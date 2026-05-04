@@ -1,0 +1,17 @@
+{
+  "name": "alexmercedcom",
+  "version": "1.0.0",
+  "description": "AlexMerced.com — Portal into the world of Alex Merced",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["Alex Merced", "Data Lakehouse", "Apache Iceberg", "Portfolio"],
+  "author": "Alex Merced",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Alex Merced",
+  "short_name": "AlexMerced",
+  "description": "Portal into the world of Alex Merced — Data Lakehouse & AI Expert, Author, Creator",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f13",
+  "theme_color": "#748ec3",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
