@@ -83,6 +83,13 @@ h1, h2, h3, h4, h5 { font-family: var(--font-heading); font-weight: 600; line-he
 }
 .skip-link:focus { top: 16px; }
 
+/* --- Focus Ring (Accessibility) --- */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
 /* --- Container --- */
 .container { width: 90%; max-width: 1200px; margin: 0 auto; }
 

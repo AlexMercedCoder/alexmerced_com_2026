@@ -73,8 +73,10 @@ function initActiveNav() {
     const href = link.getAttribute('href');
     if (href === path || (href !== '/' && path.includes(href))) {
       link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
     } else if (href === '/' && (path === '/' || path === '/index.html')) {
       link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
     }
   });
 }

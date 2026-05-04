@@ -16,7 +16,7 @@
   <meta property="og:description" content="Portal into the professional and personal world of Alex Merced.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://alexmerced.com">
-  <meta property="og:image" content="https://alexmerced.com/alexpics/photo-headshot-dremio-tee-blazer.png">
+  <meta property="og:image" content="https://alexmerced.com/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -26,7 +26,7 @@
   <meta name="twitter:creator" content="@amdatalakehouse">
   <meta name="twitter:title" content="Alex Merced — Data Lakehouse & AI Expert">
   <meta name="twitter:description" content="Portal into the professional and personal world of Alex Merced.">
-  <meta name="twitter:image" content="https://alexmerced.com/alexpics/photo-headshot-dremio-tee-blazer.png">
+  <meta name="twitter:image" content="https://alexmerced.com/og-image.png">
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -54,6 +54,8 @@
   }
   </script>
 
+  <link rel="preconnect" href="https://m.media-amazon.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="stylesheet" href="/index.css">
 </head>
 <body>
@@ -84,7 +86,10 @@
   <!-- HERO -->
   <section class="hero" id="main-content">
     <div class="container hero__content">
-      <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced" class="hero__avatar">
+      <picture>
+        <source srcset="/alexpics/photo-headshot-dremio-beanie-blazer.webp" type="image/webp">
+        <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced" class="hero__avatar">
+      </picture>
       <h1 class="hero__name">Alex Merced</h1>
       <p class="hero__title">Data Lakehouse & AI Expert · Author · Creator</p>
       <p class="hero__tagline">"Empowering through education, technology, and optimism."</p>
@@ -191,6 +196,23 @@
           <div class="timeline__text">Head of Developer Relations. 2025 CEO Award Winner. O'Reilly & Manning author. 35+ books. Global conference speaker.</div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- NEWSLETTER CTA -->
+  <section class="section reveal" id="newsletter">
+    <div class="container" style="text-align:center;max-width:640px;">
+      <div class="section__header">
+        <h2 class="section__title">Stay Connected</h2>
+        <p class="section__subtitle">Subscribe to get the latest on Data Lakehouses, AI, and open source.</p>
+      </div>
+      <a href="https://amdatalakehouse.substack.com/" target="_blank" rel="noopener" class="link-card" style="margin-top:1.5rem;">
+        <span class="link-card__icon">📊</span>
+        <div class="link-card__info">
+          <div class="link-card__name">Data Lakehouse Newsletter</div>
+          <div class="link-card__desc">Weekly insights on Apache Iceberg, Polaris, and AI</div>
+        </div>
+        <span class="link-card__arrow">→</span>
+      </a>
     </div>
   </section>
 
