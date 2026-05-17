@@ -22,6 +22,7 @@ Alex Merced is the Head of Developer Relations at Dremio and a leading expert in
 - Apache Iceberg: The Definitive Guide (O'Reilly)
 - Apache Polaris: The Definitive Guide (O'Reilly)
 - Architecting an Apache Iceberg Lakehouse (Manning)
+- Alex Merced's Field Guide to Developer Relations
 - The Book on Apache Polaris
 - The Lakehouse Built for Everyone
 - Hands-On Agentic Engineering
@@ -33,5 +34,8 @@ Alex Merced is the Head of Developer Relations at Dremio and a leading expert in
 - LinkedIn: https://www.linkedin.com/in/alexmerced
 - YouTube (Data): https://www.youtube.com/@alexmerceddata
 - YouTube (Dev): https://www.youtube.com/@alexmercedcoder
+- Instagram: https://www.instagram.com/alexmercedcoder
+- TikTok: https://www.tiktok.com/@alexmercedcoder
 - BlueSky: https://bsky.app/profile/alextalksdatalakehouses.fyi
+- Mastodon: https://me.dm/@thealexmerced
 - Twitter: https://twitter.com/amdatalakehouse
