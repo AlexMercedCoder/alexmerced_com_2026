@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Merced — Press Kit & Media Bio</title>
+  <meta name="description" content="Official press kit for Alex Merced. Verified biography, media mentions, book credentials, speaking history, and contact information for journalists and event organizers.">
+  <link rel="canonical" href="https://alexmerced.com/press_kit.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alex Merced — Press Kit & Media Bio">
+  <meta property="og:description" content="Official verified biography, credentials, and media history for Alex Merced — Data Lakehouse expert, O'Reilly & Manning author, Head of DevRel at Dremio.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://alexmerced.com/press_kit.html">
+  <meta property="og:image" content="https://alexmerced.com/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@amdatalakehouse">
+  <meta name="twitter:title" content="Alex Merced — Press Kit & Media Bio">
+  <meta name="twitter:image" content="https://alexmerced.com/og-image.png">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Alex Merced — Press Kit & Media Bio",
+    "url": "https://alexmerced.com/press_kit.html",
+    "dateModified": "2026-05-22",
+    "isPartOf": { "@type": "WebSite", "name": "Alex Merced", "url": "https://alexmerced.com/" },
+    "about": {
+      "@type": "Person",
+      "name": "Alex Merced",
+      "jobTitle": "Head of Developer Relations",
+      "worksFor": { "@type": "Organization", "name": "Dremio", "url": "https://www.dremio.com" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Bowling Green State University" },
+      "sameAs": [
+        "https://github.com/alexmercedcoder",
+        "https://www.linkedin.com/in/alexmerced",
+        "https://twitter.com/amdatalakehouse",
+        "https://bsky.app/profile/alextalksdatalakehouses.fyi",
+        "https://www.youtube.com/@alexmerceddata",
+        "https://www.youtube.com/@alexmercedcoder",
+        "https://me.dm/@thealexmerced",
+        "https://alexmerced.blog"
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/index.css">
+
+  <style>
+    /* Press Kit specific styles */
+    .press-hero {
+      background: var(--color-surface-alt, #f5f0eb);
+      padding: var(--spacing-xl, 4rem) 0 var(--spacing-lg, 3rem);
+      border-bottom: 2px solid var(--color-border, #e0d8cc);
+    }
+    .press-hero__inner {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .press-hero__photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 4px solid var(--color-accent, #c17f3c);
+      flex-shrink: 0;
+    }
+    .press-hero__name {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin: 0 0 0.25rem;
+      line-height: 1.1;
+    }
+    .press-hero__role {
+      font-size: 1.1rem;
+      color: var(--color-text-muted, #6b6b6b);
+      margin: 0 0 1rem;
+    }
+    .press-hero__badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 2px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background: var(--color-accent, #c17f3c);
+      color: #fff;
+    }
+    .badge--secondary {
+      background: transparent;
+      border: 1.5px solid var(--color-accent, #c17f3c);
+      color: var(--color-accent, #c17f3c);
+    }
+    .press-section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--color-border, #e0d8cc);
+    }
+    .press-section:last-child { border-bottom: none; }
+    .press-section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 0 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--color-accent, #c17f3c);
+      display: inline-block;
+    }
+    .bio-text p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+      max-width: 72ch;
+    }
+    .bio-text p:last-child { margin-bottom: 0; }
+    .credentials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+    }
+    .credential-card {
+      background: var(--color-surface-alt, #f5f0eb);
+      border: 1px solid var(--color-border, #e0d8cc);
+      border-left: 4px solid var(--color-accent, #c17f3c);
+      padding: 1.25rem;
+      border-radius: 0 2px 2px 0;
+    }
+    .credential-card__label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-muted, #6b6b6b);
+      margin-bottom: 0.4rem;
+    }
+    .credential-card__value {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .credential-card__sub {
+      font-size: 0.85rem;
+      color: var(--color-text-muted, #6b6b6b);
+      margin-top: 0.25rem;
+    }
+    .credential-card a {
+      color: var(--color-accent, #c17f3c);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .sources-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .sources-table th {
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      background: var(--color-surface-alt, #f5f0eb);
+      font-weight: 700;
+      border-bottom: 2px solid var(--color-accent, #c17f3c);
+      white-space: nowrap;
+    }
+    .sources-table td {
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--color-border, #e0d8cc);
+      vertical-align: top;
+      line-height: 1.45;
+    }
+    .sources-table tr:last-child td { border-bottom: none; }
+    .sources-table a { color: var(--color-accent, #c17f3c); }
+    .source-type {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.4rem;
+      border-radius: 2px;
+      background: var(--color-surface-alt, #f5f0eb);
+      border: 1px solid var(--color-border, #e0d8cc);
+      white-space: nowrap;
+    }
+    .source-type--high { border-color: #4caf50; color: #2e7d32; background: #f1f8e9; }
+    .source-type--med  { border-color: #ff9800; color: #e65100; background: #fff8e1; }
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .press-book-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .press-book-card img {
+      width: 100%;
+      max-width: 160px;
+      border: 1px solid var(--color-border, #e0d8cc);
+      border-radius: 2px;
+    }
+    .press-book-card__title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .press-book-card__pub {
+      font-size: 0.8rem;
+      color: var(--color-text-muted, #6b6b6b);
+    }
+    .press-book-card a { color: var(--color-accent, #c17f3c); font-size: 0.85rem; }
+    .headshots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .headshot-item { display: flex; flex-direction: column; gap: 0.5rem; }
+    .headshot-item img {
+      width: 100%;
+      border: 1px solid var(--color-border, #e0d8cc);
+      border-radius: 4px;
+    }
+    .headshot-item__caption { font-size: 0.8rem; color: var(--color-text-muted, #6b6b6b); }
+    .headshot-item a { font-size: 0.85rem; color: var(--color-accent, #c17f3c); }
+    .contact-block {
+      background: var(--color-surface-alt, #f5f0eb);
+      border: 1px solid var(--color-border, #e0d8cc);
+      padding: 1.5rem 2rem;
+      border-radius: 4px;
+      max-width: 600px;
+    }
+    .contact-block p { margin: 0.35rem 0; font-size: 0.95rem; }
+    .contact-block a { color: var(--color-accent, #c17f3c); font-weight: 600; }
+    .socials-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .socials-list li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.4rem 0.9rem;
+      border: 1.5px solid var(--color-border, #e0d8cc);
+      border-radius: 2px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text, #1a1a1a);
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .socials-list li a:hover {
+      border-color: var(--color-accent, #c17f3c);
+      color: var(--color-accent, #c17f3c);
+    }
+    .toc {
+      background: var(--color-surface-alt, #f5f0eb);
+      border: 1px solid var(--color-border, #e0d8cc);
+      padding: 1.25rem 1.5rem;
+      border-radius: 4px;
+      margin-bottom: 2.5rem;
+      display: inline-block;
+      min-width: 280px;
+    }
+    .toc__title { font-weight: 700; margin-bottom: 0.75rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .toc ol { margin: 0; padding-left: 1.25rem; }
+    .toc li { margin: 0.3rem 0; }
+    .toc a { color: var(--color-accent, #c17f3c); font-size: 0.9rem; }
+    @media (max-width: 640px) {
+      .press-hero__inner { grid-template-columns: 1fr; text-align: center; }
+      .press-hero__badges { justify-content: center; }
+      .press-hero__photo { width: 130px; height: 130px; margin: 0 auto; }
+      .press-hero__name { font-size: 2rem; }
+      .sources-table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo" aria-label="Alex Merced Home">
+        <span class="nav__logo-icon" aria-hidden="true">AM</span>
+        <span>Alex Merced</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="/">Home</a>
+        <a href="/professional.html">Professional</a>
+        <a href="/personal.html">Personal</a>
+        <a href="https://alexmerced.blog" target="_blank" rel="noopener">Blog</a>
+        <a href="https://buymeacoffee.com/alexmerced" target="_blank" rel="noopener">☕ Buy Me a Coffee</a>
+      </div>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <div class="press-hero">
+      <div class="container">
+        <div class="press-hero__inner">
+          <picture>
+            <source srcset="/alexpics/photo-headshot-dremio-beanie-blazer.webp" type="image/webp">
+            <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — official headshot" class="press-hero__photo">
+          </picture>
+          <div>
+            <h1 class="press-hero__name">Alex Merced</h1>
+            <p class="press-hero__role">Head of Developer Relations at Dremio · O'Reilly & Manning Author · Data Lakehouse Expert</p>
+            <div class="press-hero__badges">
+              <span class="badge">O'Reilly Author</span>
+              <span class="badge">Manning Author</span>
+              <span class="badge badge--secondary">35+ Books</span>
+              <span class="badge badge--secondary">LinkedIn Learning Instructor</span>
+              <span class="badge badge--secondary">LP Vice Chair 2018–2022</span>
+              <span class="badge badge--secondary">2025 Dremio CEO Award</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top: 2.5rem; padding-bottom: 4rem;">
+
+      <!-- TABLE OF CONTENTS -->
+      <nav class="toc" aria-label="Page contents">
+        <div class="toc__title">On This Page</div>
+        <ol>
+          <li><a href="#biography">Official Biography</a></li>
+          <li><a href="#credentials">Verified Credentials</a></li>
+          <li><a href="#books">Books & Publications</a></li>
+          <li><a href="#media">Media Coverage</a></li>
+          <li><a href="#speaking">Speaking & Education</a></li>
+          <li><a href="#political">Political Record</a></li>
+          <li><a href="#headshots">Press Photos</a></li>
+          <li><a href="#socials">Official Profiles</a></li>
+          <li><a href="#contact">Press Contact</a></li>
+        </ol>
+      </nav>
+
+      <!-- BIOGRAPHY -->
+      <section class="press-section" id="biography">
+        <h2>Official Biography</h2>
+        <div class="bio-text">
+          <p>Alex Merced is an American technology executive, author, educator, and former political candidate based in New York. He currently serves as Head of Developer Relations at <a href="https://www.dremio.com" target="_blank" rel="noopener">Dremio</a>, the open lakehouse platform company, where he leads community education and technical evangelism around Apache Iceberg, Apache Polaris, and modern data lakehouse architecture. He received the 2025 Dremio CEO Award for his contributions to the company and ecosystem.</p>
+
+          <p>Merced is an established technical author with a particular focus on open-source data infrastructure. He is a co-author of <em>Apache Iceberg: The Definitive Guide</em> (O'Reilly Media, 2024) — translated into Japanese in 2025 — and co-author of <em>Apache Polaris: The Definitive Guide</em> (O'Reilly Media, 2025). He is also the sole author of <em>Architecting an Apache Iceberg Lakehouse</em> (Manning/Simon & Schuster, 2026), as well as <em>Alex Merced's Field Guide to Developer Relations</em> and more than 35 additional books spanning data engineering, artificial intelligence, economics, philosophy, and fiction published independently. His LinkedIn Learning course, <em>Hands-On with Apache Iceberg</em>, launched in October 2024.</p>
+
+          <p>Before joining Dremio, Merced built an extensive background as a self-taught software developer and educator. He is a graduate of <a href="https://generalassemb.ly" target="_blank" rel="noopener">General Assembly's</a> Software Engineering Immersive bootcamp — a career pivot from finance that was featured in a <a href="https://www.coursereport.com" target="_blank" rel="noopener">Course Report</a> profile in 2024 — and later became an instructor there. He subsequently built a wide-reaching educational presence: his coding-education YouTube channel (<a href="https://www.youtube.com/@alexmercedcoder" target="_blank" rel="noopener">@alexmercedcoder</a>) has approximately 5,000 subscribers and over 1,500 videos covering JavaScript, Python, Rust, and web frameworks. His second channel (<a href="https://www.youtube.com/@alexmerceddata" target="_blank" rel="noopener">@alexmerceddata</a>) focuses on data engineering, Apache Iceberg, and the data lakehouse ecosystem. He is also a multi-topic instructor on <a href="https://www.udemy.com" target="_blank" rel="noopener">Udemy</a>, with courses spanning JavaScript, Python, C++, Flutter, React Native, AI/LLMs, and data engineering.</p>
+
+          <p>Merced attended <a href="https://www.bgsu.edu" target="_blank" rel="noopener">Bowling Green State University</a> in Ohio, where he worked as a DJ and promotions director at WBGU campus radio and briefly co-owned a local retail business. After moving to New York, he pursued financial training and worked in the finance sector before transitioning into software development and developer advocacy.</p>
+
+          <p>Merced has been active in Libertarian politics since the mid-2010s. He was the New York Libertarian Party's 2016 U.S. Senate nominee (a statewide race against incumbent Chuck Schumer), ran in the 2013 New York City public advocate race, and appeared on the ballot for New York City Comptroller in 2017. In July 2018 he was elected Vice Chair of the Libertarian National Committee at the party's national convention — a result covered by Reason magazine and LP.org as part of reporting on the party's ideological direction — and served in that role through 2022. He has been a podcast guest on The Tom Woods Show, Bad Crypto Podcast, Pantsuit Politics, and other programs discussing Libertarian policy and political strategy.</p>
+
+          <p>Merced is a prolific content creator and conference speaker. He has appeared at Data Day Texas, Dremio Subsurface, SQLBits, OSA Con (2023 & 2024), DataEngBytes, ODSC AI East, Nerdearla (Argentina), Øredev (Sweden), and Confluent's Currents, among others. His speaker profile is maintained on <a href="https://sessionize.com" target="_blank" rel="noopener">Sessionize.com</a>. He maintains an active technical blog at <a href="https://alexmerced.blog" target="_blank" rel="noopener">alexmerced.blog</a>, a data lakehouse Substack newsletter, and produces creative and philosophical writing through <em>The Lovatarian</em> Substack. He hosts a technology podcast available on Spotify at <a href="https://alexmercedpodcast.com" target="_blank" rel="noopener">alexmercedpodcast.com</a>.</p>
+
+          <p>A multi-faceted creator, Merced also composes and releases original music. He is known professionally for a public philosophy of empowerment through education, technology, and optimism.</p>
+        </div>
+
+        <!-- SHORT BIOS -->
+        <div style="margin-top: 2rem;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;">Short Bios for Event Organizers</h3>
+          <div class="credentials-grid">
+            <div class="credential-card">
+              <div class="credential-card__label">50 Words</div>
+              <div class="credential-card__value" style="font-weight: 400; font-size: 0.95rem; line-height: 1.6;">Alex Merced is Head of Developer Relations at Dremio, co-author of O'Reilly's <em>Apache Iceberg: The Definitive Guide</em> and <em>Apache Polaris: The Definitive Guide</em>, and author of the Manning title <em>Architecting an Apache Iceberg Lakehouse</em>. He creates technical content across YouTube, LinkedIn Learning, and a developer blog reaching tens of thousands of practitioners.</div>
+            </div>
+            <div class="credential-card">
+              <div class="credential-card__label">25 Words</div>
+              <div class="credential-card__value" style="font-weight: 400; font-size: 0.95rem; line-height: 1.6;">Head of DevRel at Dremio. O'Reilly & Manning author on Apache Iceberg and Apache Polaris. 35+ books. LinkedIn Learning instructor. Data lakehouse educator.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CREDENTIALS -->
+      <section class="press-section" id="credentials">
+        <h2>Verified Credentials</h2>
+        <div class="credentials-grid">
+
+          <div class="credential-card">
+            <div class="credential-card__label">Current Role</div>
+            <div class="credential-card__value">Head of Developer Relations</div>
+            <div class="credential-card__sub">Dremio — <a href="https://www.dremio.com/blog/author/alex-merced/" target="_blank" rel="noopener">Dremio Author Page</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Recognition</div>
+            <div class="credential-card__value">2025 Dremio CEO Award</div>
+            <div class="credential-card__sub">Internal annual award for exceptional contribution</div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Education</div>
+            <div class="credential-card__value">Bowling Green State University</div>
+            <div class="credential-card__sub">Bowling Green, Ohio — campus radio DJ & promotions director</div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">O'Reilly Books (co-author)</div>
+            <div class="credential-card__value">Apache Iceberg: The Definitive Guide (2024)<br>Apache Polaris: The Definitive Guide (2025)</div>
+            <div class="credential-card__sub"><a href="https://oreilly.com/library/view/apache-iceberg-the/9781098148614/" target="_blank" rel="noopener">O'Reilly Library ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Manning / Simon & Schuster</div>
+            <div class="credential-card__value">Architecting an Apache Iceberg Lakehouse (2026)</div>
+            <div class="credential-card__sub"><a href="https://www.simonandschuster.com/books/Architecting-an-Apache-Iceberg-Lakehouse/Alex-Merced/9781633435100" target="_blank" rel="noopener">Simon & Schuster ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">International Edition</div>
+            <div class="credential-card__value">Apache Iceberg: The Definitive Guide — Japanese Edition (2025)</div>
+            <div class="credential-card__sub">Published in Japan; confirms global reach of technical work</div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">LinkedIn Learning</div>
+            <div class="credential-card__value">Hands-On with Apache Iceberg</div>
+            <div class="credential-card__sub"><a href="https://www.linkedin.com/learning/hands-on-with-apache-iceberg/apache-iceberg" target="_blank" rel="noopener">LinkedIn Learning Course ↗</a> — Oct 2024</div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Political Office (elected)</div>
+            <div class="credential-card__value">Vice Chair, Libertarian National Committee</div>
+            <div class="credential-card__sub">Elected July 2018 at LP National Convention · Served through 2022 · <a href="https://lp.org/libertarian-convention-breaks-fundraising-records-elects-new-officers/" target="_blank" rel="noopener">LP.org ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">NY Board of Elections</div>
+            <div class="credential-card__value">2016 Libertarian U.S. Senate Nominee — New York</div>
+            <div class="credential-card__sub"><a href="https://results.elections.ny.gov/candidate/3700" target="_blank" rel="noopener">Official NY election record ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">C-SPAN</div>
+            <div class="credential-card__value">Documented broadcast appearance</div>
+            <div class="credential-card__sub"><a href="https://www.c-span.org/person/?102681=" target="_blank" rel="noopener">C-SPAN archive ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Independent Books (self-published)</div>
+            <div class="credential-card__value">35+ titles on data engineering, AI, economics, philosophy, and fiction</div>
+            <div class="credential-card__sub"><a href="https://books.alexmerced.com" target="_blank" rel="noopener">books.alexmerced.com ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Conference Speaking</div>
+            <div class="credential-card__value">Data Day Texas · Dremio Subsurface · SQLBits · OSA Con · DataEngBytes · ODSC AI East · Nerdearla · Øredev · Confluent Currents · O'Reilly Author Showcase</div>
+            <div class="credential-card__sub"><a href="https://datadaytexas.com/2024/speakers" target="_blank" rel="noopener">Data Day Texas 2024 ↗</a> · <a href="https://sessionize.com" target="_blank" rel="noopener">Sessionize profile ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Udemy Instructor</div>
+            <div class="credential-card__value">Multi-topic course library</div>
+            <div class="credential-card__sub">JavaScript, Python, C++, Flutter, React Native, AI/LLMs, data engineering, finance — <a href="https://www.udemy.com" target="_blank" rel="noopener">Udemy ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">General Assembly</div>
+            <div class="credential-card__value">Alumnus & Instructor — Software Engineering Immersive</div>
+            <div class="credential-card__sub">Career pivot from finance to software engineering; later taught at GA. Featured in Course Report alumni profile (2024).</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- BOOKS -->
+      <section class="press-section" id="books">
+        <h2>Books & Publications</h2>
+        <div class="books-grid">
+
+          <div class="press-book-card">
+            <img src="https://m.media-amazon.com/images/I/81lRdcGaQjL._SY466_.jpg" alt="Apache Iceberg: The Definitive Guide cover" loading="lazy">
+            <div class="press-book-card__title">Apache Iceberg: The Definitive Guide</div>
+            <div class="press-book-card__pub">O'Reilly Media · 2024 · Co-author</div>
+            <a href="https://www.amazon.com/dp/1098148622" target="_blank" rel="noopener">Amazon ↗</a>
+          </div>
+
+          <div class="press-book-card">
+            <img src="https://m.media-amazon.com/images/I/71EkrFM5CZL._SY466_.jpg" alt="Apache Polaris: The Definitive Guide cover" loading="lazy">
+            <div class="press-book-card__title">Apache Polaris: The Definitive Guide</div>
+            <div class="press-book-card__pub">O'Reilly Media · 2025 · Co-author</div>
+            <a href="https://www.amazon.com/dp/B0FBRJ7J1Y" target="_blank" rel="noopener">Amazon ↗</a>
+          </div>
+
+          <div class="press-book-card">
+            <img src="https://m.media-amazon.com/images/I/71ljEwQ0MZL._SY466_.jpg" alt="Architecting an Apache Iceberg Lakehouse cover" loading="lazy">
+            <div class="press-book-card__title">Architecting an Apache Iceberg Lakehouse</div>
+            <div class="press-book-card__pub">Manning / Simon & Schuster · 2026 · Sole Author</div>
+            <a href="https://www.amazon.com/dp/1633435105" target="_blank" rel="noopener">Amazon ↗</a>
+          </div>
+
+          <div class="press-book-card">
+            <img src="https://m.media-amazon.com/images/I/71taB+pfeeL._SY466_.jpg" alt="Field Guide to Developer Relations cover" loading="lazy">
+            <div class="press-book-card__title">Alex Merced's Field Guide to Developer Relations</div>
+            <div class="press-book-card__pub">Self-published · Sole Author</div>
+            <a href="https://www.amazon.com/dp/B0H15CJLNG" target="_blank" rel="noopener">Amazon ↗</a>
+          </div>
+
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted, #6b6b6b);">
+          Full catalog of 35+ titles available at <a href="https://books.alexmerced.com" target="_blank" rel="noopener">books.alexmerced.com</a>
+        </p>
+      </section>
+
+      <!-- MEDIA COVERAGE -->
+      <section class="press-section" id="media">
+        <h2>Media Coverage & Press Mentions</h2>
+        <p style="margin-bottom: 1.5rem; color: var(--color-text-muted, #6b6b6b); font-size: 0.9rem;">Independent coverage by journalists, broadcasters, and editorial publishers — not including self-published or employer-produced content.</p>
+
+        <div style="overflow-x: auto;">
+          <table class="sources-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Outlet</th>
+                <th>Title / Description</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2005</td>
+                <td>BG Falcon Media</td>
+                <td><a href="https://bgfalconmedia.com/130510/news/bg-news/wbgu-staff-renovates-offices/" target="_blank" rel="noopener">WBGU staff renovates offices</a> — Identifies Merced as DJ and promotions director at WBGU campus radio.</td>
+                <td><span class="source-type source-type--med">Student Press</span></td>
+              </tr>
+              <tr>
+                <td>2006</td>
+                <td>BG Falcon Media</td>
+                <td><a href="https://bgfalconmedia.com/109765/news/bg-news/game-over-for-lounge/" target="_blank" rel="noopener">Game over for Lounge</a> — Reports on gaming store co-owned by Merced; quotes him on the business.</td>
+                <td><span class="source-type source-type--med">Student Press</span></td>
+              </tr>
+              <tr>
+                <td>2013</td>
+                <td>New York Amsterdam News</td>
+                <td><a href="https://amsterdamnews.com/news/2013/10/17/tish-james-prepared-public-advocate-seat/" target="_blank" rel="noopener">Tish James prepared for public advocate seat</a> — Mentions Merced as a candidate in the NYC public advocate race.</td>
+                <td><span class="source-type source-type--med">Newspaper</span></td>
+              </tr>
+              <tr>
+                <td>2016</td>
+                <td>Spectrum Local News (Capital Tonight)</td>
+                <td><a href="https://spectrumlocalnews.com/nys/rochester/capital-tonight-interviews/2016/06/2/alex-merced-060216" target="_blank" rel="noopener">Libertarian Running for Schumer's Seat</a> — TV news interview on Merced's statewide Senate campaign.</td>
+                <td><span class="source-type source-type--high">Broadcast News</span></td>
+              </tr>
+              <tr>
+                <td>2016</td>
+                <td>Pantsuit Politics Podcast</td>
+                <td><a href="https://babyboomer.org/shows/pantsuit-politics/special-episode-alex-merced-on-libertarianism/" target="_blank" rel="noopener">Special Episode: Alex Merced on Libertarianism</a> — Full episode on Merced's background and policy views.</td>
+                <td><span class="source-type source-type--med">Podcast</span></td>
+              </tr>
+              <tr>
+                <td>2016</td>
+                <td>Medium</td>
+                <td><a href="https://medium.com/@lillymmaier/alex-merced-wants-to-be-famous-6ef7be588948" target="_blank" rel="noopener">Alex Merced Wants to Be Famous</a> — Profile on Merced's self-branding, politics, and media ambitions.</td>
+                <td><span class="source-type source-type--med">Profile</span></td>
+              </tr>
+              <tr>
+                <td>2017</td>
+                <td>Reason Magazine</td>
+                <td><a href="https://reason.com/2017/10/31/all-local-politics-are-stupid-in-part-be/" target="_blank" rel="noopener">All Local Politics Are Stupid</a> — Identifies Merced as the Libertarian NYC comptroller candidate.</td>
+                <td><span class="source-type source-type--high">Magazine</span></td>
+              </tr>
+              <tr>
+                <td>2017</td>
+                <td>City & State New York</td>
+                <td><a href="https://cityandstateny.com/politics/2017/10/key-2017-new-york-election-races-to-watch/370954/" target="_blank" rel="noopener">Key 2017 New York election races to watch</a> — Notes Merced as the Libertarian on the ballot in the NYC comptroller race.</td>
+                <td><span class="source-type source-type--high">Politics Press</span></td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td>Reason Magazine</td>
+                <td><a href="https://reason.com/2018/07/04/libertarian-party-rebuffs-mises-uprising/" target="_blank" rel="noopener">Libertarian Party Rebuffs Mises Uprising</a> — Reports Merced's election as LP Vice Chair; central to story's argument.</td>
+                <td><span class="source-type source-type--high">Magazine</span></td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td>The Tom Woods Show (Ep. 1306)</td>
+                <td><a href="https://tomwoods.com/ep-1306-the-stock-market-demystified/" target="_blank" rel="noopener">The Stock Market Demystified</a> — Presents Merced as LP vice chair and finance expert.</td>
+                <td><span class="source-type source-type--med">Podcast</span></td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td>Bad Crypto Podcast</td>
+                <td><a href="https://badcryptopodcast.com/2018/11/14/alex-merced-206/" target="_blank" rel="noopener">Blockchain and Politics with Alex Merced</a> — Feature episode on Merced's political profile and LNC role.</td>
+                <td><span class="source-type source-type--med">Podcast</span></td>
+              </tr>
+              <tr>
+                <td>2020</td>
+                <td>Reason Magazine</td>
+                <td><a href="https://reason.com/video/2020/11/08/whats-next-for-the-libertarian-party-after-jo-jorgensen-got-1/" target="_blank" rel="noopener">What's Next for the Libertarian Party?</a> — Quotes Merced as former LP vice chair in post-election analysis.</td>
+                <td><span class="source-type source-type--high">Magazine</span></td>
+              </tr>
+              <tr>
+                <td>2023</td>
+                <td>The Data Stack Show</td>
+                <td><a href="https://datastackshow.com/podcast/the-anatomy-of-a-data-lakehouse-with-alex-merced-of-dremio/" target="_blank" rel="noopener">The Anatomy of a Data Lakehouse with Alex Merced of Dremio</a> — Dedicated episode on Merced's background and data lakehouse expertise.</td>
+                <td><span class="source-type source-type--med">Tech Podcast</span></td>
+              </tr>
+              <tr>
+                <td>2024</td>
+                <td>SiliconANGLE</td>
+                <td><a href="https://siliconangle.com/2024/07/05/betamax-blues-hudi-edging-toward-also-ran-status-data-platform-race/" target="_blank" rel="noopener">Betamax blues: Hudi edging toward "also ran" status</a> — Quotes Merced as expert on Apache Iceberg vs. Hudi/Delta Lake market dynamics.</td>
+                <td><span class="source-type source-type--high">Tech Trade</span></td>
+              </tr>
+              <tr>
+                <td>2024</td>
+                <td>Let's Talk AI Podcast (Ep. 70)</td>
+                <td>"Data Engineering, Open Source and Dremio with Alex Merced" — A dedicated episode covering Merced's career journey from finance to data engineering, Apache Iceberg, Apache Arrow, and Dremio. Hosted by Thomas Bustos.</td>
+                <td><span class="source-type source-type--med">Tech Podcast</span></td>
+              </tr>
+              <tr>
+                <td>2024</td>
+                <td>Course Report</td>
+                <td>General Assembly alumnus feature — Merced profiled as a software engineering bootcamp graduate who pivoted from finance to a remote software development and developer advocacy career.</td>
+                <td><span class="source-type source-type--med">Feature</span></td>
+              </tr>
+              <tr>
+                <td>2024</td>
+                <td>SD Times</td>
+                <td><a href="https://sdtimes.com/softwaredev/predictions-for-software-development-in-2025/" target="_blank" rel="noopener">Predictions for software development in 2025</a> — Features Merced's expert prediction on data catalogs and Apache Iceberg interoperability.</td>
+                <td><span class="source-type source-type--high">Tech Trade</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SPEAKING & EDUCATION -->
+      <section class="press-section" id="speaking">
+        <h2>Speaking, Education & Content</h2>
+        <div class="credentials-grid">
+
+          <div class="credential-card">
+            <div class="credential-card__label">Conference</div>
+            <div class="credential-card__value">Data Day Texas 2024</div>
+            <div class="credential-card__sub">Speaker & O'Reilly Author Showcase · Austin, TX · <a href="https://datadaytexas.com/2024/speakers" target="_blank" rel="noopener">Speaker listing ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Conference</div>
+            <div class="credential-card__value">Dremio Subsurface</div>
+            <div class="credential-card__sub">Annual data lakehouse conference · Multiple appearances as speaker and host</div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Conference</div>
+            <div class="credential-card__value">SQLBits</div>
+            <div class="credential-card__sub">Session: "Apache Iceberg Data Analytics with Python" · <a href="https://sqlbits.com" target="_blank" rel="noopener">sqlbits.com ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Conference</div>
+            <div class="credential-card__value">OSA Con (Open Source Analytics) 2023 & 2024</div>
+            <div class="credential-card__sub">2024: "Open Source and the Data Lakehouse" · 2023: "Data as Code: Project Nessie" · <a href="https://osacon.io" target="_blank" rel="noopener">osacon.io ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Conference</div>
+            <div class="credential-card__value">DataEngBytes · ODSC AI East · Nerdearla · Øredev</div>
+            <div class="credential-card__sub">International data engineering & developer conferences · <a href="https://dataengbytes.com" target="_blank" rel="noopener">DataEngBytes ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Online Course</div>
+            <div class="credential-card__value">LinkedIn Learning: Hands-On with Apache Iceberg</div>
+            <div class="credential-card__sub">Published October 2024 · <a href="https://www.linkedin.com/learning/hands-on-with-apache-iceberg/apache-iceberg" target="_blank" rel="noopener">LinkedIn Learning ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">YouTube — @alexmercedcoder</div>
+            <div class="credential-card__value">Coding & Web Development Education</div>
+            <div class="credential-card__sub"><a href="https://www.youtube.com/@alexmercedcoder" target="_blank" rel="noopener">youtube.com/@alexmercedcoder ↗</a> · JavaScript, Python, Rust, web dev</div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">YouTube — @alexmerceddata</div>
+            <div class="credential-card__value">Data Engineering & Apache Iceberg Education</div>
+            <div class="credential-card__sub"><a href="https://www.youtube.com/@alexmerceddata" target="_blank" rel="noopener">youtube.com/@alexmerceddata ↗</a> · Data lakehouse, Dremio, open formats</div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Blog</div>
+            <div class="credential-card__value">alexmerced.blog</div>
+            <div class="credential-card__sub"><a href="https://alexmerced.blog" target="_blank" rel="noopener">alexmerced.blog ↗</a> · Technical tutorials, data engineering, AI</div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Podcast (host)</div>
+            <div class="credential-card__value">Tech Podcast on Spotify</div>
+            <div class="credential-card__sub"><a href="https://open.spotify.com/show/2PRDrWVpgDvKxN6n1oUsJF" target="_blank" rel="noopener">Listen on Spotify ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Dremio Blog</div>
+            <div class="credential-card__value">Prolific contributor to Dremio's engineering blog</div>
+            <div class="credential-card__sub"><a href="https://www.dremio.com/blog/author/alex-merced/" target="_blank" rel="noopener">dremio.com/blog/author/alex-merced/ ↗</a></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- POLITICAL RECORD -->
+      <section class="press-section" id="political">
+        <h2>Political Record (Verified Official Sources)</h2>
+        <div class="credentials-grid">
+
+          <div class="credential-card">
+            <div class="credential-card__label">Elected Position</div>
+            <div class="credential-card__value">Vice Chair, Libertarian National Committee</div>
+            <div class="credential-card__sub">Elected July 2018, LP National Convention · Served through 2022 · <a href="https://lp.org/libertarian-convention-breaks-fundraising-records-elects-new-officers/" target="_blank" rel="noopener">LP.org announcement ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">2016 Candidate</div>
+            <div class="credential-card__value">Libertarian Nominee — U.S. Senate, New York</div>
+            <div class="credential-card__sub">Ran against Sen. Chuck Schumer (D) · Statewide ballot · <a href="https://results.elections.ny.gov/candidate/3700" target="_blank" rel="noopener">NY Board of Elections ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">2017 Candidate</div>
+            <div class="credential-card__value">Libertarian Nominee — NYC Comptroller</div>
+            <div class="credential-card__sub">Citywide race · Covered by City & State NY and Reason Magazine</div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">2013 Candidate</div>
+            <div class="credential-card__value">NYC Public Advocate Race</div>
+            <div class="credential-card__sub">Mentioned in New York Amsterdam News · <a href="https://ballotpedia.org/Alex_Merced" target="_blank" rel="noopener">Ballotpedia ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">Ballotpedia</div>
+            <div class="credential-card__value">Three separate candidate entries (2013, 2016, 2017)</div>
+            <div class="credential-card__sub"><a href="https://ballotpedia.org/Alex_Merced" target="_blank" rel="noopener">ballotpedia.org/Alex_Merced ↗</a></div>
+          </div>
+
+          <div class="credential-card">
+            <div class="credential-card__label">C-SPAN Appearance</div>
+            <div class="credential-card__value">Video archive available</div>
+            <div class="credential-card__sub"><a href="https://www.c-span.org/person/?102681=" target="_blank" rel="noopener">C-SPAN person archive ↗</a></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PRESS PHOTOS -->
+      <section class="press-section" id="headshots">
+        <h2>Press Photos</h2>
+        <p style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted, #6b6b6b);">High-resolution photos are available. Please credit: <strong>Alex Merced / alexmerced.com</strong></p>
+        <div class="headshots-grid">
+          <div class="headshot-item">
+            <picture>
+              <source srcset="/alexpics/photo-headshot-dremio-beanie-blazer.webp" type="image/webp">
+              <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — professional headshot, Dremio beanie and blazer" loading="lazy">
+            </picture>
+            <div class="headshot-item__caption">Official headshot — blazer & Dremio beanie</div>
+            <a href="/alexpics/photo-headshot-dremio-beanie-blazer.png" download>Download PNG ↓</a>
+          </div>
+          <div class="headshot-item">
+            <picture>
+              <source srcset="/alexpics/photo-headshot-dremio-tee-blazer.webp" type="image/webp">
+              <img src="/alexpics/photo-headshot-dremio-tee-blazer.png" alt="Alex Merced — professional headshot, Dremio tee and blazer" loading="lazy">
+            </picture>
+            <div class="headshot-item__caption">Alternate headshot — tee & blazer</div>
+            <a href="/alexpics/photo-headshot-dremio-tee-blazer.png" download>Download PNG ↓</a>
+          </div>
+          <div class="headshot-item">
+            <img src="/alexpics/portrait-casual-painted.jpg" alt="Alex Merced — casual portrait, painted style" loading="lazy">
+            <div class="headshot-item__caption">Casual portrait</div>
+            <a href="/alexpics/portrait-casual-painted.jpg" download>Download JPG ↓</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- OFFICIAL PROFILES -->
+      <section class="press-section" id="socials">
+        <h2>Official Profiles & Verification</h2>
+        <ul class="socials-list">
+          <li><a href="https://www.linkedin.com/in/alexmerced" target="_blank" rel="me noopener">💼 LinkedIn</a></li>
+          <li><a href="https://github.com/alexmercedcoder" target="_blank" rel="me noopener">🐙 GitHub</a></li>
+          <li><a href="https://twitter.com/amdatalakehouse" target="_blank" rel="me noopener">🐦 Twitter/X</a></li>
+          <li><a href="https://bsky.app/profile/alextalksdatalakehouses.fyi" target="_blank" rel="me noopener">🦋 BlueSky</a></li>
+          <li><a href="https://me.dm/@thealexmerced" target="_blank" rel="me noopener">🐘 Mastodon</a></li>
+          <li><a href="https://www.instagram.com/alexmercedcoder" target="_blank" rel="me noopener">📸 Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@alexmercedcoder" target="_blank" rel="me noopener">🎵 TikTok</a></li>
+          <li><a href="https://www.youtube.com/@alexmerceddata" target="_blank" rel="me noopener">▶️ YouTube (Data)</a></li>
+          <li><a href="https://www.youtube.com/@alexmercedcoder" target="_blank" rel="me noopener">▶️ YouTube (Dev)</a></li>
+          <li><a href="https://www.c-span.org/person/?102681=" target="_blank" rel="noopener">📺 C-SPAN</a></li>
+          <li><a href="https://results.elections.ny.gov/candidate/3700" target="_blank" rel="noopener">🗳️ NY Elections Record</a></li>
+          <li><a href="https://lp.org/libertarian-convention-breaks-fundraising-records-elects-new-officers/" target="_blank" rel="noopener">🗳️ LP.org (VP Election)</a></li>
+          <li><a href="https://ballotpedia.org/Alex_Merced" target="_blank" rel="noopener">🗳️ Ballotpedia</a></li>
+          <li><a href="https://oreilly.com/search/?q=alex+merced" target="_blank" rel="noopener">📚 O'Reilly Author Page</a></li>
+          <li><a href="https://www.linkedin.com/learning/hands-on-with-apache-iceberg/apache-iceberg" target="_blank" rel="noopener">🎓 LinkedIn Learning</a></li>
+          <li><a href="https://www.dremio.com/blog/author/alex-merced/" target="_blank" rel="noopener">✍️ Dremio Blog</a></li>
+          <li><a href="https://sessionize.com" target="_blank" rel="noopener">🎤 Sessionize (Speaker Profile)</a></li>
+          <li><a href="https://www.udemy.com" target="_blank" rel="noopener">🎓 Udemy Instructor</a></li>
+          <li><a href="https://alexmercedpodcast.com" target="_blank" rel="noopener">🎙️ Podcast Hub</a></li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="press-section" id="contact">
+        <h2>Press Contact</h2>
+        <div class="contact-block">
+          <p><strong>Email:</strong> <a href="mailto:dev@alexmerced.com">dev@alexmerced.com</a></p>
+          <p><strong>Website:</strong> <a href="https://alexmerced.com">alexmerced.com</a></p>
+          <p><strong>Booking / speaking inquiries:</strong> <a href="mailto:dev@alexmerced.com">dev@alexmerced.com</a></p>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted, #6b6b6b);">For interview requests, conference bookings, or media inquiries please email with your publication/event name, topic of interest, and preferred format.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__col-title">Professional</div>
+          <div class="footer__links">
+            <a href="https://alexmerced.blog" target="_blank" rel="me noopener">Blog</a>
+            <a href="https://open.spotify.com/show/2PRDrWVpgDvKxN6n1oUsJF" target="_blank" rel="noopener">Tech Podcast</a>
+            <a href="https://main.datalakehousehub.com" target="_blank" rel="noopener">DataLakehouseHub</a>
+            <a href="https://dataengnr.com" target="_blank" rel="noopener">DataEngnr.com</a>
+            <a href="https://opendatalakehouse.com" target="_blank" rel="noopener">OpenDataLakehouse.com</a>
+            <a href="https://semanticlakehouse.com" target="_blank" rel="noopener">SemanticLakehouse.com</a>
+            <a href="https://books.alexmerced.com" target="_blank" rel="noopener">All Books</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Personal</div>
+          <div class="footer__links">
+            <a href="https://loveatarian.substack.com/" target="_blank" rel="noopener">The Lovatarian</a>
+            <a href="https://www.youtube.com/user/AlexMercedMusic" target="_blank" rel="noopener">Music</a>
+            <a href="https://buymeacoffee.com/alexmerced" target="_blank" rel="noopener">☕ Buy Me a Coffee</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Connect</div>
+          <div class="footer__links">
+            <a href="https://github.com/alexmercedcoder" target="_blank" rel="me noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/alexmerced" target="_blank" rel="me noopener">LinkedIn</a>
+            <a href="https://www.youtube.com/@alexmerceddata" target="_blank" rel="me noopener">YouTube (Data)</a>
+            <a href="https://www.youtube.com/@alexmercedcoder" target="_blank" rel="me noopener">YouTube (Dev)</a>
+            <a href="https://www.instagram.com/alexmercedcoder" target="_blank" rel="me noopener">Instagram</a>
+            <a href="https://www.tiktok.com/@alexmercedcoder" target="_blank" rel="me noopener">TikTok</a>
+            <a href="https://bsky.app/profile/alextalksdatalakehouses.fyi" target="_blank" rel="me noopener">BlueSky</a>
+            <a href="https://me.dm/@thealexmerced" target="_blank" rel="me noopener">Mastodon</a>
+            <a href="https://twitter.com/amdatalakehouse" target="_blank" rel="me noopener">Twitter/X</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © <span id="footer-year">2026</span> Alex Merced. All rights reserved. |
+        <a href="mailto:dev@alexmerced.com">dev@alexmerced.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
