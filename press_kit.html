@@ -59,7 +59,7 @@
     /* Press Kit specific styles */
     .press-hero {
       background: var(--color-surface-alt, #f5f0eb);
-      padding: 3rem 0 3.5rem;
+      padding: 3.5rem 0;
       border-bottom: 2px solid var(--color-border, #e0d8cc);
     }
     .press-hero__inner {
@@ -68,15 +68,23 @@
       gap: 2.5rem;
       align-items: center;
     }
-    .press-hero__photo {
+    /* The <picture> element is the flex item — it defines the circle */
+    .press-hero__picture {
       width: 160px;
       height: 160px;
       min-width: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center top;
-      border: 4px solid var(--color-accent, #c17f3c);
       flex-shrink: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid var(--color-accent, #c17f3c);
+      display: block;
+    }
+    /* The <img> fills the picture container */
+    .press-hero__photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
       display: block;
     }
     .press-hero__name {
@@ -290,7 +298,7 @@
     @media (max-width: 640px) {
       .press-hero__inner { flex-direction: column; text-align: center; }
       .press-hero__badges { justify-content: center; }
-      .press-hero__photo { width: 130px; height: 130px; min-width: 130px; margin: 0 auto; }
+      .press-hero__picture { width: 120px; height: 120px; min-width: 120px; margin: 0 auto; }
       .press-hero__name { font-size: 2rem; }
       .sources-table { display: block; overflow-x: auto; }
     }
@@ -405,7 +413,7 @@
     <div class="press-hero">
       <div class="container">
         <div class="press-hero__inner">
-          <picture>
+          <picture class="press-hero__picture">
             <source srcset="/alexpics/photo-headshot-dremio-beanie-blazer.webp" type="image/webp">
             <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — official headshot" class="press-hero__photo">
           </picture>
