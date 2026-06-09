@@ -1,41 +1,23 @@
 # Alex Merced
+> Portal into the professional and personal world of Alex Merced — Head of Developer Relations at Dremio, O'Reilly and Manning author.
 
 ## About
-Alex Merced is the Head of Developer Relations at Dremio and a leading expert in Data Lakehouse architecture, Apache Iceberg, and AI. He is an O'Reilly and Manning author with 35+ published books spanning technology, economics, philosophy, and fiction.
+- [About Alex Merced](/professional.html): Biography, books, and professional background
 
-## Professional Links
-- Website: https://alexmerced.com
-- Blog: https://alexmerced.blog
-- Portfolio: https://alexmercedcoder.dev
-- Data Lakehouse Hub: https://datalakehousehub.com
-- Books: https://books.alexmerced.com
-- GitHub: https://github.com/alexmercedcoder
+## Books
+- [Apache Iceberg: The Definitive Guide](https://www.amazon.com/Apache-Iceberg-Functionality-Performance-Scalability/dp/1098148622): O'Reilly — the category-defining text
+- [Apache Polaris: The Definitive Guide](https://www.amazon.com/dp/B0FBRJ7J1Y): O'Reilly — the catalog reference
+- [Architecting an Apache Iceberg Lakehouse](https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse): Manning — architecture patterns
+- [All Books](https://books.alexmerced.com): Complete library
 
-## Key Topics
-- Apache Iceberg and Apache Polaris
-- Data Lakehouse Architecture
-- Agentic AI and AI Engineering
-- Developer Relations and Developer Advocacy
-- Open Source Data Infrastructure
+## Projects
+- [Pangolin Catalog](https://pangolincatalog.org): Rust Iceberg REST catalog
+- [Iceframe](https://github.com/AlexMercedCoder/iceframe): Python library for Iceberg
 
-## Publications
-- Apache Iceberg: The Definitive Guide (O'Reilly)
-- Apache Polaris: The Definitive Guide (O'Reilly)
-- Architecting an Apache Iceberg Lakehouse (Manning)
-- Alex Merced's Field Guide to Developer Relations
-- The Book on Apache Polaris
-- The Lakehouse Built for Everyone
-- Hands-On Agentic Engineering
-- AI-Ready Data
-- The AI Engineering Handbook
-- 30+ additional titles on AI, data, economics, and fiction
-
-## Social
-- LinkedIn: https://www.linkedin.com/in/alexmerced
-- YouTube (Data): https://www.youtube.com/@alexmerceddata
-- YouTube (Dev): https://www.youtube.com/@alexmercedcoder
-- Instagram: https://www.instagram.com/alexmercedcoder
-- TikTok: https://www.tiktok.com/@alexmercedcoder
-- BlueSky: https://bsky.app/profile/alextalksdatalakehouses.fyi
-- Mastodon: https://me.dm/@thealexmerced
-- Twitter: https://twitter.com/amdatalakehouse
+## Profiles
+- [GitHub](https://github.com/alexmercedcoder)
+- [LinkedIn](https://www.linkedin.com/in/alexmerced)
+- [YouTube (Data)](https://www.youtube.com/@alexmerceddata)
+- [YouTube (Dev)](https://www.youtube.com/@alexmercedcoder)
+- [Substack](https://amdatalakehouse.substack.com)
+- [Dev.to](https://dev.to/alexmercedcoder)
