@@ -1,5 +1,0 @@
-# Legacy path redirects
-/web          /           301
-/data         /professional.html  301
-/opinion      /personal.html      301
-/music        /personal.html      301
