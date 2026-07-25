@@ -9,6 +9,7 @@ export default defineConfig({
         professional: resolve(__dirname, 'professional.html'),
         personal: resolve(__dirname, 'personal.html'),
         press_kit: resolve(__dirname, 'press_kit.html'),
+        bio: resolve(__dirname, 'bio.html'),
         '404': resolve(__dirname, '404.html'),
       },
     },
