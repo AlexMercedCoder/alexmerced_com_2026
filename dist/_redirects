@@ -1,3 +1,6 @@
+# bio.alexmerced.com subdomain serves the bio variant (self-canonical)
+https://bio.alexmerced.com/  /bio.html  200!
+
 # Canonical URL redirects (extensionless is canonical)
 /professional.html  /professional  301
 /personal.html      /personal      301
