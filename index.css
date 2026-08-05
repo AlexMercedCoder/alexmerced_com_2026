@@ -516,6 +516,27 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ============================================
+   BRAND VIDEO
+   ============================================ */
+.video-figure { max-width: 900px; margin: 0 auto; }
+.video-frame {
+  overflow: hidden; border: 1px solid var(--border-light);
+  transition: border-color var(--transition);
+  background: var(--color-ash);
+}
+.video-frame:hover { border-color: var(--text); }
+.video-frame video {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 16 / 9; background: var(--color-ash);
+}
+.video-figure__caption {
+  margin-top: var(--spacing-8);
+  text-align: center; color: var(--text-muted);
+  font-size: var(--text-caption); line-height: var(--leading-caption);
+  letter-spacing: var(--tracking-caption);
+}
+
+/* ============================================
    SCROLL REVEAL
    ============================================ */
 .reveal { opacity: 0; transition: opacity 0.6s ease; }

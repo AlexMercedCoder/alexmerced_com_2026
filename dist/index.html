@@ -397,11 +397,29 @@
   }
   </script>
 
+  <!-- VideoObject Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Who is Alex Merced?",
+    "description": "Who is Alex Merced — a short introduction",
+    "thumbnailUrl": "https://alexmerced.com/who-is-alex-merced-poster.jpg",
+    "uploadDate": "2026-08-05",
+    "duration": "PT48S",
+    "contentUrl": "https://alexmerced.com/who-is-alex-merced.mp4",
+    "embedUrl": "https://alexmerced.com/#brand-video",
+    "about": { "@id": "https://alexmerced.com/#alexmerced" },
+    "author": { "@id": "https://alexmerced.com/#alexmerced" },
+    "publisher": { "@id": "https://alexmerced.com/#alexmerced" }
+  }
+  </script>
+
   <link rel="preconnect" href="https://m.media-amazon.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script type="module" crossorigin src="/assets/main-9iBhKfXW.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-DBGzVWog.css">
+  <script type="module" crossorigin src="/assets/main-f0BR3Jm5.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BKnFiijL.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
@@ -454,6 +472,32 @@
         <a href="https://me.dm/@thealexmerced" target="_blank" rel="me noopener" aria-label="Mastodon">🐘</a>
         <a href="https://twitter.com/amdatalakehouse" target="_blank" rel="me noopener" aria-label="Twitter/X">🐦</a>
       </div>
+    </div>
+  </section>
+
+  <!-- BRAND VIDEO -->
+  <section class="section section--surface reveal" id="brand-video">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Video</span>
+        <h2 class="section__title">Who is Alex Merced?</h2>
+        <p class="section__subtitle">A short introduction — the author, speaker, podcaster, and educator behind the work.</p>
+      </div>
+      <figure class="video-figure">
+        <div class="video-frame">
+          <video
+            controls
+            preload="metadata"
+            playsinline
+            poster="/who-is-alex-merced-poster.jpg"
+            width="1920" height="1080">
+            <source src="/who-is-alex-merced.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <a href="/who-is-alex-merced.mp4">Download the video</a>.
+          </video>
+        </div>
+        <figcaption class="video-figure__caption">48 seconds · Press play (with sound) for the short version.</figcaption>
+      </figure>
     </div>
   </section>
 
