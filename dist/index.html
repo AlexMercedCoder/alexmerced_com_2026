@@ -37,7 +37,7 @@
     "@id": "https://alexmerced.com/#alexmerced",
     "name": "Alex Merced",
     "url": "https://alexmerced.com",
-    "image": "https://alexmerced.com/alexpics/photo-headshot-dremio-beanie-blazer.webp",
+    "image": "https://alexmerced.com/alexpics/photo-headshot-charcoal-blazer-turtleneck.webp",
     "jobTitle": "Head of Developer Relations",
     "worksFor": {
       "@type": "Organization",
@@ -430,8 +430,8 @@
   <link rel="preconnect" href="https://m.media-amazon.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script type="module" crossorigin src="/assets/main-f0BR3Jm5.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-BKnFiijL.css">
+  <script type="module" crossorigin src="/assets/main-DfMnonoW.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-9CREAqVA.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
@@ -461,10 +461,78 @@
 
   <!-- HERO -->
   <section class="hero" id="main-content">
+    <svg class="hero__viz" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <defs>
+        <pattern id="hv-grid" width="45" height="45" patternUnits="userSpaceOnUse">
+          <path d="M45 0H0V45" fill="none" stroke="currentColor" stroke-width="1" opacity="0.16"/>
+        </pattern>
+        <!-- Keeps the motif in the side gutters and clear of the content column -->
+        <linearGradient id="hv-fade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0">
+          <stop offset="0" stop-color="#fff"/>
+          <stop offset="0.194" stop-color="#fff"/>
+          <stop offset="0.292" stop-color="#000"/>
+          <stop offset="0.708" stop-color="#000"/>
+          <stop offset="0.806" stop-color="#fff"/>
+          <stop offset="1" stop-color="#fff"/>
+        </linearGradient>
+        <mask id="hv-mask"><rect width="1440" height="900" fill="url(#hv-fade)"/></mask>
+      </defs>
+
+      <g mask="url(#hv-mask)">
+        <rect width="1440" height="900" fill="url(#hv-grid)"/>
+
+        <!-- Routes: data moving through the lakehouse, left and right of the content column -->
+        <g>
+          <path class="hv-line" d="M0 175H120V265H190V335H310"/>
+          <path class="hv-flow" pathLength="100" style="animation-duration:11s" d="M0 175H120V265H190V335H310"/>
+
+          <path class="hv-line" d="M0 455H90V395H310"/>
+          <path class="hv-flow hv-flow--accent" pathLength="100" style="animation-duration:8s;animation-delay:-3s" d="M0 455H90V395H310"/>
+
+          <path class="hv-line" d="M0 730H140V645H210V570H310"/>
+          <path class="hv-flow" pathLength="100" style="animation-duration:13s;animation-delay:-5s" d="M0 730H140V645H210V570H310"/>
+
+          <path class="hv-line" d="M1440 200H1330V295H1250V365H1130"/>
+          <path class="hv-flow" pathLength="100" style="animation-duration:12s;animation-delay:-7s" d="M1440 200H1330V295H1250V365H1130"/>
+
+          <path class="hv-line" d="M1440 470H1360V410H1130"/>
+          <path class="hv-flow hv-flow--accent" pathLength="100" style="animation-duration:9s;animation-delay:-1s" d="M1440 470H1360V410H1130"/>
+
+          <path class="hv-line" d="M1440 715H1310V635H1230V550H1130"/>
+          <path class="hv-flow" pathLength="100" style="animation-duration:10s;animation-delay:-4s" d="M1440 715H1310V635H1230V550H1130"/>
+        </g>
+
+        <!-- Nodes at the route junctions -->
+        <g>
+          <rect class="hv-node" x="114" y="259" width="12" height="12" style="animation-delay:-0.5s"/>
+          <rect class="hv-node hv-node--accent" x="84" y="389" width="12" height="12" style="animation-delay:-2s"/>
+          <rect class="hv-node" x="204" y="564" width="12" height="12" style="animation-delay:-3.2s"/>
+          <rect class="hv-node" x="1324" y="289" width="12" height="12" style="animation-delay:-1.4s"/>
+          <rect class="hv-node hv-node--accent" x="1354" y="404" width="12" height="12" style="animation-delay:-2.6s"/>
+          <rect class="hv-node" x="1224" y="544" width="12" height="12" style="animation-delay:-3.8s"/>
+        </g>
+
+        <!-- Strata: stacked layers, bottom left -->
+        <g>
+          <path class="hv-bar" pathLength="100" style="animation-delay:-0.2s" d="M45 690H300"/>
+          <path class="hv-bar" pathLength="100" style="animation-delay:-1.1s" d="M45 713H255"/>
+          <path class="hv-bar" pathLength="100" style="animation-delay:-2s" d="M45 736H285"/>
+          <path class="hv-bar" pathLength="100" style="animation-delay:-2.9s" d="M45 759H215"/>
+        </g>
+
+        <!-- Strata: stacked layers, top right -->
+        <g>
+          <path class="hv-bar" pathLength="100" style="animation-delay:-3.5s" d="M1395 150H1160"/>
+          <path class="hv-bar" pathLength="100" style="animation-delay:-4.4s" d="M1395 173H1205"/>
+          <path class="hv-bar" pathLength="100" style="animation-delay:-5.3s" d="M1395 196H1140"/>
+          <path class="hv-bar" pathLength="100" style="animation-delay:-6.2s" d="M1395 219H1250"/>
+        </g>
+      </g>
+    </svg>
     <div class="container hero__content">
       <picture>
-        <source srcset="/alexpics/photo-headshot-dremio-beanie-blazer.webp" type="image/webp">
-        <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced" class="hero__avatar">
+        <source srcset="/alexpics/photo-headshot-charcoal-blazer-turtleneck.webp" type="image/webp">
+        <img src="/alexpics/photo-headshot-charcoal-blazer-turtleneck.png" alt="Alex Merced" class="hero__avatar" width="140" height="140" fetchpriority="high">
       </picture>
       <h1 class="hero__name">Alex Merced</h1>
       <p class="hero__title">Data Lakehouse & AI Expert · Author · Creator</p>
@@ -664,11 +732,9 @@
           <div class="footer__links">
             <a href="https://alexmerced.blog" target="_blank" rel="me noopener">Blog</a>
             <a href="https://open.spotify.com/show/2PRDrWVpgDvKxN6n1oUsJF" target="_blank" rel="noopener">Tech Podcast</a>
-            <a href="https://main.datalakehousehub.com" target="_blank" rel="noopener">DataLakehouseHub</a>
-            <a href="https://dataengnr.com" target="_blank" rel="noopener">DataEngnr.com</a>
             <a href="https://opendatalakehouse.com" target="_blank" rel="noopener">OpenDataLakehouse.com</a>
-            <a href="https://semanticlakehouse.com" target="_blank" rel="noopener">SemanticLakehouse.com</a>
-            <a href="https://books.alexmerced.com" target="_blank" rel="noopener">All Books</a>
+            <a href="/professional">Professional Profile</a>
+            <a href="/press_kit">Press Kit</a>
           </div>
         </div>
         <div>
@@ -694,6 +760,41 @@
           </div>
         </div>
       </div>
+
+      <!-- NETWORK -->
+      <nav class="footer__network" aria-label="The Alex Merced Network">
+        <div class="footer__network-title">The Alex Merced Network</div>
+        <div class="footer__inner">
+          <div>
+            <div class="footer__col-title">Alex Merced</div>
+            <div class="footer__links">
+              <a href="https://whoisalexmerced.com" target="_blank" rel="noopener">WhoIsAlexMerced.com</a>
+              <a href="https://alexmercedmedia.com" target="_blank" rel="noopener">AlexMercedMedia.com</a>
+              <a href="https://books.alexmerced.com" target="_blank" rel="noopener">Books</a>
+              <a href="https://alexmercedcoder.dev" target="_blank" rel="noopener">AlexMercedCoder.dev</a>
+              <a href="https://alexmerceddata.com" target="_blank" rel="noopener">AlexMercedData.com</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer__col-title">Lakehouse &amp; Data</div>
+            <div class="footer__links">
+              <a href="https://datalakehousehub.com" target="_blank" rel="noopener">DataLakehouseHub.com</a>
+              <a href="https://iceberglakehouse.com" target="_blank" rel="noopener">IcebergLakehouse.com</a>
+              <a href="https://agenticlakehouse.com" target="_blank" rel="noopener">AgenticLakehouse.com</a>
+              <a href="https://semanticlakehouse.com" target="_blank" rel="noopener">SemanticLakehouse.com</a>
+              <a href="https://dataengnr.com" target="_blank" rel="noopener">DataEngnr.com</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer__col-title">Blogs</div>
+            <div class="footer__links">
+              <a href="https://grokoverflow.com" target="_blank" rel="noopener">GrokOverflow.com</a>
+              <a href="https://ingestthis.com" target="_blank" rel="noopener">IngestThis.com</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <div class="footer__bottom">
         © <span id="footer-year">2026</span> Alex Merced. All rights reserved. |
         <a href="mailto:dev@alexmerced.com">dev@alexmerced.com</a>

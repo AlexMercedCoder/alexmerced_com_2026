@@ -232,6 +232,55 @@ h1, h2, h3, h4, h5 {
 }
 .hero__socials a:hover { border-color: var(--text); color: var(--text); }
 
+/* Hero Background Animation — desktop only */
+.hero__viz { display: none; }
+
+@media (min-width: 1200px) {
+  .hero__viz {
+    display: block;
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    color: var(--text);
+    opacity: 0.55;
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+[data-theme="dark"] .hero__viz { opacity: 0.7; }
+
+.hv-line { fill: none; stroke: currentColor; stroke-width: 1; opacity: 0.3; }
+.hv-flow {
+  fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-dasharray: 8 92;
+  animation: hv-travel 11s linear infinite;
+}
+.hv-flow--accent { stroke: var(--color-accent); }
+.hv-node {
+  fill: none; stroke: currentColor; stroke-width: 1.5;
+  animation: hv-pulse 5s ease-in-out infinite;
+}
+.hv-node--accent { stroke: var(--color-accent); }
+.hv-bar {
+  fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-dasharray: 100; stroke-dashoffset: 100;
+  animation: hv-draw 9s ease-in-out infinite;
+}
+
+@keyframes hv-travel { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+@keyframes hv-pulse { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.85; } }
+@keyframes hv-draw {
+  0% { stroke-dashoffset: 100; }
+  30%, 78% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 100; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hv-flow, .hv-node, .hv-bar { animation: none; }
+  .hv-flow { stroke-dashoffset: 55; }
+  .hv-bar { stroke-dashoffset: 0; }
+  .hv-node { opacity: 0.5; }
+}
+
 /* ============================================
    BUTTONS
    ============================================ */
@@ -465,6 +514,15 @@ h1, h2, h3, h4, h5 {
   transition: color var(--transition);
 }
 .footer__links a:hover { color: var(--text); }
+.footer__network {
+  padding-top: var(--spacing-30);
+  border-top: 1px solid var(--border-light);
+}
+.footer__network-title {
+  font-size: var(--text-caption); font-weight: 500;
+  letter-spacing: var(--tracking-caption); text-transform: uppercase;
+  color: var(--text-muted); margin-bottom: var(--spacing-20);
+}
 .footer__bottom {
   text-align: center; padding-top: var(--spacing-30);
   border-top: 1px solid var(--border-light);
@@ -589,7 +647,7 @@ h1, h2, h3, h4, h5 {
    PRINT
    ============================================ */
 @media print {
-  .nav, .hero__socials, .theme-toggle, .nav__hamburger, .btn { display: none !important; }
+  .nav, .hero__socials, .theme-toggle, .nav__hamburger, .btn, .hero__viz { display: none !important; }
   body { color: #000; background: #fff; }
   a::after { content: " (" attr(href) ")"; font-size: 0.75em; color: #666; }
   .section { padding: 1rem 0; }
