@@ -652,3 +652,26 @@ h1, h2, h3, h4, h5 {
   a::after { content: " (" attr(href) ")"; font-size: 0.75em; color: #666; }
   .section { padding: 1rem 0; }
 }
+
+/* Cross-network runs: inline wrapped lists. Same links as the old column
+   grids, a fraction of the height, and six fewer sub-headings. */
+.footer__run { padding-top: var(--spacing-30); border-top: 1px solid var(--border-light); }
+.footer__run + .footer__run { margin-top: var(--spacing-20); }
+.footer__run-title {
+  font-size: var(--text-caption); font-weight: 500;
+  letter-spacing: var(--tracking-caption); text-transform: uppercase;
+  color: var(--text-muted); margin-bottom: var(--spacing-10);
+}
+.footer__run-list {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: var(--spacing-5) var(--spacing-10); list-style: none;
+}
+.footer__run-list a {
+  color: var(--text-muted); font-size: var(--text-caption);
+  letter-spacing: var(--tracking-caption); text-decoration: none;
+  transition: color var(--transition);
+}
+.footer__run-list a:hover { color: var(--text); }
+.footer__run-list li + li::before {
+  content: "·"; margin-right: var(--spacing-10); color: var(--border-light);
+}
