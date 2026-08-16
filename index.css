@@ -675,3 +675,24 @@ h1, h2, h3, h4, h5 {
 .footer__run-list li + li::before {
   content: "·"; margin-right: var(--spacing-10); color: var(--border-light);
 }
+
+/* Mobile: the inline run degenerates to roughly one item per row, which left a
+   separator stranded at the start of most lines and 17px tap targets. Below
+   640px the items become auto-width chips: no separators, real touch targets,
+   and nowrap so domain names are never broken mid-word. */
+@media (max-width: 640px) {
+  .footer__run-list { gap: 8px; }
+  .footer__run-list li + li::before { content: none !important; margin-right: 0 !important; }
+  .footer__run-list a {
+    display: block;
+    max-width: 100%;
+    padding: 9px 11px;
+    border: 1px solid var(--border-light);
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
