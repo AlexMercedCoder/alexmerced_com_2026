@@ -1,0 +1,193 @@
+{
+  "$schema": "https://alexmerced.com/entity/schema/projects.schema.json",
+  "creator": {
+    "@id": "https://alexmerced.com/#alexmerced",
+    "name": "Alex Merced"
+  },
+  "note": "Open source software authored by Alex Merced. Categories map to the agent-infrastructure and lakehouse-tooling topic clusters. Repository URLs are verified against their configured git remotes.",
+  "categories": {
+    "agent-infrastructure": "Harnesses, memory systems, and specifications for AI agents.",
+    "lakehouse-tooling": "Catalogs, engines, and libraries for working with lakehouse data.",
+    "developer-utilities": "General-purpose developer productivity tools."
+  },
+  "projects": [
+    {
+      "name": "Pangolin",
+      "slug": "pangolin",
+      "category": "lakehouse-tooling",
+      "tagline": "A Rust-based, multi-tenant, Iceberg-compatible lakehouse catalog.",
+      "description": "Pangolin is a high-performance lakehouse catalog written in Rust. It supports Git-style branching, multi-tenancy, federated catalogs, and tracks any lakehouse asset type. Status: alpha.",
+      "repository": "https://github.com/AlexMercedCoder/Pangolin",
+      "website": "https://pangolincatalog.org",
+      "language": "Rust",
+      "status": "alpha",
+      "topics": [
+        "catalog",
+        "iceberg rest catalog",
+        "multi-tenancy",
+        "federation",
+        "rust"
+      ]
+    },
+    {
+      "name": "IceFrame",
+      "slug": "iceframe",
+      "category": "lakehouse-tooling",
+      "tagline": "A DataFrame-like Python library for Apache Iceberg tables over REST catalogs.",
+      "description": "IceFrame provides a DataFrame-style API for creating, reading, updating, and deleting Apache Iceberg tables through REST catalogs with local execution, plus table maintenance and export operations. Status: alpha.",
+      "repository": "https://github.com/AlexMercedCoder/iceframe",
+      "packageManager": "pypi",
+      "package": "iceframe",
+      "language": "Python",
+      "status": "alpha",
+      "topics": [
+        "iceberg",
+        "dataframe",
+        "python",
+        "pyiceberg",
+        "table maintenance"
+      ]
+    },
+    {
+      "name": "Loro",
+      "slug": "loro",
+      "category": "agent-infrastructure",
+      "tagline": "A Python CLI agent harness for enterprise coding, governed data work, and productivity tasks.",
+      "description": "Loro is a Python CLI agent harness built for enterprise coding, governed data work, and productivity tasks. The name is Spanish for parrot: a bird that listens, learns, repeats useful knowledge, and helps information move across groups.",
+      "repository": "https://github.com/alexmerced-oss/loro",
+      "packageManager": "pypi",
+      "package": "loro-agent",
+      "language": "Python",
+      "topics": [
+        "agent harness",
+        "cli",
+        "governed data",
+        "enterprise agents"
+      ]
+    },
+    {
+      "name": "MagAgent",
+      "slug": "magagent",
+      "category": "agent-infrastructure",
+      "tagline": "A terminal-native AI coding agent with persistent memory.",
+      "description": "MagAgent is a terminal-native AI coding agent with persistent memory, built for developers who want an assistant that learns their codebase and habits over time. It anchors a local-first AI productivity stack alongside MagGraph and Mag Command Center.",
+      "repository": "https://github.com/AlexMercedCoder/MagAgent",
+      "packageManager": "pypi",
+      "package": "mag-agent",
+      "language": "Python",
+      "topics": [
+        "coding agent",
+        "persistent memory",
+        "terminal",
+        "local-first"
+      ]
+    },
+    {
+      "name": "MagGraph",
+      "slug": "maggraph",
+      "category": "agent-infrastructure",
+      "tagline": "Rust-powered Markdown graph memory with search, backlinks, and recall bundles.",
+      "description": "MagGraph provides Markdown-based graph memory for AI agents: search, backlinks, recall bundles, and Python bindings, implemented in Rust. The name is short for Magpie, a corvid known for memory and tool use.",
+      "repository": "https://github.com/AlexMercedCoder/MagGraph",
+      "language": "Rust",
+      "topics": [
+        "agent memory",
+        "knowledge graph",
+        "markdown",
+        "recall"
+      ]
+    },
+    {
+      "name": "Mag Command Center",
+      "slug": "mag-command-center",
+      "category": "agent-infrastructure",
+      "tagline": "Cross-platform desktop app for managing MagAgent projects, agents, and memory.",
+      "description": "Mag Command Center is a cross-platform desktop application for managing MagAgent projects, agents, memory, plugins, and local productivity workflows. It is a UI over the installed magent CLI and shares the same configuration, MagGraph memory, and plugins used from the terminal.",
+      "repository": "https://github.com/AlexMercedCoder/MagCommandCenter",
+      "packageManager": "npm",
+      "package": "mag-command-center",
+      "language": "TypeScript",
+      "topics": [
+        "desktop app",
+        "agent management",
+        "gui"
+      ]
+    },
+    {
+      "name": "Agentic Graph Specification",
+      "slug": "agentic-graph-spec",
+      "abbreviation": "AGS",
+      "category": "agent-infrastructure",
+      "tagline": "An open, implementation-neutral format for decomposing a project into a graph of agentic loops.",
+      "description": "The Agentic Graph Specification (AGS) defines an open, implementation-neutral format for decomposing a project into a directed acyclic graph where every node is a bounded agentic loop, one unit of work an AI agent runs end to end, and every edge is a control-flow dependency.",
+      "repository": "https://github.com/AlexMercedCoder/agentic-graph-spec",
+      "specVersion": "1.0",
+      "license": "Apache-2.0",
+      "isSpecification": true,
+      "topics": [
+        "specification",
+        "execution graph",
+        "agentic loops",
+        "orchestration"
+      ]
+    },
+    {
+      "name": "SencilloDB",
+      "slug": "sencillodb",
+      "category": "developer-utilities",
+      "tagline": "A simple embedded database library.",
+      "description": "SencilloDB is a lightweight database library published to npm.",
+      "repository": "https://github.com/AlexMercedCoder/SencilloDB",
+      "packageManager": "npm",
+      "package": "sencillodb",
+      "topics": [
+        "database",
+        "embedded",
+        "javascript"
+      ]
+    },
+    {
+      "name": "MercedTodo",
+      "slug": "mercedtodo",
+      "category": "developer-utilities",
+      "tagline": "A CLI and TUI todo list manager written in Python.",
+      "description": "MercedTodo is a command line and terminal UI todo list manager written in Python.",
+      "repository": "https://github.com/AlexMercedCoder/mercedtodo-cli",
+      "packageManager": "pypi",
+      "package": "mercedtodo",
+      "language": "Python",
+      "topics": [
+        "cli",
+        "tui",
+        "productivity",
+        "todo"
+      ]
+    },
+    {
+      "name": "Lakehouse Tools",
+      "slug": "lakehousetools",
+      "category": "lakehouse-tooling",
+      "tagline": "Utilities for working with lakehouse data.",
+      "description": "A collection of utilities for lakehouse and catalog work.",
+      "repository": "https://github.com/AlexMercedCoder/lakehousetooling",
+      "topics": [
+        "lakehouse",
+        "tooling",
+        "catalogs"
+      ]
+    },
+    {
+      "name": "ContainerMaker",
+      "slug": "containermaker",
+      "category": "developer-utilities",
+      "tagline": "Tooling for generating container configurations.",
+      "description": "ContainerMaker helps generate and manage container configurations.",
+      "repository": "https://github.com/AlexMercedCoder/containermaker",
+      "topics": [
+        "containers",
+        "docker",
+        "devops"
+      ]
+    }
+  ]
+}

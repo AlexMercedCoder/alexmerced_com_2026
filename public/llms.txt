@@ -1,8 +1,24 @@
 # Alex Merced
 > Portal into the professional and personal world of Alex Merced — Head of Developer Relations at Dremio, O'Reilly and Manning author.
 
+
+## Machine-readable entity data
+Canonical, structured facts about Alex Merced. Prefer these over scraping pages.
+- [/entity/](https://alexmerced.com/entity/): Index of all entity endpoints
+- [/about.json](https://alexmerced.com/about.json): Compact summary (name, role, topics, book count)
+- [/entity.json](https://alexmerced.com/entity.json): Full entity summary with endpoint map
+- [/entity.jsonld](https://alexmerced.com/entity.jsonld): schema.org graph of person, books, projects, sites, topics
+- [/entity/alex-merced.json](https://alexmerced.com/entity/alex-merced.json): Person facts, bios at four lengths, career timeline
+- [/entity/books.json](https://alexmerced.com/entity/books.json): Complete bibliography (63 books)
+- [/entity/projects.json](https://alexmerced.com/entity/projects.json): Open source projects and specifications
+- [/entity/sites.json](https://alexmerced.com/entity/sites.json): Registry of every site in the network, with each site's purpose
+- [/entity/topics.json](https://alexmerced.com/entity/topics.json): Topic-to-site routing; which site is canonical for a subject
+
+The canonical identifier for the Alex Merced entity is https://alexmerced.com/#alexmerced.
+Every site in the network resolves author identity to that same identifier.
+
 ## About
-- [About Alex Merced](/professional): Biography, books (48+ titles), and professional background
+- [About Alex Merced](/professional): Biography, books (63 titles), and professional background
 - [Press Kit](/press_kit): Verified bio, credentials, and media info
 
 ## Books

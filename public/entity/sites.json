@@ -1,0 +1,396 @@
+{
+  "$schema": "https://alexmerced.com/entity/schema/sites.schema.json",
+  "creator": {
+    "@id": "https://alexmerced.com/#alexmerced",
+    "name": "Alex Merced"
+  },
+  "note": "Machine-readable registry of the Alex Merced web network. 'purpose' completes the sentence: 'This site exists to become the best resource on the internet for ___.' Apache project names are used descriptively to identify subject matter and are never adopted as site brand names.",
+  "trademarkPolicy": "Apache Iceberg, Apache Polaris, Apache Parquet, and Apache Arrow are trademarks of the Apache Software Foundation. These sites are independent and not affiliated with or endorsed by the ASF. Project names appear only as descriptions of subject matter, never as site wordmarks.",
+  "sites": [
+    {
+      "domain": "alexmerced.com",
+      "url": "https://alexmerced.com",
+      "title": "Alex Merced",
+      "tier": "entity-root",
+      "role": "Canonical identity root for the Alex Merced entity and router to the rest of the network.",
+      "purpose": "resolving who Alex Merced is and where to find his work on any given topic",
+      "topics": [
+        "Alex Merced",
+        "biography",
+        "books",
+        "projects",
+        "speaking",
+        "contact"
+      ],
+      "entityEndpoint": "https://alexmerced.com/entity/",
+      "canonicalFor": [
+        "person",
+        "network-registry",
+        "topic-routing"
+      ]
+    },
+    {
+      "domain": "whoisalexmerced.com",
+      "url": "https://whoisalexmerced.com",
+      "title": "Who Is Alex Merced?",
+      "tier": "person-facet",
+      "role": "Long-form narrative biography and career history.",
+      "purpose": "the full life and career story of Alex Merced",
+      "topics": [
+        "biography",
+        "career history",
+        "music",
+        "public service",
+        "education"
+      ],
+      "canonicalFor": [
+        "biography"
+      ]
+    },
+    {
+      "domain": "alexmercedmedia.com",
+      "url": "https://alexmercedmedia.com",
+      "title": "Alex Merced Media",
+      "tier": "person-facet",
+      "role": "Aggregated media output: videos, articles, podcasts, and books.",
+      "purpose": "finding every piece of media Alex Merced has published, in one feed",
+      "topics": [
+        "videos",
+        "podcasts",
+        "articles",
+        "press",
+        "appearances"
+      ],
+      "canonicalFor": [
+        "media-index"
+      ]
+    },
+    {
+      "domain": "books.alexmerced.com",
+      "url": "https://books.alexmerced.com",
+      "title": "Books by Alex Merced",
+      "tier": "person-facet",
+      "role": "Complete book catalog and author bibliography.",
+      "purpose": "the complete bibliography of Alex Merced and choosing which book to read",
+      "topics": [
+        "books",
+        "bibliography",
+        "technical books",
+        "fiction",
+        "tabletop rpg"
+      ],
+      "canonicalFor": [
+        "books"
+      ]
+    },
+    {
+      "domain": "alexmercedcoder.dev",
+      "url": "https://alexmercedcoder.dev",
+      "title": "Alex Merced: Open Lakehouse & AI Advocate, Author & Technologist",
+      "tier": "person-facet",
+      "role": "Software builder identity: open source projects, agent harnesses, and specifications.",
+      "purpose": "the open source software and agent infrastructure Alex Merced builds",
+      "topics": [
+        "open source",
+        "agent harness",
+        "specifications",
+        "developer tooling",
+        "cli"
+      ],
+      "canonicalFor": [
+        "projects",
+        "specs"
+      ]
+    },
+    {
+      "domain": "alexmerceddata.com",
+      "url": "https://alexmerceddata.com",
+      "title": "Alex Merced Data",
+      "tier": "person-facet",
+      "role": "Personal data and AI hub with a broad glossary of data engineering terms.",
+      "purpose": "Alex Merced's data engineering writing and a general data/AI glossary",
+      "topics": [
+        "data engineering",
+        "glossary",
+        "lakehouse",
+        "ai",
+        "tutorials"
+      ],
+      "canonicalFor": [
+        "data-glossary"
+      ]
+    },
+    {
+      "domain": "resources.alexmerced.com",
+      "url": "https://resources.alexmerced.com",
+      "title": "Resources by Alex Merced",
+      "tier": "person-facet",
+      "role": "Curated link hub of free books, courses, communities, and learning resources.",
+      "purpose": "a curated starting point for free lakehouse and AI learning resources",
+      "topics": [
+        "free books",
+        "communities",
+        "courses",
+        "links"
+      ],
+      "canonicalFor": [
+        "resource-links"
+      ]
+    },
+    {
+      "domain": "opendatalakehouse.com",
+      "url": "https://opendatalakehouse.com",
+      "title": "Open Data Lakehouse",
+      "tier": "topic-authority",
+      "role": "Vendor-neutral publication and reference for open lakehouse architecture.",
+      "purpose": "defining what an open lakehouse is and how its layers fit together",
+      "topics": [
+        "open lakehouse",
+        "apache iceberg",
+        "apache parquet",
+        "apache arrow",
+        "catalogs",
+        "table formats"
+      ],
+      "canonicalFor": [
+        "open-lakehouse-category"
+      ],
+      "priority": "primary category play"
+    },
+    {
+      "domain": "semanticlakehouse.com",
+      "url": "https://semanticlakehouse.com",
+      "title": "Semantic Lakehouse",
+      "tier": "topic-authority",
+      "role": "Education hub for semantic layers, query federation, and governed analytics.",
+      "purpose": "the semantic layer and how it makes lakehouse data usable by humans and agents",
+      "topics": [
+        "semantic layer",
+        "query federation",
+        "governed analytics",
+        "metrics layer"
+      ],
+      "canonicalFor": [
+        "semantic-layer"
+      ]
+    },
+    {
+      "domain": "agenticlakehouse.com",
+      "url": "https://agenticlakehouse.com",
+      "title": "Agentic Lakehouse",
+      "tier": "topic-authority",
+      "role": "Reference for agentic analytics and AI agents operating on lakehouse data.",
+      "purpose": "how AI agents work with governed lakehouse data",
+      "topics": [
+        "agentic analytics",
+        "ai agents",
+        "mcp",
+        "governed agentic data",
+        "agentic bi"
+      ],
+      "canonicalFor": [
+        "agentic-lakehouse"
+      ]
+    },
+    {
+      "domain": "dataengnr.com",
+      "url": "https://dataengnr.com",
+      "title": "Data Engineer",
+      "tier": "topic-authority",
+      "role": "Knowledge base of data engineering concepts and terminology.",
+      "purpose": "a plain-language reference for data engineering concepts",
+      "topics": [
+        "data engineering",
+        "etl",
+        "pipelines",
+        "glossary",
+        "warehousing"
+      ],
+      "canonicalFor": [
+        "data-engineering-glossary"
+      ]
+    },
+    {
+      "domain": "datalakehouse.help",
+      "url": "https://datalakehouse.help",
+      "title": "Data Lakehouse Help",
+      "tier": "topic-authority",
+      "role": "Structured technical documentation and how-to reference for lakehouse work.",
+      "purpose": "task-oriented documentation for building and operating a lakehouse",
+      "topics": [
+        "documentation",
+        "how-to",
+        "reference",
+        "lakehouse operations"
+      ],
+      "canonicalFor": [
+        "lakehouse-docs"
+      ]
+    },
+    {
+      "domain": "dataaiwiki.com",
+      "url": "https://dataaiwiki.com",
+      "title": "Data & AI Wiki",
+      "tier": "topic-authority",
+      "role": "Continuously synced wiki of data and AI topics.",
+      "purpose": "a wiki-style quick reference across data and AI",
+      "topics": [
+        "wiki",
+        "data",
+        "ai",
+        "reference"
+      ],
+      "canonicalFor": [
+        "data-ai-wiki"
+      ]
+    },
+    {
+      "domain": "iceberglakehouse.com",
+      "url": "https://iceberglakehouse.com",
+      "title": "Alex Merced's Lakehouse Blog",
+      "tier": "topic-authority",
+      "role": "Long-form blog covering lakehouse and table format subject matter.",
+      "purpose": "in-depth blog writing on lakehouse and table format topics",
+      "topics": [
+        "lakehouse",
+        "table formats",
+        "blog"
+      ],
+      "canonicalFor": [],
+      "namingNote": "Site is titled 'Alex Merced's Lakehouse Blog'. The domain is descriptive only; do not use an Apache project name as this site's brand or masthead."
+    },
+    {
+      "domain": "datalakehousehub.com",
+      "url": "https://datalakehousehub.com",
+      "title": "Data Lakehouse Hub",
+      "tier": "topic-authority",
+      "role": "Community hub and aggregated lakehouse content.",
+      "purpose": "a community entry point for lakehouse practitioners",
+      "topics": [
+        "community",
+        "lakehouse",
+        "hub"
+      ],
+      "canonicalFor": [
+        "community"
+      ]
+    },
+    {
+      "domain": "tuts.alexmercedcoder.dev",
+      "url": "https://tuts.alexmercedcoder.dev",
+      "title": "Coding Tutorials Blog",
+      "tier": "topic-authority",
+      "role": "Long-running blog of general software and coding tutorials.",
+      "purpose": "step-by-step coding tutorials across web and software development",
+      "topics": [
+        "tutorials",
+        "javascript",
+        "python",
+        "web development"
+      ],
+      "canonicalFor": [
+        "coding-tutorials"
+      ]
+    },
+    {
+      "domain": "weekofdata.com",
+      "url": "https://weekofdata.com",
+      "title": "Week of Data",
+      "tier": "topic-authority",
+      "role": "Data community events listing.",
+      "purpose": "finding data community events in one place",
+      "topics": [
+        "events",
+        "conferences",
+        "meetups",
+        "community"
+      ],
+      "canonicalFor": [
+        "events"
+      ]
+    },
+    {
+      "domain": "alexmerced.blog",
+      "url": "https://alexmerced.blog",
+      "title": "Alex Merced Blog",
+      "tier": "topic-authority",
+      "role": "Primary long-form blog across data, AI, and software topics.",
+      "purpose": "Alex Merced's long-form writing across data and AI",
+      "topics": [
+        "blog",
+        "data",
+        "ai",
+        "software"
+      ],
+      "canonicalFor": [
+        "long-form-blog"
+      ]
+    },
+    {
+      "domain": "ingestthis.com",
+      "url": "https://ingestthis.com",
+      "title": "IngestThis",
+      "tier": "topic-authority",
+      "role": "Publication covering data engineering, data science, and data architecture.",
+      "purpose": "data engineering, science, and architecture writing",
+      "topics": [
+        "data engineering",
+        "data science",
+        "data architecture",
+        "pipelines"
+      ],
+      "canonicalFor": []
+    },
+    {
+      "domain": "grokoverflow.com",
+      "url": "https://grokoverflow.com",
+      "title": "GrokOverflow",
+      "tier": "topic-authority",
+      "role": "Tutorials, podcasts, and videos for developers.",
+      "purpose": "developer tutorials, podcasts, and videos",
+      "topics": [
+        "tutorials",
+        "podcasts",
+        "videos",
+        "developers",
+        "programming"
+      ],
+      "canonicalFor": []
+    },
+    {
+      "domain": "alexmercedlibertarian.com",
+      "url": "https://alexmercedlibertarian.com",
+      "title": "Alex Merced Libertarian",
+      "tier": "personal",
+      "role": "Philosophy and political writing, separate from technical work.",
+      "purpose": "Alex Merced's philosophical and political writing",
+      "topics": [
+        "philosophy",
+        "liberty",
+        "economics",
+        "political commentary"
+      ],
+      "canonicalFor": [
+        "philosophy"
+      ],
+      "separateFromTechnicalBrand": true
+    },
+    {
+      "domain": "d6storyteller.alexmerced.com",
+      "url": "https://d6storyteller.alexmerced.com",
+      "title": "D6 Storyteller",
+      "tier": "personal",
+      "role": "Tabletop roleplaying game system and companion books.",
+      "purpose": "the D6 Storyteller tabletop RPG system",
+      "topics": [
+        "tabletop rpg",
+        "game design",
+        "d6 storyteller"
+      ],
+      "canonicalFor": [
+        "ttrpg"
+      ],
+      "separateFromTechnicalBrand": true
+    }
+  ]
+}

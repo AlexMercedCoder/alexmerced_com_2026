@@ -36,3 +36,8 @@ User-agent: Meta-ExternalAgent
 Allow: /
 
 Sitemap: https://alexmerced.com/sitemap.xml
+
+# Machine-readable entity data for crawlers, answer engines, and agents
+# Index:  https://alexmerced.com/entity/
+# Graph:  https://alexmerced.com/entity.jsonld
+# Compact: https://alexmerced.com/about.json

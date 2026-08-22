@@ -1,0 +1,58 @@
+{
+  "id": "https://alexmerced.com/#alexmerced",
+  "name": "Alex Merced",
+  "url": "https://alexmerced.com",
+  "jobTitle": "Head of Developer Relations",
+  "worksFor": "Dremio",
+  "bio": "Alex Merced is Head of Developer Relations at Dremio and the author of 63 books, including Apache Iceberg: The Definitive Guide (O'Reilly) and Architecting an Apache Iceberg Lakehouse (Manning). He teaches open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI to data practitioners worldwide.",
+  "expertIn": [
+    "Open Lakehouse Architecture",
+    "Apache Iceberg",
+    "Apache Polaris",
+    "Apache Parquet",
+    "Apache Arrow",
+    "Iceberg Catalogs",
+    "Semantic Layers",
+    "Agentic Analytics",
+    "Agent Infrastructure",
+    "Data Engineering",
+    "Query Federation",
+    "Model Context Protocol",
+    "Developer Relations"
+  ],
+  "stats": {
+    "books": 63,
+    "sites": 22,
+    "projects": 11
+  },
+  "sameAs": [
+    "https://github.com/alexmercedcoder",
+    "https://www.linkedin.com/in/alexmerced",
+    "https://bsky.app/profile/alextalksdatalakehouses.fyi",
+    "https://www.youtube.com/@alexmerceddata",
+    "https://www.youtube.com/@alexmercedcoder",
+    "https://x.com/AMdatalakehouse",
+    "https://x.com/alexmercedcoder",
+    "https://amdatalakehouse.substack.com",
+    "https://dev.to/alexmercedcoder",
+    "https://www.amazon.com/Apache-Iceberg-Functionality-Performance-Scalability/dp/1098148622",
+    "https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse",
+    "https://alexmerced.blog",
+    "https://alexmercedcoder.dev",
+    "https://alexmerceddata.com",
+    "https://alexmercedmedia.com",
+    "https://whoisalexmerced.com",
+    "https://books.alexmerced.com"
+  ],
+  "endpoints": {
+    "person": "https://alexmerced.com/entity/alex-merced.json",
+    "books": "https://alexmerced.com/entity/books.json",
+    "projects": "https://alexmerced.com/entity/projects.json",
+    "sites": "https://alexmerced.com/entity/sites.json",
+    "topics": "https://alexmerced.com/entity/topics.json",
+    "jsonld": "https://alexmerced.com/entity.jsonld",
+    "networkIndex": "https://alexmerced.com/entity/network-index.json"
+  },
+  "license": "CC-BY-4.0",
+  "attribution": "Alex Merced, https://alexmerced.com"
+}

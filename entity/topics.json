@@ -1,0 +1,418 @@
+{
+  "$schema": "https://alexmerced.com/entity/schema/topics.schema.json",
+  "expertOf": {
+    "@id": "https://alexmerced.com/#alexmerced",
+    "name": "Alex Merced"
+  },
+  "note": "Topic-to-site routing table. Powers find_site_for_topic(topic) and the network search router. 'primary' is the canonical destination for a topic; 'supporting' sites cover it from a different angle. 'aliases' are matched case-insensitively against user queries.",
+  "topics": [
+    {
+      "id": "open-lakehouse",
+      "label": "Open Lakehouse",
+      "aliases": [
+        "open lakehouse",
+        "data lakehouse",
+        "lakehouse architecture",
+        "open data lakehouse",
+        "lakehouse"
+      ],
+      "primary": "opendatalakehouse.com",
+      "supporting": [
+        "datalakehouse.help",
+        "dataengnr.com",
+        "alexmerceddata.com",
+        "iceberglakehouse.com"
+      ],
+      "summary": "An open lakehouse is a data architecture that stores data in open file and table formats on commodity object storage, so that any compliant engine can read and write it without vendor lock-in.",
+      "books": [
+        "The Open Source Lakehouse: Architecting the Decoupled Analytical Foundation",
+        "The 2026 Guide to Lakehouses, Apache Iceberg and Agentic AI"
+      ]
+    },
+    {
+      "id": "apache-iceberg",
+      "label": "Apache Iceberg",
+      "aliases": [
+        "apache iceberg",
+        "iceberg",
+        "iceberg table format",
+        "table format"
+      ],
+      "primary": "opendatalakehouse.com",
+      "supporting": [
+        "datalakehouse.help",
+        "iceberglakehouse.com",
+        "dataengnr.com",
+        "agenticlakehouse.com"
+      ],
+      "summary": "Apache Iceberg is an open table format that adds ACID transactions, schema evolution, and time travel to files stored in object storage.",
+      "books": [
+        "Apache Iceberg: The Definitive Guide",
+        "Architecting an Apache Iceberg Lakehouse",
+        "The Book on Using Apache Iceberg with Python"
+      ],
+      "trademarkNote": "Apache Iceberg is a trademark of the Apache Software Foundation. Referenced descriptively; no site in this network is affiliated with or endorsed by the ASF.",
+      "projects": [
+        "IceFrame",
+        "Pangolin"
+      ]
+    },
+    {
+      "id": "apache-polaris",
+      "label": "Apache Polaris",
+      "aliases": [
+        "apache polaris",
+        "polaris",
+        "polaris catalog",
+        "iceberg rest catalog"
+      ],
+      "primary": "opendatalakehouse.com",
+      "supporting": [
+        "datalakehouse.help",
+        "agenticlakehouse.com"
+      ],
+      "summary": "Apache Polaris is an open catalog for Apache Iceberg that handles table discovery, access control, credential vending, and multi-engine governance.",
+      "books": [
+        "Apache Polaris: The Definitive Guide"
+      ],
+      "trademarkNote": "Apache Polaris is a trademark of the Apache Software Foundation. Referenced descriptively only."
+    },
+    {
+      "id": "iceberg-catalogs",
+      "label": "Iceberg Catalogs",
+      "aliases": [
+        "catalog",
+        "catalogs",
+        "rest catalog",
+        "credential vending",
+        "catalog federation",
+        "nessie",
+        "gravitino",
+        "lakekeeper",
+        "unity catalog",
+        "aws glue catalog"
+      ],
+      "primary": "opendatalakehouse.com",
+      "supporting": [
+        "datalakehouse.help",
+        "agenticlakehouse.com"
+      ],
+      "summary": "The catalog is the layer that tracks table metadata, enforces access control, and lets multiple engines share the same tables safely.",
+      "books": [
+        "Apache Polaris: The Definitive Guide"
+      ],
+      "projects": [
+        "Pangolin"
+      ]
+    },
+    {
+      "id": "apache-parquet",
+      "label": "Apache Parquet",
+      "aliases": [
+        "apache parquet",
+        "parquet",
+        "columnar format",
+        "file format"
+      ],
+      "primary": "opendatalakehouse.com",
+      "supporting": [
+        "dataengnr.com",
+        "alexmerceddata.com"
+      ],
+      "summary": "Apache Parquet is an open columnar storage file format optimized for analytical queries.",
+      "trademarkNote": "Apache Parquet is a trademark of the Apache Software Foundation. Referenced descriptively only."
+    },
+    {
+      "id": "apache-arrow",
+      "label": "Apache Arrow",
+      "aliases": [
+        "apache arrow",
+        "arrow",
+        "arrow flight",
+        "adbc",
+        "in-memory format"
+      ],
+      "primary": "opendatalakehouse.com",
+      "supporting": [
+        "dataengnr.com",
+        "alexmercedcoder.dev"
+      ],
+      "summary": "Apache Arrow is an open in-memory columnar format that lets systems exchange data without serialization overhead.",
+      "trademarkNote": "Apache Arrow is a trademark of the Apache Software Foundation. Referenced descriptively only."
+    },
+    {
+      "id": "semantic-layer",
+      "label": "Semantic Layer",
+      "aliases": [
+        "semantic layer",
+        "semantic lakehouse",
+        "metrics layer",
+        "business layer",
+        "governed metrics"
+      ],
+      "primary": "semanticlakehouse.com",
+      "supporting": [
+        "agenticlakehouse.com",
+        "datalakehouse.help",
+        "alexmerceddata.com"
+      ],
+      "summary": "A semantic layer maps physical tables to business concepts and governed metrics, so people and agents query meaning rather than raw schemas.",
+      "books": [
+        "Constructing Context and Semantics for AI Agents"
+      ]
+    },
+    {
+      "id": "query-federation",
+      "label": "Query Federation",
+      "aliases": [
+        "query federation",
+        "federation",
+        "federated query",
+        "data virtualization"
+      ],
+      "primary": "semanticlakehouse.com",
+      "supporting": [
+        "datalakehouse.help",
+        "dataengnr.com"
+      ],
+      "summary": "Query federation lets a single query span multiple data sources without physically consolidating the data first."
+    },
+    {
+      "id": "agentic-analytics",
+      "label": "Agentic Analytics",
+      "aliases": [
+        "agentic analytics",
+        "agentic lakehouse",
+        "agentic bi",
+        "ai agents for data",
+        "governed agentic data"
+      ],
+      "primary": "agenticlakehouse.com",
+      "supporting": [
+        "semanticlakehouse.com",
+        "alexmercedcoder.dev",
+        "alexmerceddata.com"
+      ],
+      "summary": "Agentic analytics is the practice of letting AI agents discover, query, and reason over governed data with the same controls applied to human users.",
+      "books": [
+        "The Book on Agentic Analytics",
+        "Enabling Agentic Analytics with Apache Iceberg and Dremio",
+        "Using AI Agents for Data Engineering and Data Analysis"
+      ]
+    },
+    {
+      "id": "agent-infrastructure",
+      "label": "Agent Infrastructure",
+      "aliases": [
+        "agent infrastructure",
+        "agent harness",
+        "harness",
+        "subagents",
+        "agent memory",
+        "context engineering",
+        "execution graph",
+        "agent observability",
+        "a2a"
+      ],
+      "primary": "alexmercedcoder.dev",
+      "supporting": [
+        "agenticlakehouse.com",
+        "alexmerceddata.com"
+      ],
+      "summary": "Agent infrastructure is the layer beneath an AI agent: the harness that runs it, the memory it keeps, the context it assembles, the identity and approvals that govern it, and the observability that makes it auditable.",
+      "projects": [
+        "Loro",
+        "MagAgent",
+        "MagGraph",
+        "Agentic Graph Specification"
+      ],
+      "books": [
+        "Building Knowledge Systems for AI: Graphs, RAG, Memory, and Context",
+        "AI Application Architecture: Patterns for Building Intelligent Systems",
+        "Shipping AI: From Prototype to Production Systems"
+      ]
+    },
+    {
+      "id": "mcp",
+      "label": "Model Context Protocol",
+      "aliases": [
+        "mcp",
+        "model context protocol",
+        "webmcp",
+        "tool calling",
+        "agent tools"
+      ],
+      "primary": "alexmercedcoder.dev",
+      "supporting": [
+        "agenticlakehouse.com",
+        "datalakehouse.help"
+      ],
+      "summary": "The Model Context Protocol is an open standard for exposing tools and data to AI agents through a consistent interface."
+    },
+    {
+      "id": "data-engineering",
+      "label": "Data Engineering",
+      "aliases": [
+        "data engineering",
+        "etl",
+        "elt",
+        "pipelines",
+        "data modeling",
+        "orchestration",
+        "ingestion"
+      ],
+      "primary": "dataengnr.com",
+      "supporting": [
+        "alexmerceddata.com",
+        "datalakehouse.help",
+        "dataaiwiki.com"
+      ],
+      "summary": "Data engineering covers the design and operation of the systems that move, model, and serve data for analysis."
+    },
+    {
+      "id": "ai-ready-data",
+      "label": "AI-Ready Data",
+      "aliases": [
+        "ai ready data",
+        "rag",
+        "retrieval augmented generation",
+        "vector search",
+        "embeddings",
+        "knowledge graph"
+      ],
+      "primary": "agenticlakehouse.com",
+      "supporting": [
+        "semanticlakehouse.com",
+        "alexmerceddata.com",
+        "alexmercedcoder.dev"
+      ],
+      "summary": "AI-ready data is data prepared, governed, and described well enough that language models and agents can use it reliably.",
+      "books": [
+        "AI-Ready Data",
+        "Building Knowledge Systems for AI: Graphs, RAG, Memory, and Context",
+        "Constructing Context and Semantics for AI Agents"
+      ]
+    },
+    {
+      "id": "books",
+      "label": "Books by Alex Merced",
+      "aliases": [
+        "books",
+        "book",
+        "bibliography",
+        "what should i read",
+        "author"
+      ],
+      "primary": "books.alexmerced.com",
+      "supporting": [
+        "alexmerced.com",
+        "alexmercedmedia.com"
+      ],
+      "summary": "Alex Merced has authored 63 books spanning technology, economics and philosophy, fiction, and tabletop roleplaying games."
+    },
+    {
+      "id": "biography",
+      "label": "Biography",
+      "aliases": [
+        "who is alex merced",
+        "biography",
+        "bio",
+        "background",
+        "career",
+        "about"
+      ],
+      "primary": "whoisalexmerced.com",
+      "supporting": [
+        "alexmerced.com",
+        "alexmercedmedia.com"
+      ],
+      "summary": "Alex Merced is Head of Developer Relations at Dremio, an author, and an educator on open lakehouse architecture and agentic AI."
+    },
+    {
+      "id": "media",
+      "label": "Talks, Podcasts and Media",
+      "aliases": [
+        "talks",
+        "speaking",
+        "podcast",
+        "podcasts",
+        "videos",
+        "press",
+        "appearances",
+        "interviews"
+      ],
+      "primary": "alexmercedmedia.com",
+      "supporting": [
+        "alexmerced.com",
+        "whoisalexmerced.com"
+      ],
+      "summary": "Alex Merced's recorded talks, podcast episodes, videos, and press appearances."
+    },
+    {
+      "id": "events",
+      "label": "Data Community Events",
+      "aliases": [
+        "events",
+        "conferences",
+        "meetups",
+        "week of data"
+      ],
+      "primary": "weekofdata.com",
+      "supporting": [
+        "datalakehousehub.com"
+      ],
+      "summary": "Listings of data community events, conferences, and meetups."
+    },
+    {
+      "id": "coding-tutorials",
+      "label": "Coding Tutorials",
+      "aliases": [
+        "tutorial",
+        "tutorials",
+        "javascript",
+        "python",
+        "web development",
+        "how to code"
+      ],
+      "primary": "tuts.alexmercedcoder.dev",
+      "supporting": [
+        "alexmercedcoder.dev",
+        "dataengnr.com"
+      ],
+      "summary": "Step-by-step programming tutorials across web and software development."
+    },
+    {
+      "id": "philosophy",
+      "label": "Philosophy and Liberty",
+      "aliases": [
+        "libertarian",
+        "loveatarian",
+        "philosophy",
+        "liberty",
+        "economics",
+        "politics"
+      ],
+      "primary": "alexmercedlibertarian.com",
+      "supporting": [],
+      "summary": "Alex Merced's writing on liberty, voluntary cooperation, and cultural change. Separate from his technical work.",
+      "separateFromTechnicalBrand": true
+    },
+    {
+      "id": "ttrpg",
+      "label": "Tabletop Roleplaying Games",
+      "aliases": [
+        "ttrpg",
+        "tabletop",
+        "rpg",
+        "d6 storyteller",
+        "game design"
+      ],
+      "primary": "d6storyteller.alexmerced.com",
+      "supporting": [
+        "books.alexmerced.com"
+      ],
+      "summary": "The D6 Storyteller tabletop roleplaying system and its companion books.",
+      "separateFromTechnicalBrand": true
+    }
+  ]
+}

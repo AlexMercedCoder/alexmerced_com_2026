@@ -1,14 +1,24 @@
 {
   "name": "alexmercedcom",
   "version": "1.0.0",
-  "description": "AlexMerced.com — Portal into the world of Alex Merced",
+  "description": "AlexMerced.com \u2014 Portal into the world of Alex Merced",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "node scripts/build-entity.mjs && vite",
+    "build": "node scripts/build-network-index.mjs && node scripts/build-entity.mjs && vite build",
+    "preview": "vite preview",
+    "build:entity": "node scripts/build-entity.mjs",
+    "build:index": "node scripts/build-network-index.mjs",
+    "test:webmcp": "node scripts/test-webmcp.mjs",
+    "sync:webmcp": "node scripts/sync-webmcp.mjs",
+    "wire:webmcp": "node scripts/wire-webmcp-sites.mjs"
   },
-  "keywords": ["Alex Merced", "Data Lakehouse", "Apache Iceberg", "Portfolio"],
+  "keywords": [
+    "Alex Merced",
+    "Data Lakehouse",
+    "Apache Iceberg",
+    "Portfolio"
+  ],
   "author": "Alex Merced",
   "license": "ISC",
   "devDependencies": {

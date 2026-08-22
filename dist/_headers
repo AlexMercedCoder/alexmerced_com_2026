@@ -1,0 +1,30 @@
+# The entity layer is a public, machine-readable knowledge source. Other sites in
+# the network, AI crawlers, and browser agents fetch it cross-origin, so it needs
+# permissive CORS. These documents contain only facts already published on the site.
+
+# No Content-Type override here: /entity/ also serves a human-readable index.html,
+# and the host infers types from file extensions.
+/entity/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, OPTIONS
+  Cache-Control: public, max-age=3600
+
+/entity.json
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+  Content-Type: application/json; charset=utf-8
+
+/entity.jsonld
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+  Content-Type: application/ld+json; charset=utf-8
+
+/about.json
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+  Content-Type: application/json; charset=utf-8
+
+# Shared WebMCP layer, loaded by every site in the network.
+/webmcp/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600

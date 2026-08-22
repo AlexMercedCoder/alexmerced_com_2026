@@ -1,0 +1,1681 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://alexmerced.com/#alexmerced",
+      "name": "Alex Merced",
+      "url": "https://alexmerced.com",
+      "image": "https://alexmerced.com/alexpics/photo-headshot-charcoal-blazer-turtleneck.webp",
+      "email": "mailto:dev@alexmerced.com",
+      "jobTitle": "Head of Developer Relations",
+      "description": "Alex Merced is Head of Developer Relations at Dremio, where he teaches and writes about open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI. He is the author of 63 books, including Apache Iceberg: The Definitive Guide (O'Reilly Media), Architecting an Apache Iceberg Lakehouse (Manning Publications), and Apache Polaris: The Definitive Guide (O'Reilly Media). Before moving into data engineering, he spent over a decade in New York City teaching economics and finance to professionals, an experience that shaped his approach to breaking down complex technical subjects. He publishes across a network of technical sites, speaks at data conferences, and hosts podcasts on data and AI.",
+      "birthDate": "1985-06-30",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Dremio",
+        "url": "https://www.dremio.com"
+      },
+      "knowsAbout": [
+        "Open Lakehouse Architecture",
+        "Apache Iceberg",
+        "Apache Polaris",
+        "Apache Parquet",
+        "Apache Arrow",
+        "Iceberg Catalogs",
+        "Semantic Layers",
+        "Agentic Analytics",
+        "Agent Infrastructure",
+        "Data Engineering",
+        "Query Federation",
+        "Model Context Protocol",
+        "Developer Relations"
+      ],
+      "sameAs": [
+        "https://github.com/alexmercedcoder",
+        "https://www.linkedin.com/in/alexmerced",
+        "https://bsky.app/profile/alextalksdatalakehouses.fyi",
+        "https://www.youtube.com/@alexmerceddata",
+        "https://www.youtube.com/@alexmercedcoder",
+        "https://x.com/AMdatalakehouse",
+        "https://x.com/alexmercedcoder",
+        "https://amdatalakehouse.substack.com",
+        "https://dev.to/alexmercedcoder",
+        "https://www.amazon.com/Apache-Iceberg-Functionality-Performance-Scalability/dp/1098148622",
+        "https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse",
+        "https://alexmerced.blog",
+        "https://alexmercedcoder.dev",
+        "https://alexmerceddata.com",
+        "https://alexmercedmedia.com",
+        "https://whoisalexmerced.com",
+        "https://books.alexmerced.com"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://alexmerced.com/#website"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alexmerced.com/#website",
+      "url": "https://alexmerced.com/",
+      "name": "Alex Merced",
+      "description": "Canonical profile and entity root for Alex Merced.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      }
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/#book",
+      "name": "Apache Iceberg: The Definitive Guide",
+      "url": "https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "O'Reilly Media"
+      },
+      "isbn": "9781098148621",
+      "description": "A comprehensive guide to Apache Iceberg and modern lakehouse architecture, covering table format internals, schema evolution, partitioning, and integration with major query engines.",
+      "image": "https://images.amazon.com/images/P/1098148622.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/architecting-an-apache-iceberg-lakehouse/#book",
+      "name": "Architecting an Apache Iceberg Lakehouse",
+      "url": "https://books.alexmerced.com/books/architecting-an-apache-iceberg-lakehouse/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Manning Publications"
+      },
+      "isbn": "9781633435100",
+      "description": "Architecture patterns and best practices for building production-grade, Iceberg-based data platforms from the ground up.",
+      "image": "https://images.amazon.com/images/P/1633435105.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/apache-polaris-the-definitive-guide/#book",
+      "name": "Apache Polaris: The Definitive Guide",
+      "url": "https://books.alexmerced.com/books/apache-polaris-the-definitive-guide/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "O'Reilly Media"
+      },
+      "description": "A guide to open catalogs for Apache Iceberg lakehouses, covering Polaris catalog architecture, configuration, and governance.",
+      "image": "https://images.amazon.com/images/P/B0FBRJ7J1Y.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-book-on-using-apache-iceberg-with-python/#book",
+      "name": "The Book on Using Apache Iceberg with Python",
+      "url": "https://books.alexmerced.com/books/the-book-on-using-apache-iceberg-with-python/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A hands-on guide to working with Apache Iceberg using Python tools like PyIceberg, PySpark, and other Python-based engines.",
+      "image": "https://images.amazon.com/images/P/B0GNZ454FF.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-2026-guide-to-lakehouses-apache-iceberg-and-agentic-ai/#book",
+      "name": "The 2026 Guide to Lakehouses, Apache Iceberg and Agentic AI",
+      "url": "https://books.alexmerced.com/books/the-2026-guide-to-lakehouses-apache-iceberg-and-agentic-ai/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A comprehensive guide covering the convergence of lakehouse architecture, Apache Iceberg, and the rise of agentic AI systems.",
+      "image": "https://images.amazon.com/images/P/B0GQNY21TD.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-book-on-agentic-analytics/#book",
+      "name": "The Book on Agentic Analytics",
+      "url": "https://books.alexmerced.com/books/the-book-on-agentic-analytics/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Explores the foundations of agentic data architecture, where AI agents autonomously discover, query, and analyze data.",
+      "image": "https://images.amazon.com/images/P/B0GQN4Q41Y.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/enabling-agentic-analytics-with-apache-iceberg-and-dremio/#book",
+      "name": "Enabling Agentic Analytics with Apache Iceberg and Dremio",
+      "url": "https://books.alexmerced.com/books/enabling-agentic-analytics-with-apache-iceberg-and-dremio/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to building AI-ready lakehouse systems using Apache Iceberg and Dremio for agentic analytics workflows.",
+      "image": "https://images.amazon.com/images/P/B0GQXT6W3N.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/using-ai-agents-for-data-engineering-and-data-analysis/#book",
+      "name": "Using AI Agents for Data Engineering and Data Analysis",
+      "url": "https://books.alexmerced.com/books/using-ai-agents-for-data-engineering-and-data-analysis/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to leveraging AI agents for automating data engineering pipelines and performing intelligent data analysis.",
+      "image": "https://images.amazon.com/images/P/B0GR6PYJT9.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-ai-engineering-handbook/#book",
+      "name": "The AI Engineering Handbook",
+      "url": "https://books.alexmerced.com/books/the-ai-engineering-handbook/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A full-stack reference for building AI systems, covering LLMs, embeddings, agents, RAG, and production deployment patterns.",
+      "image": "https://images.amazon.com/images/P/B0GSS4R9FK.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/ai-ready-data/#book",
+      "name": "AI-Ready Data",
+      "url": "https://books.alexmerced.com/books/ai-ready-data/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Designing data platforms optimized for LLMs, AI agents, and retrieval-augmented generation (RAG) workflows.",
+      "image": "https://images.amazon.com/images/P/B0GSN7GLH2.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-2026-guide-to-ai-assisted-development/#book",
+      "name": "The 2026 Guide to AI-Assisted Development",
+      "url": "https://books.alexmerced.com/books/the-2026-guide-to-ai-assisted-development/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Covers prompt engineering, AI coding assistants, and agent-driven development workflows for modern software engineers.",
+      "image": "https://images.amazon.com/images/P/B0GQW7CTML.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/apache-iceberg-for-agentic-ai-connecting-structured-enterprise/#book",
+      "name": "Apache Iceberg for Agentic AI: Connecting Structured Enterprise",
+      "url": "https://books.alexmerced.com/books/apache-iceberg-for-agentic-ai-connecting-structured-enterprise/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Explores how to connect structured enterprise data in Apache Iceberg lakehouses to agentic AI systems.",
+      "image": "https://images.amazon.com/images/P/B0DYTX2WZY.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-agentic-enterprise-deploying-ai-agents-across-the-modern-organization/#book",
+      "name": "The Agentic Enterprise: Deploying AI Agents Across the Modern Organization",
+      "url": "https://books.alexmerced.com/books/the-agentic-enterprise-deploying-ai-agents-across-the-modern-organization/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A guide to deploying AI agents across enterprise functions, covering strategy, governance, and organizational adoption.",
+      "image": "https://images.amazon.com/images/P/B0GSN3NNS5.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/constructing-context-and-semantics-for-ai-agents/#book",
+      "name": "Constructing Context and Semantics for AI Agents",
+      "url": "https://books.alexmerced.com/books/constructing-context-and-semantics-for-ai-agents/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to embeddings, knowledge graphs, memory systems, RAG, evaluation, and production agent architectures.",
+      "image": "https://images.amazon.com/images/P/B0GSHRZNZ5.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-open-source-lakehouse-architecting-the-decoupled-analytical-foundation/#book",
+      "name": "The Open Source Lakehouse: Architecting the Decoupled Analytical Foundation",
+      "url": "https://books.alexmerced.com/books/the-open-source-lakehouse-architecting-the-decoupled-analytical-foundation/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Covers building a fully decoupled lakehouse using open source technologies, emphasizing modularity and vendor independence.",
+      "image": "https://images.amazon.com/images/P/B0D46P3VB7.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/evaluating-ai-systems-testing-llms-rag-and-agents/#book",
+      "name": "Evaluating AI Systems: Testing LLMs, RAG, and Agents",
+      "url": "https://books.alexmerced.com/books/evaluating-ai-systems-testing-llms-rag-and-agents/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A guide to properly testing and evaluating AI systems, including benchmarking strategies for LLMs, RAG pipelines, and agents.",
+      "image": "https://images.amazon.com/images/P/B0GSVPQ667.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-economics-of-labor-in-the-ai-era/#book",
+      "name": "The Economics of Labor in the AI Era",
+      "url": "https://books.alexmerced.com/books/the-economics-of-labor-in-the-ai-era/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Examines how the AI era is disrupting the labor market and explores paths for adaptation and the future of work.",
+      "image": "https://images.amazon.com/images/P/B0GSQSL344.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/governing-ai-systems/#book",
+      "name": "Governing AI Systems",
+      "url": "https://books.alexmerced.com/books/governing-ai-systems/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A guide to AI governance frameworks, covering risk management, compliance, ethics, and organizational oversight of AI systems.",
+      "image": "https://images.amazon.com/images/P/B0GSMVQ1TH.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/shipping-ai-from-prototype-to-production-systems/#book",
+      "name": "Shipping AI: From Prototype to Production Systems",
+      "url": "https://books.alexmerced.com/books/shipping-ai-from-prototype-to-production-systems/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Covers the full lifecycle of taking AI systems from prototype to production, including deployment, scaling, and monitoring.",
+      "image": "https://images.amazon.com/images/P/B0GSR2GRZX.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/building-knowledge-systems-for-ai-graphs-rag-memory-and-context/#book",
+      "name": "Building Knowledge Systems for AI: Graphs, RAG, Memory, and Context",
+      "url": "https://books.alexmerced.com/books/building-knowledge-systems-for-ai-graphs-rag-memory-and-context/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A deep dive into building robust knowledge systems for AI using knowledge graphs, RAG, memory architectures, and context management.",
+      "image": "https://images.amazon.com/images/P/B0GSWFSSRC.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-ai-lakehouse-architecting-data-platforms-for-ai/#book",
+      "name": "The AI Lakehouse: Architecting Data Platforms for AI",
+      "url": "https://books.alexmerced.com/books/the-ai-lakehouse-architecting-data-platforms-for-ai/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Explores how to architect data lakehouse platforms specifically designed to serve AI and machine learning workloads.",
+      "image": "https://images.amazon.com/images/P/B0GSMQ6M2J.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/ai-application-architecture-patterns-for-building-intelligent-systems/#book",
+      "name": "AI Application Architecture: Patterns for Building Intelligent Systems",
+      "url": "https://books.alexmerced.com/books/ai-application-architecture-patterns-for-building-intelligent-systems/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Covers architectural patterns for building intelligent applications, from inference pipelines to multi-agent orchestration.",
+      "image": "https://images.amazon.com/images/P/B0GSVFT3H4.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-economics-of-ai-cost-latency-and-infrastructure-tradeoffs/#book",
+      "name": "The Economics of AI: Cost, Latency, and Infrastructure Tradeoffs",
+      "url": "https://books.alexmerced.com/books/the-economics-of-ai-cost-latency-and-infrastructure-tradeoffs/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Analyzes the cost structures of AI systems and how to optimize spending across compute, latency, and infrastructure.",
+      "image": "https://images.amazon.com/images/P/B0GSPGSKXC.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/alex-merced-s-field-guide-to-developer-relations/#book",
+      "name": "Alex Merced's Field Guide to Developer Relations",
+      "url": "https://books.alexmerced.com/books/alex-merced-s-field-guide-to-developer-relations/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to developer relations, community building, and technical evangelism for practitioners entering or growing in the DevRel field.",
+      "image": "https://images.amazon.com/images/P/B0H15CJLNG.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/ai-and-agents-for-normal-people/#book",
+      "name": "AI and Agents for Normal People",
+      "url": "https://books.alexmerced.com/books/ai-and-agents-for-normal-people/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to using AI tools for everyday tasks, covering Gemini, NotebookLM, ChatGPT, Claude, and local agent workflows without technical jargon.",
+      "image": "https://images.amazon.com/images/P/B0H59GBTMW.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-no-lock-in-apache-iceberg-lakehouse-with-agentic-analytics/#book",
+      "name": "The No Lock-in Apache Iceberg Lakehouse with Agentic Analytics",
+      "url": "https://books.alexmerced.com/books/the-no-lock-in-apache-iceberg-lakehouse-with-agentic-analytics/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to building a portable Apache Iceberg lakehouse with open catalogs, agentic analytics, and AI-ready data platforms while avoiding vendor lock-in.",
+      "image": "https://images.amazon.com/images/P/B0H49TDNX3.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/being-productive-with-google-ai/#book",
+      "name": "Being Productive with Google AI",
+      "url": "https://books.alexmerced.com/books/being-productive-with-google-ai/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to using Google's AI ecosystem including Gemini, NotebookLM, Veo, Gemini Spark, and Jules.",
+      "image": "https://images.amazon.com/images/P/B0H77DBD83.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/being-productive-with-open-models/#book",
+      "name": "Being Productive with Open Models",
+      "url": "https://books.alexmerced.com/books/being-productive-with-open-models/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to using open models with Opencode, PI, and Hermes for AI-assisted development.",
+      "image": "https://images.amazon.com/images/P/B0H76JQ55R.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/being-productive-with-claude/#book",
+      "name": "Being Productive with Claude",
+      "url": "https://books.alexmerced.com/books/being-productive-with-claude/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to Claude.ai, Claude Code, and Claude Dispatch for AI-powered development.",
+      "image": "https://images.amazon.com/images/P/B0H76BTLMF.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/being-productive-with-openai-codex/#book",
+      "name": "Being Productive with OpenAI Codex",
+      "url": "https://books.alexmerced.com/books/being-productive-with-openai-codex/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to building documents, images, video, websites, and apps with an AI agent using OpenAI Codex.",
+      "image": "https://images.amazon.com/images/P/B0H766477L.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/being-productive-with-grok-and-cursor/#book",
+      "name": "Being Productive with Grok and Cursor",
+      "url": "https://books.alexmerced.com/books/being-productive-with-grok-and-cursor/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to the xAI and Cursor coding ecosystem covering Grok Chat, Grok Build, DeepSearch, Cursor Composer, Agent Mode, MCP servers, and local model runtimes for agentic development workflows.",
+      "image": "https://images.amazon.com/images/P/B0H7Z6RS5Y.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/being-productive-with-microsoft-copilot/#book",
+      "name": "Being Productive with Microsoft Copilot",
+      "url": "https://books.alexmerced.com/books/being-productive-with-microsoft-copilot/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to the Microsoft Copilot ecosystem covering Copilot Chat, M365 Copilot, GitHub Copilot Agent Mode, Copilot Studio, Copilot Cowork, and Copilot Plus PC features.",
+      "image": "https://images.amazon.com/images/P/B0H7WZ19NJ.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-2/#book",
+      "name": "The Book on Data, Data Engineering, Data Analytics, and Agentic AI - Volume 2",
+      "url": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-2/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A complete guide to SQL analytics, BI, and agentic AI for modern data platforms.",
+      "image": "https://images.amazon.com/images/P/B0GZVJB6ML.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-1/#book",
+      "name": "The Book on Data, Data Engineering, Data Analytics, and Agentic AI - Volume 1",
+      "url": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-1/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A complete guide to modern data systems, data engineering, analytics, and AI.",
+      "image": "https://images.amazon.com/images/P/B0GZTXJQ1C.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/dremio-and-the-semantic-layer/#book",
+      "name": "Dremio and the Semantic Layer",
+      "url": "https://books.alexmerced.com/books/dremio-and-the-semantic-layer/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The journey to providing meaning and context for AI with Dremio's semantic layer.",
+      "image": "https://images.amazon.com/images/P/B0GWF7PFDG.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/hands-on-agentic-engineering-a-practical-guide-to-building-multi-agent-systems/#book",
+      "name": "Hands-On Agentic Engineering: A Practical Guide to Building Multi-Agent Systems",
+      "url": "https://books.alexmerced.com/books/hands-on-agentic-engineering-a-practical-guide-to-building-multi-agent-systems/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A practical guide to building multi-agent systems with Apache Iceberg.",
+      "image": "https://images.amazon.com/images/P/B0GWTZ1394.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-lakehouse-built-for-everyone/#book",
+      "name": "The Lakehouse Built for Everyone",
+      "url": "https://books.alexmerced.com/books/the-lakehouse-built-for-everyone/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "From laptop prototypes to enterprise-scale agentic AI with Apache Iceberg and Dremio.",
+      "image": "https://images.amazon.com/images/P/B0GYL5Q5YV.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-book-on-apache-polaris/#book",
+      "name": "The Book on Apache Polaris",
+      "url": "https://books.alexmerced.com/books/the-book-on-apache-polaris/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Building the open data lakehouse with the industry standard Iceberg REST catalog.",
+      "image": "https://images.amazon.com/images/P/B0GZDVCV24.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/economic-ideas-from-beginning-to-early-2026/#book",
+      "name": "Economic Ideas: From Beginning to Early 2026",
+      "url": "https://books.alexmerced.com/books/economic-ideas-from-beginning-to-early-2026/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A survey of the history of economic thought, tracing ideas from ancient civilizations through the modern AI era.",
+      "image": "https://images.amazon.com/images/P/B0GQQ68F63.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-field-guide-to-libertarianism/#book",
+      "name": "The Field Guide to Libertarianism",
+      "url": "https://books.alexmerced.com/books/the-field-guide-to-libertarianism/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "An accessible introduction to libertarian ideas, key debates, and the spectrum of thought within the libertarian tradition.",
+      "image": "https://images.amazon.com/images/P/B0GQV4CK5B.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-field-guide-to-political-thought-and-debates-in-the-united-states/#book",
+      "name": "The Field Guide to Political Thought and Debates in the United States",
+      "url": "https://books.alexmerced.com/books/the-field-guide-to-political-thought-and-debates-in-the-united-states/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Maps the terrain of American political thought — conservative, progressive, and libertarian — so you can understand why people across the table believe what they believe and how to talk about it.",
+      "image": "https://images.amazon.com/images/P/B0GTV6ZWHX.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-libertarian-heart/#book",
+      "name": "The Libertarian Heart",
+      "url": "https://books.alexmerced.com/books/the-libertarian-heart/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "isbn": "9780359752119",
+      "description": "A philosophical exploration of consent, individual peace, and the moral foundations of a free society.",
+      "image": "https://images.amazon.com/images/P/035975211X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/profits-are-generosity-entrepreneurship-is-philanthropy/#book",
+      "name": "Profits are Generosity, Entrepreneurship is Philanthropy",
+      "url": "https://books.alexmerced.com/books/profits-are-generosity-entrepreneurship-is-philanthropy/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "isbn": "9781387798421",
+      "description": "An economic philosophy book arguing that voluntary exchange and entrepreneurship are the most generous forms of social contribution.",
+      "image": "https://images.amazon.com/images/P/1387798421.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-semantic-rebellion/#book",
+      "name": "The Semantic Rebellion",
+      "url": "https://books.alexmerced.com/books/the-semantic-rebellion/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A sci-fi novel following a data engineer's journey through a rapidly changing world shaped by AI and shifting power dynamics.",
+      "image": "https://images.amazon.com/images/P/B0GPMNX78W.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-emperors-of-a-i-valley/#book",
+      "name": "The Emperors of A.I. Valley",
+      "url": "https://books.alexmerced.com/books/the-emperors-of-a-i-valley/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A near-future thriller exploring power struggles, corporate intrigue, and moral dilemmas in an AI-dominated Silicon Valley.",
+      "image": "https://images.amazon.com/images/P/B0GQHKF4ZT.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-federation-of-tides/#book",
+      "name": "The Federation of Tides",
+      "url": "https://books.alexmerced.com/books/the-federation-of-tides/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "An epic fantasy adventure following a narwhal on a journey seeking knowledge across oceanic civilizations.",
+      "image": "https://images.amazon.com/images/P/B0GPRBTV6W.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/plastic-punk/#book",
+      "name": "Plastic Punk",
+      "url": "https://books.alexmerced.com/books/plastic-punk/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A genre-bending novel exploring economic systems, societal structures, and individual agency in a stylized world.",
+      "image": "https://images.amazon.com/images/P/B0GQGRFW2H.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/embers-of-claim/#book",
+      "name": "Embers of Claim",
+      "url": "https://books.alexmerced.com/books/embers-of-claim/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The first book in an epic fantasy trilogy, introducing a world of competing kingdoms, ancient magic, and rising conflict.",
+      "image": "https://images.amazon.com/images/P/B0GQGW7VCY.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/crowns-and-wings/#book",
+      "name": "Crowns and Wings",
+      "url": "https://books.alexmerced.com/books/crowns-and-wings/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The second book in the epic fantasy trilogy, deepening the political intrigue and expanding the world's mythology.",
+      "image": "https://images.amazon.com/images/P/B0GQGHYL79.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/thrones-of-ash-and-sky/#book",
+      "name": "Thrones of Ash and Sky",
+      "url": "https://books.alexmerced.com/books/thrones-of-ash-and-sky/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The concluding volume of the trilogy, bringing the saga of kingdoms, magic, and destiny to its climax.",
+      "image": "https://images.amazon.com/images/P/B0GQCHRYHV.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/tales-of-fur-and-sky-echoes-of-the-ages/#book",
+      "name": "Tales of Fur and Sky: Echoes of the Ages",
+      "url": "https://books.alexmerced.com/books/tales-of-fur-and-sky-echoes-of-the-ages/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A companion volume to the fantasy trilogy, expanding the lore with standalone tales set in the same world.",
+      "image": "https://images.amazon.com/images/P/B0GQGRGH93.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/signal-and-noise/#book",
+      "name": "Signal and Noise",
+      "url": "https://books.alexmerced.com/books/signal-and-noise/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A literary novel tracing a twelve-year long-distance connection between a documentary producer in Manila and a logistics manager in Indiana, and the single hour that finally tests it.",
+      "image": "https://images.amazon.com/images/P/B0HDDN968Z.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/celestial-fragments-the-duel-of-souls/#book",
+      "name": "Celestial Fragments: The Duel of Souls",
+      "url": "https://books.alexmerced.com/books/celestial-fragments-the-duel-of-souls/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "A contemporary fantasy in which two political rivals discover they carry the fragments of ancient beings of love and hate, continuing a conflict twelve thousand years old.",
+      "image": "https://images.amazon.com/images/P/B0HD831HR9.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/#book",
+      "name": "D6 Storyteller: The Core Rulebook",
+      "url": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The complete fiction-first tabletop roleplaying engine, with character creation, dice mechanics, a Storyteller's guide, and ten ready-to-play starter worlds spanning fantasy, sci-fi, horror, noir, superheroes, and post-apocalyptic genres.",
+      "image": "https://d6storyteller.alexmerced.com/images/covers/core-rulebook.webp"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/d6-storyteller-high-mythic-fantasy-companion/#book",
+      "name": "D6 Storyteller: High & Mythic Fantasy Companion",
+      "url": "https://books.alexmerced.com/books/d6-storyteller-high-mythic-fantasy-companion/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Ten complete high-fantasy settings for the D6 engine, each with a unique genre mechanic, ready-to-play archetypes, condition palettes, and a starter scenario.",
+      "image": "https://d6storyteller.alexmerced.com/images/covers/high-mythic-fantasy-companion.webp"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/d6-storyteller-sci-fi-cosmic-frontiers-companion/#book",
+      "name": "D6 Storyteller: Sci-Fi & Cosmic Frontiers Companion",
+      "url": "https://books.alexmerced.com/books/d6-storyteller-sci-fi-cosmic-frontiers-companion/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Ten sci-fi settings spanning generation ships, Dyson spheres, cyberpunk megacities, and transhuman frontiers, each with its own genre mechanic and archetypes.",
+      "image": "https://d6storyteller.alexmerced.com/images/covers/sci-fi-cosmic-frontiers-companion.webp"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/d6-storyteller-weird-west-piracy-swashbuckling-companion/#book",
+      "name": "D6 Storyteller: Weird West, Piracy & Swashbuckling Companion",
+      "url": "https://books.alexmerced.com/books/d6-storyteller-weird-west-piracy-swashbuckling-companion/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Ten gunpowder-and-salt-air settings covering demon-haunted frontier towns, cursed pirate seas, and swashbuckling royal courts.",
+      "image": "https://d6storyteller.alexmerced.com/images/covers/weird-west-piracy-swashbuckling-companion.webp"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/d6-storyteller-horror-occult-supernatural-companion/#book",
+      "name": "D6 Storyteller: Horror, Occult & Supernatural Companion",
+      "url": "https://books.alexmerced.com/books/d6-storyteller-horror-occult-supernatural-companion/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Ten horror settings ranging from 1930s cosmic cults and slasher camps to vampire dynasties and nightmare realms.",
+      "image": "https://d6storyteller.alexmerced.com/images/covers/horror-occult-supernatural-companion.webp"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/d6-storyteller-cybernetics-speculative-alternate-tech-companion/#book",
+      "name": "D6 Storyteller: Cybernetics, Speculative & Alternate Tech Companion",
+      "url": "https://books.alexmerced.com/books/d6-storyteller-cybernetics-speculative-alternate-tech-companion/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Ten settings exploring the relationship between technology and humanity, from dieselpunk war machines and genome splicing to clockwork worlds and nanotech frontiers.",
+      "image": "https://d6storyteller.alexmerced.com/images/covers/cybernetics-speculative-alternate-tech-companion.webp"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/d6-storyteller-superheroes-kaiju-anime-tropes-companion/#book",
+      "name": "D6 Storyteller: Superheroes, Kaiju & Anime Tropes Companion",
+      "url": "https://books.alexmerced.com/books/d6-storyteller-superheroes-kaiju-anime-tropes-companion/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Ten settings for caped vigilantes, mech academies, kaiju defense forces, magical guardians, and anime-inspired heroics.",
+      "image": "https://d6storyteller.alexmerced.com/images/covers/superheroes-kaiju-anime-tropes-companion.webp"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/d6-storyteller-historical-alternate-history-companion/#book",
+      "name": "D6 Storyteller: Historical & Alternate History Companion",
+      "url": "https://books.alexmerced.com/books/d6-storyteller-historical-alternate-history-companion/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Ten settings grounded in real history with speculative twists, from Roman legions and Sengoku Japan to WWII occult warfare and wuxia dynasties.",
+      "image": "https://d6storyteller.alexmerced.com/images/covers/historical-alternate-history-companion.webp"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/d6-storyteller-quirky-experimental-micro-scale-companion/#book",
+      "name": "D6 Storyteller: Quirky, Experimental & Micro-Scale Companion",
+      "url": "https://books.alexmerced.com/books/d6-storyteller-quirky-experimental-micro-scale-companion/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Ten playful experimental settings, from tiny borrowers and living toys to arcade cabinet adventures and time-travel patrols.",
+      "image": "https://d6storyteller.alexmerced.com/images/covers/quirky-experimental-micro-scale-companion.webp"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/d6-storyteller-post-apocalyptic-speculative-worlds-companion/#book",
+      "name": "D6 Storyteller: Post-Apocalyptic & Speculative Worlds Companion",
+      "url": "https://books.alexmerced.com/books/d6-storyteller-post-apocalyptic-speculative-worlds-companion/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "Ten end-of-the-world settings, from ice-age survival and sound-hunting alien horrors to the final fortress city at the end of time.",
+      "image": "https://d6storyteller.alexmerced.com/images/covers/post-apocalyptic-speculative-worlds-companion.webp"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-pangolin",
+      "name": "Pangolin",
+      "description": "Pangolin is a high-performance lakehouse catalog written in Rust. It supports Git-style branching, multi-tenancy, federated catalogs, and tracks any lakehouse asset type. Status: alpha.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/Pangolin",
+      "programmingLanguage": "Rust"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-iceframe",
+      "name": "IceFrame",
+      "description": "IceFrame provides a DataFrame-style API for creating, reading, updating, and deleting Apache Iceberg tables through REST catalogs with local execution, plus table maintenance and export operations. Status: alpha.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/iceframe",
+      "programmingLanguage": "Python"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-loro",
+      "name": "Loro",
+      "description": "Loro is a Python CLI agent harness built for enterprise coding, governed data work, and productivity tasks. The name is Spanish for parrot: a bird that listens, learns, repeats useful knowledge, and helps information move across groups.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/alexmerced-oss/loro",
+      "programmingLanguage": "Python"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-magagent",
+      "name": "MagAgent",
+      "description": "MagAgent is a terminal-native AI coding agent with persistent memory, built for developers who want an assistant that learns their codebase and habits over time. It anchors a local-first AI productivity stack alongside MagGraph and Mag Command Center.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/MagAgent",
+      "programmingLanguage": "Python"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-maggraph",
+      "name": "MagGraph",
+      "description": "MagGraph provides Markdown-based graph memory for AI agents: search, backlinks, recall bundles, and Python bindings, implemented in Rust. The name is short for Magpie, a corvid known for memory and tool use.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/MagGraph",
+      "programmingLanguage": "Rust"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-mag-command-center",
+      "name": "Mag Command Center",
+      "description": "Mag Command Center is a cross-platform desktop application for managing MagAgent projects, agents, memory, plugins, and local productivity workflows. It is a UI over the installed magent CLI and shares the same configuration, MagGraph memory, and plugins used from the terminal.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/MagCommandCenter",
+      "programmingLanguage": "TypeScript"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://alexmercedcoder.dev/#project-agentic-graph-spec",
+      "name": "Agentic Graph Specification",
+      "description": "The Agentic Graph Specification (AGS) defines an open, implementation-neutral format for decomposing a project into a directed acyclic graph where every node is a bounded agentic loop, one unit of work an AI agent runs end to end, and every edge is a control-flow dependency.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/agentic-graph-spec",
+      "license": "Apache-2.0"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-sencillodb",
+      "name": "SencilloDB",
+      "description": "SencilloDB is a lightweight database library published to npm.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/SencilloDB"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-mercedtodo",
+      "name": "MercedTodo",
+      "description": "MercedTodo is a command line and terminal UI todo list manager written in Python.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/mercedtodo-cli",
+      "programmingLanguage": "Python"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-lakehousetools",
+      "name": "Lakehouse Tools",
+      "description": "A collection of utilities for lakehouse and catalog work.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/lakehousetooling"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-containermaker",
+      "name": "ContainerMaker",
+      "description": "ContainerMaker helps generate and manage container configurations.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/containermaker"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://whoisalexmerced.com/#website",
+      "url": "https://whoisalexmerced.com",
+      "name": "Who Is Alex Merced?",
+      "description": "Long-form narrative biography and career history.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "biography",
+        "career history",
+        "music",
+        "public service",
+        "education"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alexmercedmedia.com/#website",
+      "url": "https://alexmercedmedia.com",
+      "name": "Alex Merced Media",
+      "description": "Aggregated media output: videos, articles, podcasts, and books.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "videos",
+        "podcasts",
+        "articles",
+        "press",
+        "appearances"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://books.alexmerced.com/#website",
+      "url": "https://books.alexmerced.com",
+      "name": "Books by Alex Merced",
+      "description": "Complete book catalog and author bibliography.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "books",
+        "bibliography",
+        "technical books",
+        "fiction",
+        "tabletop rpg"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alexmercedcoder.dev/#website",
+      "url": "https://alexmercedcoder.dev",
+      "name": "Alex Merced: Open Lakehouse & AI Advocate, Author & Technologist",
+      "description": "Software builder identity: open source projects, agent harnesses, and specifications.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "open source",
+        "agent harness",
+        "specifications",
+        "developer tooling",
+        "cli"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alexmerceddata.com/#website",
+      "url": "https://alexmerceddata.com",
+      "name": "Alex Merced Data",
+      "description": "Personal data and AI hub with a broad glossary of data engineering terms.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "data engineering",
+        "glossary",
+        "lakehouse",
+        "ai",
+        "tutorials"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://resources.alexmerced.com/#website",
+      "url": "https://resources.alexmerced.com",
+      "name": "Resources by Alex Merced",
+      "description": "Curated link hub of free books, courses, communities, and learning resources.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "free books",
+        "communities",
+        "courses",
+        "links"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://opendatalakehouse.com/#website",
+      "url": "https://opendatalakehouse.com",
+      "name": "Open Data Lakehouse",
+      "description": "Vendor-neutral publication and reference for open lakehouse architecture.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "open lakehouse",
+        "apache iceberg",
+        "apache parquet",
+        "apache arrow",
+        "catalogs",
+        "table formats"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://semanticlakehouse.com/#website",
+      "url": "https://semanticlakehouse.com",
+      "name": "Semantic Lakehouse",
+      "description": "Education hub for semantic layers, query federation, and governed analytics.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "semantic layer",
+        "query federation",
+        "governed analytics",
+        "metrics layer"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://agenticlakehouse.com/#website",
+      "url": "https://agenticlakehouse.com",
+      "name": "Agentic Lakehouse",
+      "description": "Reference for agentic analytics and AI agents operating on lakehouse data.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "agentic analytics",
+        "ai agents",
+        "mcp",
+        "governed agentic data",
+        "agentic bi"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dataengnr.com/#website",
+      "url": "https://dataengnr.com",
+      "name": "Data Engineer",
+      "description": "Knowledge base of data engineering concepts and terminology.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "data engineering",
+        "etl",
+        "pipelines",
+        "glossary",
+        "warehousing"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://datalakehouse.help/#website",
+      "url": "https://datalakehouse.help",
+      "name": "Data Lakehouse Help",
+      "description": "Structured technical documentation and how-to reference for lakehouse work.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "documentation",
+        "how-to",
+        "reference",
+        "lakehouse operations"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dataaiwiki.com/#website",
+      "url": "https://dataaiwiki.com",
+      "name": "Data & AI Wiki",
+      "description": "Continuously synced wiki of data and AI topics.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "wiki",
+        "data",
+        "ai",
+        "reference"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://iceberglakehouse.com/#website",
+      "url": "https://iceberglakehouse.com",
+      "name": "Alex Merced's Lakehouse Blog",
+      "description": "Long-form blog covering lakehouse and table format subject matter.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "lakehouse",
+        "table formats",
+        "blog"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://datalakehousehub.com/#website",
+      "url": "https://datalakehousehub.com",
+      "name": "Data Lakehouse Hub",
+      "description": "Community hub and aggregated lakehouse content.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "community",
+        "lakehouse",
+        "hub"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tuts.alexmercedcoder.dev/#website",
+      "url": "https://tuts.alexmercedcoder.dev",
+      "name": "Coding Tutorials Blog",
+      "description": "Long-running blog of general software and coding tutorials.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "tutorials",
+        "javascript",
+        "python",
+        "web development"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://weekofdata.com/#website",
+      "url": "https://weekofdata.com",
+      "name": "Week of Data",
+      "description": "Data community events listing.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "events",
+        "conferences",
+        "meetups",
+        "community"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alexmerced.blog/#website",
+      "url": "https://alexmerced.blog",
+      "name": "Alex Merced Blog",
+      "description": "Primary long-form blog across data, AI, and software topics.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "blog",
+        "data",
+        "ai",
+        "software"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ingestthis.com/#website",
+      "url": "https://ingestthis.com",
+      "name": "IngestThis",
+      "description": "Publication covering data engineering, data science, and data architecture.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "data engineering",
+        "data science",
+        "data architecture",
+        "pipelines"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://grokoverflow.com/#website",
+      "url": "https://grokoverflow.com",
+      "name": "GrokOverflow",
+      "description": "Tutorials, podcasts, and videos for developers.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "tutorials",
+        "podcasts",
+        "videos",
+        "developers",
+        "programming"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alexmercedlibertarian.com/#website",
+      "url": "https://alexmercedlibertarian.com",
+      "name": "Alex Merced Libertarian",
+      "description": "Philosophy and political writing, separate from technical work.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "philosophy",
+        "liberty",
+        "economics",
+        "political commentary"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://d6storyteller.alexmerced.com/#website",
+      "url": "https://d6storyteller.alexmerced.com",
+      "name": "D6 Storyteller",
+      "description": "Tabletop roleplaying game system and companion books.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "tabletop rpg",
+        "game design",
+        "d6 storyteller"
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#open-lakehouse",
+      "name": "Open Lakehouse",
+      "description": "An open lakehouse is a data architecture that stores data in open file and table formats on commodity object storage, so that any compliant engine can read and write it without vendor lock-in.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://opendatalakehouse.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#apache-iceberg",
+      "name": "Apache Iceberg",
+      "description": "Apache Iceberg is an open table format that adds ACID transactions, schema evolution, and time travel to files stored in object storage.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://opendatalakehouse.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#apache-polaris",
+      "name": "Apache Polaris",
+      "description": "Apache Polaris is an open catalog for Apache Iceberg that handles table discovery, access control, credential vending, and multi-engine governance.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://opendatalakehouse.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#iceberg-catalogs",
+      "name": "Iceberg Catalogs",
+      "description": "The catalog is the layer that tracks table metadata, enforces access control, and lets multiple engines share the same tables safely.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://opendatalakehouse.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#apache-parquet",
+      "name": "Apache Parquet",
+      "description": "Apache Parquet is an open columnar storage file format optimized for analytical queries.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://opendatalakehouse.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#apache-arrow",
+      "name": "Apache Arrow",
+      "description": "Apache Arrow is an open in-memory columnar format that lets systems exchange data without serialization overhead.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://opendatalakehouse.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#semantic-layer",
+      "name": "Semantic Layer",
+      "description": "A semantic layer maps physical tables to business concepts and governed metrics, so people and agents query meaning rather than raw schemas.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://semanticlakehouse.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#query-federation",
+      "name": "Query Federation",
+      "description": "Query federation lets a single query span multiple data sources without physically consolidating the data first.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://semanticlakehouse.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#agentic-analytics",
+      "name": "Agentic Analytics",
+      "description": "Agentic analytics is the practice of letting AI agents discover, query, and reason over governed data with the same controls applied to human users.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://agenticlakehouse.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#agent-infrastructure",
+      "name": "Agent Infrastructure",
+      "description": "Agent infrastructure is the layer beneath an AI agent: the harness that runs it, the memory it keeps, the context it assembles, the identity and approvals that govern it, and the observability that makes it auditable.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://alexmercedcoder.dev/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#mcp",
+      "name": "Model Context Protocol",
+      "description": "The Model Context Protocol is an open standard for exposing tools and data to AI agents through a consistent interface.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://alexmercedcoder.dev/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#data-engineering",
+      "name": "Data Engineering",
+      "description": "Data engineering covers the design and operation of the systems that move, model, and serve data for analysis.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://dataengnr.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#ai-ready-data",
+      "name": "AI-Ready Data",
+      "description": "AI-ready data is data prepared, governed, and described well enough that language models and agents can use it reliably.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://agenticlakehouse.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#books",
+      "name": "Books by Alex Merced",
+      "description": "Alex Merced has authored 63 books spanning technology, economics and philosophy, fiction, and tabletop roleplaying games.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://books.alexmerced.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#biography",
+      "name": "Biography",
+      "description": "Alex Merced is Head of Developer Relations at Dremio, an author, and an educator on open lakehouse architecture and agentic AI.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://whoisalexmerced.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#media",
+      "name": "Talks, Podcasts and Media",
+      "description": "Alex Merced's recorded talks, podcast episodes, videos, and press appearances.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://alexmercedmedia.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#events",
+      "name": "Data Community Events",
+      "description": "Listings of data community events, conferences, and meetups.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://weekofdata.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#coding-tutorials",
+      "name": "Coding Tutorials",
+      "description": "Step-by-step programming tutorials across web and software development.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://tuts.alexmercedcoder.dev/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#philosophy",
+      "name": "Philosophy and Liberty",
+      "description": "Alex Merced's writing on liberty, voluntary cooperation, and cultural change. Separate from his technical work.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://alexmercedlibertarian.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#ttrpg",
+      "name": "Tabletop Roleplaying Games",
+      "description": "The D6 Storyteller tabletop roleplaying system and its companion books.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://d6storyteller.alexmerced.com/#website"
+      }
+    }
+  ]
+}

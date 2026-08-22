@@ -1,0 +1,106 @@
+{
+  "$schema": "https://alexmerced.com/entity/schema/person.schema.json",
+  "id": "https://alexmerced.com/#alexmerced",
+  "type": "Person",
+  "name": "Alex Merced",
+  "url": "https://alexmerced.com",
+  "canonicalProfile": "https://alexmerced.com",
+  "image": "https://alexmerced.com/alexpics/photo-headshot-charcoal-blazer-turtleneck.webp",
+  "email": "dev@alexmerced.com",
+
+  "jobTitle": "Head of Developer Relations",
+  "worksFor": {
+    "name": "Dremio",
+    "url": "https://www.dremio.com"
+  },
+
+  "birthDate": "1985-06-30",
+  "birthPlace": "Hartford, Connecticut, USA",
+
+  "bio": {
+    "oneLine": "Alex Merced is Head of Developer Relations at Dremio, an author, and an educator on open lakehouse architecture and agentic AI.",
+
+    "short": "Alex Merced is Head of Developer Relations at Dremio and the author of 63 books, including Apache Iceberg: The Definitive Guide (O'Reilly) and Architecting an Apache Iceberg Lakehouse (Manning). He teaches open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI to data practitioners worldwide.",
+
+    "medium": "Alex Merced is Head of Developer Relations at Dremio, where he teaches and writes about open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI. He is the author of 63 books, including Apache Iceberg: The Definitive Guide (O'Reilly Media), Architecting an Apache Iceberg Lakehouse (Manning Publications), and Apache Polaris: The Definitive Guide (O'Reilly Media). Before moving into data engineering, he spent over a decade in New York City teaching economics and finance to professionals, an experience that shaped his approach to breaking down complex technical subjects. He publishes across a network of technical sites, speaks at data conferences, and hosts podcasts on data and AI.",
+
+    "speaker": "Alex Merced is Head of Developer Relations at Dremio and the author of 63 books on data and AI, including Apache Iceberg: The Definitive Guide (O'Reilly) and Architecting an Apache Iceberg Lakehouse (Manning). He is a widely followed educator on open lakehouse architecture, Apache Iceberg, Apache Polaris, and agentic analytics, known for making complex data infrastructure topics accessible to practitioners."
+  },
+
+  "careerTimeline": [
+    {
+      "period": "2003-2007",
+      "role": "Student, Marketing and Popular Culture Studies",
+      "organization": "Bowling Green State University",
+      "note": "Promotion Director at WBGU-FM; founded Fashionably Numb Music and The Gamers Lounge."
+    },
+    {
+      "period": "2008-2019",
+      "role": "Financial and economics trainer",
+      "organization": "Greico Financial Training",
+      "note": "Taught economics and finance to professionals in New York City for over a decade."
+    },
+    {
+      "period": "present",
+      "role": "Head of Developer Relations",
+      "organization": "Dremio",
+      "note": "Leads developer relations; writes and speaks on open lakehouse architecture and agentic AI."
+    }
+  ],
+
+  "knowsAbout": [
+    "Open Lakehouse Architecture",
+    "Apache Iceberg",
+    "Apache Polaris",
+    "Apache Parquet",
+    "Apache Arrow",
+    "Iceberg Catalogs",
+    "Semantic Layers",
+    "Agentic Analytics",
+    "Agent Infrastructure",
+    "Data Engineering",
+    "Query Federation",
+    "Model Context Protocol",
+    "Developer Relations"
+  ],
+
+  "stats": {
+    "books": 63,
+    "note": "Book count is derived from entity/books.json. Do not hardcode this number in site copy; read it from the entity layer so every property reports the same figure."
+  },
+
+  "sameAs": [
+    "https://github.com/alexmercedcoder",
+    "https://www.linkedin.com/in/alexmerced",
+    "https://bsky.app/profile/alextalksdatalakehouses.fyi",
+    "https://www.youtube.com/@alexmerceddata",
+    "https://www.youtube.com/@alexmercedcoder",
+    "https://x.com/AMdatalakehouse",
+    "https://x.com/alexmercedcoder",
+    "https://amdatalakehouse.substack.com",
+    "https://dev.to/alexmercedcoder",
+    "https://www.amazon.com/Apache-Iceberg-Functionality-Performance-Scalability/dp/1098148622",
+    "https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse",
+    "https://alexmerced.blog",
+    "https://alexmercedcoder.dev",
+    "https://alexmerceddata.com",
+    "https://alexmercedmedia.com",
+    "https://whoisalexmerced.com",
+    "https://books.alexmerced.com"
+  ],
+
+  "socialHandles": {
+    "x_primary": "@AMdatalakehouse",
+    "x_secondary": "@alexmercedcoder",
+    "github": "alexmercedcoder",
+    "githubOrg": "alexmerced-oss",
+    "linkedin": "alexmerced",
+    "substack": "amdatalakehouse"
+  },
+
+  "contact": [
+    { "type": "email", "label": "General and developer inquiries", "value": "dev@alexmerced.com" },
+    { "type": "linkedin", "label": "Professional network", "value": "https://www.linkedin.com/in/alexmerced" },
+    { "type": "pressKit", "label": "Press kit and headshots", "value": "https://alexmerced.com/press_kit.html" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Alex Merced",
+  "headline": "Alex Merced is Head of Developer Relations at Dremio, an author, and an educator on open lakehouse architecture and agentic AI.",
+  "jobTitle": "Head of Developer Relations",
+  "employer": "Dremio",
+  "url": "https://alexmerced.com",
+  "books": 63,
+  "topics": [
+    "Open Lakehouse",
+    "Apache Iceberg",
+    "Apache Polaris",
+    "Iceberg Catalogs",
+    "Apache Parquet",
+    "Apache Arrow",
+    "Semantic Layer",
+    "Query Federation",
+    "Agentic Analytics",
+    "Agent Infrastructure",
+    "Model Context Protocol",
+    "Data Engineering",
+    "AI-Ready Data",
+    "Books by Alex Merced",
+    "Biography",
+    "Talks, Podcasts and Media",
+    "Data Community Events",
+    "Coding Tutorials"
+  ],
+  "canonicalEntity": "https://alexmerced.com/#alexmerced",
+  "fullEntity": "https://alexmerced.com/entity.json"
+}
