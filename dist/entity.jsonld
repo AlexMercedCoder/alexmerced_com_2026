@@ -9,7 +9,7 @@
       "image": "https://alexmerced.com/alexpics/photo-headshot-charcoal-blazer-turtleneck.webp",
       "email": "mailto:dev@alexmerced.com",
       "jobTitle": "Head of Developer Relations",
-      "description": "Alex Merced is Head of Developer Relations at Dremio, where he teaches and writes about open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI. He is the author of 63 books, including Apache Iceberg: The Definitive Guide (O'Reilly Media), Architecting an Apache Iceberg Lakehouse (Manning Publications), and Apache Polaris: The Definitive Guide (O'Reilly Media). Before moving into data engineering, he spent over a decade in New York City teaching economics and finance to professionals, an experience that shaped his approach to breaking down complex technical subjects. He publishes across a network of technical sites, speaks at data conferences, and hosts podcasts on data and AI.",
+      "description": "Alex Merced is Head of Developer Relations at Dremio, where he teaches and writes about open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI. He is the author of 65 books, including Apache Iceberg: The Definitive Guide (O'Reilly Media), Architecting an Apache Iceberg Lakehouse (Manning Publications), and Apache Polaris: The Definitive Guide (O'Reilly Media). Before moving into data engineering, he spent over a decade in New York City teaching economics and finance to professionals, an experience that shaped his approach to breaking down complex technical subjects. He publishes across a network of technical sites, speaks at data conferences, and hosts podcasts on data and AI.",
       "birthDate": "1985-06-30",
       "worksFor": {
         "@type": "Organization",
@@ -868,6 +868,38 @@
     },
     {
       "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/adventures-in-love-and-flooding/#book",
+      "name": "Adventures in Love and Flooding",
+      "url": "https://books.alexmerced.com/books/adventures-in-love-and-flooding/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "isbn": "9798194094882",
+      "description": "A romantic action thriller about disaster capitalism, artificial intelligence, and ordinary competence. He crossed an ocean for a woman he had only ever met on a screen, and landed four days before the water came.",
+      "image": "https://books.alexmerced.com/covers/adventures-in-love-and-flooding.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-last-continue/#book",
+      "name": "The Last Continue",
+      "url": "https://books.alexmerced.com/books/the-last-continue/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "isbn": "9798194229079",
+      "description": "A novel about finishing things, and about what a finished life turns out to be for. A clockmaker in Manchester, Connecticut spends fifty-six years noticing that the world does not always keep time.",
+      "image": "https://books.alexmerced.com/covers/the-last-continue.jpg"
+    },
+    {
+      "@type": "Book",
       "@id": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/#book",
       "name": "D6 Storyteller: The Core Rulebook",
       "url": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/",
@@ -1611,7 +1643,7 @@
       "@type": "DefinedTerm",
       "@id": "https://alexmerced.com/entity/topics#books",
       "name": "Books by Alex Merced",
-      "description": "Alex Merced has authored 63 books spanning technology, economics and philosophy, fiction, and tabletop roleplaying games.",
+      "description": "Alex Merced has authored 65 books spanning technology, economics and philosophy, fiction, and tabletop roleplaying games.",
       "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
       "subjectOf": {
         "@id": "https://books.alexmerced.com/#website"

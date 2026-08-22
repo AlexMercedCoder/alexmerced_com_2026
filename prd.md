@@ -266,7 +266,7 @@ Inherit and evolve the established blue/gold brand from alexmercedcoder.dev:
 ### 6.1 Meta Tags
 ```html
 <title>Alex Merced — Data Lakehouse & AI Expert | Author | Creator</title>
-<meta name="description" content="The official portal of Alex Merced. Data Lakehouse expert, Apache Iceberg authority, O'Reilly & Manning author, Head of DevRel at Dremio, musician, and author of 63 books.">
+<meta name="description" content="The official portal of Alex Merced. Data Lakehouse expert, Apache Iceberg authority, O'Reilly & Manning author, Head of DevRel at Dremio, musician, and author of 65 books.">
 <meta name="keywords" content="Alex Merced, Data Lakehouse, Apache Iceberg, Apache Polaris, AI, Dremio, Developer Relations, DevRel, Author, Open Source">
 <link rel="canonical" href="https://alexmerced.com">
 ```

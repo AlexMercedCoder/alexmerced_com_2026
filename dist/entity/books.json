@@ -1,7 +1,7 @@
 {
   "$schema": "https://alexmerced.com/entity/schema/books.schema.json",
   "generatedFrom": "books.alexmerced.com list.md + build.py PUBLISHER_OVERRIDES",
-  "count": 63,
+  "count": 65,
   "author": {
     "@id": "https://alexmerced.com/#alexmerced",
     "name": "Alex Merced"
@@ -532,7 +532,7 @@
       "slug": "the-field-guide-to-political-thought-and-debates-in-the-united-states",
       "category": "Economics & Philosophy",
       "publisher": "Self-published",
-      "description": "Maps the terrain of American political thought — conservative, progressive, and libertarian — so you can understand why people across the table believe what they believe and how to talk about it.",
+      "description": "Maps the terrain of American political thought \u2014 conservative, progressive, and libertarian \u2014 so you can understand why people across the table believe what they believe and how to talk about it.",
       "asin": "B0GTV6ZWHX",
       "isbn": null,
       "flagship": false,
@@ -695,6 +695,32 @@
       "url": "https://www.amazon.com/dp/B0HD831HR9",
       "cover": "https://images.amazon.com/images/P/B0HD831HR9.01._SCLZZZZZZZ_.jpg",
       "canonicalPage": "https://books.alexmerced.com/books/celestial-fragments-the-duel-of-souls/"
+    },
+    {
+      "title": "Adventures in Love and Flooding",
+      "slug": "adventures-in-love-and-flooding",
+      "category": "Fiction",
+      "publisher": "Self-published",
+      "description": "A romantic action thriller about disaster capitalism, artificial intelligence, and ordinary competence. He crossed an ocean for a woman he had only ever met on a screen, and landed four days before the water came.",
+      "asin": "B0HG3YM4QW",
+      "isbn": "9798194094882",
+      "flagship": false,
+      "url": "https://www.amazon.com/dp/B0HG3YM4QW",
+      "cover": "https://books.alexmerced.com/covers/adventures-in-love-and-flooding.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/adventures-in-love-and-flooding/"
+    },
+    {
+      "title": "The Last Continue",
+      "slug": "the-last-continue",
+      "category": "Fiction",
+      "publisher": "Self-published",
+      "description": "A novel about finishing things, and about what a finished life turns out to be for. A clockmaker in Manchester, Connecticut spends fifty-six years noticing that the world does not always keep time.",
+      "asin": "B0HG5TGQBV",
+      "isbn": "9798194229079",
+      "flagship": false,
+      "url": "https://www.amazon.com/dp/B0HG5TGQBV",
+      "cover": "https://books.alexmerced.com/covers/the-last-continue.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-last-continue/"
     },
     {
       "title": "D6 Storyteller: The Core Rulebook",

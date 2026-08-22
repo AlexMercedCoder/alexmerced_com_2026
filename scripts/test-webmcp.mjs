@@ -73,7 +73,7 @@ console.log('\n--- tool behaviour ---');
 
 const author = await call('get_author', { bioLength: 'speaker' });
 pass('get_author returns canonical id', author.entityId === 'https://alexmerced.com/#alexmerced');
-pass('get_author reports 63 books', author.books === 63, String(author.books));
+pass('get_author reports 65 books', author.books === 65, String(author.books));
 pass('get_author returns speaker bio', /Head of Developer Relations/.test(author.bio || ''));
 
 const routed = await call('find_site_for_topic', { topic: 'Apache Polaris credential vending' });
@@ -131,7 +131,7 @@ const specs = await call('list_specs');
 pass('lists AGS spec', specs.specifications.some((s) => s.abbreviation === 'AGS'), `${specs.count} spec(s)`);
 
 const bio = await call('get_biography', { length: 'speaker' });
-pass('speaker bio available', /63 books/.test(bio.biography || ''));
+pass('speaker bio available', /65 books/.test(bio.biography || ''));
 
 const def = await call('get_definition', { term: 'apache iceberg' });
 pass('defines a term', /open table format/.test(def.definition || ''), def.source);
