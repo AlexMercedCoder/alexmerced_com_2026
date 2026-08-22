@@ -4,7 +4,7 @@
     "@id": "https://alexmerced.com/#alexmerced",
     "name": "Alex Merced"
   },
-  "note": "Topic-to-site routing table. Powers find_site_for_topic(topic) and the network search router. 'primary' is the canonical destination for a topic; 'supporting' sites cover it from a different angle. 'aliases' are matched case-insensitively against user queries.",
+  "note": "Topic-to-site routing table. Powers find_site_for_topic(topic) and the network search router. 'primary' is the canonical destination for a topic; 'supporting' sites cover it from a different angle. 'aliases' are matched case-insensitively against user queries. 'canonicalUrl' names the single best page for a topic when one exists.",
   "topics": [
     {
       "id": "open-lakehouse",
@@ -27,7 +27,8 @@
       "books": [
         "The Open Source Lakehouse: Architecting the Decoupled Analytical Foundation",
         "The 2026 Guide to Lakehouses, Apache Iceberg and Agentic AI"
-      ]
+      ],
+      "canonicalUrl": "https://opendatalakehouse.com/what-is-an-open-lakehouse/"
     },
     {
       "id": "apache-iceberg",
@@ -55,7 +56,8 @@
       "projects": [
         "IceFrame",
         "Pangolin"
-      ]
+      ],
+      "canonicalUrl": "https://opendatalakehouse.com/compare/table-formats/"
     },
     {
       "id": "apache-polaris",
@@ -75,7 +77,8 @@
       "books": [
         "Apache Polaris: The Definitive Guide"
       ],
-      "trademarkNote": "Apache Polaris is a trademark of the Apache Software Foundation. Referenced descriptively only."
+      "trademarkNote": "Apache Polaris is a trademark of the Apache Software Foundation. Referenced descriptively only.",
+      "canonicalUrl": "https://opendatalakehouse.com/compare/catalogs/"
     },
     {
       "id": "iceberg-catalogs",
@@ -103,7 +106,8 @@
       ],
       "projects": [
         "Pangolin"
-      ]
+      ],
+      "canonicalUrl": "https://opendatalakehouse.com/compare/catalogs/"
     },
     {
       "id": "apache-parquet",
