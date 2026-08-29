@@ -49,6 +49,23 @@
       ]
     },
     {
+      "name": "Merced AI",
+      "slug": "merced-ai",
+      "category": "agent-infrastructure",
+      "tagline": "A local-first broker for the AI agent harnesses already installed on your machine.",
+      "description": "Merced AI discovers agent harnesses installed locally, normalizes their noninteractive interfaces, and uses Open Agent Profile documents to create portable bots you can chat and collaborate with. It is deliberately not another agent loop: the selected harness still owns model access, tools, authentication, sandboxing, approvals, and policy enforcement.",
+      "repository": "https://github.com/AlexMercedCoder/merced-ai",
+      "packageManager": "pypi",
+      "package": "merced-ai",
+      "language": "Python",
+      "topics": [
+        "agent broker",
+        "harness discovery",
+        "portable agents",
+        "local-first"
+      ]
+    },
+    {
       "name": "Loro",
       "slug": "loro",
       "category": "agent-infrastructure",
@@ -129,6 +146,26 @@
         "execution graph",
         "agentic loops",
         "orchestration"
+      ]
+    },
+    {
+      "name": "Open Agent Profile",
+      "slug": "open-agent-profile",
+      "abbreviation": "OAP",
+      "category": "agent-infrastructure",
+      "tagline": "An open specification for persisting a named AI agent as a file instead of a running process.",
+      "description": "The Open Agent Profile (OAP) defines a portable document describing a named agent: role, model, tool surface, permissions, attached context, and what previous sessions learned. Three rules make it safe to leave enabled: a profile narrows capability and never widens it, an agent cannot rewrite its own contract, and learned state is treated as untrusted content.",
+      "repository": "https://github.com/alexmerced-oss/open-agent-profile",
+      "packageManager": "pypi",
+      "package": "open-agent-profile",
+      "specVersion": "1.0",
+      "license": "Apache-2.0",
+      "isSpecification": true,
+      "topics": [
+        "specification",
+        "agent identity",
+        "portable agents",
+        "capability narrowing"
       ]
     },
     {

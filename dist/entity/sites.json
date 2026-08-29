@@ -103,6 +103,25 @@
       ]
     },
     {
+      "domain": "alexmercedai.com",
+      "url": "https://www.alexmercedai.com",
+      "title": "Alex Merced AI",
+      "tier": "person-facet",
+      "role": "Point-of-view site for Alex Merced's agentic AI work: projects, open specifications, and design principles.",
+      "purpose": "understanding the agentic AI systems and specifications Alex Merced builds and why they are designed that way",
+      "topics": [
+        "agentic ai",
+        "agent broker",
+        "agent harness",
+        "agent memory",
+        "open specifications",
+        "agent governance"
+      ],
+      "canonicalFor": [
+        "agentic-ai-work"
+      ]
+    },
+    {
       "domain": "alexmerceddata.com",
       "url": "https://alexmerceddata.com",
       "title": "Alex Merced Data",
@@ -190,6 +209,27 @@
       ],
       "canonicalFor": [
         "agentic-lakehouse"
+      ]
+    },
+    {
+      "domain": "openagenticplatform.com",
+      "url": "https://openagenticplatform.com",
+      "title": "Open Agentic Platform",
+      "tier": "topic-authority",
+      "role": "Vendor-neutral reference architecture for assembling agentic AI from open, replaceable components.",
+      "purpose": "understanding what an open agentic platform is, layer by layer, and how to evaluate whether an architecture is genuinely open",
+      "topics": [
+        "open agentic platform",
+        "agentic ai architecture",
+        "agent harness",
+        "agent broker",
+        "open standards",
+        "mcp",
+        "agent skills",
+        "open weight models"
+      ],
+      "canonicalFor": [
+        "open-agentic-platform"
       ]
     },
     {

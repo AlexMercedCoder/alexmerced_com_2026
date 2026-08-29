@@ -1072,6 +1072,17 @@
     },
     {
       "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-merced-ai",
+      "name": "Merced AI",
+      "description": "Merced AI discovers agent harnesses installed locally, normalizes their noninteractive interfaces, and uses Open Agent Profile documents to create portable bots you can chat and collaborate with. It is deliberately not another agent loop: the selected harness still owns model access, tools, authentication, sandboxing, approvals, and policy enforcement.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/AlexMercedCoder/merced-ai",
+      "programmingLanguage": "Python"
+    },
+    {
+      "@type": "SoftwareSourceCode",
       "@id": "https://alexmercedcoder.dev/#project-loro",
       "name": "Loro",
       "description": "Loro is a Python CLI agent harness built for enterprise coding, governed data work, and productivity tasks. The name is Spanish for parrot: a bird that listens, learns, repeats useful knowledge, and helps information move across groups.",
@@ -1123,6 +1134,17 @@
         "@id": "https://alexmerced.com/#alexmerced"
       },
       "codeRepository": "https://github.com/AlexMercedCoder/agentic-graph-spec",
+      "license": "Apache-2.0"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://alexmercedcoder.dev/#project-open-agent-profile",
+      "name": "Open Agent Profile",
+      "description": "The Open Agent Profile (OAP) defines a portable document describing a named agent: role, model, tool surface, permissions, attached context, and what previous sessions learned. Three rules make it safe to leave enabled: a profile narrows capability and never widens it, an agent cannot rewrite its own contract, and learned state is treated as untrusted content.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/alexmerced-oss/open-agent-profile",
       "license": "Apache-2.0"
     },
     {
@@ -1236,6 +1258,24 @@
     },
     {
       "@type": "WebSite",
+      "@id": "https://alexmercedai.com/#website",
+      "url": "https://www.alexmercedai.com",
+      "name": "Alex Merced AI",
+      "description": "Point-of-view site for Alex Merced's agentic AI work: projects, open specifications, and design principles.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "agentic ai",
+        "agent broker",
+        "agent harness",
+        "agent memory",
+        "open specifications",
+        "agent governance"
+      ]
+    },
+    {
+      "@type": "WebSite",
       "@id": "https://alexmerceddata.com/#website",
       "url": "https://alexmerceddata.com",
       "name": "Alex Merced Data",
@@ -1316,6 +1356,26 @@
         "mcp",
         "governed agentic data",
         "agentic bi"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://openagenticplatform.com/#website",
+      "url": "https://openagenticplatform.com",
+      "name": "Open Agentic Platform",
+      "description": "Vendor-neutral reference architecture for assembling agentic AI from open, replaceable components.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "open agentic platform",
+        "agentic ai architecture",
+        "agent harness",
+        "agent broker",
+        "open standards",
+        "mcp",
+        "agent skills",
+        "open weight models"
       ]
     },
     {
@@ -1707,6 +1767,36 @@
       "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
       "subjectOf": {
         "@id": "https://d6storyteller.alexmerced.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#open-agentic-platform",
+      "name": "Open Agentic Platform",
+      "description": "An open agentic platform is an architecture in which data, models, execution, and interoperability remain independently understandable and replaceable. It is a stack of four layers rather than a mandatory suite: data and semantics, models and routing, harnesses and brokers, and open standards.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://openagenticplatform.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#agent-standards",
+      "name": "Open Agent Standards",
+      "description": "Open agent standards make skills, tool connections, agent identity, and work plans portable between runtimes. Agent Skills package capability, the Model Context Protocol carries tool access, the Open Agent Profile describes who an agent is and what it has learned, and the Agentic Graph Specification describes the shape of a piece of work.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://openagenticplatform.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#agent-governance",
+      "name": "Agent Governance",
+      "description": "Agent governance is the practice of enforcing what an agent may do outside the model rather than requesting it in a prompt: scoped capability and credentials, approval gates on irreversible actions, delegated identity, and records complete enough to reconstruct what happened months later.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://alexmercedai.com/#website"
       }
     }
   ]

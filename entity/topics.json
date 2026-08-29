@@ -158,7 +158,8 @@
       "supporting": [
         "agenticlakehouse.com",
         "datalakehouse.help",
-        "alexmerceddata.com"
+        "alexmerceddata.com",
+        "openagenticplatform.com"
       ],
       "summary": "A semantic layer maps physical tables to business concepts and governed metrics, so people and agents query meaning rather than raw schemas.",
       "books": [
@@ -195,7 +196,9 @@
       "supporting": [
         "semanticlakehouse.com",
         "alexmercedcoder.dev",
-        "alexmerceddata.com"
+        "alexmerceddata.com",
+        "alexmercedai.com",
+        "openagenticplatform.com"
       ],
       "summary": "Agentic analytics is the practice of letting AI agents discover, query, and reason over governed data with the same controls applied to human users.",
       "books": [
@@ -221,7 +224,9 @@
       "primary": "alexmercedcoder.dev",
       "supporting": [
         "agenticlakehouse.com",
-        "alexmerceddata.com"
+        "alexmerceddata.com",
+        "openagenticplatform.com",
+        "alexmercedai.com"
       ],
       "summary": "Agent infrastructure is the layer beneath an AI agent: the harness that runs it, the memory it keeps, the context it assembles, the identity and approvals that govern it, and the observability that makes it auditable.",
       "projects": [
@@ -249,7 +254,9 @@
       "primary": "alexmercedcoder.dev",
       "supporting": [
         "agenticlakehouse.com",
-        "datalakehouse.help"
+        "datalakehouse.help",
+        "openagenticplatform.com",
+        "alexmercedai.com"
       ],
       "summary": "The Model Context Protocol is an open standard for exposing tools and data to AI agents through a consistent interface."
     },
@@ -288,7 +295,8 @@
       "supporting": [
         "semanticlakehouse.com",
         "alexmerceddata.com",
-        "alexmercedcoder.dev"
+        "alexmercedcoder.dev",
+        "openagenticplatform.com"
       ],
       "summary": "AI-ready data is data prepared, governed, and described well enough that language models and agents can use it reliably.",
       "books": [
@@ -417,6 +425,93 @@
       ],
       "summary": "The D6 Storyteller tabletop roleplaying system and its companion books.",
       "separateFromTechnicalBrand": true
+    },
+    {
+      "id": "open-agentic-platform",
+      "label": "Open Agentic Platform",
+      "aliases": [
+        "open agentic platform",
+        "agentic platform",
+        "agentic ai architecture",
+        "composable ai stack",
+        "open agentic stack",
+        "agentic reference architecture"
+      ],
+      "primary": "openagenticplatform.com",
+      "supporting": [
+        "alexmercedai.com",
+        "alexmercedcoder.dev",
+        "agenticlakehouse.com"
+      ],
+      "summary": "An open agentic platform is an architecture in which data, models, execution, and interoperability remain independently understandable and replaceable. It is a stack of four layers rather than a mandatory suite: data and semantics, models and routing, harnesses and brokers, and open standards.",
+      "projects": [
+        "Loro",
+        "MagAgent",
+        "MagGraph",
+        "Merced AI",
+        "Agentic Graph Specification",
+        "Open Agent Profile"
+      ],
+      "books": [
+        "The Book on Agentic Analytics",
+        "AI Application Architecture: Patterns for Building Intelligent Systems"
+      ],
+      "canonicalUrl": "https://openagenticplatform.com/knowledge-base"
+    },
+    {
+      "id": "agent-standards",
+      "label": "Open Agent Standards",
+      "aliases": [
+        "agent standards",
+        "open agent profile",
+        "oap",
+        "agentic graph specification",
+        "ags",
+        "agent skills",
+        "portable agents",
+        "agent interoperability"
+      ],
+      "primary": "openagenticplatform.com",
+      "supporting": [
+        "alexmercedai.com",
+        "alexmercedcoder.dev"
+      ],
+      "summary": "Open agent standards make skills, tool connections, agent identity, and work plans portable between runtimes. Agent Skills package capability, the Model Context Protocol carries tool access, the Open Agent Profile describes who an agent is and what it has learned, and the Agentic Graph Specification describes the shape of a piece of work.",
+      "projects": [
+        "Agentic Graph Specification",
+        "Open Agent Profile"
+      ],
+      "canonicalUrl": "https://openagenticplatform.com/knowledge-base/open-standards"
+    },
+    {
+      "id": "agent-governance",
+      "label": "Agent Governance",
+      "aliases": [
+        "agent governance",
+        "agent authority",
+        "agent permissions",
+        "agent audit",
+        "approval gates",
+        "least privilege agents",
+        "prompt injection",
+        "agent accountability"
+      ],
+      "primary": "alexmercedai.com",
+      "supporting": [
+        "openagenticplatform.com",
+        "alexmercedcoder.dev",
+        "agenticlakehouse.com"
+      ],
+      "summary": "Agent governance is the practice of enforcing what an agent may do outside the model rather than requesting it in a prompt: scoped capability and credentials, approval gates on irreversible actions, delegated identity, and records complete enough to reconstruct what happened months later.",
+      "projects": [
+        "Loro",
+        "Open Agent Profile"
+      ],
+      "books": [
+        "Governing AI Systems",
+        "Evaluating AI Systems: Testing LLMs, RAG, and Agents"
+      ],
+      "canonicalUrl": "https://www.alexmercedai.com/knowledge-base/explicit-authority"
     }
   ]
 }
