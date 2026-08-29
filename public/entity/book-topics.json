@@ -1,0 +1,256 @@
+{
+  "$schema": "https://alexmerced.com/entity/schema/book-topics.schema.json",
+  "note": "Topic tags per book slug, used to build the per-site book lists across the Alex Merced network. Slugs must match entity/books.json exactly; scripts/build-network-booklists.mjs fails if one does not. A book may carry several tags.",
+  "tagDefinitions": {
+    "iceberg": "Apache Iceberg specifically: the table format, its internals, and working with it directly.",
+    "lakehouse": "Lakehouse architecture generally: storage, engines, catalogs, and the decoupled analytical stack.",
+    "catalogs": "Catalogs and governance over lakehouse tables, including Apache Polaris.",
+    "semantic": "Semantic layers, metric definitions, and giving data shared meaning.",
+    "data-engineering": "Data engineering and analytics practice: pipelines, modeling, SQL, and BI.",
+    "agentic": "AI agents and agentic systems: harnesses, multi-agent design, and agents over data.",
+    "ai-engineering": "Building, shipping, evaluating, and governing AI systems in production.",
+    "ai-productivity": "Using AI tools well day to day, including AI-assisted development.",
+    "devrel": "Developer relations and technical community practice.",
+    "economics": "Economics, labor, philosophy, and political thought.",
+    "fiction": "Novels and short fiction.",
+    "ttrpg": "Tabletop roleplaying game rulebooks and companions."
+  },
+  "books": {
+    "apache-iceberg-the-definitive-guide": [
+      "iceberg",
+      "lakehouse"
+    ],
+    "architecting-an-apache-iceberg-lakehouse": [
+      "iceberg",
+      "lakehouse"
+    ],
+    "apache-polaris-the-definitive-guide": [
+      "catalogs",
+      "iceberg",
+      "lakehouse"
+    ],
+    "the-book-on-apache-polaris": [
+      "catalogs",
+      "iceberg",
+      "lakehouse"
+    ],
+    "the-book-on-using-apache-iceberg-with-python": [
+      "iceberg",
+      "data-engineering"
+    ],
+    "the-2026-guide-to-lakehouses-apache-iceberg-and-agentic-ai": [
+      "lakehouse",
+      "iceberg",
+      "agentic"
+    ],
+    "the-open-source-lakehouse-architecting-the-decoupled-analytical-foundation": [
+      "lakehouse",
+      "iceberg"
+    ],
+    "the-lakehouse-built-for-everyone": [
+      "lakehouse"
+    ],
+    "the-ai-lakehouse-architecting-data-platforms-for-ai": [
+      "lakehouse",
+      "ai-engineering",
+      "agentic"
+    ],
+    "the-no-lock-in-apache-iceberg-lakehouse-with-agentic-analytics": [
+      "lakehouse",
+      "iceberg",
+      "agentic"
+    ],
+    "dremio-and-the-semantic-layer": [
+      "semantic",
+      "lakehouse"
+    ],
+    "constructing-context-and-semantics-for-ai-agents": [
+      "semantic",
+      "agentic",
+      "ai-engineering"
+    ],
+    "the-book-on-agentic-analytics": [
+      "agentic",
+      "data-engineering",
+      "lakehouse"
+    ],
+    "enabling-agentic-analytics-with-apache-iceberg-and-dremio": [
+      "agentic",
+      "iceberg",
+      "lakehouse"
+    ],
+    "apache-iceberg-for-agentic-ai-connecting-structured-enterprise": [
+      "agentic",
+      "iceberg",
+      "lakehouse"
+    ],
+    "using-ai-agents-for-data-engineering-and-data-analysis": [
+      "agentic",
+      "data-engineering"
+    ],
+    "the-agentic-enterprise-deploying-ai-agents-across-the-modern-organization": [
+      "agentic",
+      "ai-engineering"
+    ],
+    "hands-on-agentic-engineering-a-practical-guide-to-building-multi-agent-systems": [
+      "agentic",
+      "ai-engineering"
+    ],
+    "ai-and-agents-for-normal-people": [
+      "agentic",
+      "ai-productivity"
+    ],
+    "the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-1": [
+      "data-engineering",
+      "agentic",
+      "lakehouse"
+    ],
+    "the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-2": [
+      "data-engineering",
+      "agentic",
+      "lakehouse"
+    ],
+    "ai-ready-data": [
+      "ai-engineering",
+      "data-engineering",
+      "semantic"
+    ],
+    "the-ai-engineering-handbook": [
+      "ai-engineering"
+    ],
+    "building-knowledge-systems-for-ai-graphs-rag-memory-and-context": [
+      "ai-engineering",
+      "semantic",
+      "agentic"
+    ],
+    "ai-application-architecture-patterns-for-building-intelligent-systems": [
+      "ai-engineering",
+      "agentic"
+    ],
+    "shipping-ai-from-prototype-to-production-systems": [
+      "ai-engineering"
+    ],
+    "evaluating-ai-systems-testing-llms-rag-and-agents": [
+      "ai-engineering",
+      "agentic"
+    ],
+    "governing-ai-systems": [
+      "ai-engineering",
+      "agentic"
+    ],
+    "the-economics-of-ai-cost-latency-and-infrastructure-tradeoffs": [
+      "ai-engineering"
+    ],
+    "the-economics-of-labor-in-the-ai-era": [
+      "economics",
+      "ai-engineering"
+    ],
+    "the-2026-guide-to-ai-assisted-development": [
+      "ai-productivity",
+      "ai-engineering"
+    ],
+    "being-productive-with-claude": [
+      "ai-productivity"
+    ],
+    "being-productive-with-openai-codex": [
+      "ai-productivity"
+    ],
+    "being-productive-with-google-ai": [
+      "ai-productivity"
+    ],
+    "being-productive-with-grok-and-cursor": [
+      "ai-productivity"
+    ],
+    "being-productive-with-microsoft-copilot": [
+      "ai-productivity"
+    ],
+    "being-productive-with-open-models": [
+      "ai-productivity",
+      "agentic"
+    ],
+    "alex-merced-s-field-guide-to-developer-relations": [
+      "devrel"
+    ],
+    "economic-ideas-from-beginning-to-early-2026": [
+      "economics"
+    ],
+    "the-field-guide-to-libertarianism": [
+      "economics"
+    ],
+    "the-field-guide-to-political-thought-and-debates-in-the-united-states": [
+      "economics"
+    ],
+    "the-libertarian-heart": [
+      "economics"
+    ],
+    "profits-are-generosity-entrepreneurship-is-philanthropy": [
+      "economics"
+    ],
+    "the-semantic-rebellion": [
+      "fiction"
+    ],
+    "the-emperors-of-a-i-valley": [
+      "fiction"
+    ],
+    "the-federation-of-tides": [
+      "fiction"
+    ],
+    "plastic-punk": [
+      "fiction"
+    ],
+    "embers-of-claim": [
+      "fiction"
+    ],
+    "crowns-and-wings": [
+      "fiction"
+    ],
+    "thrones-of-ash-and-sky": [
+      "fiction"
+    ],
+    "tales-of-fur-and-sky-echoes-of-the-ages": [
+      "fiction"
+    ],
+    "signal-and-noise": [
+      "fiction"
+    ],
+    "celestial-fragments-the-duel-of-souls": [
+      "fiction"
+    ],
+    "adventures-in-love-and-flooding": [
+      "fiction"
+    ],
+    "the-last-continue": [
+      "fiction"
+    ],
+    "d6-storyteller-the-core-rulebook": [
+      "ttrpg"
+    ],
+    "d6-storyteller-high-mythic-fantasy-companion": [
+      "ttrpg"
+    ],
+    "d6-storyteller-sci-fi-cosmic-frontiers-companion": [
+      "ttrpg"
+    ],
+    "d6-storyteller-weird-west-piracy-swashbuckling-companion": [
+      "ttrpg"
+    ],
+    "d6-storyteller-horror-occult-supernatural-companion": [
+      "ttrpg"
+    ],
+    "d6-storyteller-cybernetics-speculative-alternate-tech-companion": [
+      "ttrpg"
+    ],
+    "d6-storyteller-superheroes-kaiju-anime-tropes-companion": [
+      "ttrpg"
+    ],
+    "d6-storyteller-historical-alternate-history-companion": [
+      "ttrpg"
+    ],
+    "d6-storyteller-quirky-experimental-micro-scale-companion": [
+      "ttrpg"
+    ],
+    "d6-storyteller-post-apocalyptic-speculative-worlds-companion": [
+      "ttrpg"
+    ]
+  }
+}

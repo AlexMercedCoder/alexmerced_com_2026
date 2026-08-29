@@ -1085,7 +1085,7 @@
       "@type": "SoftwareSourceCode",
       "@id": "https://alexmercedcoder.dev/#project-loro",
       "name": "Loro",
-      "description": "Loro is a Python CLI agent harness built for enterprise coding, governed data work, and productivity tasks. The name is Spanish for parrot: a bird that listens, learns, repeats useful knowledge, and helps information move across groups.",
+      "description": "Loro is a Python CLI agent harness built for enterprise coding, governed data work, and productivity tasks, organized around identity, policy decisions, identity-bound approvals, sandboxed execution, and delivered audit records. The name is Spanish for parrot: a bird that listens, learns, repeats useful knowledge, and helps information move across groups.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
@@ -1096,7 +1096,7 @@
       "@type": "SoftwareSourceCode",
       "@id": "https://alexmercedcoder.dev/#project-magagent",
       "name": "MagAgent",
-      "description": "MagAgent is a terminal-native AI coding agent with persistent memory, built for developers who want an assistant that learns their codebase and habits over time. It anchors a local-first AI productivity stack alongside MagGraph and Mag Command Center.",
+      "description": "MagAgent is a terminal-native AI coding agent with persistent memory, built for developers who want an assistant that learns their codebase and habits over time. Version 1.0.0 adds a confined local web workspace and a run center spanning chat runs, graph history, and durable background tasks. It anchors a local-first AI productivity stack alongside MagGraph and Mag Command Center.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },

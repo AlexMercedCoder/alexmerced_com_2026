@@ -70,7 +70,7 @@
       "slug": "loro",
       "category": "agent-infrastructure",
       "tagline": "A Python CLI agent harness for enterprise coding, governed data work, and productivity tasks.",
-      "description": "Loro is a Python CLI agent harness built for enterprise coding, governed data work, and productivity tasks. The name is Spanish for parrot: a bird that listens, learns, repeats useful knowledge, and helps information move across groups.",
+      "description": "Loro is a Python CLI agent harness built for enterprise coding, governed data work, and productivity tasks, organized around identity, policy decisions, identity-bound approvals, sandboxed execution, and delivered audit records. The name is Spanish for parrot: a bird that listens, learns, repeats useful knowledge, and helps information move across groups.",
       "repository": "https://github.com/alexmerced-oss/loro",
       "packageManager": "pypi",
       "package": "loro-agent",
@@ -87,7 +87,7 @@
       "slug": "magagent",
       "category": "agent-infrastructure",
       "tagline": "A terminal-native AI coding agent with persistent memory.",
-      "description": "MagAgent is a terminal-native AI coding agent with persistent memory, built for developers who want an assistant that learns their codebase and habits over time. It anchors a local-first AI productivity stack alongside MagGraph and Mag Command Center.",
+      "description": "MagAgent is a terminal-native AI coding agent with persistent memory, built for developers who want an assistant that learns their codebase and habits over time. Version 1.0.0 adds a confined local web workspace and a run center spanning chat runs, graph history, and durable background tasks. It anchors a local-first AI productivity stack alongside MagGraph and Mag Command Center.",
       "repository": "https://github.com/AlexMercedCoder/MagAgent",
       "packageManager": "pypi",
       "package": "mag-agent",
@@ -139,6 +139,7 @@
       "description": "The Agentic Graph Specification (AGS) defines an open, implementation-neutral format for decomposing a project into a directed acyclic graph where every node is a bounded agentic loop, one unit of work an AI agent runs end to end, and every edge is a control-flow dependency.",
       "repository": "https://github.com/AlexMercedCoder/agentic-graph-spec",
       "specVersion": "1.0",
+      "supportVersion": "1.0.4",
       "license": "Apache-2.0",
       "isSpecification": true,
       "topics": [
@@ -159,6 +160,7 @@
       "packageManager": "pypi",
       "package": "open-agent-profile",
       "specVersion": "1.0",
+      "supportVersion": "1.0.4",
       "license": "Apache-2.0",
       "isSpecification": true,
       "topics": [
