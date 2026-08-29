@@ -46,11 +46,42 @@ for (const [slug, tags] of Object.entries(topics.books)) {
  * audience. `order` puts the most on-topic tag first so the page leads with the
  * books a reader of that site actually came for.
  */
-/**
- * semanticlakehouse_com already ships a reading list at /reading backed by its
- * own data module, so it is deliberately absent here.
- */
 const SITES = [
+  {
+    dir: 'website/2026/openlakehouse',
+    out: 'src/data/books.json',
+    tags: ['lakehouse', 'iceberg', 'catalogs', 'semantic', 'data-engineering', 'agentic'],
+    order: ['lakehouse', 'iceberg', 'catalogs', 'semantic', 'data-engineering', 'agentic'],
+    intro: 'Books on open lakehouse architecture: table formats, catalogs, engines, semantic layers, and the agentic workloads now reading these tables.',
+  },
+  {
+    dir: 'website/2026/dataengnr',
+    out: 'src/data/books.json',
+    tags: ['data-engineering', 'lakehouse', 'iceberg', 'catalogs', 'agentic'],
+    order: ['data-engineering', 'lakehouse', 'iceberg', 'catalogs', 'agentic'],
+    intro: 'Longer-form treatments of the terms in the knowledge base: Apache Iceberg, lakehouse architecture, catalogs, semantic layers, and agentic analytics.',
+  },
+  {
+    dir: 'website/2026/alexmerceddata',
+    out: 'src/data/books.json',
+    tags: null,
+    order: ['data-engineering', 'lakehouse', 'iceberg', 'semantic', 'agentic', 'ai-engineering', 'ai-productivity', 'catalogs', 'devrel', 'economics', 'fiction', 'ttrpg'],
+    intro: 'Every book Alex Merced has written, across data engineering and the lakehouse, AI and agents, economics, fiction, and tabletop roleplaying.',
+  },
+  {
+    dir: 'website/2026/alexmercedmediacom',
+    out: 'src/data/books.json',
+    tags: null,
+    order: ['lakehouse', 'iceberg', 'agentic', 'ai-engineering', 'ai-productivity', 'semantic', 'data-engineering', 'catalogs', 'devrel', 'economics', 'fiction', 'ttrpg'],
+    intro: 'The complete bibliography: technical books on data and AI, economics and philosophy, novels, and tabletop roleplaying rulebooks.',
+  },
+  {
+    dir: 'website/2026/semanticlakehouse_com',
+    out: 'src/data/books.json',
+    tags: ['semantic', 'lakehouse', 'agentic', 'ai-engineering', 'iceberg'],
+    order: ['semantic', 'lakehouse', 'iceberg', 'agentic', 'ai-engineering'],
+    intro: 'Books on the semantic layer and what sits either side of it: the lakehouse underneath, and the agents and AI systems that depend on shared meaning.',
+  },
   {
     dir: 'website/2026/agenticlakehouse',
     out: 'data/books.json',
@@ -185,6 +216,12 @@ for (const site of SITES) {
       slug: b.slug,
       description: b.description,
       category: b.category,
+      categorySlug: {
+        'Tech': 'tech',
+        'Fiction': 'fiction',
+        'Economics & Philosophy': 'economics',
+        'Tabletop RPG': 'tabletop',
+      }[b.category] || 'tech',
       topics: topics.books[b.slug],
       // Only surface a publisher when it is a real one; 62 of 65 are self-published.
       publisher: b.publisher && b.publisher !== 'Self-published' ? b.publisher : null,
