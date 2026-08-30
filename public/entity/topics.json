@@ -22,7 +22,8 @@
         "datalakehouse.help",
         "dataengnr.com",
         "alexmerceddata.com",
-        "iceberglakehouse.com"
+        "iceberglakehouse.com",
+        "agenticanalyticsnow.com"
       ],
       "summary": "An open lakehouse is a data architecture that stores data in open file and table formats on commodity object storage, so that any compliant engine can read and write it without vendor lock-in.",
       "books": [
@@ -46,7 +47,8 @@
         "iceberglakehouse.com",
         "dataengnr.com",
         "agenticlakehouse.com",
-        "openlakehouse.alexmerced.com"
+        "openlakehouse.alexmerced.com",
+        "agenticanalyticsnow.com"
       ],
       "summary": "Apache Iceberg is an open table format that adds ACID transactions, schema evolution, and time travel to files stored in object storage.",
       "books": [
@@ -74,7 +76,8 @@
       "supporting": [
         "datalakehouse.help",
         "agenticlakehouse.com",
-        "openlakehouse.alexmerced.com"
+        "openlakehouse.alexmerced.com",
+        "agenticanalyticsnow.com"
       ],
       "summary": "Apache Polaris is an open catalog for Apache Iceberg that handles table discovery, access control, credential vending, and multi-engine governance.",
       "books": [
@@ -102,7 +105,8 @@
       "supporting": [
         "datalakehouse.help",
         "agenticlakehouse.com",
-        "openlakehouse.alexmerced.com"
+        "openlakehouse.alexmerced.com",
+        "agenticanalyticsnow.com"
       ],
       "summary": "The catalog is the layer that tracks table metadata, enforces access control, and lets multiple engines share the same tables safely.",
       "books": [
@@ -145,7 +149,8 @@
       "supporting": [
         "dataengnr.com",
         "alexmercedcoder.dev",
-        "openlakehouse.alexmerced.com"
+        "openlakehouse.alexmerced.com",
+        "agenticanalyticsnow.com"
       ],
       "summary": "Apache Arrow is an open in-memory columnar format that lets systems exchange data without serialization overhead.",
       "trademarkNote": "Apache Arrow is a trademark of the Apache Software Foundation. Referenced descriptively only."
@@ -166,7 +171,8 @@
         "datalakehouse.help",
         "alexmerceddata.com",
         "openagenticplatform.com",
-        "openlakehouse.alexmerced.com"
+        "openlakehouse.alexmerced.com",
+        "agenticanalyticsnow.com"
       ],
       "summary": "A semantic layer maps physical tables to business concepts and governed metrics, so people and agents query meaning rather than raw schemas.",
       "books": [
@@ -205,7 +211,8 @@
         "alexmercedcoder.dev",
         "alexmerceddata.com",
         "alexmercedai.com",
-        "openagenticplatform.com"
+        "openagenticplatform.com",
+        "agenticanalyticsnow.com"
       ],
       "summary": "Agentic analytics is the practice of letting AI agents discover, query, and reason over governed data with the same controls applied to human users.",
       "books": [
@@ -233,7 +240,8 @@
         "agenticlakehouse.com",
         "alexmerceddata.com",
         "openagenticplatform.com",
-        "alexmercedai.com"
+        "alexmercedai.com",
+        "agenticanalyticsnow.com"
       ],
       "summary": "Agent infrastructure is the layer beneath an AI agent: the harness that runs it, the memory it keeps, the context it assembles, the identity and approvals that govern it, and the observability that makes it auditable.",
       "projects": [
@@ -263,7 +271,8 @@
         "agenticlakehouse.com",
         "datalakehouse.help",
         "openagenticplatform.com",
-        "alexmercedai.com"
+        "alexmercedai.com",
+        "agenticanalyticsnow.com"
       ],
       "summary": "The Model Context Protocol is an open standard for exposing tools and data to AI agents through a consistent interface."
     },
@@ -303,7 +312,8 @@
         "semanticlakehouse.com",
         "alexmerceddata.com",
         "alexmercedcoder.dev",
-        "openagenticplatform.com"
+        "openagenticplatform.com",
+        "agenticanalyticsnow.com"
       ],
       "summary": "AI-ready data is data prepared, governed, and described well enough that language models and agents can use it reliably.",
       "books": [

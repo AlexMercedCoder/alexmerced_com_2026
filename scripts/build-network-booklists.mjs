@@ -48,6 +48,13 @@ for (const [slug, tags] of Object.entries(topics.books)) {
  */
 const SITES = [
   {
+    dir: 'website/2026/agenticanalyticsnow',
+    out: 'src/data/books.json',
+    tags: ['agentic', 'ai-engineering', 'semantic', 'lakehouse', 'iceberg', 'catalogs', 'ai-productivity'],
+    order: ['agentic', 'semantic', 'ai-engineering', 'lakehouse', 'iceberg', 'catalogs', 'ai-productivity'],
+    intro: 'Books covering both halves of agentic analytics: the agents and AI systems doing the asking, the semantic and governance work that makes their answers trustworthy, and the lakehouse architecture holding the data underneath.',
+  },
+  {
     dir: 'website/2026/openlakehouse-alexmerced',
     out: 'src/data/books.json',
     tags: ['lakehouse', 'iceberg', 'catalogs', 'semantic', 'data-engineering', 'agentic'],

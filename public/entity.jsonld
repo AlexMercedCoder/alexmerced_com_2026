@@ -1381,6 +1381,27 @@
     },
     {
       "@type": "WebSite",
+      "@id": "https://agenticanalyticsnow.com/#website",
+      "url": "https://agenticanalyticsnow.com",
+      "name": "Agentic Analytics Now",
+      "description": "Reference for running analytics with AI agents: the agent stack of model, harness, and open interfaces, and the governed semantic data an open lakehouse provides underneath it.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "agentic analytics",
+        "ai agents",
+        "agent harness",
+        "model context protocol",
+        "semantic layer",
+        "data governance",
+        "open lakehouse",
+        "apache iceberg",
+        "apache polaris"
+      ]
+    },
+    {
+      "@type": "WebSite",
       "@id": "https://openagenticplatform.com/#website",
       "url": "https://openagenticplatform.com",
       "name": "Open Agentic Platform",
