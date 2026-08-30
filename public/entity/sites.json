@@ -177,6 +177,28 @@
       "priority": "primary category play"
     },
     {
+      "domain": "openlakehouse.alexmerced.com",
+      "url": "https://openlakehouse.alexmerced.com",
+      "title": "Alex Merced, Open Lakehouse advocate",
+      "tier": "person-facet",
+      "role": "Alex Merced’s open lakehouse work in one place: a knowledge base of the architecture and its key projects, plus where the writing, video, and books live.",
+      "purpose": "Alex Merced’s advocacy and reference material for open lakehouse architecture",
+      "topics": [
+        "open lakehouse",
+        "apache iceberg",
+        "apache polaris",
+        "apache arrow",
+        "apache parquet",
+        "apache ossie",
+        "table formats",
+        "catalogs",
+        "semantic layer"
+      ],
+      "canonicalFor": [
+        "open-lakehouse-advocacy"
+      ]
+    },
+    {
       "domain": "semanticlakehouse.com",
       "url": "https://semanticlakehouse.com",
       "title": "Semantic Lakehouse",

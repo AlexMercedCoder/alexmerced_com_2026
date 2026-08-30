@@ -48,6 +48,13 @@ for (const [slug, tags] of Object.entries(topics.books)) {
  */
 const SITES = [
   {
+    dir: 'website/2026/openlakehouse-alexmerced',
+    out: 'src/data/books.json',
+    tags: ['lakehouse', 'iceberg', 'catalogs', 'semantic', 'data-engineering', 'agentic'],
+    order: ['iceberg', 'lakehouse', 'catalogs', 'semantic', 'data-engineering', 'agentic'],
+    intro: 'Books that go deeper on the material in the knowledge base: Apache Iceberg and the table formats, lakehouse architecture end to end, catalogs and governance, the semantic layer, and the agentic workloads now reading these tables.',
+  },
+  {
     dir: 'website/2026/openlakehouse',
     out: 'src/data/books.json',
     tags: ['lakehouse', 'iceberg', 'catalogs', 'semantic', 'data-engineering', 'agentic'],

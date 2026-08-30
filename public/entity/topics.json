@@ -18,6 +18,7 @@
       ],
       "primary": "opendatalakehouse.com",
       "supporting": [
+        "openlakehouse.alexmerced.com",
         "datalakehouse.help",
         "dataengnr.com",
         "alexmerceddata.com",
@@ -44,7 +45,8 @@
         "datalakehouse.help",
         "iceberglakehouse.com",
         "dataengnr.com",
-        "agenticlakehouse.com"
+        "agenticlakehouse.com",
+        "openlakehouse.alexmerced.com"
       ],
       "summary": "Apache Iceberg is an open table format that adds ACID transactions, schema evolution, and time travel to files stored in object storage.",
       "books": [
@@ -71,7 +73,8 @@
       "primary": "opendatalakehouse.com",
       "supporting": [
         "datalakehouse.help",
-        "agenticlakehouse.com"
+        "agenticlakehouse.com",
+        "openlakehouse.alexmerced.com"
       ],
       "summary": "Apache Polaris is an open catalog for Apache Iceberg that handles table discovery, access control, credential vending, and multi-engine governance.",
       "books": [
@@ -98,7 +101,8 @@
       "primary": "opendatalakehouse.com",
       "supporting": [
         "datalakehouse.help",
-        "agenticlakehouse.com"
+        "agenticlakehouse.com",
+        "openlakehouse.alexmerced.com"
       ],
       "summary": "The catalog is the layer that tracks table metadata, enforces access control, and lets multiple engines share the same tables safely.",
       "books": [
@@ -121,7 +125,8 @@
       "primary": "opendatalakehouse.com",
       "supporting": [
         "dataengnr.com",
-        "alexmerceddata.com"
+        "alexmerceddata.com",
+        "openlakehouse.alexmerced.com"
       ],
       "summary": "Apache Parquet is an open columnar storage file format optimized for analytical queries.",
       "trademarkNote": "Apache Parquet is a trademark of the Apache Software Foundation. Referenced descriptively only."
@@ -139,7 +144,8 @@
       "primary": "opendatalakehouse.com",
       "supporting": [
         "dataengnr.com",
-        "alexmercedcoder.dev"
+        "alexmercedcoder.dev",
+        "openlakehouse.alexmerced.com"
       ],
       "summary": "Apache Arrow is an open in-memory columnar format that lets systems exchange data without serialization overhead.",
       "trademarkNote": "Apache Arrow is a trademark of the Apache Software Foundation. Referenced descriptively only."
@@ -159,7 +165,8 @@
         "agenticlakehouse.com",
         "datalakehouse.help",
         "alexmerceddata.com",
-        "openagenticplatform.com"
+        "openagenticplatform.com",
+        "openlakehouse.alexmerced.com"
       ],
       "summary": "A semantic layer maps physical tables to business concepts and governed metrics, so people and agents query meaning rather than raw schemas.",
       "books": [
