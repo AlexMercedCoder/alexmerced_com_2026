@@ -22,7 +22,7 @@
   ],
   "stats": {
     "books": 65,
-    "sites": 26,
+    "sites": 27,
     "projects": 13
   },
   "sameAs": [
@@ -42,7 +42,11 @@
     "https://alexmerceddata.com",
     "https://alexmercedmedia.com",
     "https://whoisalexmerced.com",
-    "https://books.alexmerced.com"
+    "https://books.alexmerced.com",
+    "https://alexmercedmusic.com",
+    "https://www.youtube.com/@AlexMercedMusic",
+    "https://soundcloud.com/alexmerced",
+    "https://suno.com/@alexmerced"
   ],
   "endpoints": {
     "person": "https://alexmerced.com/entity/alex-merced.json",

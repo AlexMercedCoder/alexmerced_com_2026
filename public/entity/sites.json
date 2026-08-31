@@ -460,6 +460,27 @@
       "separateFromTechnicalBrand": true
     },
     {
+      "domain": "alexmercedmusic.com",
+      "url": "https://alexmercedmusic.com",
+      "title": "Alex Merced Music",
+      "tier": "personal",
+      "role": "Catalogue of the music Alex Merced has written, recorded and produced, across acoustic, electronic and AI-assisted work.",
+      "purpose": "the music Alex Merced has made over the last twenty years",
+      "topics": [
+        "music",
+        "singer songwriter",
+        "acoustic",
+        "electronic music",
+        "FL Studio",
+        "Suno",
+        "AI music"
+      ],
+      "canonicalFor": [
+        "music"
+      ],
+      "separateFromTechnicalBrand": true
+    },
+    {
       "domain": "d6storyteller.alexmerced.com",
       "url": "https://d6storyteller.alexmerced.com",
       "title": "D6 Storyteller",

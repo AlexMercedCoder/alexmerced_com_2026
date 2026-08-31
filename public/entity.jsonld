@@ -48,7 +48,11 @@
         "https://alexmerceddata.com",
         "https://alexmercedmedia.com",
         "https://whoisalexmerced.com",
-        "https://books.alexmerced.com"
+        "https://books.alexmerced.com",
+        "https://alexmercedmusic.com",
+        "https://www.youtube.com/@AlexMercedMusic",
+        "https://soundcloud.com/alexmerced",
+        "https://suno.com/@alexmerced"
       ],
       "mainEntityOfPage": {
         "@id": "https://alexmerced.com/#website"
@@ -1594,6 +1598,25 @@
         "liberty",
         "economics",
         "political commentary"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alexmercedmusic.com/#website",
+      "url": "https://alexmercedmusic.com",
+      "name": "Alex Merced Music",
+      "description": "Catalogue of the music Alex Merced has written, recorded and produced, across acoustic, electronic and AI-assisted work.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "music",
+        "singer songwriter",
+        "acoustic",
+        "electronic music",
+        "FL Studio",
+        "Suno",
+        "AI music"
       ]
     },
     {
