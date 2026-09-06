@@ -9,7 +9,7 @@
       "image": "https://alexmerced.com/alexpics/photo-headshot-charcoal-blazer-turtleneck.webp",
       "email": "mailto:dev@alexmerced.com",
       "jobTitle": "Head of Developer Relations",
-      "description": "Alex Merced is Head of Developer Relations at Dremio, where he teaches and writes about open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI. He is the author of 65 books, including Apache Iceberg: The Definitive Guide (O'Reilly Media), Architecting an Apache Iceberg Lakehouse (Manning Publications), and Apache Polaris: The Definitive Guide (O'Reilly Media). Before moving into data engineering, he spent over a decade in New York City teaching economics and finance to professionals, an experience that shaped his approach to breaking down complex technical subjects. He publishes across a network of technical sites, speaks at data conferences, and hosts podcasts on data and AI.",
+      "description": "Alex Merced is Head of Developer Relations at Dremio, where he teaches and writes about open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI. He is the author of 66 books, including Apache Iceberg: The Definitive Guide (O'Reilly Media), Architecting an Apache Iceberg Lakehouse (Manning Publications), and Apache Polaris: The Definitive Guide (O'Reilly Media). Before moving into data engineering, he spent over a decade in New York City teaching economics and finance to professionals, an experience that shaped his approach to breaking down complex technical subjects. He publishes across a network of technical sites, speaks at data conferences, and hosts podcasts on data and AI.",
       "birthDate": "1985-06-30",
       "worksFor": {
         "@type": "Organization",
@@ -49,6 +49,7 @@
         "https://alexmercedmedia.com",
         "https://whoisalexmerced.com",
         "https://books.alexmerced.com",
+        "https://branding.alexmerced.com",
         "https://alexmercedmusic.com",
         "https://www.youtube.com/@AlexMercedMusic",
         "https://soundcloud.com/alexmerced",
@@ -642,6 +643,21 @@
       },
       "description": "Building the open data lakehouse with the industry standard Iceberg REST catalog.",
       "image": "https://images.amazon.com/images/P/B0GZDVCV24.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/reputation-as-code/#book",
+      "name": "Reputation as Code",
+      "url": "https://books.alexmerced.com/books/reputation-as-code/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The companion book to branding.alexmerced.com, covering personal branding, reputation engineering, and career sovereignty for developers and tech professionals.",
+      "image": "https://images.amazon.com/images/P/B0HHXV4L42.01._SCLZZZZZZZ_.jpg"
     },
     {
       "@type": "Book",
@@ -1241,6 +1257,23 @@
         "technical books",
         "fiction",
         "tabletop rpg"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://branding.alexmerced.com/#website",
+      "url": "https://branding.alexmerced.com",
+      "name": "Branding by Alex Merced",
+      "description": "Personal branding, career sovereignty, and reputation engineering for developers, tech professionals, and creators.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "about": [
+        "personal branding",
+        "career sovereignty",
+        "reputation as code",
+        "developer relations",
+        "content strategy"
       ]
     },
     {
@@ -1862,6 +1895,16 @@
       "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
       "subjectOf": {
         "@id": "https://alexmercedai.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#personal-branding",
+      "name": "Personal Branding & Career Sovereignty",
+      "description": "Personal branding and career sovereignty for software engineers, DevRel professionals, and creators, treating reputation as code and building independent digital equity.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
+        "@id": "https://branding.alexmerced.com/#website"
       }
     }
   ]

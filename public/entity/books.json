@@ -1,7 +1,7 @@
 {
   "$schema": "https://alexmerced.com/entity/schema/books.schema.json",
   "generatedFrom": "books.alexmerced.com list.md + build.py PUBLISHER_OVERRIDES",
-  "count": 65,
+  "count": 66,
   "author": {
     "@id": "https://alexmerced.com/#alexmerced",
     "name": "Alex Merced"
@@ -500,6 +500,19 @@
       "url": "https://www.amazon.com/dp/B0GZDVCV24",
       "cover": "https://images.amazon.com/images/P/B0GZDVCV24.01._SCLZZZZZZZ_.jpg",
       "canonicalPage": "https://books.alexmerced.com/books/the-book-on-apache-polaris/"
+    },
+    {
+      "title": "Reputation as Code",
+      "slug": "reputation-as-code",
+      "category": "Tech",
+      "publisher": "Self-published",
+      "description": "The companion book to branding.alexmerced.com, covering personal branding, reputation engineering, and career sovereignty for developers and tech professionals.",
+      "asin": "B0HHXV4L42",
+      "isbn": null,
+      "flagship": false,
+      "url": "https://www.amazon.com/dp/B0HHXV4L42",
+      "cover": "https://images.amazon.com/images/P/B0HHXV4L42.01._SCLZZZZZZZ_.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/reputation-as-code/"
     },
     {
       "title": "Economic Ideas: From Beginning to Early 2026",

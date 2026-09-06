@@ -111,6 +111,13 @@ const SITES = [
     intro: 'Books on the software and agent infrastructure covered here: building agents, shipping AI systems, and working well with AI tooling day to day.',
   },
   {
+    dir: 'website/2026/branding_alexmerced_com',
+    out: 'src/data/books.json',
+    tags: ['devrel', 'ai-productivity'],
+    order: ['devrel', 'ai-productivity'],
+    intro: 'Books on career sovereignty, developer relations, and personal branding.',
+  },
+  {
     dir: 'website/2026/dataaiwiki',
     out: 'src/data/books.json',
     tags: ['lakehouse', 'iceberg', 'catalogs', 'semantic', 'data-engineering', 'agentic', 'ai-engineering'],

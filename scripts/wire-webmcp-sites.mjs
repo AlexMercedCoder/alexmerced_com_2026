@@ -21,6 +21,7 @@ const BLOG_ROOT = join(ROOT, '..', '..', '..', 'blog');
  */
 const SITES = [
   { repo: 'books-by-alex-merced', assets: '.', domain: 'books.alexmerced.com', packs: ['books'] },
+  { repo: 'branding_alexmerced_com', assets: 'public', domain: 'branding.alexmerced.com', packs: ['biography', 'books'] },
   { repo: 'AlexMercedCoder2026', assets: 'public', domain: 'alexmercedcoder.dev', packs: ['projects'] },
   { repo: 'whoisalexmerced', assets: '.', domain: 'whoisalexmerced.com', packs: ['biography'] },
   { repo: 'alexmercedmediacom', assets: 'public', domain: 'alexmercedmedia.com', packs: ['biography'] },

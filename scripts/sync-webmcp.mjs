@@ -22,6 +22,7 @@ const SOURCE = join(ROOT, 'webmcp', 'alex-merced-webmcp.js');
 const TARGETS = {
   AlexMercedCoder2026: 'public',
   'books-by-alex-merced': '.',
+  branding_alexmerced_com: 'public',
   whoisalexmerced: '.',
   alexmercedmediacom: 'public',
   alexmerceddata: 'public',

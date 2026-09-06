@@ -34,6 +34,7 @@ const REPO_FOR_DOMAIN = {
   'whoisalexmerced.com': 'whoisalexmerced',
   'alexmercedmedia.com': 'alexmercedmediacom',
   'books.alexmerced.com': 'books-by-alex-merced',
+  'branding.alexmerced.com': 'branding_alexmerced_com',
   'alexmercedcoder.dev': 'AlexMercedCoder2026',
   'alexmerceddata.com': 'alexmerceddata',
   'resources.alexmerced.com': 'amresources',

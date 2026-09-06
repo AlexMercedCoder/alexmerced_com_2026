@@ -4,7 +4,7 @@
   "jobTitle": "Head of Developer Relations",
   "employer": "Dremio",
   "url": "https://alexmerced.com",
-  "books": 65,
+  "books": 66,
   "topics": [
     "Open Lakehouse",
     "Apache Iceberg",
@@ -26,7 +26,8 @@
     "Coding Tutorials",
     "Open Agentic Platform",
     "Open Agent Standards",
-    "Agent Governance"
+    "Agent Governance",
+    "Personal Branding & Career Sovereignty"
   ],
   "canonicalEntity": "https://alexmerced.com/#alexmerced",
   "fullEntity": "https://alexmerced.com/entity.json"

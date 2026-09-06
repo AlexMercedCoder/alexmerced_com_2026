@@ -84,6 +84,26 @@
       ]
     },
     {
+      "domain": "branding.alexmerced.com",
+      "url": "https://branding.alexmerced.com",
+      "title": "Branding by Alex Merced",
+      "tier": "person-facet",
+      "role": "Personal branding, career sovereignty, and reputation engineering for developers, tech professionals, and creators.",
+      "purpose": "mastering developer personal branding, reputation engineering, and career sovereignty",
+      "topics": [
+        "personal branding",
+        "career sovereignty",
+        "reputation as code",
+        "developer relations",
+        "content strategy"
+      ],
+      "canonicalFor": [
+        "personal-branding",
+        "career-sovereignty",
+        "reputation-as-code"
+      ]
+    },
+    {
       "domain": "alexmercedcoder.dev",
       "url": "https://alexmercedcoder.dev",
       "title": "Alex Merced: Open Lakehouse & AI Advocate, Author & Technologist",

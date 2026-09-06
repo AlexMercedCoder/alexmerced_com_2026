@@ -529,6 +529,30 @@
         "Evaluating AI Systems: Testing LLMs, RAG, and Agents"
       ],
       "canonicalUrl": "https://www.alexmercedai.com/knowledge-base/explicit-authority"
+    },
+    {
+      "id": "personal-branding",
+      "label": "Personal Branding & Career Sovereignty",
+      "aliases": [
+        "personal branding",
+        "career sovereignty",
+        "developer branding",
+        "reputation engineering",
+        "reputation as code",
+        "devrel branding"
+      ],
+      "primary": "branding.alexmerced.com",
+      "supporting": [
+        "alexmerced.com",
+        "whoisalexmerced.com",
+        "alexmercedcoder.dev"
+      ],
+      "summary": "Personal branding and career sovereignty for software engineers, DevRel professionals, and creators, treating reputation as code and building independent digital equity.",
+      "books": [
+        "Reputation as Code",
+        "Alex Merced's Field Guide to Developer Relations"
+      ],
+      "canonicalUrl": "https://branding.alexmerced.com"
     }
   ]
 }
