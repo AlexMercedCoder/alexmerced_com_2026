@@ -28,6 +28,7 @@ const TARGETS = {
   alexmerceddata: 'public',
   amresources: '.',
   openlakehouse: 'public',
+  'openlakehouse-alexmerced': 'public',
   semanticlakehouse_com: 'public',
   agenticlakehouse: '.',
   dataengnr: 'public',
