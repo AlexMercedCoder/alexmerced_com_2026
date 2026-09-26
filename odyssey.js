@@ -170,8 +170,10 @@ const player = {
 };
 const input = { up:false, down:false, left:false, right:false };
 let enemies = [];
+let projectiles = [];
 let blocked = new Set();
 let modalOpen = false;
+let puzzleCleanup = () => {};
 let soundOn = false;
 let audioContext;
 let last = performance.now();
@@ -202,6 +204,7 @@ function buildZone() {
   // Four small features frame the central open paths without blocking quests.
   const rand = rng(state.chapter+718);
   enemies = [];
+  projectiles = [];
   const spots = [[7,15],[10,7],[16,6],[23,7],[39,7],[48,8],[54,14],[10,25],[19,25],[27,24],[37,24],[49,26],[26,17],[36,18],[55,24],[16,18]];
   for (const [i,[x,y]] of spots.entries()) enemies.push({x:(x+.5)*TILE,y:(y+.5)*TILE,hp: i<9?3:2, speed:.53+rand()*.35, drift:rand()*6, lastHit:0,boss:false});
   if (state.shrines[state.chapter].every(Boolean) && !state.guardians[state.chapter]) spawnGuardian();
@@ -211,7 +214,7 @@ function buildZone() {
 }
 function spawnGuardian() {
   if (enemies.some(e=>e.boss)) return;
-  enemies.push({x:30.5*TILE,y:10.5*TILE,hp:12,speed:.75,drift:0,lastHit:0,boss:true});
+  enemies.push({x:30.5*TILE,y:10.5*TILE,hp:12,speed:.65,drift:0,lastHit:0,boss:true,nextAttack:performance.now()+1500,attackCount:0,warning:null});
   effects.push({text:'GUARDIAN AWAKENS',x:30.5*TILE,y:9*TILE,until:performance.now()+1800,color:'#ffce77'});
   tone(180,.35,'sawtooth');
 }
@@ -219,13 +222,14 @@ function updateHud() {
   els.title.textContent = chapters[state.chapter].name;
   els.health.innerHTML = Array.from({length:6},(_,i)=>'<span class="'+(i<state.health?'heart-full':'heart-empty')+'">♥</span>').join('');
   const done = state.shrines[state.chapter].filter(Boolean).length;
-  els.objective.textContent = state.won ? 'The story lives on. Explore or revisit the network below.' : state.guardians[state.chapter] ? (state.chapter===chapters.length-1 ? 'The final gate is open. Leave the summit to finish.' : 'The guardian is defeated. Travel through the east gate.') : done===3 ? 'Face the guardian near the north end of the central path.' : 'Each shrine needs its nearby tablet OR 1 Insight from a shadow. '+done+'/3 shrines · '+state.shards[state.chapter]+' Insight.';
+  els.objective.textContent = state.won ? 'The story lives on. Explore or revisit the network below.' : state.guardians[state.chapter] ? (state.chapter===chapters.length-1 ? 'The final gate is open. Leave the summit to finish.' : 'The guardian is defeated. Travel through the east gate.') : done===3 ? 'Face the guardian near the north end of the central path. Watch its attack warning.' : 'Each shrine needs its nearby tablet OR 1 Insight from a shadow. '+done+'/3 shrines · '+state.shards[state.chapter]+' Insight.';
   const total = chapters.length*4+1;
   const completed = state.guardians.filter(Boolean).length+state.shrines.flat().filter(Boolean).length+(state.won?1:0);
   els.progress.style.width = (completed/total*100)+'%';
   els.progressLabel.textContent = completed+' of '+total+' milestones · Chapter '+(state.chapter+1)+' of '+chapters.length;
 }
 function modal(title, lines, actions=[], kicker='The Merced Odyssey') {
+  puzzleCleanup(); puzzleCleanup=()=>{};
   modalOpen=true; els.dialog.hidden=false; els.dialogTitle.textContent=title; els.dialogKicker.textContent=kicker;
   els.dialogBody.replaceChildren(); els.dialogActions.replaceChildren();
   for (const line of lines) {
@@ -238,7 +242,7 @@ function modal(title, lines, actions=[], kicker='The Merced Odyssey') {
   }
   document.querySelector('#dialog-close').focus();
 }
-function closeModal() { modalOpen=false; els.dialog.hidden=true; canvas.focus(); }
+function closeModal() { puzzleCleanup(); puzzleCleanup=()=>{}; modalOpen=false; els.dialog.hidden=true; Object.keys(input).forEach(k=>input[k]=false); canvas.focus(); }
 document.querySelector('#dialog-close').addEventListener('click',closeModal);
 els.dialog.addEventListener('click',e=>{if(e.target===els.dialog)closeModal();});
 
@@ -252,7 +256,7 @@ function begin() {
 }
 document.querySelector('#start-button').addEventListener('click',begin);
 document.querySelector('#help-button').addEventListener('click',()=>modal('How to play',[
-  'Explore each scrolling chapter from west to east. Reading a nearby tablet or defeating a shadow activates a shrine. Defeated shadows grant insight automatically. Answer the three shrines, then defeat the guardian to open the east gate.',
+  'Explore each scrolling chapter from west to east. Reading a nearby tablet or defeating a shadow activates a shrine. Defeated shadows grant insight automatically. Later worlds have special first-shrine challenges: rhythm, relays, circuits, streams, library rooms, and a companion. Defeat the guardian to open the east gate.',
   'Move: WASD or arrow keys. Talk or use: E. Attack: Space. Journal: J. Close dialog: Esc. On touch screens, use the controls below the game.',
   'A fountain near the entrance restores your hearts. If hearts run out, you restart the current area while keeping solved shrines and defeated guardians. Progress saves automatically in local storage.'
 ],[{label:'Return to adventure',run:closeModal}],'Guide'));
@@ -305,7 +309,8 @@ function solveShrine(i) {
     run:()=>{
       if(idx===q[2]){
         tone(840,.2);
-        runeChallenge(i,q[3]);
+        if(i===0 && [1,2,4,5,6,7].includes(state.chapter))signatureChallenge(state.chapter,i,q[3]);
+        else runeChallenge(i,q[3]);
       } else {
         state.health=Math.max(1,state.health-1);save();updateHud();tone(160,.18,'sawtooth');
         modal('The memory flickers',['That answer does not fit the clue. The shrine dimmed one heart, but you can try again.','Hint: '+q[3]],[{label:'Try again',primary:true,run:()=>solveShrine(i)},{label:'Explore more',run:closeModal}],'Keep learning');
@@ -343,6 +348,163 @@ function repeatRunes(i,answer,sequence,glyphs,step) {
     }})),
     {label:'Study again',run:()=>runeChallenge(i,answer)}
   ],'Shrine '+(i+1)+' · light puzzle');
+}
+function puzzleButton(label,run,parent=els.dialogBody,className='') {
+  const b=document.createElement('button'); b.type='button'; b.textContent=label;
+  if(className)b.className=className;
+  b.addEventListener('click',run);parent.append(b);return b;
+}
+function puzzleStatus(message) {
+  let p=els.dialogBody.querySelector('.puzzle-status');
+  if(!p){p=document.createElement('p');p.className='puzzle-status';p.setAttribute('role','status');els.dialogBody.append(p);}
+  p.textContent=message;
+}
+function signatureChallenge(chapter,i,answer) {
+  const finish=()=>completeShrine(i,answer);
+  if(chapter===1)musicPuzzle(finish);
+  if(chapter===2)radioPuzzle(finish);
+  if(chapter===4)workshopPuzzle(finish);
+  if(chapter===5)lakehousePuzzle(finish);
+  if(chapter===6)libraryPuzzle(finish);
+  if(chapter===7)companionPuzzle(finish);
+}
+function musicPuzzle(finish) {
+  modal('The Music Grove · Keep the beat',['Tap along with the five golden beats as the playhead moves. The grove gives you a wide timing window; missed notes can be retried.'],[], 'Signature challenge · rhythm');
+  const beats=[0,1,2,4,6],length=8,stepMs=620;
+  const track=document.createElement('div');track.className='rhythm-track';els.dialogBody.append(track);
+  const cells=Array.from({length},(_,n)=>{const cell=document.createElement('span');cell.textContent=beats.includes(n)?'♪':'·';cell.className=beats.includes(n)?'beat target':'beat';track.append(cell);return cell;});
+  let start=0,hit=new Set(),raf=0,playing=false;
+  const tap=()=>{
+    if(!playing)return;
+    const beat=(performance.now()-start)/stepMs;
+    const nearest=beats.find(n=>!hit.has(n)&&Math.abs(beat-n-.5)<.42);
+    if(nearest===undefined){puzzleStatus('That tap fell between notes. Keep listening to the pulse.');tone(180,.08);return;}
+    hit.add(nearest);cells[nearest].classList.add('hit');tone(420+nearest*75,.12,'triangle');
+    puzzleStatus(hit.size+' of '+beats.length+' beats played.');
+    if(hit.size===beats.length){playing=false;cancelAnimationFrame(raf);finish();}
+  };
+  const tick=()=>{
+    if(!playing)return;
+    const beat=(performance.now()-start)/stepMs;
+    cells.forEach((cell,n)=>cell.classList.toggle('current',Math.floor(beat)===n));
+    if(beat>=length){playing=false;puzzleStatus('The phrase ended. Press Replay and try the rhythm again.');return;}
+    raf=requestAnimationFrame(tick);
+  };
+  const begin=()=>{cancelAnimationFrame(raf);hit=new Set();cells.forEach(c=>c.classList.remove('hit','current'));start=performance.now();playing=true;puzzleStatus('Phrase playing · tap each golden ♪ as it passes.');tick();};
+  puzzleButton('Start / replay the phrase',begin,els.dialogActions,'primary');
+  puzzleButton('Tap beat',tap,els.dialogActions);
+  puzzleStatus('Press Start, then use Tap beat or Space.');
+  const key=e=>{if(e.code==='Space'){e.preventDefault();e.stopImmediatePropagation();tap();}};
+  window.addEventListener('keydown',key,true);
+  puzzleCleanup=()=>{cancelAnimationFrame(raf);window.removeEventListener('keydown',key,true);};
+}
+const PIPE_N=1,PIPE_E=2,PIPE_S=4,PIPE_W=8;
+function radioPuzzle(finish) {
+  modal('WBGU-FM · Restore the signal',['Rotate the copper relays until a continuous line carries the broadcast from IN on the left to OUT on the right.'],[], 'Signature challenge · radio relays');
+  const base=[PIPE_E|PIPE_S,PIPE_E|PIPE_S,PIPE_W|PIPE_S,PIPE_N|PIPE_S,
+    PIPE_E|PIPE_W,PIPE_W|PIPE_N,PIPE_N|PIPE_S,PIPE_E|PIPE_S,
+    PIPE_N|PIPE_E,PIPE_N|PIPE_S,PIPE_N|PIPE_E,PIPE_W|PIPE_E,
+    PIPE_E|PIPE_W,PIPE_N|PIPE_E,PIPE_W|PIPE_N,PIPE_N|PIPE_S];
+  const turns=[1,2,1,0,1,2,1,2,0,1,2,1,0,2,1,0];
+  let bits=base.map((mask,n)=>{for(let j=0;j<turns[n];j++)mask=((mask<<1)&15)|(mask>>3);return mask;});
+  const grid=document.createElement('div');grid.className='puzzle-grid relay-grid';els.dialogBody.append(grid);
+  const connected=()=>{
+    const seen=new Set([4]),queue=[4];
+    while(queue.length){const n=queue.shift(),x=n%4,y=Math.floor(n/4),mask=bits[n];
+      if(n===11 && (mask&PIPE_E))return true;
+      for(const [bit,opposite,dx,dy] of [[PIPE_N,PIPE_S,0,-1],[PIPE_E,PIPE_W,1,0],[PIPE_S,PIPE_N,0,1],[PIPE_W,PIPE_E,-1,0]]){
+        const xx=x+dx,yy=y+dy,to=yy*4+xx;
+        if(!(mask&bit)||xx<0||xx>3||yy<0||yy>3||!(bits[to]&opposite)||seen.has(to))continue;
+        seen.add(to);queue.push(to);
+      }
+    }return false;
+  };
+  const draw=(focusIndex=-1)=>{grid.replaceChildren();bits.forEach((mask,n)=>{
+    const b=puzzleButton('',()=>{bits[n]=((bits[n]<<1)&15)|(bits[n]>>3);tone(380,.06);draw(n);if((bits[4]&PIPE_W)&&connected())finish();},grid,'pipe-tile');
+    b.setAttribute('aria-label','Rotate relay row '+(Math.floor(n/4)+1)+', column '+(n%4+1)+'. Ports '+[['north',PIPE_N],['east',PIPE_E],['south',PIPE_S],['west',PIPE_W]].filter(([,bit])=>mask&bit).map(([name])=>name).join(' and '));
+    for(const [dir,bit] of [['n',PIPE_N],['e',PIPE_E],['s',PIPE_S],['w',PIPE_W]])if(mask&bit){const arm=document.createElement('span');arm.className='pipe-arm '+dir;b.append(arm);}
+    const core=document.createElement('span');core.className='pipe-core';b.append(core);
+    if(n===4)b.dataset.terminal='IN';if(n===11)b.dataset.terminal='OUT';
+  });if(focusIndex>=0)grid.children[focusIndex]?.focus();};draw();
+  puzzleStatus('IN enters row 2. OUT leaves row 3. Click a relay to rotate it clockwise.');
+}
+function workshopPuzzle(finish) {
+  modal('Builder’s Workshop · Complete the circuit',['Push both copper blocks onto the glowing sockets. Alex can walk around them, but cannot pull a block. Use arrow keys or the buttons.'],[], 'Signature challenge · block puzzle');
+  const walls=new Set(),targets=new Set(['4,2','4,4']);
+  ['#######','#.....#','#.....#','#..#..#','#.....#','#######'].forEach((row,y)=>[...row].forEach((v,x)=>{if(v==='#')walls.add(x+','+y);}));
+  let hero=[1,4],boxes=new Set(['2,2','3,4']);
+  const board=document.createElement('div');board.className='puzzle-grid workshop-grid';els.dialogBody.append(board);
+  const render=()=>{board.replaceChildren();for(let y=0;y<6;y++)for(let x=0;x<7;x++){
+    const key=x+','+y,t=document.createElement('span');t.className='workshop-cell '+(walls.has(key)?'wall':boxes.has(key)?'block':hero[0]===x&&hero[1]===y?'hero':targets.has(key)?'socket':'floor');
+    t.textContent=boxes.has(key)?'▣':hero[0]===x&&hero[1]===y?'A':targets.has(key)?'✦':'';board.append(t);
+  }};
+  const move=(dx,dy)=>{const nx=hero[0]+dx,ny=hero[1]+dy,key=nx+','+ny,beyond=(nx+dx)+','+(ny+dy);
+    if(walls.has(key))return;
+    if(boxes.has(key)){if(walls.has(beyond)||boxes.has(beyond))return;boxes.delete(key);boxes.add(beyond);tone(320,.09);}
+    hero=[nx,ny];render();
+    if([...targets].every(t=>boxes.has(t)))finish();
+  };
+  const pad=document.createElement('div');pad.className='puzzle-pad';els.dialogActions.append(pad);
+  for(const [label,dx,dy] of [['↑',0,-1],['←',-1,0],['↓',0,1],['→',1,0]])puzzleButton(label,()=>move(dx,dy),pad);
+  puzzleButton('Reset circuit',()=>{hero=[1,4];boxes=new Set(['2,2','3,4']);render();},els.dialogActions);
+  render();puzzleStatus('Push each block onto a ✦ socket.');
+  const key=e=>{const d={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0]}[e.code];if(d){e.preventDefault();e.stopImmediatePropagation();move(...d);}};
+  window.addEventListener('keydown',key,true);puzzleCleanup=()=>window.removeEventListener('keydown',key,true);
+}
+function lakehousePuzzle(finish) {
+  modal('Open Lakehouse · Route the stream',['Open valves to carry the blue stream from SOURCE through an open table and catalog to QUERY. Close any route that sends data into the red shadow sink.'],[], 'Signature challenge · flow gates');
+  const edges=[['SOURCE','ICEBERG'],['SOURCE','SILO'],['ICEBERG','POLARIS'],['ICEBERG','SILO'],['SILO','SHADOW'],['POLARIS','QUERY'],['SILO','QUERY']];
+  const open=new Set([1,3,4,6]);
+  const flow=()=>{const reached=new Set(['SOURCE']);let changed=true;while(changed){changed=false;edges.forEach(([a,b],n)=>{if(open.has(n)&&reached.has(a)&&!reached.has(b)){reached.add(b);changed=true;}});}return reached;};
+  const panel=document.createElement('div');panel.className='flow-panel';els.dialogBody.append(panel);
+  const draw=(focusIndex=-1)=>{panel.replaceChildren();const reached=flow();
+    edges.forEach(([a,b],n)=>{const button=puzzleButton((open.has(n)?'● OPEN  ':'○ CLOSED')+'  '+a+' → '+b,()=>{if(open.has(n))open.delete(n);else open.add(n);tone(open.has(n)?580:240,.07);draw(n);},panel,'valve '+(open.has(n)?'open':''));button.setAttribute('aria-pressed',String(open.has(n)));});
+    if(focusIndex>=0)panel.children[focusIndex]?.focus();
+    puzzleStatus('Stream reaches: '+[...reached].join(' → ')+(reached.has('SHADOW')?' · Shadow sink active!':''));
+  };draw();
+  puzzleButton('Test the stream',()=>{const reached=flow();if(reached.has('QUERY')&&reached.has('POLARIS')&&!reached.has('SHADOW'))finish();else puzzleStatus(reached.has('SHADOW')?'The shadow sink is receiving data. Close its route.':'The stream needs an open path through ICEBERG and POLARIS to QUERY.');},els.dialogActions,'primary');
+}
+function libraryPuzzle(finish) {
+  const pages=new Set();let room='foyer';
+  const rooms={
+    foyer:{title:'The Crossroads',text:'A sign reads: melodies in the west wing, open data in the north wing, stories in the east wing.',links:[['West · Music archive','music'],['North · Data stacks','data'],['East · Story gallery','story'],['South · Constellation door','exit']]},
+    music:{title:'Music archive',text:'A guitar chord echoes behind the Studio door. The Silent Exhibit offers no sound at all.',links:[['Follow the guitar to the Studio','studio'],['Enter the Silent Exhibit','silent'],['Return to crossroads','foyer']]},
+    studio:{title:'Recording Studio',text:'Acoustic songs and electronic arrangements share a melody page.',page:'Melody',links:[['Return to music archive','music']]},
+    silent:{title:'Silent Exhibit',text:'The empty room holds no melody. A guitar chord still sounds beyond the door.',links:[['Return to music archive','music']]},
+    data:{title:'Data stacks',text:'A note points toward the open Polaris catalog. A sealed warehouse stands beside it.',links:[['Enter the Polaris alcove','polaris'],['Inspect the sealed warehouse','warehouse'],['Return to crossroads','foyer']]},
+    polaris:{title:'Polaris Alcove',text:'An open knowledge page rests beside the catalog.',page:'Open knowledge',links:[['Return to data stacks','data']]},
+    warehouse:{title:'Sealed Warehouse',text:'The shelves are shut. The note said to seek the open catalog.',links:[['Return to data stacks','data']]},
+    story:{title:'Story gallery',text:'A six-sided die points toward the tabletop hall. A blank stage leads elsewhere.',links:[['Follow the die to the tabletop hall','tabletop'],['Step onto the blank stage','stage'],['Return to crossroads','foyer']]},
+    tabletop:{title:'Tabletop Hall',text:'D6 Storyteller holds a page about creating worlds together.',page:'Storytelling',links:[['Return to story gallery','story']]},
+    stage:{title:'Blank Stage',text:'The unwritten scene asks for a storyteller. The die still points down the hall.',links:[['Return to story gallery','story']]},
+    exit:{title:'Constellation door',text:'Three collected pages illuminate three locks.',links:[['Return to crossroads','foyer']]}
+  };
+  const visit=id=>{room=id;const r=rooms[id];if(r.page)pages.add(r.page);
+    modal('Library · '+r.title,[r.text,'Journal pages: '+([...pages].join(', ')||'none')+' · '+pages.size+'/3'],[], 'Signature challenge · branching rooms');
+    if(id==='exit'&&pages.size===3){puzzleButton('Open the constellation door',finish,els.dialogActions,'primary');return;}
+    if(id==='exit')puzzleStatus('The door needs a page from each wing.');
+    r.links.forEach(([label,next])=>puzzleButton(label,()=>visit(next),els.dialogActions));
+  };visit(room);
+}
+function companionPuzzle(finish) {
+  modal('Agentic Summit · Work together',['Guide Alex to the exit. Switch to the companion, move them onto the ✦ pressure plate, then guide Alex through the opened gate.'],[], 'Signature challenge · companion');
+  const walls=new Set();['#######','#...GE#','#...#.#','#...#.#','#######'].forEach((row,y)=>[...row].forEach((v,x)=>{if(v==='#')walls.add(x+','+y);}));
+  let alex=[1,1],companion=[1,3],active='companion';const plate='3,3',gate='4,1',exit='5,1';
+  const board=document.createElement('div');board.className='puzzle-grid companion-grid';els.dialogBody.append(board);
+  const render=()=>{board.replaceChildren();for(let y=0;y<5;y++)for(let x=0;x<7;x++){
+    const k=x+','+y,cell=document.createElement('span');cell.className='companion-cell '+(walls.has(k)?'wall':k===gate?(companion.join(',')===plate?'gate-open':'gate-closed'):k===plate?'plate':k===exit?'exit':'floor');
+    if(alex[0]===x&&alex[1]===y){cell.textContent='A';cell.classList.add('actor');}else if(companion[0]===x&&companion[1]===y){cell.textContent='✹';cell.classList.add('actor');}else if(k===plate)cell.textContent='✦';else if(k===gate)cell.textContent=companion.join(',')===plate?'░':'▥';else if(k===exit)cell.textContent='◈';board.append(cell);
+  }puzzleStatus((companion.join(',')===plate?'Gate open. ':'Gate closed. ')+(active==='alex'?'Moving Alex.':'Commanding companion.'));};
+  const move=(dx,dy)=>{const actor=active==='alex'?alex:companion,nx=actor[0]+dx,ny=actor[1]+dy,k=nx+','+ny;
+    if(nx<0||nx>6||ny<0||ny>4||walls.has(k)||k===(active==='alex'?companion:alex).join(',')||k===gate&&companion.join(',')!==plate||active==='companion'&&nx>=4)return;
+    actor[0]=nx;actor[1]=ny;tone(active==='alex'?500:690,.06);render();if(alex.join(',')===exit)finish();
+  };
+  const toggle=puzzleButton('Commanding companion · switch to Alex',()=>{active=active==='alex'?'companion':'alex';toggle.textContent=active==='alex'?'Moving Alex · switch to companion':'Commanding companion · switch to Alex';render();},els.dialogActions,'primary');
+  const pad=document.createElement('div');pad.className='puzzle-pad';els.dialogActions.append(pad);
+  for(const [label,dx,dy] of [['↑',0,-1],['←',-1,0],['↓',0,1],['→',1,0]])puzzleButton(label,()=>move(dx,dy),pad);
+  render();
+  const key=e=>{const d={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0]}[e.code];if(d){e.preventDefault();e.stopImmediatePropagation();move(...d);}};
+  window.addEventListener('keydown',key,true);puzzleCleanup=()=>window.removeEventListener('keydown',key,true);
 }
 function completeShrine(i,answer) {
   state.shrines[state.chapter][i]=true;
@@ -441,6 +603,7 @@ function resolveAttackHits(now) {
       effects.push({text:'INSIGHT +1',x:enemy.x,y:enemy.y-22,until:now+1100,color:'#a8fff0'});
     }
     if(enemy.hp<=0 && enemy.boss){
+      projectiles=[];
       state.guardians[state.chapter]=true;save();updateHud();
       modal('Guardian of '+chapters[state.chapter].name+' defeated',[
         'The shadow lifts and the east gate opens.',
@@ -484,6 +647,35 @@ function hurt(amount=1) {
     modal('A small setback',['The shadows pushed you back to the entrance of this chapter. Your solved shrines and defeated guardians are safe. Rest at the fountain, then try again.'],[{label:'Try again',primary:true,run:closeModal}],'Keep going');
   } else {save();updateHud();}
 }
+const guardianMoves=[['charge'],['pulse'],['bolts'],['summon'],['charge','bolts'],['pulse','summon'],['bolts','pulse'],['charge','pulse','bolts']];
+function guardianAttack(e,now) {
+  if(!e.warning && now>=e.nextAttack){
+    if(Math.hypot(player.x-e.x,player.y-e.y)>280)return;
+    const moves=guardianMoves[state.chapter];
+    const type=moves[e.attackCount++%moves.length];
+    e.warning={type,until:now+850,targetX:player.x,targetY:player.y};
+    effects.push({text:{charge:'CHARGE!',pulse:'PULSE!',bolts:'BOLTS!',summon:'SUMMON!'}[type],x:e.x,y:e.y-60,until:now+900,color:'#ffe0a2'});
+    tone(185,.18,'sawtooth');
+  }
+  if(!e.warning||now<e.warning.until)return;
+  const {type,targetX,targetY}=e.warning;e.warning=null;e.nextAttack=now+2300;
+  if(type==='charge'){
+    const angle=Math.atan2(targetY-e.y,targetX-e.x),dx=Math.cos(angle),dy=Math.sin(angle);
+    for(let step=0;step<11;step++){
+      if(free(e.x+dx*12,e.y+dy*12,18)){e.x+=dx*12;e.y+=dy*12;}
+      if(Math.hypot(player.x-e.x,player.y-e.y)<30)hurt(2);
+    }
+    effects.push({text:'WHOOSH',x:e.x,y:e.y-35,until:now+500,color:'#ffbfba'});
+  }else if(type==='pulse'){
+    if(Math.hypot(player.x-e.x,player.y-e.y)<95)hurt(1);
+    effects.push({text:'✦ PULSE ✦',x:e.x,y:e.y-35,until:now+600,color:'#f5baff'});
+  }else if(type==='bolts'){
+    const angle=Math.atan2(targetY-e.y,targetX-e.x);
+    for(const spread of [-.3,0,.3])projectiles.push({x:e.x,y:e.y-18,vx:Math.cos(angle+spread)*2.5,vy:Math.sin(angle+spread)*2.5,until:now+2100});
+  }else if(type==='summon'&&enemies.filter(shadow=>shadow.hp>0&&!shadow.boss).length<20){
+    for(const side of [-1,1])enemies.push({x:e.x+side*65,y:e.y+45,hp:2,speed:.9,drift:side,lastHit:0,boss:false});
+  }
+}
 function update(dt,now) {
   if(!state.started||modalOpen)return;
   resolveAttackHits(now);
@@ -502,8 +694,9 @@ function update(dt,now) {
   if(player.moving)player.walkDistance+=moved;
   for(const e of enemies){
     if(e.hp<=0)continue;
+    if(e.boss)guardianAttack(e,now);
     const ex=player.x-e.x,ey=player.y-e.y,d=Math.hypot(ex,ey);
-    if(d<130 && d>17){
+    if(d<130 && d>17 && (!e.boss||!e.warning)){
       const speed=e.speed*dt*(e.boss?1.25:1);
       if(free(e.x+ex/d*speed,e.y))e.x+=ex/d*speed;
       if(free(e.x,e.y+ey/d*speed))e.y+=ey/d*speed;
@@ -514,6 +707,11 @@ function update(dt,now) {
     }
     if(d<22 && now>e.lastHit+800){e.lastHit=now;hurt(e.boss?2:1);}
   }
+  for(const bolt of projectiles){
+    bolt.x+=bolt.vx*dt;bolt.y+=bolt.vy*dt;
+    if(Math.hypot(player.x-bolt.x,player.y-12-bolt.y)<16){hurt(1);bolt.until=0;}
+  }
+  projectiles=projectiles.filter(b=>b.until>now);
   const item=nearestInteractable();
   els.prompt.textContent=item?'E / Tap Talk · '+item.label:'';
   els.prompt.classList.toggle('is-visible',!!item);
@@ -626,6 +824,7 @@ function drawAttack(now){
   if(sprite(art.slash,frame,row,x,y,100,100))return;
   // The generated effect remains optional while its image is loading.
   const angle={down:Math.PI/2,left:Math.PI,right:0,up:-Math.PI/2}[player.attackFacing];
+  const progress=(now-player.attackStart)/(player.attackUntil-player.attackStart);
   const centerX=player.x+Math.cos(angle)*32,centerY=player.y-15+Math.sin(angle)*32;
   ctx.save();
   ctx.globalAlpha=1-((now-player.attackStart)/(player.attackUntil-player.attackStart))*.45;
@@ -637,6 +836,13 @@ function drawAttack(now){
 function drawEnemy(e,now){
   if(e.hp<=0)return;
   const x=Math.round(e.x),y=Math.round(e.y),size=e.boss?19:11;
+  if(e.boss&&e.warning){
+    ctx.save();ctx.strokeStyle='#ffb1a8';ctx.lineWidth=3;ctx.setLineDash([7,5]);
+    if(e.warning.type==='charge'){ctx.beginPath();ctx.moveTo(x,y-12);ctx.lineTo(e.warning.targetX,e.warning.targetY);ctx.stroke();}
+    else if(e.warning.type==='pulse'){ctx.beginPath();ctx.arc(x,y,95,0,Math.PI*2);ctx.stroke();}
+    else {ctx.beginPath();ctx.arc(x,y,38,0,Math.PI*2);ctx.stroke();}
+    ctx.restore();
+  }
   glow(x,y,size+5,e.boss?'#e976af':'#a691d1',now);
   if(sprite(art.terrain,e.boss?2:0,0,x-(e.boss?43:24),y-(e.boss?57:32),e.boss?86:48,e.boss?86:48)){
     if(e.boss){rect(x-20,y-48,40,5,'#25253e');rect(x-20,y-48,40*(e.hp/12),5,'#ff8d9b');}
@@ -679,6 +885,7 @@ function render(now){
     rect(f[0]*TILE-14,f[1]*TILE+2,28,10,'#495b79');rect(f[0]*TILE-10,f[1]*TILE-4,20,10,'#72e1e8');rect(f[0]*TILE-2,f[1]*TILE-15,4,15,'#d7ffff');
   }
   for(const e of enemies)drawEnemy(e,now);
+  for(const bolt of projectiles){glow(bolt.x,bolt.y,12,'#ffb1d9',now);rect(bolt.x-5,bolt.y-5,10,10,'#fff0b2');rect(bolt.x-2,bolt.y-2,4,4,'#a35baf');}
   if(player.attackFacing==='up')drawAttack(now);
   drawPlayer(now);
   if(player.attackFacing!=='up')drawAttack(now);
