@@ -10,6 +10,7 @@ export default defineConfig({
         personal: resolve(__dirname, 'personal.html'),
         press_kit: resolve(__dirname, 'press_kit.html'),
         bio: resolve(__dirname, 'bio.html'),
+        game: resolve(__dirname, 'game.html'),
         '404': resolve(__dirname, '404.html'),
       },
     },

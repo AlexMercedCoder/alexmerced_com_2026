@@ -5,6 +5,8 @@ https://bio.alexmerced.com/  /bio.html  200!
 /professional.html  /professional  301
 /personal.html      /personal      301
 /press_kit.html     /press_kit     301
+/game.html          /game          301
+/game               /game.html     200
 
 # Legacy path redirects
 /web          /             301

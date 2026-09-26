@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151b36">
+  <meta name="description" content="Play The Merced Odyssey, a browser-only pixel adventure through Alex Merced's music, teaching, code, books, and data worlds.">
+  <link rel="canonical" href="https://alexmerced.com/game">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <title>The Merced Odyssey · Alex Merced</title>
+  <link rel="stylesheet" href="/game.css">
+</head>
+<body>
+  <a class="skip" href="#game-main">Skip to game</a>
+  <header class="site-header">
+    <a class="brand" href="/">✦ Alex Merced</a>
+    <nav aria-label="Main navigation"><a href="/">Home</a><a href="/professional">Professional</a><a href="/personal">Personal</a><a href="/game" aria-current="page">Game</a><a href="https://alexmerced.blog">Blog</a></nav>
+  </header>
+  <main id="game-main">
+    <section class="hero" aria-labelledby="game-title">
+      <div class="hero__content">
+        <p class="eyebrow">A browser adventure · Save locally · About 45–60 minutes</p>
+        <h1 id="game-title">The Merced Odyssey</h1>
+        <p>Eight worlds. One curious mind. Recover the Sparks of Curiosity and help the ideas that shaped Alex find their way home.</p>
+        <button id="start-button" class="primary-button">Begin adventure</button>
+      </div>
+    </section>
+    <section class="game-shell" aria-label="The Merced Odyssey game">
+      <div class="game-topline"><div><span class="eyebrow">Current chapter</span><h2 id="chapter-title">Hartford Beginnings</h2></div><div class="top-buttons"><button id="journal-button" type="button">Journal <kbd>J</kbd></button><button id="help-button" type="button">Help</button><button id="sound-button" type="button" aria-pressed="false">Sound off</button></div></div>
+      <div class="game-hud"><div class="portrait-wrap"><img src="/game/alex-portrait.png" alt="Pixel art portrait of Alex Merced in a blue blazer"></div><div class="hud-body"><div id="health" class="health" aria-label="Health"></div><div id="objective" class="objective"></div><div class="progress"><div id="progress-fill"></div></div><div id="progress-label" class="progress-label"></div></div></div>
+      <div class="canvas-wrap"><canvas id="game" width="960" height="576" tabindex="0" aria-label="Top-down adventure world. Use WASD or arrow keys to move, space to attack, and E to interact."></canvas><div id="prompt" class="world-prompt" aria-live="polite"></div></div>
+      <div class="touch-controls" aria-label="Touch controls"><div class="dpad"><button data-move="up" aria-label="Move up">▲</button><div><button data-move="left" aria-label="Move left">◀</button><button data-move="down" aria-label="Move down">▼</button><button data-move="right" aria-label="Move right">▶</button></div></div><div class="action-pad"><button id="touch-attack">Attack</button><button id="touch-interact">Talk / Use</button></div></div>
+      <div class="below-game"><p><strong>Move</strong> WASD / arrows · <strong>Talk / use</strong> E · <strong>Attack</strong> Space · <strong>Journal</strong> J · <strong>Close</strong> Esc</p><p>Your progress stays in this browser. The adventure works offline after its files are loaded.</p></div>
+    </section>
+    <section class="story-note"><h2>The real story behind the quest</h2><p>The places and ideas in this game are inspired by Alex's own sites. Read more about his <a href="https://whoisalexmerced.com/" target="_blank" rel="noopener">life and career</a>, <a href="https://alexmercedmusic.com/" target="_blank" rel="noopener">music</a>, <a href="https://books.alexmerced.com/" target="_blank" rel="noopener">books</a>, and <a href="https://alexmercedcoder.dev/" target="_blank" rel="noopener">software projects</a>.</p></section>
+  </main>
+  <div id="dialog" class="dialog-backdrop" hidden><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><div class="dialog-heading"><span class="eyebrow" id="dialog-kicker">The Merced Odyssey</span><button id="dialog-close" class="icon-button" aria-label="Close dialog">×</button></div><h2 id="dialog-title"></h2><div id="dialog-body"></div><div id="dialog-actions"></div></div></div>
+  <footer><a href="/">AlexMerced.com</a> · An original browser game inspired by the Alex Merced network.</footer>
+  <script type="module" src="/odyssey.js"></script>
+</body>
+</html>
