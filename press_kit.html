@@ -224,6 +224,8 @@
     .press-book-card img {
       width: 100%;
       max-width: 160px;
+      aspect-ratio: 2 / 3;
+      object-fit: contain;
       border: 1px solid var(--color-border, #e0d8cc);
       border-radius: 2px;
     }
@@ -403,7 +405,7 @@
       </div>
       <div class="nav__actions">
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -418,7 +420,7 @@
         <div class="press-hero__inner">
           <picture class="press-hero__picture">
             <source srcset="/alexpics/photo-headshot-dremio-beanie-blazer.webp" type="image/webp">
-            <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — official headshot" class="press-hero__photo">
+            <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — official headshot" class="press-hero__photo" width="1086" height="1448">
           </picture>
           <div>
             <h1 class="press-hero__name">Alex Merced</h1>
@@ -911,7 +913,7 @@
           <div class="headshot-item">
             <picture>
               <source srcset="/alexpics/photo-headshot-dremio-beanie-blazer.webp" type="image/webp">
-              <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — professional headshot, Dremio beanie and blazer" loading="lazy">
+              <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — professional headshot, Dremio beanie and blazer" loading="lazy" width="1086" height="1448">
             </picture>
             <div class="headshot-item__caption">Official headshot — blazer & Dremio beanie</div>
             <a href="/alexpics/photo-headshot-dremio-beanie-blazer.png" download>Download PNG ↓</a>
@@ -919,13 +921,13 @@
           <div class="headshot-item">
             <picture>
               <source srcset="/alexpics/photo-headshot-dremio-tee-blazer.webp" type="image/webp">
-              <img src="/alexpics/photo-headshot-dremio-tee-blazer.png" alt="Alex Merced — professional headshot, Dremio tee and blazer" loading="lazy">
+              <img src="/alexpics/photo-headshot-dremio-tee-blazer.png" alt="Alex Merced — professional headshot, Dremio tee and blazer" loading="lazy" width="1086" height="1448">
             </picture>
             <div class="headshot-item__caption">Alternate headshot — tee & blazer</div>
             <a href="/alexpics/photo-headshot-dremio-tee-blazer.png" download>Download PNG ↓</a>
           </div>
           <div class="headshot-item">
-            <img src="/alexpics/portrait-casual-painted.jpg" alt="Alex Merced — casual portrait, painted style" loading="lazy">
+            <img src="/alexpics/portrait-casual-painted.jpg" alt="Alex Merced — casual portrait, painted style" loading="lazy" width="1024" height="1536">
             <div class="headshot-item__caption">Casual portrait</div>
             <a href="/alexpics/portrait-casual-painted.jpg" download>Download JPG ↓</a>
           </div>

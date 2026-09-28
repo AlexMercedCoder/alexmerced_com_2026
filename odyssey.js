@@ -114,12 +114,23 @@ const art = {
   terrain: new Image(),
   floor: new Image()
 };
-art.hero.src='/game/alex-adventurer.png';
-art.walk.src='/game/alex-walk-sheet.png';
-art.slash.src='/game/arc-attack-sheet.png';
-art.world.src='/game/world-atlas.png';
-art.terrain.src='/game/terrain-atlas.png';
-art.floor.src='/game/floor-atlas.png';
+const artFiles = {
+  hero: '/game/alex-adventurer.webp',
+  walk: '/game/alex-walk-sheet.webp',
+  slash: '/game/arc-attack-sheet.webp',
+  world: '/game/world-atlas.webp',
+  terrain: '/game/terrain-atlas.webp',
+  floor: '/game/floor-atlas.webp'
+};
+let artLoad;
+function loadArt() {
+  artLoad ||= Promise.all(Object.entries(artFiles).map(([name,src])=>new Promise(resolve=>{
+    art[name].onload=resolve;
+    art[name].onerror=resolve; // The procedural fallback still keeps the adventure playable.
+    art[name].src=src;
+  })));
+  return artLoad;
+}
 function sprite(img,col,row,x,y,w,h) {
   if(!img.complete || !img.naturalWidth)return false;
   const cw=img.naturalWidth/4,ch=img.naturalHeight/4;
@@ -246,7 +257,11 @@ function closeModal() { puzzleCleanup(); puzzleCleanup=()=>{}; modalOpen=false; 
 document.querySelector('#dialog-close').addEventListener('click',closeModal);
 els.dialog.addEventListener('click',e=>{if(e.target===els.dialog)closeModal();});
 
-function begin() {
+async function begin() {
+  const button=document.querySelector('#start-button');
+  button.disabled=true;button.textContent='Loading game art…';
+  await loadArt();
+  button.disabled=false;button.textContent='Begin adventure';
   state.started=true; save(); canvas.scrollIntoView({behavior:'smooth',block:'center'});
   player.invulnerableUntil=performance.now()+3000;
   modal(state.won ? 'A story to revisit' : 'A spark of curiosity', [

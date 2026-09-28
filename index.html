@@ -465,7 +465,7 @@
       </div>
       <div class="nav__actions">
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -473,7 +473,8 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="main-content">
+  <main id="main-content">
+  <section class="hero">
     <svg class="hero__viz" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
       <defs>
         <pattern id="hv-grid" width="45" height="45" patternUnits="userSpaceOnUse">
@@ -610,8 +611,8 @@
           </div>
           <a href="/professional" class="btn btn--pro">Explore Professional World →</a>
         </div>
-        <div class="featured-img">
-          <img src="/alexpics/action-figure-lakehouse-hero.jpg" alt="Alex Merced - Lakehouse Hero action figure" loading="lazy">
+        <div class="featured-img featured-img--portrait">
+          <img src="/alexpics/action-figure-lakehouse-hero.jpg" alt="Alex Merced - Lakehouse Hero action figure" loading="lazy" width="1024" height="1536">
         </div>
       </div>
     </div>
@@ -675,8 +676,27 @@
           </div>
           <a href="/personal" class="btn btn--personal">Explore Personal World →</a>
         </div>
-        <div class="featured-img">
-          <img src="/alexpics/portrait-casual-painted.jpg" alt="Alex Merced - portrait" loading="lazy">
+        <div class="featured-img featured-img--portrait">
+          <img src="/alexpics/portrait-casual-painted.jpg" alt="Alex Merced - portrait" loading="lazy" width="1024" height="1536">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAME -->
+  <section class="section section--surface reveal" id="game-preview">
+    <div class="container">
+      <div class="section-with-image">
+        <div>
+          <div class="section__header" style="text-align:left;margin-left:0;margin-right:0;">
+            <span class="section__label section__label--personal">Interactive Story</span>
+            <h2 class="section__title">The Merced Odyssey</h2>
+            <p class="section__subtitle">Explore eight pixel-art worlds inspired by Alex's life and work. Solve music, code, data, and story challenges on an adventure you can play entirely in your browser.</p>
+          </div>
+          <a href="/game" class="btn btn--personal">✦ Play the Game →</a>
+        </div>
+        <div class="featured-img featured-img--landscape">
+          <img src="/game/merced-world.webp" alt="Pixel-art landscape from The Merced Odyssey" width="1536" height="1024" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -737,6 +757,8 @@
   </section>
 
   <!-- FOOTER -->
+  </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">

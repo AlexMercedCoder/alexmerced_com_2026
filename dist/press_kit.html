@@ -223,6 +223,8 @@
     .press-book-card img {
       width: 100%;
       max-width: 160px;
+      aspect-ratio: 2 / 3;
+      object-fit: contain;
       border: 1px solid var(--color-border, #e0d8cc);
       border-radius: 2px;
     }
@@ -382,8 +384,8 @@
     [data-theme="dark"] .bio-text a { color: #a080ff; }
   </style>
   <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-  <script type="module" crossorigin src="/assets/main-LxY_9Zb4.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-C7yahH4S.css">
+  <script type="module" crossorigin src="/assets/main-CqsDv3yX.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-pX2H-Ez_.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
@@ -405,7 +407,7 @@
       </div>
       <div class="nav__actions">
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -420,7 +422,7 @@
         <div class="press-hero__inner">
           <picture class="press-hero__picture">
             <source srcset="/alexpics/photo-headshot-dremio-beanie-blazer.webp" type="image/webp">
-            <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — official headshot" class="press-hero__photo">
+            <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — official headshot" class="press-hero__photo" width="1086" height="1448">
           </picture>
           <div>
             <h1 class="press-hero__name">Alex Merced</h1>
@@ -428,7 +430,7 @@
             <div class="press-hero__badges">
               <span class="badge">O'Reilly Author</span>
               <span class="badge">Manning Author</span>
-              <span class="badge badge--secondary">66 Books</span>
+              <span class="badge badge--secondary">77 Books</span>
               <span class="badge badge--secondary">LinkedIn Learning Instructor</span>
               <span class="badge badge--secondary">LP Vice Chair 2018–2022</span>
               <span class="badge badge--secondary">2025 Dremio CEO Award</span>
@@ -485,7 +487,7 @@
             </div>
             <div class="credential-card">
               <div class="credential-card__label">25 Words</div>
-              <div class="credential-card__value" style="font-weight: 400; font-size: 0.95rem; line-height: 1.6;">Head of DevRel at Dremio. O'Reilly & Manning author on Apache Iceberg and Apache Polaris. 66 books. LinkedIn Learning instructor. Data lakehouse educator.</div>
+              <div class="credential-card__value" style="font-weight: 400; font-size: 0.95rem; line-height: 1.6;">Head of DevRel at Dremio. O'Reilly & Manning author on Apache Iceberg and Apache Polaris; Packt author on AI-assisted software engineering. 77 books. LinkedIn Learning instructor. Data lakehouse educator.</div>
             </div>
           </div>
         </div>
@@ -558,7 +560,7 @@
 
           <div class="credential-card">
             <div class="credential-card__label">Independent Books (self-published)</div>
-            <div class="credential-card__value">66 titles on data engineering, AI, economics, philosophy, fiction, and tabletop RPGs</div>
+            <div class="credential-card__value">77 titles on data engineering, AI, economics, philosophy, fiction, and tabletop RPGs</div>
             <div class="credential-card__sub"><a href="https://books.alexmerced.com" target="_blank" rel="noopener">books.alexmerced.com ↗</a></div>
           </div>
 
@@ -618,7 +620,7 @@
 
         </div>
         <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--color-text-muted, #6b6b6b);">
-          Full catalog of 66 titles available at <a href="https://books.alexmerced.com" target="_blank" rel="noopener">books.alexmerced.com</a>
+          Full catalog of 77 titles available at <a href="https://books.alexmerced.com" target="_blank" rel="noopener">books.alexmerced.com</a>
         </p>
       </section>
 
@@ -913,7 +915,7 @@
           <div class="headshot-item">
             <picture>
               <source srcset="/alexpics/photo-headshot-dremio-beanie-blazer.webp" type="image/webp">
-              <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — professional headshot, Dremio beanie and blazer" loading="lazy">
+              <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced — professional headshot, Dremio beanie and blazer" loading="lazy" width="1086" height="1448">
             </picture>
             <div class="headshot-item__caption">Official headshot — blazer & Dremio beanie</div>
             <a href="/alexpics/photo-headshot-dremio-beanie-blazer.png" download>Download PNG ↓</a>
@@ -921,13 +923,13 @@
           <div class="headshot-item">
             <picture>
               <source srcset="/alexpics/photo-headshot-dremio-tee-blazer.webp" type="image/webp">
-              <img src="/alexpics/photo-headshot-dremio-tee-blazer.png" alt="Alex Merced — professional headshot, Dremio tee and blazer" loading="lazy">
+              <img src="/alexpics/photo-headshot-dremio-tee-blazer.png" alt="Alex Merced — professional headshot, Dremio tee and blazer" loading="lazy" width="1086" height="1448">
             </picture>
             <div class="headshot-item__caption">Alternate headshot — tee & blazer</div>
             <a href="/alexpics/photo-headshot-dremio-tee-blazer.png" download>Download PNG ↓</a>
           </div>
           <div class="headshot-item">
-            <img src="/alexpics/portrait-casual-painted.jpg" alt="Alex Merced — casual portrait, painted style" loading="lazy">
+            <img src="/alexpics/portrait-casual-painted.jpg" alt="Alex Merced — casual portrait, painted style" loading="lazy" width="1024" height="1536">
             <div class="headshot-item__caption">Casual portrait</div>
             <a href="/alexpics/portrait-casual-painted.jpg" download>Download JPG ↓</a>
           </div>

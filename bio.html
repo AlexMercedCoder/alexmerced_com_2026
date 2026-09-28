@@ -387,7 +387,7 @@
       </div>
       <div class="nav__actions">
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -395,11 +395,12 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="main-content">
+  <main id="main-content">
+  <section class="hero">
     <div class="container hero__content">
       <picture>
         <source srcset="/alexpics/photo-headshot-dremio-beanie-blazer.webp" type="image/webp">
-        <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced" class="hero__avatar">
+        <img src="/alexpics/photo-headshot-dremio-beanie-blazer.png" alt="Alex Merced" class="hero__avatar" width="1086" height="1448">
       </picture>
       <h1 class="hero__name">Alex Merced</h1>
       <p class="hero__title">Data Lakehouse & AI Expert · Author · Creator</p>
@@ -438,8 +439,8 @@
           </div>
           <a href="/professional" class="btn btn--pro">Explore Professional World →</a>
         </div>
-        <div class="featured-img">
-          <img src="/alexpics/action-figure-lakehouse-hero.jpg" alt="Alex Merced - Lakehouse Hero action figure" loading="lazy">
+        <div class="featured-img featured-img--portrait">
+          <img src="/alexpics/action-figure-lakehouse-hero.jpg" alt="Alex Merced - Lakehouse Hero action figure" loading="lazy" width="1024" height="1536">
         </div>
       </div>
     </div>
@@ -498,8 +499,8 @@
           </div>
           <a href="/personal" class="btn btn--personal">Explore Personal World →</a>
         </div>
-        <div class="featured-img">
-          <img src="/alexpics/portrait-casual-painted.jpg" alt="Alex Merced - portrait" loading="lazy">
+        <div class="featured-img featured-img--portrait">
+          <img src="/alexpics/portrait-casual-painted.jpg" alt="Alex Merced - portrait" loading="lazy" width="1024" height="1536">
         </div>
       </div>
     </div>
@@ -560,6 +561,8 @@
   </section>
 
   <!-- FOOTER -->
+  </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">

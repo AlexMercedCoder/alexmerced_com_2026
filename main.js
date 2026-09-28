@@ -33,23 +33,36 @@ function initMobileNav() {
   const links = document.getElementById('nav-links');
   if (!hamburger || !links) return;
 
+  const setOpen = (open) => {
+    hamburger.classList.toggle('active', open);
+    links.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', String(open));
+  };
   hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    links.classList.toggle('open');
+    setOpen(!links.classList.contains('open'));
   });
 
   links.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      links.classList.remove('open');
-    });
+    link.addEventListener('click', () => setOpen(false));
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && links.classList.contains('open')) {
+      setOpen(false);
+      hamburger.focus();
+    }
+  });
+  document.addEventListener('click', event => {
+    if (links.classList.contains('open') && !hamburger.contains(event.target) && !links.contains(event.target)) setOpen(false);
+  });
+  window.matchMedia('(min-width: 769px)').addEventListener('change', event => {
+    if (event.matches) setOpen(false);
   });
 }
 
 // --- Scroll Reveal ---
 function initScrollReveal() {
   const elements = document.querySelectorAll('.reveal');
-  if (!elements.length) return;
+  if (!elements.length || !('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -63,6 +76,7 @@ function initScrollReveal() {
     { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
   );
 
+  document.documentElement.classList.add('reveal-ready');
   elements.forEach(el => observer.observe(el));
 }
 
