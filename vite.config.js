@@ -12,6 +12,8 @@ export default defineConfig({
         bio: resolve(__dirname, 'bio.html'),
         game: resolve(__dirname, 'game.html'),
         speaking: resolve(__dirname, 'speaking.html'),
+        network: resolve(__dirname, 'network.html'),
+        community: resolve(__dirname, 'community.html'),
         speakingThanks: resolve(__dirname, 'speaking-thanks.html'),
         '404': resolve(__dirname, '404.html'),
       },
