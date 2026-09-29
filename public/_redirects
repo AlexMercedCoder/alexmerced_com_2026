@@ -6,6 +6,10 @@ https://bio.alexmerced.com/  /bio.html  200!
 /personal.html      /personal      301
 /press_kit.html     /press_kit     301
 /game.html          /game          301
+/speaking.html      /speaking      301
+/speaking-thanks.html /speaking-thanks 301
+/speaking           /speaking.html 200
+/speaking-thanks    /speaking-thanks.html 200
 /game               /game.html     200
 
 # Legacy path redirects

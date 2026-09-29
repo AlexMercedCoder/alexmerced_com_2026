@@ -449,6 +449,15 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 2px; letter-spacing: var(--tracking-body);
 }
 .timeline__text { color: var(--text-muted); font-size: var(--text-caption); line-height: var(--leading-caption); }
+.book-picks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 0 0 2rem; }
+.book-pick { display: flex; flex-direction: column; gap: .55rem; padding: 1.25rem; border: 1px solid var(--border-light); background: var(--card-bg); color: var(--text); text-decoration: none; min-height: 12rem; }
+.book-pick:hover, .book-pick:focus-visible { border-color: var(--color-accent); }
+.book-pick__label { color: var(--color-accent); font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.book-pick strong { font-size: 1.08rem; line-height: 1.3; }
+.book-pick span:not(.book-pick__label) { color: var(--text-muted); line-height: 1.4; }
+.book-pick__arrow { margin-top: auto; }
+@media (max-width: 950px) { .book-picks { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 540px) { .book-picks { grid-template-columns: 1fr; } }
 
 /* ============================================
    DIVIDER
@@ -625,7 +634,7 @@ h1, h2, h3, h4, h5 {
 /* ============================================
    RESPONSIVE
    ============================================ */
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   .nav__links {
     display: none; position: absolute; top: 100%; left: 0; right: 0;
     background: var(--nav-bg); backdrop-filter: blur(12px);

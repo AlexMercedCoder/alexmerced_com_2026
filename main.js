@@ -54,7 +54,7 @@ function initMobileNav() {
   document.addEventListener('click', event => {
     if (links.classList.contains('open') && !hamburger.contains(event.target) && !links.contains(event.target)) setOpen(false);
   });
-  window.matchMedia('(min-width: 769px)').addEventListener('change', event => {
+  window.matchMedia('(min-width: 1051px)').addEventListener('change', event => {
     if (event.matches) setOpen(false);
   });
 }

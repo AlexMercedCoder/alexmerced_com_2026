@@ -11,6 +11,8 @@ export default defineConfig({
         press_kit: resolve(__dirname, 'press_kit.html'),
         bio: resolve(__dirname, 'bio.html'),
         game: resolve(__dirname, 'game.html'),
+        speaking: resolve(__dirname, 'speaking.html'),
+        speakingThanks: resolve(__dirname, 'speaking-thanks.html'),
         '404': resolve(__dirname, '404.html'),
       },
     },

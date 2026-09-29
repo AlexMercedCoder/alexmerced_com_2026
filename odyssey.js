@@ -191,6 +191,58 @@ let last = performance.now();
 let effects = [];
 
 function save() { try { localStorage.setItem(SAVE_KEY, JSON.stringify(state)); } catch {} }
+function validateImportedSave(value) {
+  const data = value?.format === 'merced-odyssey-save' && value.version === 1 ? value.state : value;
+  const count = chapters.length;
+  const boolRows = rows => Array.isArray(rows) && rows.length === count && rows.every(row => Array.isArray(row) && row.length === 3 && row.every(cell => typeof cell === 'boolean'));
+  if (!data || typeof data !== 'object' || !Number.isInteger(data.chapter) || data.chapter < 0 || data.chapter >= count ||
+      !boolRows(data.shrines) || !boolRows(data.notes) || !Array.isArray(data.guardians) || data.guardians.length !== count || !data.guardians.every(value => typeof value === 'boolean') ||
+      !Array.isArray(data.shards) || data.shards.length !== count || !data.shards.every(value => Number.isInteger(value) && value >= 0 && value <= 3) ||
+      !Number.isInteger(data.health) || data.health < 1 || data.health > 6 || !Number.isInteger(data.deaths) || data.deaths < 0 ||
+      typeof data.won !== 'boolean' || typeof data.started !== 'boolean') {
+    throw new Error('This file does not contain a valid Merced Odyssey save.');
+  }
+  return { chapter: data.chapter, shrines: data.shrines, guardians: data.guardians, notes: data.notes, shards: data.shards,
+    health: data.health, deaths: data.deaths, won: data.won, started: data.started };
+}
+function downloadSave() {
+  const payload = { format: 'merced-odyssey-save', version: 1, exportedAt: new Date().toISOString(), state };
+  const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
+  const link = document.createElement('a');
+  link.href = url; link.download = `merced-odyssey-save-${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.append(link); link.click(); link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  journal();
+}
+function importSave() {
+  const input = document.createElement('input');
+  input.type = 'file'; input.accept = '.json,application/json';
+  input.addEventListener('change', async () => {
+    const file = input.files?.[0];
+    if (!file) return;
+    try {
+      if (file.size > 100_000) throw new Error('This save file is too large.');
+      const restored = validateImportedSave(JSON.parse(await file.text()));
+      modal('Restore this adventure?', [
+        `The file contains chapter ${restored.chapter + 1} progress and ${restored.guardians.filter(Boolean).length} completed guardians.`,
+        'Restoring replaces the current save in this browser. Download a backup first if you want to keep it.'
+      ], [
+        { label: 'Cancel', run: journal },
+        { label: 'Restore save', primary: true, run: async () => {
+          await loadArt();
+          state = restored; state.started = true; save(); buildZone(); updateHud();
+          player.invulnerableUntil = performance.now() + 3000;
+          modal('Adventure restored', ['Your progress is ready. Continue exploring from the restored chapter.'],
+            [{ label: 'Continue', primary: true, run: closeModal }]);
+        } }
+      ], 'Import save');
+    } catch (error) {
+      modal('Could not import save', [error instanceof SyntaxError ? 'The selected file is not valid JSON.' : error.message],
+        [{ label: 'Back to journal', primary: true, run: journal }], 'Import save');
+    }
+  }, { once: true });
+  input.click();
+}
 function tone(freq=440, duration=.1, type='square') {
   if (!soundOn) return;
   try {
@@ -285,6 +337,8 @@ function journal() {
     'Deaths: '+state.deaths+'. The main story takes roughly 45–60 minutes at an exploratory pace; there is no timer.'
   ],[
     {label:'Continue',primary:true,run:closeModal},
+    {label:'Download save backup',run:downloadSave},
+    {label:'Import save file',run:importSave},
     {label:'Start a new adventure (erase local save)',run:()=>modal('Start over?',[
       'This resets all chapters, shrines, and guardians stored in this browser.'
     ],[{label:'Cancel',run:journal},{label:'Erase save and start over',run:()=>{state=fresh();save();buildZone();closeModal();}}],'Confirm reset')}

@@ -444,8 +444,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-  <script type="module" crossorigin src="/assets/main-CqsDv3yX.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-pX2H-Ez_.css">
+  <script type="module" crossorigin src="/assets/main-DeOKdMUz.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Cfjb9UZa.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
@@ -462,6 +462,7 @@
         <a href="/professional">Professional</a>
         <a href="/personal">Personal</a>
         <a href="/game">Game</a>
+        <a href="/speaking">Speaking</a>
         <a href="https://alexmerced.blog" target="_blank" rel="noopener">Blog</a>
         <a href="https://buymeacoffee.com/alexmerced" target="_blank" rel="noopener">☕ Buy Me a Coffee</a>
       </div>
@@ -556,7 +557,7 @@
       <div class="hero__ctas">
         <a href="/professional" class="btn btn--pro">⚡ Explore Professional</a>
         <a href="/personal" class="btn btn--personal">🎨 Explore Personal</a>
-        <a href="mailto:Contact@alexmerced.com?subject=Speaking%20Inquiry" class="btn btn--pro">🎤 Book Me to Speak</a>
+        <a href="/speaking" class="btn btn--pro">🎤 Book Me to Speak</a>
       </div>
       <div class="hero__socials">
         <a href="https://github.com/alexmercedcoder" target="_blank" rel="me noopener" aria-label="GitHub">🐙</a>
@@ -605,10 +606,10 @@
           <div class="section__header" style="text-align:left;margin-left:0;margin-right:0;">
             <span class="section__label section__label--pro">Professional</span>
             <h2 class="section__title">The Expert</h2>
-            <p class="section__subtitle">Head of Developer Relations at Dremio. Author of 77 books including four flagship O'Reilly, Manning, and Packt titles: Apache Iceberg: The Definitive Guide, Apache Polaris: The Definitive Guide, Architecting an Apache Iceberg Lakehouse, and Building the Software Factory. Leading voice in Data Lakehouses, Apache Iceberg, and AI.</p>
+            <p class="section__subtitle" data-site-fact="expert-summary">Head of Developer Relations at Dremio. Author of 77 books including four flagship O'Reilly, Manning, and Packt titles: Apache Iceberg: The Definitive Guide, Apache Polaris: The Definitive Guide, Architecting an Apache Iceberg Lakehouse, and Building the Software Factory. Leading voice in data lakehouses, Apache Iceberg, and AI.</p>
           </div>
           <div class="stats" style="margin-bottom: 2.5rem; justify-content: flex-start;">
-            <div class="stat"><div class="stat__number">77</div><div class="stat__label">Books Published</div></div>
+            <div class="stat"><div class="stat__number" data-site-fact="book-count">77</div><div class="stat__label">Books Published</div></div>
             <div class="stat"><div class="stat__number">34K+</div><div class="stat__label">LinkedIn Followers</div></div>
           </div>
           <a href="/professional" class="btn btn--pro">Explore Professional World →</a>
@@ -625,7 +626,7 @@
     <div class="container">
       <div class="section__header">
         <span class="section__label section__label--pro">Books</span>
-        <h2 class="section__title">Author of 77 Books</h2>
+        <h2 class="section__title" data-site-fact="book-heading">Author of 77 Books</h2>
         <p class="section__subtitle">Published works spanning AI engineering, data lakehouses, Apache Iceberg, economics, philosophy, fiction, and tabletop roleplaying games. Available on Amazon and other retailers.</p>
       </div>
       <div class="grid grid--3" style="margin-bottom: 2rem;">
@@ -650,7 +651,16 @@
           <div class="card__desc">D6 Storyteller: a fiction-first tabletop roleplaying engine with ten genre companions</div>
         </div>
       </div>
-      <a href="/professional#tech-library" class="btn btn--pro">See All Books →</a>
+      <div class="section__header"><span class="section__label section__label--pro">Start here</span><h3 class="section__title">Pick a book for your interests</h3></div>
+      <!-- site-book-picks:start -->
+      <div class="book-picks">
+        <a class="book-pick" href="https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/" target="_blank" rel="noopener"><span class="book-pick__label">For data builders</span><strong>Apache Iceberg: The Definitive Guide</strong><span>Understand the open table format behind modern lakehouses.</span><span class="book-pick__arrow">Explore book ↗</span></a>
+        <a class="book-pick" href="https://books.alexmerced.com/books/ai-and-agents-for-normal-people/" target="_blank" rel="noopener"><span class="book-pick__label">For AI beginners</span><strong>AI and Agents for Normal People</strong><span>Get started with everyday AI tools and agents.</span><span class="book-pick__arrow">Explore book ↗</span></a>
+        <a class="book-pick" href="https://books.alexmerced.com/books/embers-of-claim/" target="_blank" rel="noopener"><span class="book-pick__label">For fiction readers</span><strong>Embers of Claim</strong><span>Begin an epic fantasy trilogy.</span><span class="book-pick__arrow">Explore book ↗</span></a>
+        <a class="book-pick" href="https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/" target="_blank" rel="noopener"><span class="book-pick__label">For tabletop storytellers</span><strong>D6 Storyteller: The Core Rulebook</strong><span>Build characters and worlds with a fiction-first RPG.</span><span class="book-pick__arrow">Explore book ↗</span></a>
+      </div>
+      <!-- site-book-picks:end -->
+      <a href="https://books.alexmerced.com/" target="_blank" rel="noopener" class="btn btn--pro">See All Books →</a>
     </div>
   </section>
 
@@ -735,7 +745,7 @@
         <div class="timeline__item">
           <div class="timeline__year">2021–Present</div>
           <div class="timeline__title">Developer Advocacy at Dremio</div>
-          <div class="timeline__text">Head of Developer Relations. 2025 CEO Award Winner. O'Reilly & Manning author of Apache Iceberg: The Definitive Guide, Apache Polaris: The Definitive Guide, and Architecting an Apache Iceberg Lakehouse. Global conference speaker.</div>
+          <div class="timeline__text" data-site-fact="career-summary">Head of Developer Relations. 2025 CEO Award Winner. Author of Apache Iceberg: The Definitive Guide, Apache Polaris: The Definitive Guide, Architecting an Apache Iceberg Lakehouse, and Building the Software Factory. Global conference speaker.</div>
         </div>
       </div>
     </div>
