@@ -155,6 +155,26 @@
             "event": "cta_free_book"
           }
         ]
+      },
+      "agenticanalyticsnow.com": {
+        "heading": "See where your team stands",
+        "links": [
+          {
+            "label": "Take the readiness assessment",
+            "url": "https://agenticanalyticsnow.com/readiness/",
+            "event": "cta_readiness"
+          },
+          {
+            "label": "Book Alex to speak",
+            "url": "https://alexmerced.com/speaking",
+            "event": "cta_speaking"
+          },
+          {
+            "label": "Free Apache Iceberg book",
+            "url": "https://hello.dremio.com/wp-apache-iceberg-the-definitive-guide-reg.html?utm_source=alexmerced_network&utm_medium=referral&utm_campaign=network_cta",
+            "event": "cta_free_book"
+          }
+        ]
       }
     }
   }

@@ -229,7 +229,10 @@
         "governed agentic data",
         "agent access control",
         "agentic glossary",
-        "mcp over lakehouse data"
+        "mcp over lakehouse data",
+        "agent implementation patterns",
+        "agentic lakehouse patterns",
+        "mcp semantic layer demo"
       ],
       "primary": "agenticlakehouse.com",
       "supporting": [
@@ -479,7 +482,9 @@
         "agentic ai architecture",
         "composable ai stack",
         "open agentic stack",
-        "agentic reference architecture"
+        "agentic reference architecture",
+        "openness scorecard",
+        "ai stack openness test"
       ],
       "primary": "openagenticplatform.com",
       "supporting": [
