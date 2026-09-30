@@ -465,9 +465,11 @@
         "Loro",
         "MagAgent",
         "MagGraph",
+        "Mag Command Center",
         "Merced AI",
         "Agentic Graph Specification",
-        "Open Agent Profile"
+        "Open Agent Profile",
+        "Agent Approval Interchange Specification"
       ],
       "books": [
         "The Book on Agentic Analytics",
@@ -484,6 +486,8 @@
         "oap",
         "agentic graph specification",
         "ags",
+        "agent approval interchange specification",
+        "aais",
         "agent skills",
         "portable agents",
         "agent interoperability"
@@ -496,7 +500,8 @@
       "summary": "Open agent standards make skills, tool connections, agent identity, and work plans portable between runtimes. Agent Skills package capability, the Model Context Protocol carries tool access, the Open Agent Profile describes who an agent is and what it has learned, and the Agentic Graph Specification describes the shape of a piece of work.",
       "projects": [
         "Agentic Graph Specification",
-        "Open Agent Profile"
+        "Open Agent Profile",
+        "Agent Approval Interchange Specification"
       ],
       "canonicalUrl": "https://openagenticplatform.com/knowledge-base/open-standards"
     },
@@ -522,7 +527,8 @@
       "summary": "Agent governance is the practice of enforcing what an agent may do outside the model rather than requesting it in a prompt: scoped capability and credentials, approval gates on irreversible actions, delegated identity, and records complete enough to reconstruct what happened months later.",
       "projects": [
         "Loro",
-        "Open Agent Profile"
+        "Open Agent Profile",
+        "Agent Approval Interchange Specification"
       ],
       "books": [
         "Governing AI Systems",

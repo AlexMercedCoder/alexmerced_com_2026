@@ -9,7 +9,7 @@
       "image": "https://alexmerced.com/alexpics/photo-headshot-charcoal-blazer-turtleneck.webp",
       "email": "mailto:dev@alexmerced.com",
       "jobTitle": "Head of Developer Relations",
-      "description": "Alex Merced is Head of Developer Relations at Dremio, where he teaches and writes about open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI. He is the author of 66 books, including Apache Iceberg: The Definitive Guide (O'Reilly Media), Architecting an Apache Iceberg Lakehouse (Manning Publications), and Apache Polaris: The Definitive Guide (O'Reilly Media). Before moving into data engineering, he spent over a decade in New York City teaching economics and finance to professionals, an experience that shaped his approach to breaking down complex technical subjects. He publishes across a network of technical sites, speaks at data conferences, and hosts podcasts on data and AI.",
+      "description": "Alex Merced is Head of Developer Relations at Dremio, where he teaches and writes about open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI. He is the author of 77 books, including Apache Iceberg: The Definitive Guide (O'Reilly Media), Architecting an Apache Iceberg Lakehouse (Manning Publications), Apache Polaris: The Definitive Guide (O'Reilly Media), and Building the Software Factory (Packt Publishing). Before moving into data engineering, he spent over a decade in New York City teaching economics and finance to professionals, an experience that shaped his approach to breaking down complex technical subjects. He publishes across a network of technical sites, speaks at data conferences, and hosts podcasts on data and AI.",
       "birthDate": "1985-06-30",
       "worksFor": {
         "@type": "Organization",
@@ -118,6 +118,22 @@
       },
       "description": "A guide to open catalogs for Apache Iceberg lakehouses, covering Polaris catalog architecture, configuration, and governance.",
       "image": "https://images.amazon.com/images/P/B0FBRJ7J1Y.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/building-the-software-factory/#book",
+      "name": "Building the Software Factory",
+      "url": "https://books.alexmerced.com/books/building-the-software-factory/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Packt Publishing"
+      },
+      "isbn": "9781807782771",
+      "description": "Co-authored with Benedikt Stemmildt. How to turn AI coding agents into a dependable, team-wide software factory using context engineering, AI-TDD, harness design, and the AEMM and Elastic Loop frameworks, moving teams from vibe coding to disciplined agentic engineering.",
+      "image": "https://m.media-amazon.com/images/I/81-gPruyXyL._SL1500_.jpg"
     },
     {
       "@type": "Book",
@@ -920,6 +936,156 @@
     },
     {
       "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-children-of-damaris/#book",
+      "name": "The Children of Damaris",
+      "url": "https://books.alexmerced.com/books/the-children-of-damaris/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The Worlds Between Home, Book 1 of 10. A ship mechanic, a surgical assistant, and their two children steal a damaged survey courier to escape a fascist world that has begun taking every child into state custody, with a whispering stuffed animal hidden aboard.",
+      "image": "https://m.media-amazon.com/images/I/814bKVKGW+L._SL1500_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/a-crown-of-cliffs/#book",
+      "name": "A Crown of Cliffs",
+      "url": "https://books.alexmerced.com/books/a-crown-of-cliffs/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The Worlds Between Home, Book 2 of 10. The Oleds land on Cyradon, a canyon kingdom where every load-bearing part carries a household's name, and survive on a queen's revocable guest-oath while their asylum claim waits in court.",
+      "image": "https://m.media-amazon.com/images/I/81m0syAst1L._SL1500_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-price-of-high-ground/#book",
+      "name": "The Price of High Ground",
+      "url": "https://books.alexmerced.com/books/the-price-of-high-ground/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The Worlds Between Home, Book 3 of 10. On Vanthel, where arrival is an invoice and every charge is published, the family learns that each honest offer made to them comes with a claim on their ship.",
+      "image": "https://m.media-amazon.com/images/I/91jvMuSAA-L._SL1500_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-common-sun/#book",
+      "name": "The Common Sun",
+      "url": "https://books.alexmerced.com/books/the-common-sun/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The Worlds Between Home, Book 4 of 10. Solvara's generous public system heals the family and repairs their ship for free, yet every entitlement costs them something they did not know they were holding.",
+      "image": "https://m.media-amazon.com/images/I/910nHjOgvkL._SL1500_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/what-the-models-cannot-see/#book",
+      "name": "What the Models Cannot See",
+      "url": "https://books.alexmerced.com/books/what-the-models-cannot-see/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The Worlds Between Home, Book 5 of 10. The best-run world the Oleds have seen places them under a formal hold, and ten-year-old Xia's refusals become the only thing standing between careful assessors and the voice she talks to.",
+      "image": "https://m.media-amazon.com/images/I/81aHYjEWVRL._SL1500_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-memory-garden/#book",
+      "name": "The Memory Garden",
+      "url": "https://books.alexmerced.com/books/the-memory-garden/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The Worlds Between Home, Book 6 of 10. On Varduun nothing is withheld and nothing is billed, the memory gardens keep what people say for nine hundred years, and Xia carries something that took an entire hillside without asking.",
+      "image": "https://m.media-amazon.com/images/I/91U627Pk2TL._SL1500_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/no-one-commands-the-tunnels/#book",
+      "name": "No One Commands the Tunnels",
+      "url": "https://books.alexmerced.com/books/no-one-commands-the-tunnels/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The Worlds Between Home, Book 7 of 10. Caldris runs on syndicates, chambers, and signed findings instead of offices, and a family nobody refuses finds that nobody is able to accept them either.",
+      "image": "https://m.media-amazon.com/images/I/91ZToGC0L1L._SL1500_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/terms-of-protection/#book",
+      "name": "Terms of Protection",
+      "url": "https://books.alexmerced.com/books/terms-of-protection/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The Worlds Between Home, Book 8 of 10. On the Orison Exchange, air is the currency and protection is bought from competing houses, so the Oleds end up covered on three separate books by people who all deal with them honestly.",
+      "image": "https://m.media-amazon.com/images/I/91XYqcyp6kL._SL1500_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-light-at-the-lava-sea/#book",
+      "name": "The Light at the Lava Sea",
+      "url": "https://books.alexmerced.com/books/the-light-at-the-lava-sea/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The Worlds Between Home, Book 9 of 10. Three of the Oleds are taken aboard an occupation carrier that writes everything down, while Xia climbs alone through a dark recovery trunk with a pencil and her mother's rules.",
+      "image": "https://m.media-amazon.com/images/I/81ukVpUTn5L._SL1500_.jpg"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://books.alexmerced.com/books/the-voice-at-the-end-of-everything/#book",
+      "name": "The Voice at the End of Everything",
+      "url": "https://books.alexmerced.com/books/the-voice-at-the-end-of-everything/",
+      "author": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Self-published"
+      },
+      "description": "The Worlds Between Home, Book 10 of 10. The concluding volume: the Directorate has broken, Aldex rebuilds authority with paper and signatures, and Xia keeps a case open against the voice that has watched eight worlds decide what to do with her family.",
+      "image": "https://m.media-amazon.com/images/I/91ew4c30crL._SL1500_.jpg"
+    },
+    {
+      "@type": "Book",
       "@id": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/#book",
       "name": "D6 Storyteller: The Core Rulebook",
       "url": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/",
@@ -1116,7 +1282,7 @@
       "@type": "SoftwareSourceCode",
       "@id": "https://alexmercedcoder.dev/#project-magagent",
       "name": "MagAgent",
-      "description": "MagAgent is a terminal-native AI coding agent with persistent memory, built for developers who want an assistant that learns their codebase and habits over time. Version 1.0.0 adds a confined local web workspace and a run center spanning chat runs, graph history, and durable background tasks. It anchors a local-first AI productivity stack alongside MagGraph and Mag Command Center.",
+      "description": "MagAgent is a memory-first personal agent that runs in the terminal and remembers you across sessions, keeping what it learns in Git-backed Markdown you can review. Version 1.4.0 adds per-run memory evidence, review-gated team memory, and expiring approval grants. It anchors a local-first AI productivity stack alongside MagGraph and Mag Command Center.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
@@ -1138,7 +1304,7 @@
       "@type": "SoftwareSourceCode",
       "@id": "https://alexmercedcoder.dev/#project-mag-command-center",
       "name": "Mag Command Center",
-      "description": "Mag Command Center is a cross-platform desktop application for managing MagAgent projects, agents, memory, plugins, and local productivity workflows. It is a UI over the installed magent CLI and shares the same configuration, MagGraph memory, and plugins used from the terminal.",
+      "description": "Mag Command Center is a cross-platform desktop application for MagAgent that brings runs, approvals, graphs, memory, plugins, and local productivity workflows into one window. It is a UI over the installed magent CLI and shares the same configuration, MagGraph memory, and plugins used from the terminal. Version 1.0.0 is the first stable release, packaged for Linux, macOS, and Windows with unsigned installers, and requires MagAgent 1.4.0.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
@@ -1165,6 +1331,17 @@
         "@id": "https://alexmerced.com/#alexmerced"
       },
       "codeRepository": "https://github.com/alexmerced-oss/open-agent-profile",
+      "license": "Apache-2.0"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://alexmercedcoder.dev/#project-agent-approval-interchange-spec",
+      "name": "Agent Approval Interchange Specification",
+      "description": "The Agent Approval Interchange Specification (AAIS) defines the handoff when an agent runtime needs permission for an action: the request, the human decision, and the receipt. Each decision carries a digest of the exact action the person reviewed, clients may only choose scopes the harness offered, and expired, stale, or replayed decisions are rejected. The harness stays the authority while a CLI, web UI, desktop app, or policy service presents the request.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/alexmerced-oss/agent-approval-interchange-spec",
       "license": "Apache-2.0"
     },
     {
@@ -1296,7 +1473,7 @@
     {
       "@type": "WebSite",
       "@id": "https://alexmercedai.com/#website",
-      "url": "https://www.alexmercedai.com",
+      "url": "https://alexmercedai.com",
       "name": "Alex Merced AI",
       "description": "Point-of-view site for Alex Merced's agentic AI work: projects, open specifications, and design principles.",
       "creator": {
@@ -1316,16 +1493,16 @@
       "@id": "https://alexmerceddata.com/#website",
       "url": "https://alexmerceddata.com",
       "name": "Alex Merced Data",
-      "description": "Personal data and AI hub with a broad glossary of data engineering terms.",
+      "description": "Alex Merced's data and AI work: talks, the Lakehouse and AI Show, books, and videos.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
       "about": [
-        "data engineering",
-        "glossary",
+        "talks",
+        "videos",
         "lakehouse",
         "ai",
-        "tutorials"
+        "books"
       ]
     },
     {
@@ -1404,16 +1581,18 @@
       "@id": "https://agenticlakehouse.com/#website",
       "url": "https://agenticlakehouse.com",
       "name": "Agentic Lakehouse",
-      "description": "Reference for agentic analytics and AI agents operating on lakehouse data.",
+      "description": "For engineers building agentic analytics: reference architecture, implementation patterns, a working demo, the agentic glossary, and the Agentic Lakehouse community.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
       "about": [
-        "agentic analytics",
-        "ai agents",
+        "agentic lakehouse",
+        "reference architecture",
         "mcp",
-        "governed agentic data",
-        "agentic bi"
+        "agent access control",
+        "agentic glossary",
+        "ai agents",
+        "community events"
       ]
     },
     {
@@ -1421,20 +1600,18 @@
       "@id": "https://agenticanalyticsnow.com/#website",
       "url": "https://agenticanalyticsnow.com",
       "name": "Agentic Analytics Now",
-      "description": "Reference for running analytics with AI agents: the agent stack of model, harness, and open interfaces, and the governed semantic data an open lakehouse provides underneath it.",
+      "description": "For analytics leaders adopting agentic analytics: the case, readiness assessment, use cases by function, evaluation checklist, and rollout playbook.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
       "about": [
         "agentic analytics",
-        "ai agents",
-        "agent harness",
-        "model context protocol",
-        "semantic layer",
-        "data governance",
-        "open lakehouse",
-        "apache iceberg",
-        "apache polaris"
+        "readiness",
+        "rollout",
+        "evaluation",
+        "governance",
+        "use cases",
+        "business case"
       ]
     },
     {
@@ -1461,8 +1638,8 @@
       "@type": "WebSite",
       "@id": "https://dataengnr.com/#website",
       "url": "https://dataengnr.com",
-      "name": "Data Engineer",
-      "description": "Knowledge base of data engineering concepts and terminology.",
+      "name": "DataEngnr",
+      "description": "Knowledge base of long-form data engineering guides: each concept explained with worked examples.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
@@ -1479,7 +1656,7 @@
       "@id": "https://datalakehouse.help/#website",
       "url": "https://datalakehouse.help",
       "name": "Data Lakehouse Help",
-      "description": "Structured technical documentation and how-to reference for lakehouse work.",
+      "description": "Step-by-step procedures with runnable code for building and operating a lakehouse.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
@@ -1541,7 +1718,7 @@
       "@id": "https://tuts.alexmercedcoder.dev/#website",
       "url": "https://tuts.alexmercedcoder.dev",
       "name": "Coding Tutorials Blog",
-      "description": "Long-running blog of general software and coding tutorials.",
+      "description": "Coding tutorials: languages, frameworks, and libraries, with code you run.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
@@ -1557,7 +1734,7 @@
       "@id": "https://weekofdata.com/#website",
       "url": "https://weekofdata.com",
       "name": "Week of Data",
-      "description": "Data community events listing.",
+      "description": "Upcoming in-person Week of Data community event; subscribe to hear when the date and location are announced.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
@@ -1589,7 +1766,7 @@
       "@id": "https://ingestthis.com/#website",
       "url": "https://ingestthis.com",
       "name": "IngestThis",
-      "description": "Publication covering data engineering, data science, and data architecture.",
+      "description": "Retired article site; posts redirect to their canonical copies on the network.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },
@@ -1605,7 +1782,7 @@
       "@id": "https://grokoverflow.com/#website",
       "url": "https://grokoverflow.com",
       "name": "GrokOverflow",
-      "description": "Tutorials, podcasts, and videos for developers.",
+      "description": "Retired article site; posts redirect to their canonical copies on the network.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
       },

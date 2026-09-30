@@ -4,7 +4,7 @@
   "url": "https://alexmerced.com",
   "jobTitle": "Head of Developer Relations",
   "worksFor": "Dremio",
-  "bio": "Alex Merced is Head of Developer Relations at Dremio and the author of 66 books, including Apache Iceberg: The Definitive Guide (O'Reilly) and Architecting an Apache Iceberg Lakehouse (Manning). He teaches open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI to data practitioners worldwide.",
+  "bio": "Alex Merced is Head of Developer Relations at Dremio and the author of 77 books, including Apache Iceberg: The Definitive Guide (O'Reilly), Architecting an Apache Iceberg Lakehouse (Manning), and Building the Software Factory (Packt). He teaches open lakehouse architecture, Apache Iceberg, Apache Polaris, semantic layers, and agentic AI to data practitioners worldwide.",
   "expertIn": [
     "Open Lakehouse Architecture",
     "Apache Iceberg",
@@ -21,9 +21,9 @@
     "Developer Relations"
   ],
   "stats": {
-    "books": 66,
+    "books": 77,
     "sites": 28,
-    "projects": 13
+    "projects": 14
   },
   "sameAs": [
     "https://github.com/alexmercedcoder",

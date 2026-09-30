@@ -86,8 +86,8 @@
       "name": "MagAgent",
       "slug": "magagent",
       "category": "agent-infrastructure",
-      "tagline": "A terminal-native AI coding agent with persistent memory.",
-      "description": "MagAgent is a terminal-native AI coding agent with persistent memory, built for developers who want an assistant that learns their codebase and habits over time. Version 1.0.0 adds a confined local web workspace and a run center spanning chat runs, graph history, and durable background tasks. It anchors a local-first AI productivity stack alongside MagGraph and Mag Command Center.",
+      "tagline": "A memory-first personal agent that remembers you across sessions in Git-backed Markdown.",
+      "description": "MagAgent is a memory-first personal agent that runs in the terminal and remembers you across sessions, keeping what it learns in Git-backed Markdown you can review. Version 1.4.0 adds per-run memory evidence, review-gated team memory, and expiring approval grants. It anchors a local-first AI productivity stack alongside MagGraph and Mag Command Center.",
       "repository": "https://github.com/AlexMercedCoder/MagAgent",
       "packageManager": "pypi",
       "package": "mag-agent",
@@ -118,11 +118,9 @@
       "name": "Mag Command Center",
       "slug": "mag-command-center",
       "category": "agent-infrastructure",
-      "tagline": "Cross-platform desktop app for managing MagAgent projects, agents, and memory.",
-      "description": "Mag Command Center is a cross-platform desktop application for managing MagAgent projects, agents, memory, plugins, and local productivity workflows. It is a UI over the installed magent CLI and shares the same configuration, MagGraph memory, and plugins used from the terminal.",
+      "tagline": "Cross-platform desktop cockpit for MagAgent runs, approvals, graphs, and memory.",
+      "description": "Mag Command Center is a cross-platform desktop application for MagAgent that brings runs, approvals, graphs, memory, plugins, and local productivity workflows into one window. It is a UI over the installed magent CLI and shares the same configuration, MagGraph memory, and plugins used from the terminal. Version 1.0.0 is the first stable release, packaged for Linux, macOS, and Windows with unsigned installers, and requires MagAgent 1.4.0.",
       "repository": "https://github.com/AlexMercedCoder/MagCommandCenter",
-      "packageManager": "npm",
-      "package": "mag-command-center",
       "language": "TypeScript",
       "topics": [
         "desktop app",
@@ -160,7 +158,7 @@
       "packageManager": "pypi",
       "package": "open-agent-profile",
       "specVersion": "1.0",
-      "supportVersion": "1.0.4",
+      "supportVersion": "1.0.5",
       "license": "Apache-2.0",
       "isSpecification": true,
       "topics": [
@@ -168,6 +166,27 @@
         "agent identity",
         "portable agents",
         "capability narrowing"
+      ]
+    },
+    {
+      "name": "Agent Approval Interchange Specification",
+      "slug": "agent-approval-interchange-spec",
+      "abbreviation": "AAIS",
+      "category": "agent-infrastructure",
+      "tagline": "An open, transport-neutral contract for asking a human to authorize one exact agent action.",
+      "description": "The Agent Approval Interchange Specification (AAIS) defines the handoff when an agent runtime needs permission for an action: the request, the human decision, and the receipt. Each decision carries a digest of the exact action the person reviewed, clients may only choose scopes the harness offered, and expired, stale, or replayed decisions are rejected. The harness stays the authority while a CLI, web UI, desktop app, or policy service presents the request.",
+      "repository": "https://github.com/alexmerced-oss/agent-approval-interchange-spec",
+      "packageManager": "pypi",
+      "package": "agent-approval-interchange",
+      "specVersion": "1.0",
+      "supportVersion": "Python 0.2.0; TypeScript, Go, Rust, and Java 0.1.0",
+      "license": "Apache-2.0",
+      "isSpecification": true,
+      "topics": [
+        "specification",
+        "human approval",
+        "agent governance",
+        "human in the loop"
       ]
     },
     {

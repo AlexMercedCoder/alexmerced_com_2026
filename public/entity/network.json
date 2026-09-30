@@ -1,0 +1,75 @@
+{
+  "note": "Shared network plumbing: analytics, footer tiers, and calls to action. scripts/build-network-shared.mjs reads this with alex-merced.json and sites.json and writes network.json plus network-head.html into every site repo. Edit here, never in the site copies.",
+  "analytics": {
+    "provider": "ga4",
+    "property": "AlexMercedNetwork",
+    "measurementId": "G-4F1DTQJNDM",
+    "legacyMeasurementIds": {
+      "datalakehousehub.com": "G-VCHC62F9H2",
+      "datalakehouse.help": "G-DQMSHK8YQM",
+      "iceberglakehouse.com": "G-R36WSYY68B",
+      "tuts.alexmercedcoder.dev": "G-GL7YLRDWX1"
+    }
+  },
+  "twitter": {
+    "default": "@AMdatalakehouse",
+    "coding": "@alexmercedcoder",
+    "codingSites": ["alexmercedcoder.dev", "tuts.alexmercedcoder.dev"]
+  },
+  "allSitesUrl": "https://alexmerced.com/network.html",
+  "footer": {
+    "technical": [
+      {
+        "title": "Learn the lakehouse",
+        "domains": ["opendatalakehouse.com", "datalakehouse.help", "iceberglakehouse.com", "datalakehousehub.com", "dataengnr.com", "dataaiwiki.com"]
+      },
+      {
+        "title": "Agents and semantics",
+        "domains": ["agenticlakehouse.com", "agenticanalyticsnow.com", "semanticlakehouse.com", "openagenticplatform.com", "alexmercedai.com"]
+      },
+      {
+        "title": "Alex Merced",
+        "domains": ["alexmerced.com", "books.alexmerced.com", "resources.alexmerced.com", "alexmercedmedia.com", "alexmerced.blog"]
+      }
+    ],
+    "personal": [
+      {
+        "title": "More from Alex",
+        "domains": ["alexmerced.com", "books.alexmerced.com", "alexmercedmusic.com", "alexmercedlibertarian.com", "d6storyteller.alexmerced.com"]
+      }
+    ]
+  },
+  "cta": {
+    "technical": {
+      "heading": "Work with Alex",
+      "links": [
+        { "label": "Book Alex to speak", "url": "https://alexmerced.com/speaking", "event": "cta_speaking" },
+        { "label": "Get the newsletter", "url": "https://alexmerced.com/newsletter", "event": "cta_newsletter" },
+        { "label": "Free Apache Iceberg book", "url": "https://hello.dremio.com/wp-apache-iceberg-the-definitive-guide-reg.html?utm_source=alexmerced_network&utm_medium=referral&utm_campaign=network_cta", "event": "cta_free_book" }
+      ]
+    },
+    "personal": {
+      "alexmercedmusic.com": {
+        "heading": "Follow the music",
+        "links": [
+          { "label": "Listen on YouTube", "url": "https://www.youtube.com/@AlexMercedMusic", "event": "cta_music_follow" },
+          { "label": "Listen on SoundCloud", "url": "https://soundcloud.com/alexmerced", "event": "cta_music_follow" }
+        ]
+      },
+      "alexmercedlibertarian.com": {
+        "heading": "Keep reading",
+        "links": [
+          { "label": "Subscribe to The Loveatarian", "url": "https://loveatarian.substack.com", "event": "cta_newsletter" },
+          { "label": "Books by Alex", "url": "https://books.alexmerced.com", "event": "cta_books" }
+        ]
+      },
+      "d6storyteller.alexmerced.com": {
+        "heading": "Start playing",
+        "links": [
+          { "label": "Get the core rulebook", "url": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/", "event": "cta_books" },
+          { "label": "More books by Alex", "url": "https://books.alexmerced.com", "event": "cta_books" }
+        ]
+      }
+    }
+  }
+}
