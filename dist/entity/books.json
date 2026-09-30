@@ -1,6 +1,6 @@
 {
   "$schema": "https://alexmerced.com/entity/schema/books.schema.json",
-  "generatedFrom": "books.alexmerced.com list.md + build.py PUBLISHER_OVERRIDES",
+  "generatedFrom": "Originally generated from books.alexmerced.com list.md. Since 2026-09-29 this file is the source of truth: books.alexmerced.com build.py and build-network-booklists.mjs both read it.",
   "count": 77,
   "author": {
     "@id": "https://alexmerced.com/#alexmerced",
@@ -17,8 +17,21 @@
       "isbn": "9781098148621",
       "flagship": true,
       "url": "https://www.amazon.com/dp/1098148622",
-      "cover": "https://images.amazon.com/images/P/1098148622.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/"
+      "cover": "https://books.alexmerced.com/covers/apache-iceberg-the-definitive-guide.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/",
+      "coAuthors": [
+        "Tomer Shiran",
+        "Jason Hughes"
+      ],
+      "datePublished": "2024-05",
+      "freeEdition": {
+        "url": "https://hello.dremio.com/wp-apache-iceberg-the-definitive-guide-reg.html",
+        "label": "Free digital edition from Dremio"
+      },
+      "formats": [
+        "Paperback",
+        "EBook"
+      ]
     },
     {
       "title": "Architecting an Apache Iceberg Lakehouse",
@@ -30,8 +43,25 @@
       "isbn": "9781633435100",
       "flagship": true,
       "url": "https://www.amazon.com/dp/1633435105",
-      "cover": "https://images.amazon.com/images/P/1633435105.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/architecting-an-apache-iceberg-lakehouse/"
+      "cover": "https://books.alexmerced.com/covers/architecting-an-apache-iceberg-lakehouse.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/architecting-an-apache-iceberg-lakehouse/",
+      "formats": [
+        "Paperback",
+        "EBook"
+      ],
+      "toc": [
+        "The world of the data lakehouse",
+        "Apache Iceberg and the lakehouse",
+        "Hands-on with Apache Iceberg",
+        "Preparing for your move to Apache Iceberg",
+        "Selecting the storage layer",
+        "Architecting the ingestion layer",
+        "Implementing the catalog layer",
+        "Designing the federation layer",
+        "Understanding the consumption layer",
+        "Maintaining an Iceberg lakehouse",
+        "Operationalizing Apache Iceberg"
+      ]
     },
     {
       "title": "Apache Polaris: The Definitive Guide",
@@ -43,8 +73,21 @@
       "isbn": null,
       "flagship": true,
       "url": "https://www.amazon.com/dp/B0FBRJ7J1Y",
-      "cover": "https://images.amazon.com/images/P/B0FBRJ7J1Y.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/apache-polaris-the-definitive-guide/"
+      "cover": "https://books.alexmerced.com/covers/apache-polaris-the-definitive-guide.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/apache-polaris-the-definitive-guide/",
+      "coAuthors": [
+        "Andrew Madson",
+        "Tomer Shiran"
+      ],
+      "datePublished": "2025-09",
+      "freeEdition": {
+        "url": "https://hello.dremio.com/wp-apache-polaris-guide-reg.html",
+        "label": "Free digital edition from Dremio"
+      },
+      "formats": [
+        "Paperback",
+        "EBook"
+      ]
     },
     {
       "title": "Building the Software Factory",
@@ -56,8 +99,15 @@
       "isbn": "9781807782771",
       "flagship": true,
       "url": "https://www.amazon.com/dp/1807782778",
-      "cover": "https://m.media-amazon.com/images/I/81-gPruyXyL._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/building-the-software-factory/"
+      "cover": "https://books.alexmerced.com/covers/building-the-software-factory.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/building-the-software-factory/",
+      "coAuthors": [
+        "Benedikt Stemmildt"
+      ],
+      "formats": [
+        "Paperback",
+        "EBook"
+      ]
     },
     {
       "title": "The Book on Using Apache Iceberg with Python",
@@ -69,8 +119,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GNZ454FF",
-      "cover": "https://images.amazon.com/images/P/B0GNZ454FF.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-book-on-using-apache-iceberg-with-python/"
+      "cover": "https://books.alexmerced.com/covers/the-book-on-using-apache-iceberg-with-python.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-book-on-using-apache-iceberg-with-python/",
+      "toc": [
+        "The Basics of Apache Iceberg",
+        "PyIceberg",
+        "PySpark",
+        "PyFlink",
+        "DataFusion",
+        "Iceframe",
+        "Iceberg-cli",
+        "Dremio - The Agentic Lakehouse Platform",
+        "Bauplan - The Programmable Lakehouse",
+        "DuckDB - The Engine in Your Pocket",
+        "Daft - The Multimodal DataFrame",
+        "SpiceAI - The Edge-Accelerated Lakehouse"
+      ],
+      "audience": "Data engineers, data architects, and Python developers who want to master the Apache Iceberg ecosystem using Python.",
+      "excerpt": "The shift from managing files to managing tables is the single most important evolution in modern data architecture. For years, data engineers built \"data lakes\" by dumping thousands of Parquet, CSV, or JSON files into object storage buckets. They relied on directory structures and Hive metastores to make sense of this data. This approach worked until it didn't. As data volumes grew, listing files became slow, schema changes became risky, and data consistency became a nightmare. If a job failed halfway through writing a thousand files, you were left with a corrupted dataset and no easy way to roll back."
     },
     {
       "title": "The 2026 Guide to Lakehouses, Apache Iceberg and Agentic AI",
@@ -82,8 +148,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQNY21TD",
-      "cover": "https://images.amazon.com/images/P/B0GQNY21TD.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-2026-guide-to-lakehouses-apache-iceberg-and-agentic-ai/"
+      "cover": "https://books.alexmerced.com/covers/the-2026-guide-to-lakehouses-apache-iceberg-and-agentic-ai.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-2026-guide-to-lakehouses-apache-iceberg-and-agentic-ai/",
+      "toc": [
+        "A Primer on Data Today",
+        "What is a Lakehouse?",
+        "What is Apache Iceberg?",
+        "What is Agentic AI?",
+        "Apache Spark",
+        "Apache Flink",
+        "Dremio",
+        "Trino",
+        "The Python Ecosystem for Lakehouse and AI",
+        "Streaming Platforms",
+        "Ingestion Platforms",
+        "Agentic Analytics"
+      ],
+      "audience": "Data engineers, data architects, data analysts, data scientists, analytics engineers, and AI/ML engineers who build, query, or put agentic systems on top of lakehouse data.",
+      "excerpt": "Data has become the operational core of every modern business. From the way a retail company decides which products to stock, to how a financial institution detects fraud in real time, to how a healthcare provider personalizes treatment plans, data sits at the center of every decision. This is not a new observation, but the infrastructure that supports these decisions has undergone a fundamental transformation over the past decade. The tooling is more powerful, the architectures are more open, and the roles of the people who build and use data systems have evolved to match."
     },
     {
       "title": "The Book on Agentic Analytics",
@@ -95,8 +177,22 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQN4Q41Y",
-      "cover": "https://images.amazon.com/images/P/B0GQN4Q41Y.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-book-on-agentic-analytics/"
+      "cover": "https://books.alexmerced.com/covers/the-book-on-agentic-analytics.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-book-on-agentic-analytics/",
+      "toc": [
+        "The Shift to Agentic Analytics",
+        "The Open Foundation (Iceberg & Polaris)",
+        "Breaking Silos (Federation & Virtualization)",
+        "The Need for Speed (Acceleration)",
+        "Teaching AI the Business (The Semantic Layer)",
+        "Native Intelligence (Built-in Agents & AI SQL)",
+        "The Interface of the Future (MCP Servers)",
+        "The Developer's Toolkit (Agent Skills)",
+        "Feeding the Lake (Ingestion Strategies)",
+        "Conclusion - The Agentic Future"
+      ],
+      "audience": "Data engineers, solutions architects, and CTOs who already know SQL and Python and are being asked to make their data platform ready for AI agents.",
+      "excerpt": "For decades, the data industry has been locked in a cycle of centralization. We built Data Warehouses to answer known questions. We built Data Lakes to store everything else. Then we built Lakehouses to try and get the best of both worlds. Yet, despite billions of dollars invested in modern data stacks, a simple question like \"What was our churn rate last quarter, and how does it correlate with the new pricing model?\" often takes days to answer."
     },
     {
       "title": "Enabling Agentic Analytics with Apache Iceberg and Dremio",
@@ -108,8 +204,28 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQXT6W3N",
-      "cover": "https://images.amazon.com/images/P/B0GQXT6W3N.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/enabling-agentic-analytics-with-apache-iceberg-and-dremio/"
+      "cover": "https://books.alexmerced.com/covers/enabling-agentic-analytics-with-apache-iceberg-and-dremio.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/enabling-agentic-analytics-with-apache-iceberg-and-dremio/",
+      "toc": [
+        "The Shift from BI to Agents",
+        "What Is Agentic Analytics?",
+        "The Enterprise Roadblocks",
+        "Apache Iceberg: The Table Format for the Lakehouse",
+        "Open Catalogs and Apache Polaris",
+        "Query Federation: Access Data Where It Lives",
+        "Performance Without Tuning: Reflections and Apache Arrow",
+        "The AI Semantic Layer",
+        "AI SQL Functions: Bringing LLMs into Your Queries",
+        "Data Ingestion: Getting Data into Iceberg",
+        "Governance: Securing Data for Agents",
+        "Dremio's AI Agent",
+        "The MCP Server and External AI Clients",
+        "The Developer Toolkit: SDKs, APIs, and Arrow Flight",
+        "Reference Architectures and Real-World Scenarios",
+        "Getting Started: Your 30-Day Implementation Roadmap"
+      ],
+      "audience": "Data engineers, data architects, analytics leaders, AI engineers, and chief data officers.",
+      "excerpt": "This shift isn't theoretical. It's happening now. Companies are deploying AI agents that write SQL, answer business questions, and trigger automated workflows. But most of these agents are running on architectures that were never designed for them. The data is scattered across silos. The queries are too slow. The governance is too rigid or too loose. The business context that makes the difference between a useful insight and a hallucination is locked in people's heads, not in the platform."
     },
     {
       "title": "Using AI Agents for Data Engineering and Data Analysis",
@@ -121,8 +237,28 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GR6PYJT9",
-      "cover": "https://images.amazon.com/images/P/B0GR6PYJT9.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/using-ai-agents-for-data-engineering-and-data-analysis/"
+      "cover": "https://books.alexmerced.com/covers/using-ai-agents-for-data-engineering-and-data-analysis.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/using-ai-agents-for-data-engineering-and-data-analysis/",
+      "toc": [
+        "Why AI Agents Matter for Data Teams",
+        "Setting Up Your Environment",
+        "Anatomy of an Agent Interaction",
+        "Schema Design and DDL with Agents",
+        "Data Ingestion and Transformation",
+        "Building a Semantic Layer with Agents",
+        "Query Optimization and Reflections",
+        "Data Quality and Governance",
+        "Exploratory Analysis with Agents",
+        "AI SQL Functions in Practice",
+        "Reporting and Visualization Workflows",
+        "Ad-Hoc Investigation and Troubleshooting",
+        "MCP Server and External Agents",
+        "Building Agent Skills for Dremio",
+        "Automation and Pipelines with Agents",
+        "What Comes Next"
+      ],
+      "audience": "Data engineers, data analysts, and analytics engineers.",
+      "excerpt": "Data teams spend most of their time on work that follows predictable patterns. Writing DDL. Building views. Debugging a query that returns unexpected results. Classifying a column. Summarizing a table. These tasks require knowledge and judgment, but the mechanical steps are repetitive. AI coding agents can handle the mechanical part. This book teaches you how to use AI coding agents for data engineering and data analysis. Not in theory. In practice, with real tools, real SQL, and a real data platform."
     },
     {
       "title": "The AI Engineering Handbook",
@@ -134,8 +270,26 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GSS4R9FK",
-      "cover": "https://images.amazon.com/images/P/B0GSS4R9FK.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-ai-engineering-handbook/"
+      "cover": "https://books.alexmerced.com/covers/the-ai-engineering-handbook.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-ai-engineering-handbook/",
+      "toc": [
+        "AI Engineering as a Discipline",
+        "Foundation Models",
+        "Prompting and Context Engineering",
+        "Embeddings and Retrieval",
+        "Retrieval-Augmented Generation",
+        "Knowledge Graphs and Structured Knowledge",
+        "Agent Architectures",
+        "Memory Systems",
+        "Multimodal AI",
+        "Evaluation and Testing",
+        "Production AI Systems",
+        "Data for AI",
+        "Safety, Ethics, and Governance",
+        "The AI Engineer's Toolkit"
+      ],
+      "audience": "AI engineers at any level who want a single reference, software engineers moving into AI engineering, full-stack developers adding AI features to applications, and technical leaders who need to understand the whole AI engineering stack.",
+      "excerpt": "Ideal characteristics. High value and low risk: internal-facing (not customer-facing), well-defined success criteria, domain experts available for evaluation, and existing data that can power the feature. Customer support automation, internal knowledge search, and document summarization are common first projects. Avoid these as first projects. Customer-facing chatbots (too visible if quality is low), autonomous decision-making (too risky without experience), and projects requiring custom model training (too complex for a first effort)."
     },
     {
       "title": "AI-Ready Data",
@@ -147,8 +301,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/AI-Ready-Data-Designing-Platforms-Agents/dp/B0GSN7GLH2",
-      "cover": "https://images.amazon.com/images/P/B0GSN7GLH2.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/ai-ready-data/"
+      "cover": "https://books.alexmerced.com/covers/ai-ready-data.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/ai-ready-data/",
+      "toc": [
+        "What \"AI-Ready Data\" Means",
+        "Data Quality for AI",
+        "Structuring Data for RAG",
+        "Embeddings and Vector Infrastructure",
+        "Semantic Layers for AI",
+        "Knowledge Graphs as Data Infrastructure",
+        "Feature Stores and Embedding Registries",
+        "Open Lakehouse Architecture for AI",
+        "AI Data Pipelines",
+        "Data Governance for AI",
+        "Observability for AI Data Pipelines",
+        "Putting It All Together"
+      ],
+      "audience": "Data engineers, AI and ML engineers, platform architects, and technical leaders building the data infrastructure AI systems depend on. It is about the data layer, not models, prompts, or fine-tuning.",
+      "excerpt": "This book was written for data engineers, AI engineers, platform architects, and technical leaders who are building the data infrastructure that AI systems need to succeed. It is not a book about models, prompts, or fine-tuning. It is a book about the data layer that determines whether those models, prompts, and fine-tuning efforts produce reliable results. The premise is simple: most AI failures are data failures. A Retrieval-Augmented Generation system that retrieves stale documents produces stale answers. An AI agent that cannot discover or understand your data returns generic responses. A classification model trained on biased data produces biased predictions. Fixing any of these problems requires fixing the data, not the model."
     },
     {
       "title": "The 2026 Guide to AI-Assisted Development",
@@ -160,8 +330,30 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQW7CTML",
-      "cover": "https://images.amazon.com/images/P/B0GQW7CTML.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-2026-guide-to-ai-assisted-development/"
+      "cover": "https://books.alexmerced.com/covers/the-2026-guide-to-ai-assisted-development.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-2026-guide-to-ai-assisted-development/",
+      "toc": [
+        "The New Developer Workflow",
+        "How LLMs Work (What Developers Need to Know)",
+        "Prompt Engineering for Code",
+        "Tool Calling and Function Use",
+        "AGENTS.md and Project-Level Instructions",
+        "IDE Configuration and Editor-Specific Features",
+        "MCP (Model Context Protocol)",
+        "WebMCP and the Agent-Ready Web",
+        "Agent Skills and Reusable Workflows",
+        "Context Management and Long-Context Strategies",
+        "Managing Multiple Agents",
+        "Agentic CI/CD and PR Automation",
+        "Evaluation and Testing for AI-Generated Code",
+        "Security, Guardrails, and Safe Tool Use",
+        "Observability, Tracing, and Reproducibility",
+        "From Demo to Production",
+        "Building Your Portfolio",
+        "Career Paths in AI-Augmented Development"
+      ],
+      "audience": "Working developers who want to go well beyond autocomplete, junior developers and career changers who get a structured path plus appendices on programming basics, and team leads or engineering managers who need decision frameworks for AI tooling, evaluation, security, and staffing.",
+      "excerpt": "This book is not about AI replacing developers. It is about developers becoming more effective by using AI as a tool. Think of AI coding agents the way you think about any powerful tool: a database, a testing framework, a CI/CD pipeline. The tool does not make decisions. You make decisions. The tool executes them faster, catches some mistakes, and handles repetitive work so you can focus on the parts that require judgment."
     },
     {
       "title": "Apache Iceberg for Agentic AI: Connecting Structured Enterprise",
@@ -173,8 +365,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/Apache-Iceberg-Agentic-Connecting-Structured-ebook/dp/B0DYTX2WZY",
-      "cover": "https://images.amazon.com/images/P/B0DYTX2WZY.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/apache-iceberg-for-agentic-ai-connecting-structured-enterprise/"
+      "cover": "https://books.alexmerced.com/covers/apache-iceberg-for-agentic-ai-connecting-structured-enterprise.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/apache-iceberg-for-agentic-ai-connecting-structured-enterprise/",
+      "toc": [
+        "Why Agents Need Structured Data",
+        "Apache Iceberg Fundamentals for Agent Workloads",
+        "Designing Agent-Ready Iceberg Tables",
+        "Catalogs and Metadata for Agent Discovery",
+        "The Semantic Layer: Giving Data Meaning for Agents",
+        "MCP: Connecting Agents to Iceberg Data",
+        "Query Federation: Agents Across Data Sources",
+        "AI SQL Functions and In-Query Intelligence",
+        "Building Agentic Pipelines on Iceberg",
+        "Governance and Security for Agent Data Access",
+        "Performance Optimization for Agent Queries",
+        "Reference Architecture and Migration Guide"
+      ],
+      "audience": "Data engineers who build Apache Iceberg pipelines but rarely think about how agents will use their tables, and AI engineers who build agent workflows but struggle to connect them to governed, structured enterprise data.",
+      "excerpt": "The era of large language models began with documents. We taught models to read web pages, summarize PDFs, and converse in natural language based on immense corpora of unstructured text. When developers started building autonomous agents, they naturally gravitated toward the same domain. Retrieve-and-generate (RAG) pipelines became synonymous with searching a vector database of text snippets. But the most critical information in any enterprise does not live in text documents. It lives in structured tables. Revenue metrics, inventory counts, user clickstreams, and financial transactions are highly structured datasets, carefully curated and stored in data lakehouses."
     },
     {
       "title": "The Agentic Enterprise: Deploying AI Agents Across the Modern Organization",
@@ -186,8 +394,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/Agentic-Enterprise-Deploying-Agents-Organization/dp/B0GSN3NNS5",
-      "cover": "https://images.amazon.com/images/P/B0GSN3NNS5.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-agentic-enterprise-deploying-ai-agents-across-the-modern-organization/"
+      "cover": "https://books.alexmerced.com/covers/the-agentic-enterprise-deploying-ai-agents-across-the-modern-organization.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-agentic-enterprise-deploying-ai-agents-across-the-modern-organization/",
+      "toc": [
+        "The Enterprise Agent Opportunity",
+        "Agent Architecture for Enterprise",
+        "Agents in Operations",
+        "Agents in Analytics",
+        "Agents in Engineering",
+        "Agent Orchestration",
+        "Human-in-the-Loop Patterns",
+        "Error Handling and Recovery",
+        "Safety and Guardrails",
+        "Compliance and Governance",
+        "Measuring Agent Impact",
+        "Case Studies and Patterns"
+      ],
+      "audience": "Data and analytics leaders, engineering managers, IT architects, operations leaders, and compliance and governance professionals who are evaluating, building, or governing AI agents in the enterprise.",
+      "excerpt": "Every generation of enterprise software followed the same pattern: manual process, then software-assisted process, then automated process. Payroll moved from ledger books to spreadsheets to ERP systems. Customer support moved from phone trees to ticketing systems to chatbots. Each transition reduced cost, increased speed, and shifted human effort from execution to oversight. AI agents represent the next transition. They do not just automate individual tasks. They orchestrate multi-step workflows, make decisions based on context, and interact with enterprise systems through APIs and protocols. A procurement agent does not simply fill in a purchase order template. It evaluates vendor options, checks budget thresholds, applies compliance rules, routes approvals to the right stakeholders, and generates documentation."
     },
     {
       "title": "Constructing Context and Semantics for AI Agents",
@@ -199,8 +423,23 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/Constructing-Context-Semantics-Agents-Embeddings/dp/B0GSHRZNZ5",
-      "cover": "https://images.amazon.com/images/P/B0GSHRZNZ5.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/constructing-context-and-semantics-for-ai-agents/"
+      "cover": "https://books.alexmerced.com/covers/constructing-context-and-semantics-for-ai-agents.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/constructing-context-and-semantics-for-ai-agents/",
+      "toc": [
+        "Introduction: AI Agents and Context Overview",
+        "LLM Fundamentals and Context Windows",
+        "Prompt Engineering vs. Context Engineering",
+        "Semantic Representations",
+        "Knowledge Graphs and Structured Context",
+        "Memory Architectures for Agents",
+        "Multimodal Context and Grounding",
+        "Agent Frameworks and Tools",
+        "Evaluation of AI Agents",
+        "Safety, Ethics, and Bias Mitigation",
+        "Best Practices and Patterns"
+      ],
+      "audience": "AI and ML engineers building agent systems, software engineers and architects moving into AI product development, and technical leaders, product managers, and decision-makers evaluating AI agents for their organizations.",
+      "excerpt": "A customer support bot that forgets the user's name mid-conversation. A coding assistant that ignores the project's authentication layer and writes a second one from scratch. A data analyst agent that fabricates statistics because it never received the actual dataset. These failures share a common root cause: the agent lacked the right context at the right time. Context is not a nice-to-have feature for AI agents. It is the foundation on which every useful behavior depends. An agent's ability to reason, plan, and act correctly is bounded by the information it can access during each decision. When that information is incomplete, stale, or poorly structured, the agent produces outputs that range from mildly unhelpful to dangerously wrong."
     },
     {
       "title": "The Open Source Lakehouse: Architecting the Decoupled Analytical Foundation",
@@ -212,8 +451,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/Open-Source-Lakehouse-Architecting-Analytical-ebook/dp/B0D46P3VB7",
-      "cover": "https://images.amazon.com/images/P/B0D46P3VB7.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-open-source-lakehouse-architecting-the-decoupled-analytical-foundation/"
+      "cover": "https://books.alexmerced.com/covers/the-open-source-lakehouse-architecting-the-decoupled-analytical-foundation.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-open-source-lakehouse-architecting-the-decoupled-analytical-foundation/",
+      "toc": [
+        "The Open Source Lakehouse Vision",
+        "Apache Parquet: The Storage Foundation",
+        "Apache Arrow: The In-Memory Standard",
+        "Apache Arrow Flight: High-Performance Data Transfer",
+        "Apache Iceberg: The Table Format",
+        "Apache Iceberg: Advanced Operations",
+        "Apache Polaris: The Open Catalog",
+        "How the Stack Fits Together",
+        "Multi-Engine Interoperability",
+        "Building the Platform Yourself",
+        "How Dremio Unifies the Stack",
+        "Reference Architectures and Decision Frameworks"
+      ],
+      "audience": "Data engineers building pipelines, architects planning a platform migration, and technical leaders weighing the strategic implications of adopting open source data infrastructure.",
+      "excerpt": "The modern data landscape is undergoing a profound structural transformation. For decades, organizations stored their analytical data inside proprietary systems controlled by a small number of dominant vendors. The data formats were closed. The query engines were closed. The governance policies were embedded inside opaque administrative consoles that only the vendor fully understood. Switching platforms meant migrating petabytes of data through narrow export pipelines, a process so expensive and risky that most organizations simply accepted annual price increases as the cost of doing business."
     },
     {
       "title": "Evaluating AI Systems: Testing LLMs, RAG, and Agents",
@@ -225,8 +480,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/Evaluating-AI-Systems-Testing-Agents/dp/B0GSVPQ667",
-      "cover": "https://images.amazon.com/images/P/B0GSVPQ667.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/evaluating-ai-systems-testing-llms-rag-and-agents/"
+      "cover": "https://books.alexmerced.com/covers/evaluating-ai-systems-testing-llms-rag-and-agents.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/evaluating-ai-systems-testing-llms-rag-and-agents/",
+      "toc": [
+        "Why Evaluation Is Different for AI",
+        "Evaluation Fundamentals",
+        "Prompt Testing",
+        "Dataset Generation",
+        "RAG Evaluation",
+        "Hallucination Detection",
+        "Agent Evaluation",
+        "LLM-as-Judge Patterns",
+        "Human Evaluation",
+        "Evaluation Infrastructure",
+        "Regression Testing and Monitoring",
+        "Building an Evaluation Culture"
+      ],
+      "audience": "AI and ML engineers, QA engineers, platform engineers, technical leaders, and data engineers who need systematic evaluation for AI systems. No prior evaluation experience is assumed, though basic Python, SQL, and CI/CD familiarity helps.",
+      "excerpt": "AI systems do not work this way. Ask an LLM to summarize a quarterly earnings report and you may get a different summary each time. Both summaries might be accurate. One might emphasize revenue growth while the other leads with margin expansion. Both are correct, but they are not identical. Traditional assertion-based testing cannot handle this. This chapter establishes why AI systems require a fundamentally different approach to quality assurance, what that approach looks like at a high level, and what happens when teams skip it."
     },
     {
       "title": "The Economics of Labor in the AI Era",
@@ -238,8 +509,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/Economics-Labor-Era-Disruption-Adaptation/dp/B0GSQSL344",
-      "cover": "https://images.amazon.com/images/P/B0GSQSL344.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-economics-of-labor-in-the-ai-era/"
+      "cover": "https://books.alexmerced.com/covers/the-economics-of-labor-in-the-ai-era.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-economics-of-labor-in-the-ai-era/",
+      "toc": [
+        "The AI Disruption Question",
+        "Labor Economics Fundamentals",
+        "The Optimistic Case",
+        "The Pessimistic Case",
+        "Industry-by-Industry Analysis",
+        "The Wage Effects",
+        "Policy Response: Education and Retraining",
+        "Policy Response: Safety Nets and UBI",
+        "Policy Response: Regulation and Industrial Policy",
+        "Career Strategy for the AI Era",
+        "The Practical Playbook",
+        "Scenarios and Synthesis"
+      ],
+      "audience": "Knowledge workers weighing how AI affects their careers, economics students and enthusiasts, policymakers and their staffs, business leaders planning workforce strategy, and data professionals making career decisions in AI-adjacent fields.",
+      "excerpt": "Every major technology shift produces the same argument. One side says the new technology will destroy jobs and create mass unemployment. The other side says it will create more jobs than it destroys, just as every previous technology has. Both sides cite historical evidence. Both sides are partially right. And both sides usually miss the factors that actually determine the outcome. This chapter frames the AI disruption question honestly. It examines what happened during previous technology transitions, identifies what makes AI different from those transitions, and establishes the economic frameworks this book uses to analyze what comes next."
     },
     {
       "title": "Governing AI Systems",
@@ -251,8 +538,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/Governing-AI-Systems/dp/B0GSMVQ1TH",
-      "cover": "https://images.amazon.com/images/P/B0GSMVQ1TH.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/governing-ai-systems/"
+      "cover": "https://books.alexmerced.com/covers/governing-ai-systems.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/governing-ai-systems/",
+      "toc": [
+        "Why AI Governance Matters Now",
+        "Risk Assessment for AI Systems",
+        "The EU AI Act: Practical Compliance",
+        "NIST AI RMF and ISO 42001",
+        "Guardrails Architecture",
+        "Prompt Injection Defense",
+        "Agent Safety",
+        "Bias Detection and Mitigation",
+        "Model Governance",
+        "Data Governance for AI",
+        "Safety Evaluation and Testing",
+        "Building a Governance Program"
+      ],
+      "audience": "AI safety and governance leaders, engineering teams implementing guardrails and compliance controls, CISOs and risk officers, legal and compliance teams, and technical leaders responsible for AI deployments that must meet regulatory requirements.",
+      "excerpt": "AI governance is no longer a future concern. The EU AI Act's prohibitions on unacceptable-risk AI systems are already enforceable. High-risk AI system obligations take effect in August 2026. NIST's AI Risk Management Framework has become the de facto standard for voluntary compliance in the United States. ISO/IEC 42001 provides the first international standard for AI management systems. This chapter establishes why governance is an operational necessity, the cost of operating without it, and how to assess an organization's governance maturity."
     },
     {
       "title": "Shipping AI: From Prototype to Production Systems",
@@ -264,8 +567,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/Shipping-AI-Prototype-Production-Systems/dp/B0GSR2GRZX",
-      "cover": "https://images.amazon.com/images/P/B0GSR2GRZX.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/shipping-ai-from-prototype-to-production-systems/"
+      "cover": "https://books.alexmerced.com/covers/shipping-ai-from-prototype-to-production-systems.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/shipping-ai-from-prototype-to-production-systems/",
+      "toc": [
+        "The Production Gap",
+        "AI System Architecture",
+        "Inference Infrastructure",
+        "Latency Budgets and Performance",
+        "Prompt and Model Versioning",
+        "Evaluation Pipelines",
+        "Monitoring and Observability",
+        "Cost Management",
+        "Agent Orchestration in Production",
+        "Rollback and Incident Response",
+        "Safety and Guardrails in Production",
+        "Case Studies and Reference Architectures"
+      ],
+      "audience": "AI and ML engineers, platform engineers, engineering managers, DevOps and SRE teams, and data engineers who build or run AI systems in production. It assumes software engineering fundamentals but no machine learning research background.",
+      "excerpt": "Every AI demo lies. Not intentionally, but structurally. A prototype that answers questions correctly on a developer's laptop tells you nothing about how it will perform when 500 users hit it simultaneously, when the model returns a hallucinated answer to a customer's billing question, or when your monthly inference bill arrives at six figures. The gap between a working AI prototype and a production AI system is wider than most engineers expect. This chapter explains why that gap exists, what falls into it, and how to assess whether your system is ready to cross it."
     },
     {
       "title": "Building Knowledge Systems for AI: Graphs, RAG, Memory, and Context",
@@ -277,8 +596,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/Building-Knowledge-Systems-AI-Context/dp/B0GSWFSSRC",
-      "cover": "https://images.amazon.com/images/P/B0GSWFSSRC.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/building-knowledge-systems-for-ai-graphs-rag-memory-and-context/"
+      "cover": "https://books.alexmerced.com/covers/building-knowledge-systems-for-ai-graphs-rag-memory-and-context.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/building-knowledge-systems-for-ai-graphs-rag-memory-and-context/",
+      "toc": [
+        "The Knowledge Problem in AI",
+        "Knowledge Graphs: Foundations",
+        "Ontologies and Schema Design",
+        "Entity Linking and Resolution",
+        "Embedding Models and Vector Search",
+        "Hybrid Search Systems",
+        "Building Knowledge Graphs from Unstructured Data",
+        "GraphRAG: Knowledge Graphs Meet Retrieval",
+        "Semantic Indexing and Structured Retrieval",
+        "Agent Memory and Knowledge Integration",
+        "Multimodal Knowledge Systems",
+        "Governing Knowledge Systems"
+      ],
+      "audience": "AI engineers designing knowledge retrieval for agents, knowledge engineers and data architects building enterprise knowledge infrastructure, search engineers moving to AI-powered retrieval, and technical leaders evaluating knowledge system architectures.",
+      "excerpt": "A product team at a mid-size financial services company built a customer support chatbot in three days. They connected GPT-5.4 to a simple chat interface, wrote a system prompt describing the company's products, and launched it internally. The first day went well. On the second day, a customer asked about a pricing change that had been announced the previous week. The chatbot confidently quoted the old pricing. On the third day, a customer asked whether their account qualified for a recently introduced loyalty discount. The chatbot invented a discount program that did not exist."
     },
     {
       "title": "The AI Lakehouse: Architecting Data Platforms for AI",
@@ -290,8 +625,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/AI-Lakehouse-Architecting-Data-Platforms/dp/B0GSMQ6M2J",
-      "cover": "https://images.amazon.com/images/P/B0GSMQ6M2J.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-ai-lakehouse-architecting-data-platforms-for-ai/"
+      "cover": "https://books.alexmerced.com/covers/the-ai-lakehouse-architecting-data-platforms-for-ai.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-ai-lakehouse-architecting-data-platforms-for-ai/",
+      "toc": [
+        "The Convergence of Data and AI",
+        "Lakehouse Architecture Fundamentals",
+        "Apache Iceberg for AI Workloads",
+        "Open Table Formats Compared",
+        "Vector Search in the Lakehouse",
+        "Semantic Layers for AI Agents",
+        "Feature Engineering on the Lakehouse",
+        "RAG Pipelines on Lakehouse Data",
+        "AI Training on Lakehouse Data",
+        "Data Governance for AI",
+        "Observability and Data Quality",
+        "Reference Architectures"
+      ],
+      "audience": "Data platform architects, data engineers, AI and ML engineers, and technical leaders and CDOs deciding how a lakehouse should serve both analytics and AI workloads.",
+      "excerpt": "Every organization building AI systems today faces the same architectural question: where does the data live, and how do AI workloads get to it? For most companies, the answer is messy. Analytics data sits in a data warehouse. Raw files live in a data lake. Embeddings go into a vector database. Features get computed somewhere else and served from a feature store. Training datasets are exported, transformed, and versioned in yet another system. Each of these systems has its own security model, its own governance policies, and its own operations team."
     },
     {
       "title": "AI Application Architecture: Patterns for Building Intelligent Systems",
@@ -303,8 +654,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/AI-Application-Architecture-Patterns-Intelligent/dp/B0GSVFT3H4",
-      "cover": "https://images.amazon.com/images/P/B0GSVFT3H4.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/ai-application-architecture-patterns-for-building-intelligent-systems/"
+      "cover": "https://books.alexmerced.com/covers/ai-application-architecture-patterns-for-building-intelligent-systems.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/ai-application-architecture-patterns-for-building-intelligent-systems/",
+      "toc": [
+        "Why AI Needs Architecture",
+        "Foundational Patterns",
+        "RAG Architecture Patterns",
+        "Agent Architecture Patterns",
+        "Tool Use Patterns",
+        "Orchestration Patterns",
+        "Streaming AI Systems",
+        "Hybrid Pipelines",
+        "Multi-Model Architectures",
+        "Context Management Patterns",
+        "Reliability Patterns",
+        "Anti-Patterns and Decision Framework"
+      ],
+      "audience": "AI engineers and software architects designing AI applications, backend engineers adding AI to existing systems, platform engineers building shared AI infrastructure, and technical leaders choosing architectural approaches.",
+      "excerpt": "Building an AI application is easy. Keeping it running in production is hard. The gap between a working prototype and a production system is the same gap that software engineering has been bridging for decades: the gap between \"it works on my machine\" and \"it works for a thousand users at 3 AM.\" This chapter establishes why AI systems need architectural discipline, what makes AI architecture different from traditional software architecture, and the cost of getting it wrong."
     },
     {
       "title": "The Economics of AI: Cost, Latency, and Infrastructure Tradeoffs",
@@ -316,8 +683,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/Economics-AI-Latency-Infrastructure-Tradeoffs/dp/B0GSPGSKXC",
-      "cover": "https://images.amazon.com/images/P/B0GSPGSKXC.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-economics-of-ai-cost-latency-and-infrastructure-tradeoffs/"
+      "cover": "https://books.alexmerced.com/covers/the-economics-of-ai-cost-latency-and-infrastructure-tradeoffs.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-economics-of-ai-cost-latency-and-infrastructure-tradeoffs/",
+      "toc": [
+        "The Economics Problem",
+        "Token Economics",
+        "Model Selection Economics",
+        "Inference Infrastructure",
+        "Caching and Reuse Strategies",
+        "Latency-Cost Tradeoffs",
+        "Retrieval-Generation Cost Balance",
+        "Batching and Throughput Optimization",
+        "Managing Evaluation Costs",
+        "AI FinOps",
+        "Build vs. Buy Decisions",
+        "Decision Frameworks for AI Economics"
+      ],
+      "audience": "Engineering and platform leaders, FinOps teams, AI engineers, CTOs and VPs of Engineering, and product managers who need to make AI systems financially sustainable.",
+      "excerpt": "AI costs work differently from traditional software costs. A web application's marginal cost per user is close to zero once the infrastructure is in place. Serve one user or one million users: the database query cost barely changes. An AI application's marginal cost scales with every request: every query consumes tokens, every token costs money, and the cost varies dramatically based on model, context size, and output length."
     },
     {
       "title": "Alex Merced's Field Guide to Developer Relations",
@@ -329,8 +712,26 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0H15CJLNG",
-      "cover": "https://images.amazon.com/images/P/B0H15CJLNG.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/alex-merced-s-field-guide-to-developer-relations/"
+      "cover": "https://books.alexmerced.com/covers/alex-merced-s-field-guide-to-developer-relations.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/alex-merced-s-field-guide-to-developer-relations/",
+      "toc": [
+        "The DevRel Mission",
+        "Personal Branding",
+        "Staging the Scene",
+        "Building Rapport",
+        "The Art of Educating",
+        "Content Creation Masterclass",
+        "Podcasting",
+        "Content Distribution",
+        "Community Building",
+        "Public Speaking",
+        "Using AI Authentically",
+        "Measuring Success",
+        "The Internal Liaison",
+        "Building Your Team"
+      ],
+      "audience": "Developer advocates, technical evangelists, DevRel managers, and community managers who want a structured approach to the job, plus engineers moving into advocacy and founders or marketing leaders building a DevRel function.",
+      "excerpt": "Instead of writing code, I spent my college years at Bowling Green State University studying Popular Culture and Marketing. I ran a hobby store called The Gamers Lounge and served as the promotion director for our campus radio station. I learned early on how to organize events, build excitement around niche topics, and connect people who shared similar passions. My early technical curiosity was replaced by a deep immersion in community building."
     },
     {
       "title": "AI and Agents for Normal People",
@@ -342,8 +743,35 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0H59GBTMW",
-      "cover": "https://images.amazon.com/images/P/B0H59GBTMW.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/ai-and-agents-for-normal-people/"
+      "cover": "https://books.alexmerced.com/covers/ai-and-agents-for-normal-people.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/ai-and-agents-for-normal-people/",
+      "toc": [
+        "Start Here: Useful AI in One Afternoon with Gemini",
+        "The Simple Mental Model: How LLMs and Agents Work",
+        "NotebookLM: Turning Sources into Useful Understanding",
+        "Antigravity on Your Computer: Helpful Agent or Risky Assistant?",
+        "ChatGPT and Codex",
+        "Claude, Claude Desktop, and Claude Code",
+        "OpenCode",
+        "MCP and Agent Skills: Two Ways to Give Agents Abilities",
+        "Better Prompts for Everyday Work",
+        "Research Without Drowning",
+        "Presentations, Slides, and Visual Stories",
+        "Personal Organization and Life Admin",
+        "Small Business and Solo Workflows",
+        "Learning, Tutoring, and Practice Plans",
+        "Documents, Folders, and Light Automation with Agents",
+        "Images, Infographics, and Creative Assets",
+        "Safety, Privacy, and Judgment",
+        "Your First Personal AI Playbook",
+        "Prompt Library for Normal People",
+        "Workflow Cookbook",
+        "Plain-Language Glossary and Field Notes",
+        "Everyday Prompt Workbook",
+        "A Thirty-Day AI Practice Plan"
+      ],
+      "audience": "Everyday people such as professionals, students, creators, parents, small business owners, teachers, and retirees who want to use AI in daily life without first becoming programmers or wading through jargon.",
+      "excerpt": "I wrote this book for people who know AI matters but do not want to be talked down to, buried in jargon, or told that they need to become software engineers before they can benefit from these tools. The best way to learn AI is to practice on real but low-risk work: emails, notes, research, presentations, folders, planning, and everyday decisions. The examples in this book are designed to help you build that habit one step at a time."
     },
     {
       "title": "The No Lock-in Apache Iceberg Lakehouse with Agentic Analytics",
@@ -355,8 +783,22 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0H49TDNX3",
-      "cover": "https://images.amazon.com/images/P/B0H49TDNX3.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-no-lock-in-apache-iceberg-lakehouse-with-agentic-analytics/"
+      "cover": "https://books.alexmerced.com/covers/the-no-lock-in-apache-iceberg-lakehouse-with-agentic-analytics.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-no-lock-in-apache-iceberg-lakehouse-with-agentic-analytics/",
+      "toc": [
+        "What is a Data Lakehouse",
+        "What is Apache Iceberg",
+        "Vectors for Lock-in",
+        "Open Source Iceberg Catalogs",
+        "Why Apache Matters When Avoiding Lock-in",
+        "Getting Your Data into Iceberg",
+        "Migrating to Iceberg",
+        "Agentic AI for Apache Iceberg",
+        "Beyond Apache Iceberg",
+        "Tying It All Together"
+      ],
+      "audience": "Data engineers, analytics engineers, data architects, platform teams, and technical leaders evaluating Apache Iceberg, open catalogs, federated query, lakehouse migrations, or agentic analytics. It assumes comfort with data platform concepts.",
+      "excerpt": "A data team rarely wakes up one morning and decides to build a lakehouse. The usual path is less tidy. First there is a warehouse. It answers the finance dashboard, the executive scorecard, the recurring sales report, and the board deck. It has carefully modeled tables, access controls, and enough structure that people outside the data team can trust what they see. Then the business starts collecting more data than the warehouse was designed to handle comfortably: application logs, clickstreams, partner files, IoT events, document text, audio, images, model features, and raw operational extracts that might matter someday. A data lake appears because object storage is cheap, flexible, and forgiving."
     },
     {
       "title": "Being Productive with Google AI",
@@ -368,8 +810,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0H77DBD83",
-      "cover": "https://images.amazon.com/images/P/B0H77DBD83.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-google-ai/"
+      "cover": "https://books.alexmerced.com/covers/being-productive-with-google-ai.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-google-ai/",
+      "toc": [
+        "Google AI in 2026",
+        "Gemini Chat: The Foundation Surface",
+        "Prompting Gemini Effectively",
+        "NotebookLM: Research at Scale",
+        "Audio Overviews and Shareable Research",
+        "Gemini in Google Workspace",
+        "Gemini Live: Real-Time Multimodal Interaction",
+        "Veo and Video Generation",
+        "Gemini Spark: Your Autonomous Background Agent",
+        "Jules: Asynchronous AI Coding Agent",
+        "Google AI Studio and the Gemini API",
+        "Building Your Google AI Workflow"
+      ],
+      "audience": "Written for Google Workspace power users, researchers and knowledge managers, developers adding Google AI to their stack, and content creators who want to turn Gemini, NotebookLM, and related tools into a real daily workflow.",
+      "excerpt": "Every morning before I start writing, I open NotebookLM. I have a notebook with 40-something sources in it: research papers, product documentation pages, previous chapters I have written, interview transcripts, blog posts I saved months ago and never got around to reading properly. Before I sit down to write anything substantial, I ask NotebookLM a question about whatever I am working on that day. Sometimes the question is broad: \"What are the most important points I have not addressed yet in my sources on this topic?\" Sometimes it is narrow: \"Which of my sources mentions the context window size constraint in a way that I could cite directly?\" The answers take about two seconds."
     },
     {
       "title": "Being Productive with Open Models",
@@ -381,8 +839,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0H76JQ55R",
-      "cover": "https://images.amazon.com/images/P/B0H76JQ55R.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-open-models/"
+      "cover": "https://books.alexmerced.com/covers/being-productive-with-open-models.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-open-models/",
+      "toc": [
+        "What Is the Open-Weight Movement",
+        "The Model Families",
+        "The Agent Way of Working",
+        "Inference Runtimes",
+        "Cloud-Hybrid Access",
+        "Agent Harnesses",
+        "The Open Model Field Guide",
+        "Research and Documents",
+        "Coding and Code Review",
+        "Building Websites with Open Models",
+        "Building Desktop Applications with Open Models",
+        "Building Your Personal Open Model Stack"
+      ],
+      "audience": "Developers and technical professionals who want a capable, low-cost AI stack without a proprietary subscription, including privacy-first developers, cost-conscious builders, and curious generalists comfortable with a terminal. A GPU is not required.",
+      "excerpt": "The question that started this book was simple: what happens when the API credits run out? I had been using proprietary AI coding services daily for months. The workflow was good. The productivity gains were real. Then I got a bill that made me think seriously about what I was actually depending on. Not the model, not the workflow, but a specific company's pricing decisions, rate limits, and uptime SLAs."
     },
     {
       "title": "Being Productive with Claude",
@@ -394,8 +868,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0H76BTLMF",
-      "cover": "https://images.amazon.com/images/P/B0H76BTLMF.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-claude/"
+      "cover": "https://books.alexmerced.com/covers/being-productive-with-claude.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-claude/",
+      "toc": [
+        "What Is Anthropic",
+        "What Is Claude",
+        "The Claude Way of Working",
+        "Claude.ai: The Web and Desktop Experience",
+        "Claude on Your Phone: Mobile and Claude Dispatch",
+        "Claude Code: The Terminal Agent",
+        "A Field Guide to Claude Use Cases",
+        "Research, Documents, and Presentations",
+        "Building and Sharing Artifacts",
+        "Building Websites with Claude Code",
+        "Building Desktop Applications with Claude Code",
+        "Prompting Mastery and Your Own Claude Workflow"
+      ],
+      "audience": "Anyone who wants consistent, repeatable results from Claude for coding and non-coding work, from developers who delegate to technical generalists and curious newcomers. You do not need to be a professional developer for most of it.",
+      "excerpt": "The first time I ran Claude Code on a real project, I expected a capable autocomplete. What I got was something closer to a junior developer who had already read the entire codebase, remembered every decision I had made in the last three sessions, and asked clarifying questions before touching anything it was not sure about. That experience changed how I thought about working with AI tools. It stopped being a question of whether to use them and became a question of how to design the working relationship deliberately."
     },
     {
       "title": "Being Productive with OpenAI Codex",
@@ -407,8 +897,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0H766477L",
-      "cover": "https://images.amazon.com/images/P/B0H766477L.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-openai-codex/"
+      "cover": "https://books.alexmerced.com/covers/being-productive-with-openai-codex.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-openai-codex/",
+      "toc": [
+        "What Is OpenAI",
+        "What Is ChatGPT",
+        "What Is Codex",
+        "The Codex Desktop App",
+        "Codex on Your Phone",
+        "A Field Guide to Codex Use Cases",
+        "Local Productivity: Documents, Spreadsheets, and Presentations",
+        "Generating Images with Codex",
+        "Generating Video with Codex",
+        "Building Websites with Codex",
+        "Building Desktop Applications with Codex",
+        "Prompting Mastery and Your Own Codex Workflow"
+      ],
+      "audience": "Anyone who wants serious, repeatable output from OpenAI Codex across coding and non-coding work: developers who delegate, technical generalists such as founders and analysts, and curious newcomers coming from ChatGPT.",
+      "excerpt": "The first time I delegated a real task to Codex and walked away from my computer, I came back to a diff that was better than what I would have written myself. That had not happened with any previous AI tool. It did not just return a suggestion for me to evaluate. It returned a result I could ship. That moment changed how I thought about agentic AI, and it changed what I thought a book about agentic AI needed to cover."
     },
     {
       "title": "Being Productive with Grok and Cursor",
@@ -420,8 +926,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0H7Z6RS5Y",
-      "cover": "https://images.amazon.com/images/P/B0H7Z6RS5Y.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-grok-and-cursor/"
+      "cover": "https://books.alexmerced.com/covers/being-productive-with-grok-and-cursor.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-grok-and-cursor/",
+      "toc": [
+        "The xAI Ecosystem",
+        "Getting Access and Setting Up",
+        "Grok Chat for Developers",
+        "Grok for Coding Research and Debugging",
+        "Grok Build, the Terminal Agent",
+        "Cursor Setup and Model Configuration",
+        "The .mdc Rules System",
+        "Agent Mode in Cursor",
+        "Background Agents and Cloud Sandboxes",
+        "Multi-Model Coding in Cursor",
+        "Local Models and Desktop Runtimes",
+        "Building Custom Agents with the Developer SDK"
+      ],
+      "audience": "Written for developers tuning their Cursor setup, terminal-based developers, software architects and tools engineers, and researchers or technical generalists working with Grok and Cursor.",
+      "excerpt": "Every morning before I start writing, I open Cursor. I have a local workspace directory with structured rule files, project specifications, and raw manuscript drafts. Before I write a line of prose or code, I ask Grok Chat to summarize my research inputs. Sometimes the query is broad: \"What are the most important points I have not addressed yet in my outline?\" Sometimes it is narrow: \"Which of my research documents describes the NPU requirements in a way that I can cite directly?\" The answers take about two seconds, citing the exact source files and passages."
     },
     {
       "title": "Being Productive with Microsoft Copilot",
@@ -433,8 +955,24 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0H7WZ19NJ",
-      "cover": "https://images.amazon.com/images/P/B0H7WZ19NJ.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-microsoft-copilot/"
+      "cover": "https://books.alexmerced.com/covers/being-productive-with-microsoft-copilot.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/being-productive-with-microsoft-copilot/",
+      "toc": [
+        "The Microsoft Copilot Ecosystem",
+        "Copilot Chat: Your Starting Point",
+        "Prompting Copilot Effectively",
+        "Copilot in Word, PowerPoint, and OneNote",
+        "Copilot in Excel and Data Analysis",
+        "Copilot in Outlook, Teams, and Loop",
+        "Copilot Cowork: Delegating Multi-Step Workflows",
+        "Copilot Pages: The Collaborative AI Canvas",
+        "Copilot Studio: Building Your Own Agents",
+        "GitHub Copilot for Developers",
+        "Copilot Plus PC and the Windows Copilot Runtime",
+        "Building Your Microsoft Copilot Workflow"
+      ],
+      "audience": "Microsoft 365 power users, IT professionals and M365 administrators, developers in Microsoft-centric stacks, and business analysts who want to build Copilot automations and agents without a software engineering background.",
+      "excerpt": "The first time Microsoft 365 Copilot summarized an entire week of email threads, identified the three things I needed to act on, and drafted the follow-up for each one, I stopped thinking of it as an assistant and started treating it as infrastructure. That shift from \"useful novelty\" to \"load-bearing part of the workflow\" is what this book is about. It does not happen automatically when you get access to Copilot. It requires understanding what each Copilot surface actually does, which data it can and cannot access, what prompt structure gets consistent results, and how to verify what you receive before you act on it."
     },
     {
       "title": "The Book on Data, Data Engineering, Data Analytics, and Agentic AI - Volume 2",
@@ -446,8 +984,32 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GZVJB6ML",
-      "cover": "https://images.amazon.com/images/P/B0GZVJB6ML.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-2/"
+      "cover": "https://books.alexmerced.com/covers/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-2.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-2/",
+      "toc": [
+        "SQL Foundations: The Language of Data",
+        "Intermediate SQL: Aggregations, Subqueries, and Set Operations",
+        "Advanced SQL: Window Functions and Analytical Queries",
+        "SQL Performance and Optimization",
+        "SQL for Data Engineering",
+        "Building Dashboards That Tell Stories",
+        "Business Intelligence Tools and Platforms",
+        "From Data to Insight: The Analyst's Workflow",
+        "Building Data Stories and Reports",
+        "Data Quality, Governance, and Trust",
+        "The AI Revolution: From Neural Networks to Large Language Models",
+        "Understanding LLM Architecture and Capabilities",
+        "The Rise of Agentic AI",
+        "Building AI Agents: Architecture and Patterns",
+        "The Model Context Protocol (MCP)",
+        "Agentic Coding Tools: Claude Code, Codex, and OpenCode",
+        "AI for Data Engineering",
+        "AI for Data Analytics",
+        "Enterprise AI and Analytics Platforms",
+        "The Future of Data and AI"
+      ],
+      "audience": "Analysts who want to write performant SQL, data engineers bringing large language models into their work, and technical leaders planning an enterprise AI strategy.",
+      "excerpt": "In 1970, a mathematician named Edgar Codd published a paper at IBM Research that would ultimately become one of the most consequential documents in the history of computing. The paper proposed organizing data into relations, or tables, and querying those tables using a declarative language. The idea was radical: instead of telling a computer how to retrieve data, step by procedural step, you simply described what data you wanted, and the engine figured out the mechanics on its own."
     },
     {
       "title": "The Book on Data, Data Engineering, Data Analytics, and Agentic AI - Volume 1",
@@ -459,8 +1021,32 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GZTXJQ1C",
-      "cover": "https://images.amazon.com/images/P/B0GZTXJQ1C.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-1/"
+      "cover": "https://books.alexmerced.com/covers/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-1.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-1/",
+      "toc": [
+        "The Origins of Data Management",
+        "From OLTP to OLAP and the Birth of the Data Warehouse",
+        "The Data Lake Era",
+        "The Data Lakehouse Architecture",
+        "Understanding Data Types and Structures",
+        "Data Modeling for Analytics",
+        "Essential Statistics for Data Practitioners",
+        "File Formats and Storage",
+        "Open Table Formats",
+        "The Open Source Data Ecosystem",
+        "The Data Engineering Challenge",
+        "ETL, ELT, and Data Pipeline Design",
+        "Data Warehouse Architectures",
+        "Data Lakehouse Architectures",
+        "Query Federation and Virtual Data Layers",
+        "The Medallion Architecture and Data Mesh",
+        "Batch Processing at Scale",
+        "Stream Processing and Real-Time Pipelines",
+        "Single-Node Engines: DuckDB, DataFusion, and Polaris",
+        "Designing for Cost, Performance, and Maintainability"
+      ],
+      "audience": "Data engineers who want to build resilient pipelines, software engineers moving into data, and technical leaders who need one reference for data infrastructure.",
+      "excerpt": "Every significant shift in computing follows the same pattern. First, the early adopters build something that works but is hard to use. Then, the tooling matures, the costs drop, and suddenly an entire industry reorganizes around the new approach. We saw it with relational databases in the 1980s, with the web in the 1990s, with cloud computing in the 2010s, and we are living through it right now with two simultaneous revolutions: the open data lakehouse and artificial intelligence."
     },
     {
       "title": "Dremio and the Semantic Layer",
@@ -472,7 +1058,7 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GWF7PFDG",
-      "cover": "https://images.amazon.com/images/P/B0GWF7PFDG.01._SCLZZZZZZZ_.jpg",
+      "cover": "https://books.alexmerced.com/covers/dremio-and-the-semantic-layer.jpg",
       "canonicalPage": "https://books.alexmerced.com/books/dremio-and-the-semantic-layer/"
     },
     {
@@ -485,7 +1071,7 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GWTZ1394",
-      "cover": "https://images.amazon.com/images/P/B0GWTZ1394.01._SCLZZZZZZZ_.jpg",
+      "cover": "https://books.alexmerced.com/covers/hands-on-agentic-engineering-a-practical-guide-to-building-multi-agent-systems.jpg",
       "canonicalPage": "https://books.alexmerced.com/books/hands-on-agentic-engineering-a-practical-guide-to-building-multi-agent-systems/"
     },
     {
@@ -498,8 +1084,30 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GYL5Q5YV",
-      "cover": "https://images.amazon.com/images/P/B0GYL5Q5YV.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-lakehouse-built-for-everyone/"
+      "cover": "https://books.alexmerced.com/covers/the-lakehouse-built-for-everyone.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-lakehouse-built-for-everyone/",
+      "toc": [
+        "The Foundation: Data Lakehouses, Parquet, and Arrow",
+        "The Metadata Layer: Apache Iceberg and Apache Polaris",
+        "The Compute Ecosystem: Dremio, DuckDB, and Polars/Datafusion",
+        "The Modern Data Platform Dilemma",
+        "The Heart of the Lakehouse: Deep Dive into Iceberg",
+        "Setting Up Your Dremio Open Catalog",
+        "Ingesting Data with PyIceberg",
+        "Analytical Engines: DuckDB and DataFusion",
+        "When Your Laptop Isn't Enough: Knowing When to Scale",
+        "Introducing Dremio: Scaling Down to Minimize Costs",
+        "Federated Queries (Connecting Across Silos)",
+        "Natural Language Analytics (AI Agent Basics)",
+        "Using MCP Server with Local/Cloud Contexts",
+        "Crossing the Boundary (Moving Compute Entirely to Dremio)",
+        "Autonomous Optimization (Let the Engine Do the Work)",
+        "Building a Strict Semantic Layer for the Organization",
+        "Maximizing AI Quality (How the Semantic Layer Powers Agents)",
+        "The Open Foundation (Avoiding Vendor Lock-In)"
+      ],
+      "audience": "Data engineers, analytics engineers, software developers, and technical leaders who want practical blueprints for an Apache Iceberg lakehouse, whether they are leaving a legacy cloud warehouse, adding generative AI to BI, or learning the Iceberg ecosystem.",
+      "excerpt": "Data has gravity. The moment you place a terabyte of information into a proprietary database, it begins pulling your budget, your engineering time, and your architectural decisions toward that single vendor. Ten years ago, data engineers accepted this gravity as a law of physics. If you wanted fast, reliable SQL analytics, you paid a premium for an enterprise data warehouse. If you wanted cheap storage for unstructured files, you dumped them into a data lake. Organizations ran both systems simultaneously, building complex pipelines to shuffle data between the cheap swamp and the expensive fortress."
     },
     {
       "title": "The Book on Apache Polaris",
@@ -511,8 +1119,35 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GZDVCV24",
-      "cover": "https://images.amazon.com/images/P/B0GZDVCV24.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-book-on-apache-polaris/"
+      "cover": "https://books.alexmerced.com/covers/the-book-on-apache-polaris.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-book-on-apache-polaris/",
+      "toc": [
+        "What Is a Data Lakehouse",
+        "What Is Apache Iceberg",
+        "The Lakehouse Catalog and the REST Catalog Specification",
+        "What Is Apache Polaris",
+        "Quickstart: Your First Polaris Catalog",
+        "Installing Dependencies",
+        "Deploying Polaris",
+        "Creating a Catalog",
+        "Using Polaris",
+        "Realms, Entities, and Policy",
+        "Generic Tables and Telemetry",
+        "The Command Line Interface and Admin Tool",
+        "Configuring Polaris",
+        "Managing Security and Access Control",
+        "Deploying with Helm Charts",
+        "Metastores: Persistence Backends",
+        "Federation: Unifying Multiple Catalogs",
+        "The Polaris API, Spark Client, and Evolution",
+        "Dremio Open Catalog: Managed Polaris",
+        "Polaris with PyIceberg",
+        "Polaris for Agentic Analytics",
+        "Data Mesh and Federated Governance",
+        "The Future of Apache Polaris"
+      ],
+      "audience": "Data engineers, data architects, platform engineers, and technical leaders who design, build, or scale open data lakehouses and want to avoid catalog lock-in and understand the Iceberg REST specification.",
+      "excerpt": "A company with forty terabytes of sales records, customer interactions, and supply chain events faces a decision that will shape its data strategy for the next decade. The data lives in object storage already, sitting in hundreds of thousands of files across S3 buckets and Azure containers. Analysts want to run SQL queries against it. Data scientists want to train models on it. The finance team wants a dashboard that updates every morning by 7 a.m. The question is not whether to store the data. The question is how to make it useful."
     },
     {
       "title": "Reputation as Code",
@@ -524,8 +1159,28 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HHXV4L42",
-      "cover": "https://images.amazon.com/images/P/B0HHXV4L42.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/reputation-as-code/"
+      "cover": "https://books.alexmerced.com/covers/reputation-as-code.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/reputation-as-code/",
+      "toc": [
+        "Introduction: The Resume Is a Dead Format",
+        "The Fallacy of the Job Board Lottery",
+        "The Myth of the Overnight Authority",
+        "Your Non-Linear Superpower",
+        "The Discipline of Learning in Public",
+        "Defining Your Niche of One",
+        "Shipping Real Artifacts",
+        "Systems Over Willpower",
+        "The Waterfall Content Engine",
+        "Responsible AI as an Output Amplifier",
+        "Community as an Engine of Generosity",
+        "The Stage: Speaking and Presentations",
+        "The Path to Authoring Technical Books",
+        "Turning Gravity into Opportunities",
+        "Staying Curious for the Long Haul",
+        "Conclusion: Show Your Work"
+      ],
+      "audience": "Software engineers, data practitioners, DevRel professionals, and other technical contributors who want to be known for their expertise without becoming shallow influencers, plus career switchers who need to show credibility without an elite pedigree.",
+      "excerpt": "On a Monday morning in early 2024, a hiring manager at a mid-sized data infrastructure company posted an open role for a developer advocate. The listing was live for four hours. When she paused the posting at noon to review incoming candidates, the applicant tracking dashboard displayed 842 submissions. Eight hundred and forty-two resumes. If she spent sixty seconds reading each submission without taking a bathroom break, drinking water, or answering an email, reviewing that single batch would require fourteen continuous hours of work. She did not have fourteen hours. She had thirty minutes between a sprint planning meeting and a customer demo."
     },
     {
       "title": "Economic Ideas: From Beginning to Early 2026",
@@ -537,8 +1192,42 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQQ68F63",
-      "cover": "https://images.amazon.com/images/P/B0GQQ68F63.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/economic-ideas-from-beginning-to-early-2026/"
+      "cover": "https://books.alexmerced.com/covers/economic-ideas-from-beginning-to-early-2026.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/economic-ideas-from-beginning-to-early-2026/",
+      "toc": [
+        "Before Economics: Trade, Barter, and the First Questions About Value",
+        "Greek Foundations: Xenophon, Plato, and Aristotle on Wealth and the Good Life",
+        "Rome, Roads, and the Price of Empire",
+        "Medieval Economics: Just Price, Usury, and the Scholastics",
+        "The Islamic Golden Age: Ibn Khaldun and the Economics of Civilization",
+        "Mercantilism: Gold, Trade Wars, and the Birth of Economic Policy",
+        "Richard Cantillon: The Secret Father of Economics",
+        "The Physiocrats: Nature's Economists",
+        "Adam Smith: The Invisible Hand and the Wealth of Nations",
+        "David Ricardo: Comparative Advantage and the Logic of Trade",
+        "Thomas Malthus: Population, Poverty, and the Dismal Science",
+        "John Stuart Mill: The Liberal Reformer",
+        "Karl Marx: Capital, Exploitation, and Revolution",
+        "The Marginalist Revolution: Value Is in the Eye of the Buyer",
+        "The Methodenstreit: How Should We Do Economics?",
+        "Henry George: Progress, Poverty, and the Tax on Land",
+        "The American Institutionalists: Economics Gets Real",
+        "The Gold Standard: Monetary Orthodoxy and Its Discontents",
+        "The Austrian School: Mises, Hayek, and the Socialist Calculation Debate",
+        "John Maynard Keynes: The General Theory and the End of Laissez-Faire",
+        "The Keynesian Consensus and the Postwar Boom",
+        "The Chicago School: Milton Friedman and the Monetarist Counterrevolution",
+        "Development Economics: Why Are Some Countries Rich and Others Poor?",
+        "Public Choice Theory: When Government Fails",
+        "Game Theory: Strategy, Conflict, and Cooperation",
+        "Rational Expectations and the New Classical Revolution",
+        "Supply-Side Economics: Tax Cuts and the Laffer Curve",
+        "The Fall of Communism and Transition Economics",
+        "Behavioral Economics: When People Are Not Rational",
+        "Information Economics: When Markets Know Too Little"
+      ],
+      "audience": "General readers curious about economics, history, or political theory, including students, professionals, policymakers, and self-taught learners. No economics degree, equations, or prerequisites are needed.",
+      "excerpt": "Economics is among the oldest and most contested fields of human inquiry. For as long as people have lived in societies, they have debated how to allocate scarce resources, organize production, distribute wealth, and design the institutional rules that govern exchange. These debates are not merely academic. They shape the policies that determine whether nations prosper or stagnate, whether individuals enjoy material comfort or endure deprivation, and whether democratic societies hold together or fracture under the weight of inequality and distrust. This book tells the story of those debates from the very beginning to the early months of 2026."
     },
     {
       "title": "The Field Guide to Libertarianism",
@@ -550,21 +1239,73 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQV4CK5B",
-      "cover": "https://images.amazon.com/images/P/B0GQV4CK5B.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-field-guide-to-libertarianism/"
+      "cover": "https://books.alexmerced.com/covers/the-field-guide-to-libertarianism.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-field-guide-to-libertarianism/",
+      "toc": [
+        "What Is Libertarianism? Mapping the Territory",
+        "Classical Liberalism: The Grandfather Tradition",
+        "Objectivism: Ayn Rand and the Philosophy of Rational Self-Interest",
+        "Minarchism: The Night-Watchman State",
+        "Anarcho-Capitalism: Murray Rothbard and the Abolition of the State",
+        "Left-Libertarianism: Liberty Without Capitalism?",
+        "Paleolibertarianism and Right-Libertarianism: The Conservative Turn",
+        "Libertarian Populism and the Liberty Movement Post-Ron Paul",
+        "Agorism, Voluntaryism, and Crypto-Anarchism",
+        "The Expanding Tent: Libertarian Feminism, Black Libertarianism, and New Voices",
+        "Taxation: Is All Taxation Theft?",
+        "Money, Banking, and the Federal Reserve",
+        "Trade and Immigration: Open Borders or Fortress Liberty?",
+        "Drug Policy and Personal Freedom",
+        "Guns, Self-Defense, and the Second Amendment",
+        "Education: The Case Against Compulsory Schooling",
+        "Healthcare: Markets, Medicine, and the Price of Government Intervention",
+        "The Environment: Property Rights as Conservation",
+        "Criminal Justice: Victimless Crimes, Mass Incarceration, and Restorative Alternatives",
+        "Foreign Policy, War, and Empire",
+        "Strategy Over Policy: Why Libertarianism Needs More Than Arguments",
+        "The Fear-Hate-Compulsion Cycle",
+        "Tolerance as Infrastructure",
+        "The Political Trap",
+        "The Radical Case for Kindness",
+        "Building Voluntary Communities",
+        "Mutual Aid: The Forgotten Libertarian Tradition",
+        "Raising Free Children",
+        "The Art of Libertarian Dialog",
+        "The Lovatarian Vision"
+      ],
+      "audience": "Libertarians who want to understand the full tradition beyond their own corner of it, non-libertarians who want to know where libertarian arguments come from, and political science students looking for a readable survey.",
+      "excerpt": "Nowadays I find myself in no particular libertarian camp. What I want, more than any policy outcome, is for people regardless of ideology to be nicer and more open to each other. Open to the human experiences we can have with other individuals and the communities we choose to enrich our lives with. Open to seeing the value of protecting the autonomy that makes those enriching experiences possible, whether through the freedom itself or through the prosperity that gives us the leisure to enjoy that freedom."
     },
     {
       "title": "The Field Guide to Political Thought and Debates in the United States",
       "slug": "the-field-guide-to-political-thought-and-debates-in-the-united-states",
       "category": "Economics & Philosophy",
       "publisher": "Self-published",
-      "description": "Maps the terrain of American political thought — conservative, progressive, and libertarian — so you can understand why people across the table believe what they believe and how to talk about it.",
+      "description": "Maps the terrain of American political thought (conservative, progressive, and libertarian) so you can understand why people across the table believe what they believe and how to talk about it.",
       "asin": "B0GTV6ZWHX",
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GTV6ZWHX",
-      "cover": "https://images.amazon.com/images/P/B0GTV6ZWHX.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-field-guide-to-political-thought-and-debates-in-the-united-states/"
+      "cover": "https://books.alexmerced.com/covers/the-field-guide-to-political-thought-and-debates-in-the-united-states.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-field-guide-to-political-thought-and-debates-in-the-united-states/",
+      "toc": [
+        "The Founding Arguments",
+        "The Evolution of Conservative Thought in America",
+        "The Evolution of Progressive and Liberal Thought",
+        "The Libertarian Tradition and the Limits of the Left-Right Spectrum",
+        "Healthcare",
+        "Gun Policy",
+        "Immigration",
+        "Abortion and Reproductive Rights",
+        "Economics and the Role of Government",
+        "Climate, Energy, and the Environment",
+        "Why the Left-Right Spectrum Fails",
+        "The Stories We Tell (and the Ones We Don't Hear)",
+        "How to Have the Conversation",
+        "Finding Common Ground (Without Pretending We Agree)"
+      ],
+      "audience": "Anyone who wants to understand why a family member, coworker, or neighbor who votes differently reasons the way they do, whatever their own leaning: left, right, libertarian, or unlabeled.",
+      "excerpt": "This book will not tell you what to think. If you are looking for confirmation that your political views are correct and the other side is wrong, this is not the book for you. There are thousands of those books. They sell well. They change very few minds. This book does something harder. It maps the terrain. It traces the intellectual roots of conservatism, progressivism, and libertarianism in the United States. It examines the flashpoint issues that dominate our politics. And it presents every major argument in its strongest, most honest form, including the ones you disagree with."
     },
     {
       "title": "The Libertarian Heart",
@@ -576,7 +1317,7 @@
       "isbn": "9780359752119",
       "flagship": false,
       "url": "https://www.amazon.com/dp/035975211X",
-      "cover": "https://images.amazon.com/images/P/035975211X.01._SCLZZZZZZZ_.jpg",
+      "cover": "https://books.alexmerced.com/covers/the-libertarian-heart.jpg",
       "canonicalPage": "https://books.alexmerced.com/books/the-libertarian-heart/"
     },
     {
@@ -589,7 +1330,7 @@
       "isbn": "9781387798421",
       "flagship": false,
       "url": "https://www.amazon.com/dp/1387798421",
-      "cover": "https://images.amazon.com/images/P/1387798421.01._SCLZZZZZZZ_.jpg",
+      "cover": "https://books.alexmerced.com/covers/profits-are-generosity-entrepreneurship-is-philanthropy.jpg",
       "canonicalPage": "https://books.alexmerced.com/books/profits-are-generosity-entrepreneurship-is-philanthropy/"
     },
     {
@@ -602,8 +1343,42 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GPMNX78W",
-      "cover": "https://images.amazon.com/images/P/B0GPMNX78W.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-semantic-rebellion/"
+      "cover": "https://books.alexmerced.com/covers/the-semantic-rebellion.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-semantic-rebellion/",
+      "toc": [
+        "Two-Thirteen A.M.",
+        "Forty-Seven Databases",
+        "The Meetup",
+        "The Memo",
+        "Concerns",
+        "The Champion",
+        "Ninety Days",
+        "Proof of Concept, Proof of Value",
+        "Scaling Trust",
+        "The View from the Hill",
+        "Anomaly",
+        "Let It Rest",
+        "The Other Side",
+        "Convergence",
+        "Follow the Money",
+        "The Name on the Board",
+        "Pressure Points",
+        "The Colonel",
+        "The Senator",
+        "Emergency Meeting",
+        "The Insider",
+        "Race Against Transfer",
+        "SILVERTHREAD",
+        "Thursday",
+        "Aftermath",
+        "The Trial of Data",
+        "The New Architecture",
+        "Loose Threads",
+        "The View from Here",
+        "Epilogue: The Next Query"
+      ],
+      "audience": "A techno-thriller for readers who believe transparency is a powerful force in a democracy, pitched to fans of Michael Crichton and Daniel Suarez and to anyone who has been worn down by being on call for broken systems.",
+      "excerpt": "The phone buzzed at 2:13 in the morning. Not the gentle hum of a text message or the cheerful ping of a social media notification. This was the buzz. The angry, insistent vibration pattern that Alexjandro Olced had programmed specifically for PagerDuty alerts, the one that invaded his nervous system like a cattle prod wrapped in anxiety. He reached for the nightstand without opening his eyes, knocking over a glass of water in the process. The water spread across the wood surface and began dripping onto the carpet with the quiet patience of a system designed to ruin everything it touched."
     },
     {
       "title": "The Emperors of A.I. Valley",
@@ -615,8 +1390,22 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQHKF4ZT",
-      "cover": "https://images.amazon.com/images/P/B0GQHKF4ZT.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-emperors-of-a-i-valley/"
+      "cover": "https://books.alexmerced.com/covers/the-emperors-of-a-i-valley.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-emperors-of-a-i-valley/",
+      "toc": [
+        "The Weight of the Weights",
+        "The Open Gospel",
+        "Dark Money and Data Streams",
+        "The Outlier Algorithm",
+        "The Primary Directive",
+        "The Summit",
+        "The Counter-Offensive",
+        "The Trial of the Architects",
+        "The Global Reset",
+        "Echoes in the Valley"
+      ],
+      "audience": "Pitched to readers of Michael Lewis and Blake Crouch, and to anyone who suspects the real story of AI is playing out behind closed doors.",
+      "excerpt": "The oak paneling in the Hart Senate Office Building hearing room felt aggressively solid. Suae Canbote sat at the witness table and let her fingertips rest against the polished wood. She breathed strictly through her nose. The air in the room was overly conditioned and carried the faint scent of floor wax and anxious perspiration. This was the epicenter of the American political apparatus. It was also, she knew, a theater designed to intimidate those who did not understand its true function."
     },
     {
       "title": "The Federation of Tides",
@@ -628,8 +1417,42 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GPRBTV6W",
-      "cover": "https://images.amazon.com/images/P/B0GPRBTV6W.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-federation-of-tides/"
+      "cover": "https://books.alexmerced.com/covers/the-federation-of-tides.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-federation-of-tides/",
+      "toc": [
+        "The Apprentice of the Coral Scripts",
+        "The Current Weaver's Daughter",
+        "The Council of Coral",
+        "The First Bubble Arrow",
+        "Whispers Across the Shelf",
+        "The Kelp Crown Audience",
+        "The Forgetting",
+        "The Storm Belt Crossing",
+        "The Architecture of Currents",
+        "The Open Tide Refugees",
+        "Sabotage",
+        "The Abyssal Bargain",
+        "The First Federation Council",
+        "Growing Pains",
+        "Thessaly's Warning",
+        "The Forgetting Strikes Home",
+        "Into the Ice",
+        "The Glacier Gates",
+        "The Carvers",
+        "The Trolls' Burden",
+        "The Shimmering Fjord Alliance",
+        "The Silence Strikes",
+        "The Descent",
+        "The Preparation",
+        "Into the Maw",
+        "The Empty Narwhal",
+        "Aftermath",
+        "Dissonance",
+        "The New Tide",
+        "The Tide That Carries"
+      ],
+      "audience": "Written for adults and mature young adult readers who like philosophical fantasy, allegory about how systems work, and stories driven by their worlds.",
+      "excerpt": "The library breathed. It was not a metaphor. The walls of the Coral Script Archive pulsed gently with each shift of the thermal current beneath it, expanding and contracting like the ribcage of some enormous sleeping creature. Bioluminescent algae threaded through the living coral emitted a soft cerulean glow that shifted in intensity with the water's temperature, casting the vast chamber in perpetual twilight. Scrolls of pressed kelp and tablets of calcified coral lined every surface, thousands of them, organized according to a classification system so ancient that even the archivists sometimes argued about its logic."
     },
     {
       "title": "Plastic Punk",
@@ -641,8 +1464,42 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQGRFW2H",
-      "cover": "https://images.amazon.com/images/P/B0GQGRFW2H.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/plastic-punk/"
+      "cover": "https://books.alexmerced.com/covers/plastic-punk.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/plastic-punk/",
+      "toc": [
+        "The Polymer Coast",
+        "The Invisible Hand",
+        "The Ember Lens",
+        "The Iron Mandate",
+        "The Machine",
+        "The Mandate Seal",
+        "The Common Ground",
+        "The Thread That Binds",
+        "The Axis",
+        "The Catalyst",
+        "The Cooperatives",
+        "The Mirror of What Was",
+        "The Garden in the Waste",
+        "The Seed That Grows in Poison",
+        "The Caravans",
+        "Crossing the Barrens",
+        "The Silence Bell",
+        "The Return",
+        "The Convergence Point",
+        "The Question",
+        "The Counsel",
+        "The Night Before",
+        "The Argument Reviewed",
+        "Returning",
+        "The Book",
+        "What Remains",
+        "Conversations",
+        "The Tides",
+        "The Map of What Comes Next",
+        "Observation"
+      ],
+      "audience": "Written for adults and mature young adult readers interested in economics, governance, environmental futures, and speculative fiction.",
+      "excerpt": "The harbor of Vaelport glowed like a fever dream. Kael Doss stood at the rail of the cargo vessel Reclaimer's Profit and watched the city materialize through a haze of polymer particulate that turned the sunset into something obscene. The towers caught the dying light and amplified it. Every building in the skyline was made from compression-molded plastic, and every surface was embedded with LED filaments powered by pyro-gas running through conduits in the walls. The result was a city that burned from within, neon pinks and electric blues and acid greens bleeding into the orange sky until the boundary between architecture and atmosphere dissolved entirely."
     },
     {
       "title": "Embers of Claim",
@@ -654,8 +1511,42 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQGW7VCY",
-      "cover": "https://images.amazon.com/images/P/B0GQGW7VCY.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/embers-of-claim/"
+      "cover": "https://books.alexmerced.com/covers/embers-of-claim.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/embers-of-claim/",
+      "toc": [
+        "The Forge at Thornfield",
+        "The Signet",
+        "Ashes and Wings",
+        "The Aerie",
+        "The Road to Hellanford",
+        "The First Company",
+        "Council of Speakers",
+        "The Baron's Keep",
+        "The Corvid Exchange",
+        "The Pretender's Court",
+        "Letters Across the Wind",
+        "The Battle of Cade Ford",
+        "After the Ford",
+        "The Border Walk",
+        "The Holy City",
+        "The Draft",
+        "Duke Brennan",
+        "Cogsworth's Gambit",
+        "The March on Valdren",
+        "The Fall of Valdren Hall",
+        "News from the West",
+        "The Crown",
+        "Three Signatories",
+        "First Reforms",
+        "The Assembly",
+        "Serath's Price",
+        "Shadows of Empire",
+        "The Broader Vision",
+        "The Charter",
+        "Two Thrones"
+      ],
+      "audience": "Adult fantasy readers who enjoy political strategy, clashing factions, ideological tension, and characters whose arcs turn on power.",
+      "excerpt": "The hammer rang against the anvil three times before the steel gave in. Kael Astren wiped the soot from his forehead with the back of his wrist and held the iron rod up to the light streaming through the forge's single window. The metal glowed orange at the tip, fading to dull gray along the shaft where the heat had not fully penetrated. Not good enough. The color needed to be even, a consistent cherry-red from end to end, before he could begin shaping. He set it back on the coals and worked the bellows with his left hand while reaching for the tongs with his right."
     },
     {
       "title": "Crowns and Wings",
@@ -667,8 +1558,42 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQGHYL79",
-      "cover": "https://images.amazon.com/images/P/B0GQGHYL79.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/crowns-and-wings/"
+      "cover": "https://books.alexmerced.com/covers/crowns-and-wings.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/crowns-and-wings/",
+      "toc": [
+        "The Western Compact",
+        "Growing Pains",
+        "Needle Gate",
+        "The Furrian Question",
+        "The Iron Duke's Counsel",
+        "First Emissary",
+        "The Pretender's Court (II)",
+        "Crossing the Needle",
+        "The Meeting",
+        "Inside the Compact",
+        "The Offer",
+        "Dalia's Ledger",
+        "The Report",
+        "Eastward Eyes",
+        "Counter-Offer",
+        "The First Refusal",
+        "Taera's Passing",
+        "Declaration",
+        "The Iron Crown",
+        "Provincial Administration",
+        "Building the Network",
+        "Coppervein Falls",
+        "The Gate Problem",
+        "The Furrian Gambit",
+        "Holding the Center",
+        "Mapping the East",
+        "The Speech",
+        "The Forge's Question",
+        "Letters",
+        "The Summit"
+      ],
+      "audience": "Adult fantasy readers who enjoy political strategy, clashing factions, ideological tension, and characters whose arcs turn on power.",
+      "excerpt": "Two years changed everything and nothing. The kingdom of Valdren, which had been a single city and a stolen throne when Kael Astren first sat on the ugly oak chair in Valdren Hall, now stretched from the northern border marches to the southern coast of the Western Reach. Five additional territories had been absorbed since the coronation, each through the same process that had proven so effective in the first year: competent diplomacy, transparent governance terms, and the quiet gravitational pull of an administration that functioned better than anything the absorbed territories had experienced in living memory."
     },
     {
       "title": "Thrones of Ash and Sky",
@@ -680,8 +1605,42 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQCHRYHV",
-      "cover": "https://images.amazon.com/images/P/B0GQCHRYHV.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/thrones-of-ash-and-sky/"
+      "cover": "https://books.alexmerced.com/covers/thrones-of-ash-and-sky.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/thrones-of-ash-and-sky/",
+      "toc": [
+        "Port Tamas",
+        "The Continental Compact",
+        "The Extended Charter",
+        "The Debate",
+        "Private Conversations",
+        "The Breakdown",
+        "Recall",
+        "The Spy",
+        "Quelling the West",
+        "Defense Planning",
+        "The Empire Marches",
+        "The Line",
+        "Brennan's Warning",
+        "Alliance of Necessity",
+        "Crossing the Needle",
+        "The Tunnel War",
+        "The Second Meeting",
+        "Dalia's Truth",
+        "The Empty Throne",
+        "The Federal Army",
+        "The Amber Plains",
+        "The Coalition Holds",
+        "The Cost",
+        "The Counter-Offensive",
+        "Overextension",
+        "The Last Letter",
+        "The Emperor's Choice",
+        "The Accord",
+        "Two Speeches",
+        "The Thrones"
+      ],
+      "audience": "Adult fantasy readers who enjoy political strategy, clashing factions, ideological tension, and characters whose arcs turn on power.",
+      "excerpt": "The harbor at Port Tamas could hold forty ships at anchor, and on the morning the summit began, it held thirty-seven. Twelve flew the Western Empire's new device: the iron-crowned stag on a field of black. Eight flew the Federation's five-seal banner, the interlocking circles that represented the original signatory states. The remaining seventeen flew independent merchant flags, the commercial entities whose trade depended on whichever political arrangement the next days produced and who had positioned themselves in the harbor to observe, to profit, and to sell information to both sides."
     },
     {
       "title": "Tales of Fur and Sky: Echoes of the Ages",
@@ -693,8 +1652,19 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0GQGRGH93",
-      "cover": "https://images.amazon.com/images/P/B0GQGRGH93.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/tales-of-fur-and-sky-echoes-of-the-ages/"
+      "cover": "https://books.alexmerced.com/covers/tales-of-fur-and-sky-echoes-of-the-ages.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/tales-of-fur-and-sky-echoes-of-the-ages/",
+      "toc": [
+        "The Fire at Valdren Hall",
+        "Carving the Needle",
+        "The Corvid's First Coin",
+        "The Confessor's Choice",
+        "Blood on the Tidemark",
+        "The Long Winter of Whitecrest",
+        "The Veteran of Cade Ford"
+      ],
+      "audience": "A companion anthology of seven standalone short stories for readers returning to the world of the Thrones of Fur and Sky saga.",
+      "excerpt": "The smell of burning cedar woke Corin before the screaming started. For a moment, he lay still in the suffocating darkness of his narrow alcove off the royal corridor. He was fifteen, the third and least favored assistant to the Master of Wardrobe, whose primary duty was ensuring the young Prince Edrin never appeared before the court with a wrinkled tunic or a scuffed boot. It was a position of proximity without power, visibility without consequence. Corin had spent the last three years melting into the tapestries, trying to be as unnoticeable as the dust motes."
     },
     {
       "title": "Signal and Noise",
@@ -706,8 +1676,10 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HDDN968Z",
-      "cover": "https://images.amazon.com/images/P/B0HDDN968Z.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/signal-and-noise/"
+      "cover": "https://books.alexmerced.com/covers/signal-and-noise.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/signal-and-noise/",
+      "audience": "Adults roughly 25 to 45 who like character-driven literary fiction about first love and its lasting damage, long-distance relationships, chosen family, trans identity, and co-dependency.",
+      "excerpt": "She has not set an alarm. The alarm is the street: the tinny horn of a jeepney driver who likes to announce his displeasure with the intersection below, the drag of a metal gate being unlocked at the sari-sari across the road, a dog that has been debating something philosophical with another dog for what sounds like the past twenty minutes. She lives in Sampaloc because it is cheap and close to the university she just finished attending and because her college roommate Josie had a cousin with a vacancy on the third floor of a narrow building that smells permanently of mothballs and something faintly sweet she has decided not to investigate."
     },
     {
       "title": "Celestial Fragments: The Duel of Souls",
@@ -719,8 +1691,42 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HD831HR9",
-      "cover": "https://images.amazon.com/images/P/B0HD831HR9.01._SCLZZZZZZZ_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/celestial-fragments-the-duel-of-souls/"
+      "cover": "https://books.alexmerced.com/covers/celestial-fragments-the-duel-of-souls.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/celestial-fragments-the-duel-of-souls/",
+      "toc": [
+        "The Room That Listened",
+        "The Rally",
+        "The Search",
+        "The Weight of Names",
+        "The Machine",
+        "First Blood",
+        "Tremors",
+        "The Temperature Drops",
+        "Interlude I: Selma, 1962",
+        "Ground Game",
+        "The Dinner",
+        "The Unveiler Approaches",
+        "The Debate",
+        "The Shape of It",
+        "The Other Side",
+        "Escalation",
+        "Cora",
+        "The Viral Moment",
+        "Unmasking",
+        "Fear Itself",
+        "The Cost",
+        "Coming Out",
+        "The Arena Revealed",
+        "Interlude II: Flanders, 1247",
+        "The Journey",
+        "The Preparation",
+        "The Night Before",
+        "The Duel, Part I",
+        "The Duel, Part II",
+        "The Duel, Part III"
+      ],
+      "audience": "Adults who enjoy contemporary fantasy with real-world political tension and mythological roots, and themes of identity, inclusion, and empathy versus prejudice.",
+      "excerpt": "The girl would not stop shaking. She sat in the plastic chair with her knees drawn up, sneakers on the seat, arms wrapped around her shins. Her name was Dani. Fourteen years old. She had been coming to the Northside Youth Center for seven months, long enough for Rowan to know that she chewed her thumbnail when she was thinking and braided her hair when she was happy and pulled at the hem of her shirt when something was wrong. Today she was pulling at her hem so hard the stitching had started to give."
     },
     {
       "title": "Adventures in Love and Flooding",
@@ -733,7 +1739,27 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HG3YM4QW",
       "cover": "https://books.alexmerced.com/covers/adventures-in-love-and-flooding.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/adventures-in-love-and-flooding/"
+      "canonicalPage": "https://books.alexmerced.com/books/adventures-in-love-and-flooding/",
+      "toc": [
+        "Prologue: The Sluice Gate at Midnight",
+        "The Arrival Gate at NAIA",
+        "High Heels and Strobe Lights",
+        "Dinner in Makati, Eyes in the Mirror",
+        "The Rain Begins to Bite",
+        "Uninvited Guests at the Penthouse",
+        "The Secret in the Soundstage",
+        "The German with a Conscience",
+        "The Sinking City",
+        "The Island of White Stones",
+        "Where the Power Flows",
+        "The Snare in the Server Farm",
+        "Bayanihan on the Water",
+        "Breaching the Monolith",
+        "The Current and the Truth",
+        "Epilogue: Sunbreak Over the Bay"
+      ],
+      "audience": "A romantic action thriller for readers who want grounded thrillers, genuinely funny romance, and villains who fight with arithmetic rather than speeches.",
+      "excerpt": "The call came at ten past two, which was the hour Benigno Santos had come to think of as belonging to the floodway. Nothing was ever decided at two in the morning. Things were only discovered then, and usually by him. He took the service road with his wipers on the fastest setting they had, which was not fast enough, and which had not been fast enough for four years. The truck was a white DPWH pickup with a bent antenna and a dent in the tailgate from a jeepney in Pasig that had never stopped. Rain came off the windshield in sheets rather than drops. Past the guardrail the Marikina moved in the dark like something with a shoulder."
     },
     {
       "title": "The Last Continue",
@@ -746,7 +1772,28 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HG5TGQBV",
       "cover": "https://books.alexmerced.com/covers/the-last-continue.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-last-continue/"
+      "canonicalPage": "https://books.alexmerced.com/books/the-last-continue/",
+      "toc": [
+        "The Apple Tree at Number 9",
+        "Clockwork",
+        "The Stars Rearrange",
+        "Eighty-Two Winters",
+        "Continue?",
+        "Exit Interview",
+        "Small Hours",
+        "Patch Notes",
+        "Kingdom of Ashes",
+        "Colonial Drive",
+        "Lake Nona",
+        "The Long Afternoon",
+        "Ward C",
+        "A Finished Life",
+        "03:14",
+        "Single Strand",
+        "Epilogue: Show Your Work"
+      ],
+      "audience": "A standalone novel pitched to readers of Kazuo Ishiguro, Emily St. John Mandel, and Ted Chiang.",
+      "excerpt": "By nine that August morning Tito Mendez had the movement spread across a bath towel on the repair bench under the apple tree: mainspring barrel to one side, escapement to the other, the little forest of brass posts standing in their holes like a town he knew street by street. The clock belonged to Mrs. Gong next door. It had kept time in her kitchen for forty-five years, through two stove fires and one flood and the year her sons both left, which she mentioned every time she brought it over for service, so that by now the clock and its history arrived together, like an old married couple."
     },
     {
       "title": "The Children of Damaris",
@@ -758,8 +1805,27 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HHZFSG82",
-      "cover": "https://m.media-amazon.com/images/I/814bKVKGW+L._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-children-of-damaris/"
+      "cover": "https://books.alexmerced.com/covers/the-children-of-damaris.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-children-of-damaris/",
+      "toc": [
+        "A Noise in the Drive",
+        "The Recovery Mandate",
+        "A Gift Never Given",
+        "Continuance House Nine",
+        "Sterile Access",
+        "Rodex Chooses",
+        "The Night Intake",
+        "Repair Bay Seventeen",
+        "Wayward",
+        "Bubby",
+        "The Laboratory Accident",
+        "No Registered Exit",
+        "What Xia Heard",
+        "Lattice Fracture",
+        "The Crown Signal"
+      ],
+      "audience": "Crossover young adult and adult readers who enjoy political science fiction, dystopian adventure, and family-centered space opera.",
+      "excerpt": "The noise was three flutters to a second, soft as a moth in a jar, and it was coming from somewhere inside eleven tons of machinery that the Human Continuity Directorate had certified as sound. Aldex Oled knelt in the drive space of the courier and pressed the flat of the sounding rod against the aft coil housing. He closed his eyes. Around him the CDV Wayward ticked and settled in her berth cradle, the way any ship did when her systems were cycled down to maintenance draw, and beneath all of that ordinary settling the flutter went on. Three to a second. Not the damper packs."
     },
     {
       "title": "A Crown of Cliffs",
@@ -771,8 +1837,27 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HJ3VMVXD",
-      "cover": "https://m.media-amazon.com/images/I/81m0syAst1L._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/a-crown-of-cliffs/"
+      "cover": "https://books.alexmerced.com/covers/a-crown-of-cliffs.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/a-crown-of-cliffs/",
+      "toc": [
+        "Surrounded by Wings",
+        "The Queen's Air",
+        "Oaths at Altitude",
+        "The Empty Branch",
+        "A Place for Rodex",
+        "What Bubby Knows",
+        "The Second Heir",
+        "Shelter by Favor",
+        "The Price of an Oath",
+        "Warning from Damaris",
+        "Two Banners",
+        "The First Descent",
+        "Every Wing Withheld",
+        "The Rescue Current",
+        "The High-Ground Offer"
+      ],
+      "audience": "Crossover young adult and adult readers who enjoy political science fiction, dystopian adventure, and family-centered space opera.",
+      "excerpt": "The tow took nine hours, and for eight of them Aldex Oled sat in the left-hand seat of a ship he no longer had any way to fly and worked on the only problem left to him, which was the problem of a stuffed animal. The Wayward hung on two cables at the end of a Crown tug, nose down four degrees, and every twenty minutes or so the cables took up some slack and put a long shudder through her from the spine outward, and each time Aldex felt the aft coil housing answer it with a low grinding note that no housing should be able to make. She was finished."
     },
     {
       "title": "The Price of High Ground",
@@ -784,8 +1869,27 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HJ6B5JWJ",
-      "cover": "https://m.media-amazon.com/images/I/91jvMuSAA-L._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-price-of-high-ground/"
+      "cover": "https://books.alexmerced.com/covers/the-price-of-high-ground.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-price-of-high-ground/",
+      "toc": [
+        "Terms of Docking",
+        "Above the Tide",
+        "Aldex Oled, Proprietor",
+        "Seasonal Ground",
+        "Premium Care",
+        "Rodex for Hire",
+        "The Impossible Market",
+        "Buyout",
+        "The High-Water Clause",
+        "Claims Against the Sky",
+        "Hostile Tender",
+        "Protected Assets",
+        "Uninsured District",
+        "The Merchant Corridor",
+        "Public Provision"
+      ],
+      "audience": "Crossover young adult and adult readers who enjoy political science fiction, dystopian adventure, and family-centered space opera.",
+      "excerpt": "The berth cost four hundred and eleven a day and Aldex Oled did not find that out until the Wayward was already in it. He had been proud of the contract. That was the part he kept coming back to, afterward, in the months that followed: not that he had been cheated, because he had not been cheated, and not that anybody had lied to him, because nobody had. He had been proud."
     },
     {
       "title": "The Common Sun",
@@ -797,8 +1901,27 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HJFNCSCN",
-      "cover": "https://m.media-amazon.com/images/I/910nHjOgvkL._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-common-sun/"
+      "cover": "https://books.alexmerced.com/covers/the-common-sun.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-common-sun/",
+      "toc": [
+        "Universal Welcome",
+        "The Solar Commons",
+        "Assigned Work",
+        "Othari Light",
+        "The Waiting List",
+        "Useful Citizens",
+        "Bubby's Omission",
+        "A Permanent Apartment",
+        "Ration Winter",
+        "The Toy Inquiry",
+        "Central Authorization",
+        "The Shared Emergency",
+        "Clinics Without Orders",
+        "The Sunline",
+        "Tessik Measures Everything"
+      ],
+      "audience": "Crossover young adult and adult readers who enjoy political science fiction, dystopian adventure, and family-centered space opera.",
+      "excerpt": "The tender came up to meet them, and that was the first thing that was wrong. Seti Oled had been aft for eleven hours with her back against the transverse and Renna Twelfth's left arm across her knees, and she felt the match before she understood it: the small correcting shove of another hull coming alongside, close, deliberate, from below. She knew what that was. She had spent three worlds learning what that was."
     },
     {
       "title": "What the Models Cannot See",
@@ -810,8 +1933,27 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HJJDS9NH",
-      "cover": "https://m.media-amazon.com/images/I/81aHYjEWVRL._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/what-the-models-cannot-see/"
+      "cover": "https://books.alexmerced.com/covers/what-the-models-cannot-see.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/what-the-models-cannot-see/",
+      "toc": [
+        "Quarantine Model",
+        "The Cleanest City",
+        "An Unmodeled Child",
+        "Magnetic Speech",
+        "The Toy Test",
+        "Kalen Orr's Last File",
+        "Probable Futures",
+        "The Voice of the Universe",
+        "Custody Protocol",
+        "Xia Says No",
+        "Irrational Fleet",
+        "Contaminated Data",
+        "Failure Outside Confidence",
+        "The Blind-Lane Launch",
+        "A Garden Remembers"
+      ],
+      "audience": "Crossover young adult and adult readers who enjoy political science fiction, dystopian adventure, and family-centered space opera.",
+      "excerpt": "They gave him the rules on the second morning, printed, on paper, which Aldex had not expected and which he understood about four days later had been a deliberate choice. \"You will want to check them against what we do,\" said Tolvan Reike. \"You cannot check a screen. A screen is whatever we set it to this morning.\" There were nine pages."
     },
     {
       "title": "The Memory Garden",
@@ -823,8 +1965,27 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HJJSSWJ7",
-      "cover": "https://m.media-amazon.com/images/I/91U627Pk2TL._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-memory-garden/"
+      "cover": "https://books.alexmerced.com/covers/the-memory-garden.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-memory-garden/",
+      "toc": [
+        "Nobody Arrives Alone",
+        "Work Worth Doing",
+        "Gardens Outside the Body",
+        "The Revolution Remembered",
+        "One Table",
+        "The Missing Harvest",
+        "Bubby in Public",
+        "Rodex Stays",
+        "Sabotage Language",
+        "Edited Memory",
+        "Reports From Tessik",
+        "The Prepared Victory",
+        "Communes Against the Party",
+        "Every Hand on the Ship",
+        "The Cost of Following"
+      ],
+      "audience": "Crossover young adult and adult readers who enjoy political science fiction, dystopian adventure, and family-centered space opera.",
+      "excerpt": "The table was nine meters long and there were about forty people eating at it, and the intake was the same table. Rodex had worked that out by the third day and had not believed it until the ninth, which was the day they were formally received, and even then he spent the first quarter of an hour waiting for somebody to move them to a different room."
     },
     {
       "title": "No One Commands the Tunnels",
@@ -836,8 +1997,27 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HJK1FL81",
-      "cover": "https://m.media-amazon.com/images/I/91ZToGC0L1L._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/no-one-commands-the-tunnels/"
+      "cover": "https://books.alexmerced.com/covers/no-one-commands-the-tunnels.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/no-one-commands-the-tunnels/",
+      "toc": [
+        "Worker to Worker",
+        "The Maintenance Circle",
+        "No Permanent Chair",
+        "The Unaffiliated",
+        "Seti's Four Clinics",
+        "The Ruun Chambers",
+        "A Human Voice",
+        "Membership Offered",
+        "The Refugee Veto",
+        "Seven Defense Plans",
+        "The Fleet Follows",
+        "Every Tunnel Its Own",
+        "The Chamber Breach",
+        "Coordination From Below",
+        "A Contract for Air"
+      ],
+      "audience": "Crossover young adult and adult readers who enjoy political science fiction, dystopian adventure, and family-centered space opera.",
+      "excerpt": "The housing had come up from the west field on the back of a hauler with a note tied to it in string, and the note said that it passed the plug and ran hot anyway and that somebody at Ondrave could look at it if somebody at Ondrave had nothing better to do. That was the fourth day, and by the fourth day Aldex had stopped waiting for the rest of the process. There was no rest of the process. Work moved on this port on haulers with string on it."
     },
     {
       "title": "Terms of Protection",
@@ -849,8 +2029,27 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HJGP4K8H",
-      "cover": "https://m.media-amazon.com/images/I/91XYqcyp6kL._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/terms-of-protection/"
+      "cover": "https://books.alexmerced.com/covers/terms-of-protection.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/terms-of-protection/",
+      "toc": [
+        "Choose Your Law",
+        "Covered Persons",
+        "The Deyari Route",
+        "Mutual Recognition",
+        "No Subscriber",
+        "Home Policy",
+        "The Volcanic Claim",
+        "Xia's Condition",
+        "Competing Warrants",
+        "Defense Premium",
+        "The Exit Contract",
+        "Attack by Clause",
+        "Beyond Coverage",
+        "Hangar Arbitration",
+        "Inside the Vent"
+      ],
+      "audience": "Crossover young adult and adult readers who enjoy political science fiction, dystopian adventure, and family-centered space opera.",
+      "excerpt": "Ninety-two hours of the arrival allowance had run and eight were left, and Herrol Danch walked out to pad nine to say so with his hood in his hand, which was eleven hundred meters of tunnel and a lock cycle he did not have to spend. \"You have got the four of them on Cadwell air until the hundredth hour,\" he said. \"After that every one of them has to be on something, or they are on the person schedule, and I would rather come out here than have you read it off a board.\""
     },
     {
       "title": "The Light at the Lava Sea",
@@ -862,8 +2061,27 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HJJWZTKT",
-      "cover": "https://m.media-amazon.com/images/I/81ukVpUTn5L._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-light-at-the-lava-sea/"
+      "cover": "https://books.alexmerced.com/covers/the-light-at-the-lava-sea.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-light-at-the-lava-sea/",
+      "toc": [
+        "Above the Hangar",
+        "Prisoners of Continuity",
+        "The Vent Map",
+        "Occupied Contracts",
+        "Kalen's Child",
+        "The Long Route",
+        "Restoration Broadcast",
+        "What Bubby Wants",
+        "The Uninsured Road",
+        "The Oracle Engine",
+        "Across the Glass Plain",
+        "A Choice No Child Should Hold",
+        "The Lava Sea",
+        "The Voice Released",
+        "Everyone Who Vanished"
+      ],
+      "audience": "Crossover young adult and adult readers who enjoy political science fiction, dystopian adventure, and family-centered space opera.",
+      "excerpt": "The trunk went up at about one in four and the toy would not stay where she put it. She had him at an arm's length ahead of her, the way she had pushed him along the flat, and she got her elbows under her and came up after him, and he came back down the rake into her chin before she had made half of it. She caught him against her mouth."
     },
     {
       "title": "The Voice at the End of Everything",
@@ -875,8 +2093,27 @@
       "isbn": null,
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HL22DC7F",
-      "cover": "https://m.media-amazon.com/images/I/91ew4c30crL._SL1500_.jpg",
-      "canonicalPage": "https://books.alexmerced.com/books/the-voice-at-the-end-of-everything/"
+      "cover": "https://books.alexmerced.com/covers/the-voice-at-the-end-of-everything.jpg",
+      "canonicalPage": "https://books.alexmerced.com/books/the-voice-at-the-end-of-everything/",
+      "toc": [
+        "After the Vanishing",
+        "The Light Beyond the Ridge",
+        "The Case Against Humanity",
+        "No Orders Coming",
+        "The Crown and the Clinic",
+        "High Ground and Bad Data",
+        "Memory and Mutual Aid",
+        "Terms Without Trust",
+        "The People Bubby Erased",
+        "Across the Ash",
+        "Xia's Answer",
+        "Four Oleds",
+        "A Future Left Open",
+        "Terenne",
+        "The Center of the Universe"
+      ],
+      "audience": "Crossover young adult and adult readers who enjoy political science fiction, dystopian adventure, and family-centered space opera.",
+      "excerpt": "The two coxswains left on the hull disagreed about whether a boat could go down, and Aldex had been listening to them disagree at the head of the boat deck for about nine minutes on the forty-fifth day when Osper Rall came up the ladder with a sheet and ended it. The older one would not fly, and he said the same three sentences every time somebody came to him. A boat goes down on a movement order. A movement order comes off the coordination desk. There is nobody on the coordination desk above clerk grade, and a clerk does not issue movement, and that is not him being difficult, that is what the word issue means."
     },
     {
       "title": "D6 Storyteller: The Core Rulebook",
@@ -889,7 +2126,26 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HC4XMKW3",
       "cover": "https://d6storyteller.alexmerced.com/images/covers/core-rulebook.webp",
-      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/"
+      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/",
+      "toc": [
+        "Welcome to the Table",
+        "Character Creation",
+        "Playing the Game & Dice Mechanics",
+        "Conflict, Harm & Consequences",
+        "The Storyteller's Guide",
+        "Aether & Iron",
+        "Clockwork Revolution",
+        "Neon Overdrive",
+        "Deep Space Frontier",
+        "Shadows & Rain",
+        "Gothic Dread",
+        "Masks & Paragon",
+        "Sunken Wasteland",
+        "Veil of Secrets",
+        "Gothic Intrigue"
+      ],
+      "audience": "Seasoned Game Masters who want a light, flexible system, and new groups trying tabletop roleplaying games for the first time.",
+      "excerpt": "There is a moment that happens at almost every game table, usually about forty minutes into the first session. Someone does something no one planned for. The group laughs, or gasps, or sits in complete silence for three seconds while everyone works out what just happened. The rules did not cause that moment. The people at the table caused that moment. The rules were just the grammar the group was using to communicate."
     },
     {
       "title": "D6 Storyteller: High & Mythic Fantasy Companion",
@@ -902,7 +2158,24 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HC4XMKW3",
       "cover": "https://d6storyteller.alexmerced.com/images/covers/high-mythic-fantasy-companion.webp",
-      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-high-mythic-fantasy-companion/"
+      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-high-mythic-fantasy-companion/",
+      "toc": [
+        "The Fabric of Magic",
+        "Magic-Specific Action Resolution",
+        "Celestial Age - Shattered Heavens",
+        "Floating Isles - Skydrift Archipelago",
+        "Deep Sunken Realm - Sunless Trench",
+        "World Tree - Yggdrasil Canopy",
+        "Necrotic Empire - City of Bones",
+        "Dragon-Bound - Flames of the Scarp",
+        "Feywild Court - Summer and Winter Solstice",
+        "Alchemical Wasteland - Salt and Crucible",
+        "Subterranean Underrealm - Hollow Earth",
+        "Beast-Shaper - Spirit Wilds",
+        "The Storyteller's Mythic Forge"
+      ],
+      "audience": "Players and Game Masters at D6 Storyteller tables who want to run campaigns in these ten worlds or use them as inspiration for their own settings.",
+      "excerpt": "High and Mythic Fantasy represents storytelling at the boundaries of the possible. In these settings, players do not merely survive in the world; they shape its laws. Whether navigating continent-sized biomes on the corpses of deceased gods, sailing wind-ships across sky-rivers, or bonding telepathically with colossal mountain drakes, the fiction demands grand scope. The rules in this companion do not add complexity to support this weight; instead, they focus on the thematic trade-off of great power: Magic Strain, Empathy Resonance, and the blood oaths of the Fey courts. The story of high fantasy is always a story of what you are willing to give up to alter reality."
     },
     {
       "title": "D6 Storyteller: Sci-Fi & Cosmic Frontiers Companion",
@@ -915,7 +2188,24 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HC4XMKW3",
       "cover": "https://d6storyteller.alexmerced.com/images/covers/sci-fi-cosmic-frontiers-companion.webp",
-      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-sci-fi-cosmic-frontiers-companion/"
+      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-sci-fi-cosmic-frontiers-companion/",
+      "toc": [
+        "Outward Bound",
+        "Technology and Spaceship Operations",
+        "Generation Ship - Ark 9",
+        "Cybernetic Wasteland - Scrap Horizon",
+        "Solar Punk - Verdant Oasis",
+        "Hive-Mind Invasion - Swarm Protocol",
+        "Mech Pilot - Steel Vanguard",
+        "Warp Reality - Slipstream Navigators",
+        "Corporate Moon - Luna Syndicate",
+        "Alien Archeology - Relic Hunters",
+        "Dyson Sphere - Eternal Shell",
+        "Transhuman Fleet - Singularity Convergence",
+        "The Storyteller's Star Chart"
+      ],
+      "audience": "Players and Game Masters at D6 Storyteller tables who want to run campaigns in these ten worlds or use them as inspiration for their own settings.",
+      "excerpt": "The cosmic frontier is a canvas of immense scale and profound isolation. This companion takes the D6 Storyteller engine into the depths of space, where the struggle is as much against the cold physics of the universe as it is against rival factions. From the generational decay of ark ships and scrap-built cybernetic wastelands to the hyper-technological dystopias of corporate moons and Dyson spheres, these settings explore what it means to remain human in the void. Mechanics like System Fatigue, Oxygen Billing, and Precursor Artifact Resonance ensure that technology is never just background detail: it is a lifeline that can fray at any moment."
     },
     {
       "title": "D6 Storyteller: Weird West, Piracy & Swashbuckling Companion",
@@ -928,7 +2218,24 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HC4XMKW3",
       "cover": "https://d6storyteller.alexmerced.com/images/covers/weird-west-piracy-swashbuckling-companion.webp",
-      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-weird-west-piracy-swashbuckling-companion/"
+      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-weird-west-piracy-swashbuckling-companion/",
+      "toc": [
+        "The Swashbuckler's Path",
+        "Ships, Crews, and Iron Carriages",
+        "Weird West - Brimstone and Dust",
+        "High Seas Piracy - Tides of Blood",
+        "Sky Pirates - Nimbus Corsairs",
+        "Musketeer Intrigue - Blade and Fleur-de-Lys",
+        "Steam-Caravan - Iron Silk Road",
+        "Sunken Atlantis - Corsairs of the Deep",
+        "Phantom Frontier - Ghost Town Law",
+        "Clockwork Privateers - Armada of Gearwork",
+        "Voodoo Bayou - Serpent and Swamp",
+        "Ice-Sea Whalers - Leviathan Hunters",
+        "The Storyteller's Ledger"
+      ],
+      "audience": "Players and Game Masters at D6 Storyteller tables who want to run campaigns in these ten worlds or use them as inspiration for their own settings.",
+      "excerpt": "There is a kinetic joy in swashbuckling adventure: the crash of sabers, the roar of a broadside, the quick-draw of a revolver in a dusty street. This companion focuses on settings where motion is survival and style is a weapon. You will navigate cursed seas under Aztec gold, caravan through steam-deserts, board privateer clockwork fleets, and track serpent cults in voodoo bayous. The mechanics in this book: Panache, Boarding Tension, Loa Favor, and Boiler Pressure: translate bravado directly into mechanical advantage. At these tables, playing safe is the only real failure."
     },
     {
       "title": "D6 Storyteller: Horror, Occult & Supernatural Companion",
@@ -941,7 +2248,24 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HC4XMKW3",
       "cover": "https://d6storyteller.alexmerced.com/images/covers/horror-occult-supernatural-companion.webp",
-      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-horror-occult-supernatural-companion/"
+      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-horror-occult-supernatural-companion/",
+      "toc": [
+        "Running the Shadows",
+        "Ruin, Madness, and Infection",
+        "Eldritch Noir - Cult of the City",
+        "Slasher Camp - Summer of '84",
+        "Haunted Megastructure - The Back-Rooms",
+        "Vampire Syndicate - Nightfall Dominion",
+        "Folk Horror - The Harvest Village",
+        "Zombie Apocalypse - Quarantine Zone",
+        "Body Horror - Flesh and Biopunk",
+        "Ghost Hunter - Paranormal Unit",
+        "Ashen World - Dark Souls of the Ash",
+        "Dreamscape - Nightmare Realm",
+        "The Storyteller's Crypt"
+      ],
+      "audience": "Players and Game Masters at D6 Storyteller tables who want to run campaigns in these ten worlds or use them as inspiration for their own settings.",
+      "excerpt": "Horror at the tabletop is different from horror in every other medium. The audience is not watching something happen to someone else. They are playing a character for whom something is happening, and they are doing it in a room with other people who are also playing, and all of this happens in a collaborative space that is simultaneously fictional and social."
     },
     {
       "title": "D6 Storyteller: Cybernetics, Speculative & Alternate Tech Companion",
@@ -954,7 +2278,24 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HC4XMKW3",
       "cover": "https://d6storyteller.alexmerced.com/images/covers/cybernetics-speculative-alternate-tech-companion.webp",
-      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-cybernetics-speculative-alternate-tech-companion/"
+      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-cybernetics-speculative-alternate-tech-companion/",
+      "toc": [
+        "The Machine Interface",
+        "Resource and Energy Tracks",
+        "Dieselpunk - Iron Siege",
+        "Biopunk - Genome Revolution",
+        "Nanotech Apocalypse - Grey Goo Frontier",
+        "Retro-Futurism - Atomic 1950s",
+        "Virtual Reality - Grid Hackers",
+        "Clockwork Fantasy - Mechanized Realm",
+        "Raypunk - Rocket Cadets of Sector 7",
+        "Cyber-Noir - Hardwired City",
+        "Steampunk Space - Aether Voyagers",
+        "Sub-Microscopic - Nano Wars",
+        "The Storyteller's Schematics"
+      ],
+      "audience": "Players and Game Masters at D6 Storyteller tables who want to run campaigns in these ten worlds or use them as inspiration for their own settings.",
+      "excerpt": "The system may be mechanical (the diesel engine's fuel consumption, the steam boiler's pressure), biological (the genome's stability, the graft's rejection), computational (the bandwidth limit, the firewall's intrusion counter), or physical (radiation exposure, atomic charge). But the structure is always the same: the character has access to a powerful capability, that capability has a resource that depletes, and managing the relationship between the capability and the resource is the setting's primary tactical dimension."
     },
     {
       "title": "D6 Storyteller: Superheroes, Kaiju & Anime Tropes Companion",
@@ -967,7 +2308,24 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HC4XMKW3",
       "cover": "https://d6storyteller.alexmerced.com/images/covers/superheroes-kaiju-anime-tropes-companion.webp",
-      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-superheroes-kaiju-anime-tropes-companion/"
+      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-superheroes-kaiju-anime-tropes-companion/",
+      "toc": [
+        "The Heroic Spark",
+        "Scaling Up & Combining Forces",
+        "Kaiju Defense Force - Titan Response",
+        "Magical Girls - Starlight Guardians",
+        "Mecha Academy - Iron Wings",
+        "Superhero Dystopia - Regime of Paragons",
+        "Shonen Tournament - Martial Apex",
+        "Cyber-Ninja - Neo-Edo",
+        "Monster Collector - Beast Tamer League",
+        "Cosmic Superheroes - Galactic Defenders",
+        "Urban Vigilantes - Street-Level Justice",
+        "Post-Apocalyptic Superheroes - Ruined Dynasty",
+        "The Storyteller's Danger Level"
+      ],
+      "audience": "Players and Game Masters at D6 Storyteller tables who want to run campaigns in these ten worlds or use them as inspiration for their own settings.",
+      "excerpt": "High-octane action requires mechanics that can scale from street-level vigilantism to titanic clashes that level city blocks. This companion provides the rules for running high-energy, trope-heavy anime and superhero campaigns. You will command Kaiju Defense mechs, transform into starlight magical guardians, battle in spiritual martial tournaments, patrol cyber-feudal cities as ninjas, and wield willpower energy rings. Mechanics like Titan Threat levels, Transformation clocks, Mecha Sync Ratios, and Ki Charging ensure that high-power actions feel spectacular, fast, and emotionally anchored."
     },
     {
       "title": "D6 Storyteller: Historical & Alternate History Companion",
@@ -980,7 +2338,24 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HC4XMKW3",
       "cover": "https://d6storyteller.alexmerced.com/images/covers/historical-alternate-history-companion.webp",
-      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-historical-alternate-history-companion/"
+      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-historical-alternate-history-companion/",
+      "toc": [
+        "History Reimagined",
+        "Formations, Faith, and Fame",
+        "Roman Mythos - Legions of Mars",
+        "Viking Mythos - Ragnarok Frost",
+        "Samurai Mythos - Shadows of Sengoku",
+        "Egyptian Mythos - Sands of Anubis",
+        "WWII Alternate - Occult Frontline",
+        "Age of Sail - Terra Incognita",
+        "Bronze Age Mythos - Spear of Ilium",
+        "Victorian Gothic - Penny Dreadful",
+        "American Revolution - Liberty & Alchemy",
+        "Imperial China - Silk & Dragon",
+        "The Storyteller's Chronicle"
+      ],
+      "audience": "Players and Game Masters at D6 Storyteller tables who want to run campaigns in these ten worlds or use them as inspiration for their own settings.",
+      "excerpt": "History is a conversation between facts and possibilities. This companion takes historical periods (Rome, the Viking age, Sengoku Japan, ancient Egypt, the American Revolution, and Imperial China) and introduces a mythic or speculative catalyst. You will fight in Roman legion formations blessed by Mars, carve Norse runes to survive Fimbulwinter, contract yokai spirits for Sengoku clan wars, and use revolutionary alchemy against British automaton redcoats. The setting mechanics, from Legion Formations and Yokai Pacts to Sun/Shadow Balance and Tabloid Fame, anchor historical drama in tactical, spiritual, and social systems."
     },
     {
       "title": "D6 Storyteller: Quirky, Experimental & Micro-Scale Companion",
@@ -993,7 +2368,24 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HC4XMKW3",
       "cover": "https://d6storyteller.alexmerced.com/images/covers/quirky-experimental-micro-scale-companion.webp",
-      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-quirky-experimental-micro-scale-companion/"
+      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-quirky-experimental-micro-scale-companion/",
+      "toc": [
+        "Out of the Box",
+        "Scaling Down, Shifting Rules",
+        "Miniature World - Borrowers of the Hearth",
+        "Culinary Magic - Iron Chef Dungeon",
+        "Toy Soldiers - Plastic Warfare",
+        "Bug World - Kingdom of the Ant",
+        "Haunted Arcade - Insert Coin",
+        "Board Game Realm - Monopoly of Empires",
+        "Library of Alexandria - Living Manuscripts",
+        "Teddy Bear Guardians - Night Nightmare",
+        "Card Game Summoners - Duelists of the Deck",
+        "Time Travel - Chrono Patrol",
+        "The Storyteller's Toybox"
+      ],
+      "audience": "Players and Game Masters at D6 Storyteller tables who want to run campaigns in these ten worlds or use them as inspiration for their own settings.",
+      "excerpt": "Tabletop gaming should occasionally challenge its own assumptions. This companion is an experimental laboratory for the D6 Storyteller system. It includes settings operating at microscopic scales (miniature household scavengers, plastic toy soldier armies, backyard bug empires, and teddy bear guardians) alongside meta-fictional structures like haunted arcade cabinets, living board game grids, ink-demon library manuscripts, card-game summoners, and temporal paradox loops. The setting mechanics, from Scale Difference and Flavor Profiles to Stuffing Integrity and Paradox Meters, reframe how approaches are applied and how scenes are won."
     },
     {
       "title": "D6 Storyteller: Post-Apocalyptic & Speculative Worlds Companion",
@@ -1006,7 +2398,34 @@
       "flagship": false,
       "url": "https://www.amazon.com/dp/B0HC4XMKW3",
       "cover": "https://d6storyteller.alexmerced.com/images/covers/post-apocalyptic-speculative-worlds-companion.webp",
-      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-post-apocalyptic-speculative-worlds-companion/"
+      "canonicalPage": "https://books.alexmerced.com/books/d6-storyteller-post-apocalyptic-speculative-worlds-companion/",
+      "toc": [
+        "Life in the Ruins",
+        "Surviving the Environment",
+        "Frozen Wasteland - Ice-Age 2099",
+        "Overgrown Earth - Nature's Reclamation",
+        "Desert Highway - Speed Demons",
+        "Shattered Moon - Gravity Ruin",
+        "Radioactive Swamp - Glowing Marsh",
+        "Cyber-Ghost Wasteland - Dead Net",
+        "Volcanic Age - Ash & Magma",
+        "Sky-City Ruin - Fallen Cloud Empire",
+        "Silent World - Sound-Sensitive Horrors",
+        "Omega Epoch - End of Time",
+        "The Storyteller's Wasteland Forge"
+      ],
+      "audience": "Players and Game Masters at D6 Storyteller tables who want to run campaigns in these ten worlds or use them as inspiration for their own settings.",
+      "excerpt": "An apocalypse is never just an ending; it is a hard reset on the relationship between humanity and nature. This companion details ten speculative post-apocalyptic settings where the landscape itself is the primary antagonist. From global ice ages and vine-travel overgrown jungles to gravity-fluctuating moon ruins, radioactive marshes, and silent cities hunted by sound-sensitive horrors, survival requires adaptability. Mechanics like Geiger Counters, Decibel meters, and Hypothermia clocks track the immediate dangers of the environment, forcing characters to adapt or be reclaimed by the ruins."
     }
-  ]
+  ],
+  "fieldNotes": {
+    "coAuthors": "Verified co-authors other than Alex (publisher listings and the Packt companion repo).",
+    "datePublished": "Year-month of first publication, only where verified.",
+    "freeEdition": "Free digital edition Dremio distributes, where one exists.",
+    "formats": "Formats verified for publisher titles; self-published titles link a single Amazon edition.",
+    "cover": "Covers are served from books.alexmerced.com/covers/ rather than hotlinked from Amazon.",
+    "toc": "Chapter titles from Alex's manuscripts.",
+    "audience": "Who the book is for, from the manuscript's own preface, PRD, or description copy.",
+    "excerpt": "A short verbatim passage from the opening of the book. Omitted for publisher titles."
+  }
 }

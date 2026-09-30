@@ -77,839 +77,973 @@
       "@id": "https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/#book",
       "name": "Apache Iceberg: The Definitive Guide",
       "url": "https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        },
+        {
+          "@type": "Person",
+          "name": "Tomer Shiran"
+        },
+        {
+          "@type": "Person",
+          "name": "Jason Hughes"
+        }
+      ],
+      "datePublished": "2024-05",
       "publisher": {
         "@type": "Organization",
         "name": "O'Reilly Media"
       },
       "isbn": "9781098148621",
       "description": "A comprehensive guide to Apache Iceberg and modern lakehouse architecture, covering table format internals, schema evolution, partitioning, and integration with major query engines.",
-      "image": "https://images.amazon.com/images/P/1098148622.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/apache-iceberg-the-definitive-guide.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/architecting-an-apache-iceberg-lakehouse/#book",
       "name": "Architecting an Apache Iceberg Lakehouse",
       "url": "https://books.alexmerced.com/books/architecting-an-apache-iceberg-lakehouse/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Manning Publications"
       },
       "isbn": "9781633435100",
       "description": "Architecture patterns and best practices for building production-grade, Iceberg-based data platforms from the ground up.",
-      "image": "https://images.amazon.com/images/P/1633435105.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/architecting-an-apache-iceberg-lakehouse.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/apache-polaris-the-definitive-guide/#book",
       "name": "Apache Polaris: The Definitive Guide",
       "url": "https://books.alexmerced.com/books/apache-polaris-the-definitive-guide/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        },
+        {
+          "@type": "Person",
+          "name": "Andrew Madson"
+        },
+        {
+          "@type": "Person",
+          "name": "Tomer Shiran"
+        }
+      ],
+      "datePublished": "2025-09",
       "publisher": {
         "@type": "Organization",
         "name": "O'Reilly Media"
       },
       "description": "A guide to open catalogs for Apache Iceberg lakehouses, covering Polaris catalog architecture, configuration, and governance.",
-      "image": "https://images.amazon.com/images/P/B0FBRJ7J1Y.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/apache-polaris-the-definitive-guide.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/building-the-software-factory/#book",
       "name": "Building the Software Factory",
       "url": "https://books.alexmerced.com/books/building-the-software-factory/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        },
+        {
+          "@type": "Person",
+          "name": "Benedikt Stemmildt"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Packt Publishing"
       },
       "isbn": "9781807782771",
       "description": "Co-authored with Benedikt Stemmildt. How to turn AI coding agents into a dependable, team-wide software factory using context engineering, AI-TDD, harness design, and the AEMM and Elastic Loop frameworks, moving teams from vibe coding to disciplined agentic engineering.",
-      "image": "https://m.media-amazon.com/images/I/81-gPruyXyL._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/building-the-software-factory.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-book-on-using-apache-iceberg-with-python/#book",
       "name": "The Book on Using Apache Iceberg with Python",
       "url": "https://books.alexmerced.com/books/the-book-on-using-apache-iceberg-with-python/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A hands-on guide to working with Apache Iceberg using Python tools like PyIceberg, PySpark, and other Python-based engines.",
-      "image": "https://images.amazon.com/images/P/B0GNZ454FF.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-book-on-using-apache-iceberg-with-python.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-2026-guide-to-lakehouses-apache-iceberg-and-agentic-ai/#book",
       "name": "The 2026 Guide to Lakehouses, Apache Iceberg and Agentic AI",
       "url": "https://books.alexmerced.com/books/the-2026-guide-to-lakehouses-apache-iceberg-and-agentic-ai/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A comprehensive guide covering the convergence of lakehouse architecture, Apache Iceberg, and the rise of agentic AI systems.",
-      "image": "https://images.amazon.com/images/P/B0GQNY21TD.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-2026-guide-to-lakehouses-apache-iceberg-and-agentic-ai.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-book-on-agentic-analytics/#book",
       "name": "The Book on Agentic Analytics",
       "url": "https://books.alexmerced.com/books/the-book-on-agentic-analytics/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Explores the foundations of agentic data architecture, where AI agents autonomously discover, query, and analyze data.",
-      "image": "https://images.amazon.com/images/P/B0GQN4Q41Y.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-book-on-agentic-analytics.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/enabling-agentic-analytics-with-apache-iceberg-and-dremio/#book",
       "name": "Enabling Agentic Analytics with Apache Iceberg and Dremio",
       "url": "https://books.alexmerced.com/books/enabling-agentic-analytics-with-apache-iceberg-and-dremio/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to building AI-ready lakehouse systems using Apache Iceberg and Dremio for agentic analytics workflows.",
-      "image": "https://images.amazon.com/images/P/B0GQXT6W3N.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/enabling-agentic-analytics-with-apache-iceberg-and-dremio.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/using-ai-agents-for-data-engineering-and-data-analysis/#book",
       "name": "Using AI Agents for Data Engineering and Data Analysis",
       "url": "https://books.alexmerced.com/books/using-ai-agents-for-data-engineering-and-data-analysis/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to leveraging AI agents for automating data engineering pipelines and performing intelligent data analysis.",
-      "image": "https://images.amazon.com/images/P/B0GR6PYJT9.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/using-ai-agents-for-data-engineering-and-data-analysis.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-ai-engineering-handbook/#book",
       "name": "The AI Engineering Handbook",
       "url": "https://books.alexmerced.com/books/the-ai-engineering-handbook/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A full-stack reference for building AI systems, covering LLMs, embeddings, agents, RAG, and production deployment patterns.",
-      "image": "https://images.amazon.com/images/P/B0GSS4R9FK.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-ai-engineering-handbook.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/ai-ready-data/#book",
       "name": "AI-Ready Data",
       "url": "https://books.alexmerced.com/books/ai-ready-data/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Designing data platforms optimized for LLMs, AI agents, and retrieval-augmented generation (RAG) workflows.",
-      "image": "https://images.amazon.com/images/P/B0GSN7GLH2.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/ai-ready-data.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-2026-guide-to-ai-assisted-development/#book",
       "name": "The 2026 Guide to AI-Assisted Development",
       "url": "https://books.alexmerced.com/books/the-2026-guide-to-ai-assisted-development/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Covers prompt engineering, AI coding assistants, and agent-driven development workflows for modern software engineers.",
-      "image": "https://images.amazon.com/images/P/B0GQW7CTML.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-2026-guide-to-ai-assisted-development.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/apache-iceberg-for-agentic-ai-connecting-structured-enterprise/#book",
       "name": "Apache Iceberg for Agentic AI: Connecting Structured Enterprise",
       "url": "https://books.alexmerced.com/books/apache-iceberg-for-agentic-ai-connecting-structured-enterprise/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Explores how to connect structured enterprise data in Apache Iceberg lakehouses to agentic AI systems.",
-      "image": "https://images.amazon.com/images/P/B0DYTX2WZY.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/apache-iceberg-for-agentic-ai-connecting-structured-enterprise.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-agentic-enterprise-deploying-ai-agents-across-the-modern-organization/#book",
       "name": "The Agentic Enterprise: Deploying AI Agents Across the Modern Organization",
       "url": "https://books.alexmerced.com/books/the-agentic-enterprise-deploying-ai-agents-across-the-modern-organization/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A guide to deploying AI agents across enterprise functions, covering strategy, governance, and organizational adoption.",
-      "image": "https://images.amazon.com/images/P/B0GSN3NNS5.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-agentic-enterprise-deploying-ai-agents-across-the-modern-organization.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/constructing-context-and-semantics-for-ai-agents/#book",
       "name": "Constructing Context and Semantics for AI Agents",
       "url": "https://books.alexmerced.com/books/constructing-context-and-semantics-for-ai-agents/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to embeddings, knowledge graphs, memory systems, RAG, evaluation, and production agent architectures.",
-      "image": "https://images.amazon.com/images/P/B0GSHRZNZ5.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/constructing-context-and-semantics-for-ai-agents.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-open-source-lakehouse-architecting-the-decoupled-analytical-foundation/#book",
       "name": "The Open Source Lakehouse: Architecting the Decoupled Analytical Foundation",
       "url": "https://books.alexmerced.com/books/the-open-source-lakehouse-architecting-the-decoupled-analytical-foundation/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Covers building a fully decoupled lakehouse using open source technologies, emphasizing modularity and vendor independence.",
-      "image": "https://images.amazon.com/images/P/B0D46P3VB7.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-open-source-lakehouse-architecting-the-decoupled-analytical-foundation.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/evaluating-ai-systems-testing-llms-rag-and-agents/#book",
       "name": "Evaluating AI Systems: Testing LLMs, RAG, and Agents",
       "url": "https://books.alexmerced.com/books/evaluating-ai-systems-testing-llms-rag-and-agents/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A guide to properly testing and evaluating AI systems, including benchmarking strategies for LLMs, RAG pipelines, and agents.",
-      "image": "https://images.amazon.com/images/P/B0GSVPQ667.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/evaluating-ai-systems-testing-llms-rag-and-agents.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-economics-of-labor-in-the-ai-era/#book",
       "name": "The Economics of Labor in the AI Era",
       "url": "https://books.alexmerced.com/books/the-economics-of-labor-in-the-ai-era/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Examines how the AI era is disrupting the labor market and explores paths for adaptation and the future of work.",
-      "image": "https://images.amazon.com/images/P/B0GSQSL344.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-economics-of-labor-in-the-ai-era.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/governing-ai-systems/#book",
       "name": "Governing AI Systems",
       "url": "https://books.alexmerced.com/books/governing-ai-systems/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A guide to AI governance frameworks, covering risk management, compliance, ethics, and organizational oversight of AI systems.",
-      "image": "https://images.amazon.com/images/P/B0GSMVQ1TH.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/governing-ai-systems.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/shipping-ai-from-prototype-to-production-systems/#book",
       "name": "Shipping AI: From Prototype to Production Systems",
       "url": "https://books.alexmerced.com/books/shipping-ai-from-prototype-to-production-systems/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Covers the full lifecycle of taking AI systems from prototype to production, including deployment, scaling, and monitoring.",
-      "image": "https://images.amazon.com/images/P/B0GSR2GRZX.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/shipping-ai-from-prototype-to-production-systems.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/building-knowledge-systems-for-ai-graphs-rag-memory-and-context/#book",
       "name": "Building Knowledge Systems for AI: Graphs, RAG, Memory, and Context",
       "url": "https://books.alexmerced.com/books/building-knowledge-systems-for-ai-graphs-rag-memory-and-context/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A deep dive into building robust knowledge systems for AI using knowledge graphs, RAG, memory architectures, and context management.",
-      "image": "https://images.amazon.com/images/P/B0GSWFSSRC.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/building-knowledge-systems-for-ai-graphs-rag-memory-and-context.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-ai-lakehouse-architecting-data-platforms-for-ai/#book",
       "name": "The AI Lakehouse: Architecting Data Platforms for AI",
       "url": "https://books.alexmerced.com/books/the-ai-lakehouse-architecting-data-platforms-for-ai/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Explores how to architect data lakehouse platforms specifically designed to serve AI and machine learning workloads.",
-      "image": "https://images.amazon.com/images/P/B0GSMQ6M2J.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-ai-lakehouse-architecting-data-platforms-for-ai.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/ai-application-architecture-patterns-for-building-intelligent-systems/#book",
       "name": "AI Application Architecture: Patterns for Building Intelligent Systems",
       "url": "https://books.alexmerced.com/books/ai-application-architecture-patterns-for-building-intelligent-systems/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Covers architectural patterns for building intelligent applications, from inference pipelines to multi-agent orchestration.",
-      "image": "https://images.amazon.com/images/P/B0GSVFT3H4.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/ai-application-architecture-patterns-for-building-intelligent-systems.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-economics-of-ai-cost-latency-and-infrastructure-tradeoffs/#book",
       "name": "The Economics of AI: Cost, Latency, and Infrastructure Tradeoffs",
       "url": "https://books.alexmerced.com/books/the-economics-of-ai-cost-latency-and-infrastructure-tradeoffs/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Analyzes the cost structures of AI systems and how to optimize spending across compute, latency, and infrastructure.",
-      "image": "https://images.amazon.com/images/P/B0GSPGSKXC.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-economics-of-ai-cost-latency-and-infrastructure-tradeoffs.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/alex-merced-s-field-guide-to-developer-relations/#book",
       "name": "Alex Merced's Field Guide to Developer Relations",
       "url": "https://books.alexmerced.com/books/alex-merced-s-field-guide-to-developer-relations/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to developer relations, community building, and technical evangelism for practitioners entering or growing in the DevRel field.",
-      "image": "https://images.amazon.com/images/P/B0H15CJLNG.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/alex-merced-s-field-guide-to-developer-relations.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/ai-and-agents-for-normal-people/#book",
       "name": "AI and Agents for Normal People",
       "url": "https://books.alexmerced.com/books/ai-and-agents-for-normal-people/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to using AI tools for everyday tasks, covering Gemini, NotebookLM, ChatGPT, Claude, and local agent workflows without technical jargon.",
-      "image": "https://images.amazon.com/images/P/B0H59GBTMW.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/ai-and-agents-for-normal-people.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-no-lock-in-apache-iceberg-lakehouse-with-agentic-analytics/#book",
       "name": "The No Lock-in Apache Iceberg Lakehouse with Agentic Analytics",
       "url": "https://books.alexmerced.com/books/the-no-lock-in-apache-iceberg-lakehouse-with-agentic-analytics/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to building a portable Apache Iceberg lakehouse with open catalogs, agentic analytics, and AI-ready data platforms while avoiding vendor lock-in.",
-      "image": "https://images.amazon.com/images/P/B0H49TDNX3.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-no-lock-in-apache-iceberg-lakehouse-with-agentic-analytics.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/being-productive-with-google-ai/#book",
       "name": "Being Productive with Google AI",
       "url": "https://books.alexmerced.com/books/being-productive-with-google-ai/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to using Google's AI ecosystem including Gemini, NotebookLM, Veo, Gemini Spark, and Jules.",
-      "image": "https://images.amazon.com/images/P/B0H77DBD83.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/being-productive-with-google-ai.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/being-productive-with-open-models/#book",
       "name": "Being Productive with Open Models",
       "url": "https://books.alexmerced.com/books/being-productive-with-open-models/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to using open models with Opencode, PI, and Hermes for AI-assisted development.",
-      "image": "https://images.amazon.com/images/P/B0H76JQ55R.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/being-productive-with-open-models.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/being-productive-with-claude/#book",
       "name": "Being Productive with Claude",
       "url": "https://books.alexmerced.com/books/being-productive-with-claude/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to Claude.ai, Claude Code, and Claude Dispatch for AI-powered development.",
-      "image": "https://images.amazon.com/images/P/B0H76BTLMF.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/being-productive-with-claude.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/being-productive-with-openai-codex/#book",
       "name": "Being Productive with OpenAI Codex",
       "url": "https://books.alexmerced.com/books/being-productive-with-openai-codex/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to building documents, images, video, websites, and apps with an AI agent using OpenAI Codex.",
-      "image": "https://images.amazon.com/images/P/B0H766477L.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/being-productive-with-openai-codex.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/being-productive-with-grok-and-cursor/#book",
       "name": "Being Productive with Grok and Cursor",
       "url": "https://books.alexmerced.com/books/being-productive-with-grok-and-cursor/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to the xAI and Cursor coding ecosystem covering Grok Chat, Grok Build, DeepSearch, Cursor Composer, Agent Mode, MCP servers, and local model runtimes for agentic development workflows.",
-      "image": "https://images.amazon.com/images/P/B0H7Z6RS5Y.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/being-productive-with-grok-and-cursor.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/being-productive-with-microsoft-copilot/#book",
       "name": "Being Productive with Microsoft Copilot",
       "url": "https://books.alexmerced.com/books/being-productive-with-microsoft-copilot/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to the Microsoft Copilot ecosystem covering Copilot Chat, M365 Copilot, GitHub Copilot Agent Mode, Copilot Studio, Copilot Cowork, and Copilot Plus PC features.",
-      "image": "https://images.amazon.com/images/P/B0H7WZ19NJ.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/being-productive-with-microsoft-copilot.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-2/#book",
       "name": "The Book on Data, Data Engineering, Data Analytics, and Agentic AI - Volume 2",
       "url": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-2/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A complete guide to SQL analytics, BI, and agentic AI for modern data platforms.",
-      "image": "https://images.amazon.com/images/P/B0GZVJB6ML.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-2.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-1/#book",
       "name": "The Book on Data, Data Engineering, Data Analytics, and Agentic AI - Volume 1",
       "url": "https://books.alexmerced.com/books/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-1/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A complete guide to modern data systems, data engineering, analytics, and AI.",
-      "image": "https://images.amazon.com/images/P/B0GZTXJQ1C.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-book-on-data-data-engineering-data-analytics-and-agentic-ai-volume-1.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/dremio-and-the-semantic-layer/#book",
       "name": "Dremio and the Semantic Layer",
       "url": "https://books.alexmerced.com/books/dremio-and-the-semantic-layer/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The journey to providing meaning and context for AI with Dremio's semantic layer.",
-      "image": "https://images.amazon.com/images/P/B0GWF7PFDG.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/dremio-and-the-semantic-layer.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/hands-on-agentic-engineering-a-practical-guide-to-building-multi-agent-systems/#book",
       "name": "Hands-On Agentic Engineering: A Practical Guide to Building Multi-Agent Systems",
       "url": "https://books.alexmerced.com/books/hands-on-agentic-engineering-a-practical-guide-to-building-multi-agent-systems/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A practical guide to building multi-agent systems with Apache Iceberg.",
-      "image": "https://images.amazon.com/images/P/B0GWTZ1394.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/hands-on-agentic-engineering-a-practical-guide-to-building-multi-agent-systems.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-lakehouse-built-for-everyone/#book",
       "name": "The Lakehouse Built for Everyone",
       "url": "https://books.alexmerced.com/books/the-lakehouse-built-for-everyone/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "From laptop prototypes to enterprise-scale agentic AI with Apache Iceberg and Dremio.",
-      "image": "https://images.amazon.com/images/P/B0GYL5Q5YV.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-lakehouse-built-for-everyone.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-book-on-apache-polaris/#book",
       "name": "The Book on Apache Polaris",
       "url": "https://books.alexmerced.com/books/the-book-on-apache-polaris/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "Building the open data lakehouse with the industry standard Iceberg REST catalog.",
-      "image": "https://images.amazon.com/images/P/B0GZDVCV24.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-book-on-apache-polaris.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/reputation-as-code/#book",
       "name": "Reputation as Code",
       "url": "https://books.alexmerced.com/books/reputation-as-code/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The companion book to branding.alexmerced.com, covering personal branding, reputation engineering, and career sovereignty for developers and tech professionals.",
-      "image": "https://images.amazon.com/images/P/B0HHXV4L42.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/reputation-as-code.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/economic-ideas-from-beginning-to-early-2026/#book",
       "name": "Economic Ideas: From Beginning to Early 2026",
       "url": "https://books.alexmerced.com/books/economic-ideas-from-beginning-to-early-2026/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A survey of the history of economic thought, tracing ideas from ancient civilizations through the modern AI era.",
-      "image": "https://images.amazon.com/images/P/B0GQQ68F63.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/economic-ideas-from-beginning-to-early-2026.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-field-guide-to-libertarianism/#book",
       "name": "The Field Guide to Libertarianism",
       "url": "https://books.alexmerced.com/books/the-field-guide-to-libertarianism/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "An accessible introduction to libertarian ideas, key debates, and the spectrum of thought within the libertarian tradition.",
-      "image": "https://images.amazon.com/images/P/B0GQV4CK5B.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-field-guide-to-libertarianism.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-field-guide-to-political-thought-and-debates-in-the-united-states/#book",
       "name": "The Field Guide to Political Thought and Debates in the United States",
       "url": "https://books.alexmerced.com/books/the-field-guide-to-political-thought-and-debates-in-the-united-states/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
-      "description": "Maps the terrain of American political thought — conservative, progressive, and libertarian — so you can understand why people across the table believe what they believe and how to talk about it.",
-      "image": "https://images.amazon.com/images/P/B0GTV6ZWHX.01._SCLZZZZZZZ_.jpg"
+      "description": "Maps the terrain of American political thought (conservative, progressive, and libertarian) so you can understand why people across the table believe what they believe and how to talk about it.",
+      "image": "https://books.alexmerced.com/covers/the-field-guide-to-political-thought-and-debates-in-the-united-states.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-libertarian-heart/#book",
       "name": "The Libertarian Heart",
       "url": "https://books.alexmerced.com/books/the-libertarian-heart/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "isbn": "9780359752119",
       "description": "A philosophical exploration of consent, individual peace, and the moral foundations of a free society.",
-      "image": "https://images.amazon.com/images/P/035975211X.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-libertarian-heart.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/profits-are-generosity-entrepreneurship-is-philanthropy/#book",
       "name": "Profits are Generosity, Entrepreneurship is Philanthropy",
       "url": "https://books.alexmerced.com/books/profits-are-generosity-entrepreneurship-is-philanthropy/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "isbn": "9781387798421",
       "description": "An economic philosophy book arguing that voluntary exchange and entrepreneurship are the most generous forms of social contribution.",
-      "image": "https://images.amazon.com/images/P/1387798421.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/profits-are-generosity-entrepreneurship-is-philanthropy.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-semantic-rebellion/#book",
       "name": "The Semantic Rebellion",
       "url": "https://books.alexmerced.com/books/the-semantic-rebellion/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A sci-fi novel following a data engineer's journey through a rapidly changing world shaped by AI and shifting power dynamics.",
-      "image": "https://images.amazon.com/images/P/B0GPMNX78W.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-semantic-rebellion.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-emperors-of-a-i-valley/#book",
       "name": "The Emperors of A.I. Valley",
       "url": "https://books.alexmerced.com/books/the-emperors-of-a-i-valley/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A near-future thriller exploring power struggles, corporate intrigue, and moral dilemmas in an AI-dominated Silicon Valley.",
-      "image": "https://images.amazon.com/images/P/B0GQHKF4ZT.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-emperors-of-a-i-valley.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-federation-of-tides/#book",
       "name": "The Federation of Tides",
       "url": "https://books.alexmerced.com/books/the-federation-of-tides/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "An epic fantasy adventure following a narwhal on a journey seeking knowledge across oceanic civilizations.",
-      "image": "https://images.amazon.com/images/P/B0GPRBTV6W.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-federation-of-tides.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/plastic-punk/#book",
       "name": "Plastic Punk",
       "url": "https://books.alexmerced.com/books/plastic-punk/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A genre-bending novel exploring economic systems, societal structures, and individual agency in a stylized world.",
-      "image": "https://images.amazon.com/images/P/B0GQGRFW2H.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/plastic-punk.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/embers-of-claim/#book",
       "name": "Embers of Claim",
       "url": "https://books.alexmerced.com/books/embers-of-claim/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The first book in an epic fantasy trilogy, introducing a world of competing kingdoms, ancient magic, and rising conflict.",
-      "image": "https://images.amazon.com/images/P/B0GQGW7VCY.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/embers-of-claim.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/crowns-and-wings/#book",
       "name": "Crowns and Wings",
       "url": "https://books.alexmerced.com/books/crowns-and-wings/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The second book in the epic fantasy trilogy, deepening the political intrigue and expanding the world's mythology.",
-      "image": "https://images.amazon.com/images/P/B0GQGHYL79.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/crowns-and-wings.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/thrones-of-ash-and-sky/#book",
       "name": "Thrones of Ash and Sky",
       "url": "https://books.alexmerced.com/books/thrones-of-ash-and-sky/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The concluding volume of the trilogy, bringing the saga of kingdoms, magic, and destiny to its climax.",
-      "image": "https://images.amazon.com/images/P/B0GQCHRYHV.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/thrones-of-ash-and-sky.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/tales-of-fur-and-sky-echoes-of-the-ages/#book",
       "name": "Tales of Fur and Sky: Echoes of the Ages",
       "url": "https://books.alexmerced.com/books/tales-of-fur-and-sky-echoes-of-the-ages/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A companion volume to the fantasy trilogy, expanding the lore with standalone tales set in the same world.",
-      "image": "https://images.amazon.com/images/P/B0GQGRGH93.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/tales-of-fur-and-sky-echoes-of-the-ages.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/signal-and-noise/#book",
       "name": "Signal and Noise",
       "url": "https://books.alexmerced.com/books/signal-and-noise/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A literary novel tracing a twelve-year long-distance connection between a documentary producer in Manila and a logistics manager in Indiana, and the single hour that finally tests it.",
-      "image": "https://images.amazon.com/images/P/B0HDDN968Z.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/signal-and-noise.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/celestial-fragments-the-duel-of-souls/#book",
       "name": "Celestial Fragments: The Duel of Souls",
       "url": "https://books.alexmerced.com/books/celestial-fragments-the-duel-of-souls/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "A contemporary fantasy in which two political rivals discover they carry the fragments of ancient beings of love and hate, continuing a conflict twelve thousand years old.",
-      "image": "https://images.amazon.com/images/P/B0HD831HR9.01._SCLZZZZZZZ_.jpg"
+      "image": "https://books.alexmerced.com/covers/celestial-fragments-the-duel-of-souls.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/adventures-in-love-and-flooding/#book",
       "name": "Adventures in Love and Flooding",
       "url": "https://books.alexmerced.com/books/adventures-in-love-and-flooding/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -923,9 +1057,11 @@
       "@id": "https://books.alexmerced.com/books/the-last-continue/#book",
       "name": "The Last Continue",
       "url": "https://books.alexmerced.com/books/the-last-continue/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -939,159 +1075,181 @@
       "@id": "https://books.alexmerced.com/books/the-children-of-damaris/#book",
       "name": "The Children of Damaris",
       "url": "https://books.alexmerced.com/books/the-children-of-damaris/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The Worlds Between Home, Book 1 of 10. A ship mechanic, a surgical assistant, and their two children steal a damaged survey courier to escape a fascist world that has begun taking every child into state custody, with a whispering stuffed animal hidden aboard.",
-      "image": "https://m.media-amazon.com/images/I/814bKVKGW+L._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-children-of-damaris.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/a-crown-of-cliffs/#book",
       "name": "A Crown of Cliffs",
       "url": "https://books.alexmerced.com/books/a-crown-of-cliffs/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The Worlds Between Home, Book 2 of 10. The Oleds land on Cyradon, a canyon kingdom where every load-bearing part carries a household's name, and survive on a queen's revocable guest-oath while their asylum claim waits in court.",
-      "image": "https://m.media-amazon.com/images/I/81m0syAst1L._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/a-crown-of-cliffs.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-price-of-high-ground/#book",
       "name": "The Price of High Ground",
       "url": "https://books.alexmerced.com/books/the-price-of-high-ground/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The Worlds Between Home, Book 3 of 10. On Vanthel, where arrival is an invoice and every charge is published, the family learns that each honest offer made to them comes with a claim on their ship.",
-      "image": "https://m.media-amazon.com/images/I/91jvMuSAA-L._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-price-of-high-ground.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-common-sun/#book",
       "name": "The Common Sun",
       "url": "https://books.alexmerced.com/books/the-common-sun/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The Worlds Between Home, Book 4 of 10. Solvara's generous public system heals the family and repairs their ship for free, yet every entitlement costs them something they did not know they were holding.",
-      "image": "https://m.media-amazon.com/images/I/910nHjOgvkL._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-common-sun.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/what-the-models-cannot-see/#book",
       "name": "What the Models Cannot See",
       "url": "https://books.alexmerced.com/books/what-the-models-cannot-see/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The Worlds Between Home, Book 5 of 10. The best-run world the Oleds have seen places them under a formal hold, and ten-year-old Xia's refusals become the only thing standing between careful assessors and the voice she talks to.",
-      "image": "https://m.media-amazon.com/images/I/81aHYjEWVRL._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/what-the-models-cannot-see.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-memory-garden/#book",
       "name": "The Memory Garden",
       "url": "https://books.alexmerced.com/books/the-memory-garden/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The Worlds Between Home, Book 6 of 10. On Varduun nothing is withheld and nothing is billed, the memory gardens keep what people say for nine hundred years, and Xia carries something that took an entire hillside without asking.",
-      "image": "https://m.media-amazon.com/images/I/91U627Pk2TL._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-memory-garden.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/no-one-commands-the-tunnels/#book",
       "name": "No One Commands the Tunnels",
       "url": "https://books.alexmerced.com/books/no-one-commands-the-tunnels/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The Worlds Between Home, Book 7 of 10. Caldris runs on syndicates, chambers, and signed findings instead of offices, and a family nobody refuses finds that nobody is able to accept them either.",
-      "image": "https://m.media-amazon.com/images/I/91ZToGC0L1L._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/no-one-commands-the-tunnels.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/terms-of-protection/#book",
       "name": "Terms of Protection",
       "url": "https://books.alexmerced.com/books/terms-of-protection/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The Worlds Between Home, Book 8 of 10. On the Orison Exchange, air is the currency and protection is bought from competing houses, so the Oleds end up covered on three separate books by people who all deal with them honestly.",
-      "image": "https://m.media-amazon.com/images/I/91XYqcyp6kL._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/terms-of-protection.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-light-at-the-lava-sea/#book",
       "name": "The Light at the Lava Sea",
       "url": "https://books.alexmerced.com/books/the-light-at-the-lava-sea/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The Worlds Between Home, Book 9 of 10. Three of the Oleds are taken aboard an occupation carrier that writes everything down, while Xia climbs alone through a dark recovery trunk with a pencil and her mother's rules.",
-      "image": "https://m.media-amazon.com/images/I/81ukVpUTn5L._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-light-at-the-lava-sea.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/the-voice-at-the-end-of-everything/#book",
       "name": "The Voice at the End of Everything",
       "url": "https://books.alexmerced.com/books/the-voice-at-the-end-of-everything/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
       },
       "description": "The Worlds Between Home, Book 10 of 10. The concluding volume: the Directorate has broken, Aldex rebuilds authority with paper and signatures, and Xia keeps a case open against the voice that has watched eight worlds decide what to do with her family.",
-      "image": "https://m.media-amazon.com/images/I/91ew4c30crL._SL1500_.jpg"
+      "image": "https://books.alexmerced.com/covers/the-voice-at-the-end-of-everything.jpg"
     },
     {
       "@type": "Book",
       "@id": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/#book",
       "name": "D6 Storyteller: The Core Rulebook",
       "url": "https://books.alexmerced.com/books/d6-storyteller-the-core-rulebook/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -1104,9 +1262,11 @@
       "@id": "https://books.alexmerced.com/books/d6-storyteller-high-mythic-fantasy-companion/#book",
       "name": "D6 Storyteller: High & Mythic Fantasy Companion",
       "url": "https://books.alexmerced.com/books/d6-storyteller-high-mythic-fantasy-companion/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -1119,9 +1279,11 @@
       "@id": "https://books.alexmerced.com/books/d6-storyteller-sci-fi-cosmic-frontiers-companion/#book",
       "name": "D6 Storyteller: Sci-Fi & Cosmic Frontiers Companion",
       "url": "https://books.alexmerced.com/books/d6-storyteller-sci-fi-cosmic-frontiers-companion/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -1134,9 +1296,11 @@
       "@id": "https://books.alexmerced.com/books/d6-storyteller-weird-west-piracy-swashbuckling-companion/#book",
       "name": "D6 Storyteller: Weird West, Piracy & Swashbuckling Companion",
       "url": "https://books.alexmerced.com/books/d6-storyteller-weird-west-piracy-swashbuckling-companion/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -1149,9 +1313,11 @@
       "@id": "https://books.alexmerced.com/books/d6-storyteller-horror-occult-supernatural-companion/#book",
       "name": "D6 Storyteller: Horror, Occult & Supernatural Companion",
       "url": "https://books.alexmerced.com/books/d6-storyteller-horror-occult-supernatural-companion/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -1164,9 +1330,11 @@
       "@id": "https://books.alexmerced.com/books/d6-storyteller-cybernetics-speculative-alternate-tech-companion/#book",
       "name": "D6 Storyteller: Cybernetics, Speculative & Alternate Tech Companion",
       "url": "https://books.alexmerced.com/books/d6-storyteller-cybernetics-speculative-alternate-tech-companion/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -1179,9 +1347,11 @@
       "@id": "https://books.alexmerced.com/books/d6-storyteller-superheroes-kaiju-anime-tropes-companion/#book",
       "name": "D6 Storyteller: Superheroes, Kaiju & Anime Tropes Companion",
       "url": "https://books.alexmerced.com/books/d6-storyteller-superheroes-kaiju-anime-tropes-companion/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -1194,9 +1364,11 @@
       "@id": "https://books.alexmerced.com/books/d6-storyteller-historical-alternate-history-companion/#book",
       "name": "D6 Storyteller: Historical & Alternate History Companion",
       "url": "https://books.alexmerced.com/books/d6-storyteller-historical-alternate-history-companion/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -1209,9 +1381,11 @@
       "@id": "https://books.alexmerced.com/books/d6-storyteller-quirky-experimental-micro-scale-companion/#book",
       "name": "D6 Storyteller: Quirky, Experimental & Micro-Scale Companion",
       "url": "https://books.alexmerced.com/books/d6-storyteller-quirky-experimental-micro-scale-companion/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
@@ -1224,9 +1398,11 @@
       "@id": "https://books.alexmerced.com/books/d6-storyteller-post-apocalyptic-speculative-worlds-companion/#book",
       "name": "D6 Storyteller: Post-Apocalyptic & Speculative Worlds Companion",
       "url": "https://books.alexmerced.com/books/d6-storyteller-post-apocalyptic-speculative-worlds-companion/",
-      "author": {
-        "@id": "https://alexmerced.com/#alexmerced"
-      },
+      "author": [
+        {
+          "@id": "https://alexmerced.com/#alexmerced"
+        }
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "Self-published"
