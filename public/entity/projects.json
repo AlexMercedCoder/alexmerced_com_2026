@@ -246,6 +246,24 @@
         "docker",
         "devops"
       ]
+    },
+    {
+      "name": "MCP Semantic Lakehouse Demo",
+      "slug": "mcp-semantic-lakehouse-demo",
+      "category": "agent-infrastructure",
+      "tagline": "A runnable MCP server that gives AI agents governed access to Apache Iceberg tables through a semantic layer.",
+      "description": "Companion code for the agenticlakehouse.com implementation patterns. PyIceberg with a local SQLite catalog, DuckDB, a YAML semantic model, and the official MCP Python SDK. Agents can list, describe, and query metrics but never write SQL; they read governed views with per-role row and column policies, and every query passes allowlists, row limits, timeouts, and a cost cap.",
+      "repository": "https://github.com/alexmerced-oss/mcp-semantic-lakehouse-demo",
+      "license": "Apache-2.0",
+      "topics": [
+        "mcp",
+        "apache iceberg",
+        "semantic layer",
+        "ai agents",
+        "governance"
+      ],
+      "website": "https://agenticlakehouse.com/patterns/",
+      "language": "Python"
     }
   ]
 }

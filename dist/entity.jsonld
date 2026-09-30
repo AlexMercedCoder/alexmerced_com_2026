@@ -1562,6 +1562,18 @@
       "codeRepository": "https://github.com/AlexMercedCoder/containermaker"
     },
     {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://alexmercedcoder.dev/#project-mcp-semantic-lakehouse-demo",
+      "name": "MCP Semantic Lakehouse Demo",
+      "description": "Companion code for the agenticlakehouse.com implementation patterns. PyIceberg with a local SQLite catalog, DuckDB, a YAML semantic model, and the official MCP Python SDK. Agents can list, describe, and query metrics but never write SQL; they read governed views with per-role row and column policies, and every query passes allowlists, row limits, timeouts, and a cost cap.",
+      "creator": {
+        "@id": "https://alexmerced.com/#alexmerced"
+      },
+      "codeRepository": "https://github.com/alexmerced-oss/mcp-semantic-lakehouse-demo",
+      "programmingLanguage": "Python",
+      "license": "Apache-2.0"
+    },
+    {
       "@type": "WebSite",
       "@id": "https://whoisalexmerced.com/#website",
       "url": "https://whoisalexmerced.com",
