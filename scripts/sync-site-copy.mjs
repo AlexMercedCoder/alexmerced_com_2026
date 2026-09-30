@@ -34,14 +34,14 @@ const pickMarkup = `<div class="book-picks">\n${picks.map(([label, slug, descrip
   return `        <a class="book-pick" href="${escapeHtml(book.canonicalPage)}" target="_blank" rel="noopener"><span class="book-pick__label">${escapeHtml(label)}</span><strong>${escapeHtml(book.title)}</strong><span>${escapeHtml(description)}</span><span class="book-pick__arrow">Explore book ↗</span></a>`;
 }).join('\n')}\n      </div>`;
 
-for (const name of ['index.html', 'bio.html', 'professional.html', 'press_kit.html', 'speaking.html']) {
+for (const name of ['index.html', 'professional.html', 'press_kit.html', 'speaking.html']) {
   const path = new URL(`../${name}`, import.meta.url);
   let html = readFileSync(path, 'utf8');
   html = html.replace(/(<([a-z][\w-]*)\b[^>]*data-site-fact="([\w-]+)"[^>]*>)[\s\S]*?(<\/\2>)/g, (full, open, tag, key, close) => {
     if (!(key in facts)) throw new Error(`Unknown site fact: ${key}`);
     return `${open}${escapeHtml(facts[key])}${close}`;
   });
-  if (name === 'index.html' || name === 'bio.html') {
+  if (name === 'index.html') {
     html = html.replace(/(<!-- site-book-picks:start -->)[\s\S]*?(<!-- site-book-picks:end -->)/, `$1\n      ${pickMarkup}\n      $2`);
   }
   writeFileSync(path, html);

@@ -4,8 +4,8 @@
   "description": "AlexMerced.com \u2014 Portal into the world of Alex Merced",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/sync-site-copy.mjs && node scripts/build-entity.mjs && vite",
-    "build": "node scripts/sync-site-copy.mjs && node scripts/build-network-index.mjs && node scripts/build-entity.mjs && vite build",
+    "dev": "node scripts/sync-site-copy.mjs && node scripts/apply-network.mjs && node scripts/build-entity.mjs && vite",
+    "build": "node scripts/sync-site-copy.mjs && node scripts/apply-network.mjs && node scripts/build-network-index.mjs && node scripts/build-entity.mjs && vite build",
     "sync:site-copy": "node scripts/sync-site-copy.mjs",
     "preview": "vite preview",
     "build:entity": "node scripts/build-entity.mjs",

@@ -1,5 +1,7 @@
-# bio.alexmerced.com subdomain serves the bio variant (self-canonical)
-https://bio.alexmerced.com/  /bio.html  200!
+# bio.alexmerced.com and the old bio page retire into /professional (decision D9, P0.10)
+https://bio.alexmerced.com/*  https://alexmerced.com/professional  301!
+/bio          /professional  301!
+/bio.html     /professional  301!
 
 # Canonical URL redirects (extensionless is canonical)
 /professional.html  /professional  301
@@ -8,9 +10,13 @@ https://bio.alexmerced.com/  /bio.html  200!
 /game.html          /game          301
 /speaking.html      /speaking      301
 /speaking-thanks.html /speaking-thanks 301
+/contact.html       /contact       301
+/newsletter.html    /newsletter    301
 /speaking           /speaking.html 200
 /speaking-thanks    /speaking-thanks.html 200
 /game               /game.html     200
+/contact            /contact.html  200
+/newsletter         /newsletter.html 200
 
 # Legacy path redirects
 /web          /             301

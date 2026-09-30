@@ -20,12 +20,17 @@ Every site in the network resolves author identity to that same identifier.
 ## About
 - [About Alex Merced](/professional): Biography, books (77 titles), and professional background
 - [Press Kit](/press_kit): Verified bio, credentials, and media info
+- [Speaking](/speaking): Talk topics, past talks with dates, session abstracts, organizer FAQ, and the booking form
+- [Contact](/contact): Email dev@alexmerced.com for speaking, press, and developer inquiries
+- [Newsletters](/newsletter): Data, Lakehouse and AI on Substack, plus the other lists Alex writes
+- [Network directory](/network.html): Every site Alex runs, grouped by purpose
+- [Community](/community.html): Event calendars and discussion spaces Alex runs
 
 ## Books
-- [Apache Iceberg: The Definitive Guide](https://www.amazon.com/Apache-Iceberg-Functionality-Performance-Scalability/dp/1098148622): O'Reilly — the category-defining text
-- [Apache Polaris: The Definitive Guide](https://www.amazon.com/dp/B0FBRJ7J1Y): O'Reilly — the catalog reference
-- [Architecting an Apache Iceberg Lakehouse](https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse): Manning — architecture patterns
-- [Building the Software Factory](https://www.amazon.com/dp/1807782778): Packt, with Benedikt Stemmildt — scaling reliable AI coding practices to teams
+- [Apache Iceberg: The Definitive Guide](https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/): O'Reilly, with Tomer Shiran and Jason Hughes; the category-defining text
+- [Apache Polaris: The Definitive Guide](https://books.alexmerced.com/books/apache-polaris-the-definitive-guide/): O'Reilly, with Andrew Madson and Tomer Shiran; the catalog reference
+- [Architecting an Apache Iceberg Lakehouse](https://books.alexmerced.com/books/architecting-an-apache-iceberg-lakehouse/): Manning; architecture patterns
+- [Building the Software Factory](https://books.alexmerced.com/books/building-the-software-factory/): Packt, with Benedikt Stemmildt; scaling reliable AI coding practices to teams
 - [The Worlds Between Home](https://www.amazon.com/dp/B0HHZ8J1NX): ten-book family political space opera
 - [All Books](https://books.alexmerced.com): Complete library
 
