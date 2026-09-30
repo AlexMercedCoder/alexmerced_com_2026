@@ -1633,7 +1633,7 @@
       "@type": "WebSite",
       "@id": "https://alexmercedcoder.dev/#website",
       "url": "https://alexmercedcoder.dev",
-      "name": "Alex Merced: Open Lakehouse & AI Advocate, Author & Technologist",
+      "name": "Alex Merced: Open-Source Data and AI Tools, Agents, and Books",
       "description": "Software builder identity: open source projects, agent harnesses, and specifications.",
       "creator": {
         "@id": "https://alexmerced.com/#alexmerced"
@@ -2107,6 +2107,16 @@
       "description": "Agentic analytics is the practice of letting AI agents discover, query, and reason over governed data with the same controls applied to human users.",
       "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
       "subjectOf": {
+        "@id": "https://agenticanalyticsnow.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://alexmerced.com/entity/topics#agentic-lakehouse",
+      "name": "Agentic Lakehouse",
+      "description": "An agentic lakehouse is an open lakehouse built so AI agents can query governed data safely: open table formats and catalogs underneath, a semantic layer for shared meaning, and access controls and interfaces such as MCP that let agents act without bypassing governance.",
+      "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
+      "subjectOf": {
         "@id": "https://agenticlakehouse.com/#website"
       }
     },
@@ -2187,7 +2197,7 @@
       "description": "Listings of data community events, conferences, and meetups.",
       "inDefinedTermSet": "https://alexmerced.com/entity/topics.json",
       "subjectOf": {
-        "@id": "https://weekofdata.com/#website"
+        "@id": "https://datalakehousehub.com/#website"
       }
     },
     {

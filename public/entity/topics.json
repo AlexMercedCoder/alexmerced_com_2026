@@ -200,21 +200,46 @@
       "label": "Agentic Analytics",
       "aliases": [
         "agentic analytics",
-        "agentic lakehouse",
         "agentic bi",
+        "agentic analytics adoption",
+        "agentic analytics readiness",
+        "agentic analytics rollout",
+        "ai analytics for business"
+      ],
+      "primary": "agenticanalyticsnow.com",
+      "supporting": [
+        "agenticlakehouse.com",
+        "semanticlakehouse.com",
+        "openagenticplatform.com",
+        "alexmercedai.com"
+      ],
+      "summary": "Agentic analytics is the practice of letting AI agents discover, query, and reason over governed data with the same controls applied to human users.",
+      "books": [
+        "The Book on Agentic Analytics",
+        "Enabling Agentic Analytics with Apache Iceberg and Dremio",
+        "Using AI Agents for Data Engineering and Data Analysis"
+      ]
+    },
+    {
+      "id": "agentic-lakehouse",
+      "label": "Agentic Lakehouse",
+      "aliases": [
+        "agentic lakehouse",
         "ai agents for data",
-        "governed agentic data"
+        "governed agentic data",
+        "agent access control",
+        "agentic glossary",
+        "mcp over lakehouse data"
       ],
       "primary": "agenticlakehouse.com",
       "supporting": [
-        "semanticlakehouse.com",
-        "alexmercedcoder.dev",
-        "alexmerceddata.com",
+        "agenticanalyticsnow.com",
         "alexmercedai.com",
         "openagenticplatform.com",
-        "agenticanalyticsnow.com"
+        "alexmercedcoder.dev",
+        "semanticlakehouse.com"
       ],
-      "summary": "Agentic analytics is the practice of letting AI agents discover, query, and reason over governed data with the same controls applied to human users.",
+      "summary": "An agentic lakehouse is an open lakehouse built so AI agents can query governed data safely: open table formats and catalogs underneath, a semantic layer for shared meaning, and access controls and interfaces such as MCP that let agents act without bypassing governance.",
       "books": [
         "The Book on Agentic Analytics",
         "Enabling Agentic Analytics with Apache Iceberg and Dremio",
@@ -290,9 +315,9 @@
       ],
       "primary": "dataengnr.com",
       "supporting": [
-        "alexmerceddata.com",
         "datalakehouse.help",
-        "dataaiwiki.com"
+        "dataaiwiki.com",
+        "datalakehousehub.com"
       ],
       "summary": "Data engineering covers the design and operation of the systems that move, model, and serve data for analysis."
     },
@@ -386,9 +411,11 @@
         "meetups",
         "week of data"
       ],
-      "primary": "weekofdata.com",
+      "primary": "datalakehousehub.com",
       "supporting": [
-        "datalakehousehub.com"
+        "agenticlakehouse.com",
+        "weekofdata.com",
+        "alexmerced.com"
       ],
       "summary": "Listings of data community events, conferences, and meetups."
     },

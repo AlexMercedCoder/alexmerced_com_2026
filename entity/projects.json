@@ -178,7 +178,7 @@
       "repository": "https://github.com/alexmerced-oss/agent-approval-interchange-spec",
       "packageManager": "pypi",
       "package": "agent-approval-interchange",
-      "specVersion": "1.0",
+      "specVersion": "1.0 release candidate",
       "supportVersion": "Python 0.2.0; TypeScript, Go, Rust, and Java 0.1.0",
       "license": "Apache-2.0",
       "isSpecification": true,
