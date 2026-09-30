@@ -235,10 +235,10 @@
     },
     {
       "@type": "Question",
-      "name": "How do fees work?",
+      "name": "Is there a speaking fee?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Put your budget in the inquiry, including if there is none. Community meetups and nonprofit events are welcome to ask."
+        "text": "There is no speaking fee. When Alex presents as a Dremio representative, there is no cost to your event. For a vendor-neutral or independent talk, the event covers travel and lodging."
       }
     },
     {
@@ -246,7 +246,7 @@
       "name": "What about travel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Say whether travel and lodging are covered and where the event is. Alex is based in Orlando, Florida. A virtual session removes the question entirely."
+        "text": "Dremio covers travel when Alex speaks for Dremio. For a vendor-neutral or independent talk, the event covers travel and lodging. Alex is based in Orlando, Florida, and virtual sessions are always an option."
       }
     },
     {
@@ -402,15 +402,15 @@ document.addEventListener('click', function (e) {
       <div class="faq-list">
         <details class="faq-item"><summary>What topics does Alex speak on?</summary><p>Apache Iceberg and open lakehouse architecture, lakehouse catalogs such as Apache Polaris, query performance and data optimization, semantic layers, agentic analytics, and how open-source communities form standards. Talks can be pitched at engineers, data leaders, or a mixed audience.</p></details>
         <details class="faq-item"><summary>Which formats work?</summary><p>Keynotes, conference sessions, workshops, panels, meetups, podcasts, and webinars, in person or virtual.</p></details>
-        <details class="faq-item"><summary>How do fees work?</summary><p>Put your budget in the inquiry, including if there is none. Community meetups and nonprofit events are welcome to ask.</p></details>
-        <details class="faq-item"><summary>What about travel?</summary><p>Say whether travel and lodging are covered and where the event is. Alex is based in Orlando, Florida. A virtual session removes the question entirely.</p></details>
+        <details class="faq-item"><summary>Is there a speaking fee?</summary><p>There is no speaking fee. When Alex presents as a Dremio representative, there is no cost to your event. For a vendor-neutral or independent talk, the event covers travel and lodging.</p></details>
+        <details class="faq-item"><summary>What about travel?</summary><p>Dremio covers travel when Alex speaks for Dremio. For a vendor-neutral or independent talk, the event covers travel and lodging. Alex is based in Orlando, Florida, and virtual sessions are always an option.</p></details>
         <details class="faq-item"><summary>What should I tell you about AV and recording?</summary><p>Share the room setup (screen connectors, microphone, confidence monitor), the session length, and whether the talk will be recorded or streamed.</p></details>
         <details class="faq-item"><summary>How far ahead should I ask?</summary><p>As early as you can. Conference calls for papers often close months ahead, so include the date and any CFP deadline in the form.</p></details>
       </div>
       <p class="talk-more">Need a bio or headshot for your program? Use the <a href="/press_kit">press kit</a>, or read the long-form story on <a href="https://whoisalexmerced.com" target="_blank" rel="noopener">WhoIsAlexMerced.com</a>.</p>
     </div></section>
 
-    <section class="section" id="inquiry"><div class="container speaking-inquiry"><div><span class="section__label section__label--pro">Invite Alex</span><h2 class="section__title">Tell me about your event</h2><p>Share the date, audience, format, and the topic you have in mind. Every inquiry gets a reply. You can also email <a href="mailto:dev@alexmerced.com?subject=Speaking%20inquiry">dev@alexmerced.com</a>.</p></div>
+    <section class="section" id="inquiry"><div class="container speaking-inquiry"><div><span class="section__label section__label--pro">Invite Alex</span><h2 class="section__title">Tell me about your event</h2><p>Share the date, audience, format, and the topic you have in mind. Every inquiry gets a reply. You can also email <a href="mailto:contact@alexmerced.com?subject=Speaking%20inquiry">contact@alexmerced.com</a>.</p></div>
       <form name="speaking-inquiry" method="POST" action="/speaking-thanks" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="speaking-inquiry">
         <p class="speaking-honeypot"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
@@ -420,7 +420,7 @@ document.addEventListener('click', function (e) {
         <label>Event website <input name="event-url" type="url" placeholder="https://"></label>
         <div class="speaking-form-row"><label>Event date <input name="date" type="date"></label><label>Format <select name="format"><option value="">Select format</option><option>Conference talk</option><option>Keynote</option><option>Workshop</option><option>Panel</option><option>Meetup</option><option>Podcast or webinar</option></select></label></div>
         <div class="speaking-form-row"><label>Attendance <select name="attendance"><option value="">Select</option><option>In person</option><option>Virtual</option><option>Hybrid</option></select></label><label>Expected audience size <input name="audience-size" inputmode="numeric"></label></div>
-        <label>Budget, travel, and recording <input name="budget" placeholder="Fee or none, travel covered?, recorded?"></label>
+        <label>Talk type, travel, and recording <input name="budget" placeholder="Dremio or independent talk? Travel and lodging covered? Recorded?"></label>
         <label>Audience and topic <textarea name="details" rows="6" placeholder="Who will attend, and what would you like them to learn?" required></textarea></label>
         <button class="btn btn--pro" type="submit" data-network-event="speaking_inquiry_submit">Send speaking inquiry →</button>
       </form>
@@ -484,7 +484,7 @@ document.addEventListener('click', function (e) {
               <li><a href="https://alexmercedmedia.com" target="_blank" rel="noopener">Alex Merced Media</a></li>
               <li><a href="https://books.alexmerced.com" target="_blank" rel="noopener">Books by Alex Merced</a></li>
               <li><a href="https://branding.alexmerced.com" target="_blank" rel="noopener">Branding by Alex Merced</a></li>
-              <li><a href="https://alexmercedcoder.dev" target="_blank" rel="noopener">Alex Merced: Open Lakehouse &amp; AI Advocate, Author &amp; Technologist</a></li>
+              <li><a href="https://alexmercedcoder.dev" target="_blank" rel="noopener">Alex Merced: Open-Source Data and AI Tools, Agents, and Books</a></li>
               <li><a href="https://alexmercedai.com" target="_blank" rel="noopener">Alex Merced AI</a></li>
               <li><a href="https://alexmerceddata.com" target="_blank" rel="noopener">Alex Merced Data</a></li>
               <li><a href="https://resources.alexmerced.com" target="_blank" rel="noopener">Resources by Alex Merced</a></li>
@@ -542,7 +542,7 @@ document.addEventListener('click', function (e) {
 
       <div class="footer__bottom">
         © <span id="footer-year">2026</span> Alex Merced. All rights reserved. |
-        <a href="mailto:dev@alexmerced.com">dev@alexmerced.com</a>
+        <a href="mailto:contact@alexmerced.com">contact@alexmerced.com</a>
       </div>
     </div>
   </footer>
