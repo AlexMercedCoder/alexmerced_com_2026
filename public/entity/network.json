@@ -175,6 +175,26 @@
             "event": "cta_free_book"
           }
         ]
+      },
+      "branding.alexmerced.com": {
+        "heading": "Work on your brand with Alex",
+        "links": [
+          {
+            "label": "Ask about brand coaching",
+            "url": "mailto:contact@alexmerced.com?subject=Brand%20coaching",
+            "event": "cta_brand_coaching"
+          },
+          {
+            "label": "Take the free brand audit",
+            "url": "https://branding.alexmerced.com/audit/",
+            "event": "cta_brand_audit"
+          },
+          {
+            "label": "Book Alex to speak",
+            "url": "https://alexmerced.com/speaking",
+            "event": "cta_speaking"
+          }
+        ]
       }
     }
   }

@@ -55,7 +55,7 @@ const byDomain = new Map(sites.map(site => [site.domain, site]));
 const domainOf = url => new URL(url).hostname.replace(/^www\./, '');
 const directoryGroups = footer.groups.map(group => ({
   title: group.title,
-  sites: group.links.map(link => {
+  sites: group.links.filter(link => /^https?:/.test(link.url)).map(link => {
     const site = byDomain.get(domainOf(link.url));
     if (!site) throw new Error(`Footer link not in sites.json: ${link.url}`);
     return { title: link.title, url: link.url, role: site.role };

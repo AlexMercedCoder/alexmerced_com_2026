@@ -21,7 +21,7 @@ Every site in the network resolves author identity to that same identifier.
 - [About Alex Merced](/professional): Biography, books (77 titles), and professional background
 - [Press Kit](/press_kit): Verified bio, credentials, and media info
 - [Speaking](/speaking): Talk topics, past talks with dates, session abstracts, organizer FAQ, and the booking form
-- [Contact](/contact): Email dev@alexmerced.com for speaking, press, and developer inquiries
+- [Contact](/contact): Email contact@alexmerced.com for speaking, press, and developer inquiries
 - [Newsletters](/newsletter): Data, Lakehouse and AI on Substack, plus the other lists Alex writes
 - [Network directory](/network.html): Every site Alex runs, grouped by purpose
 - [Community](/community.html): Event calendars and discussion spaces Alex runs

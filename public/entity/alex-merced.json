@@ -6,7 +6,7 @@
   "url": "https://alexmerced.com",
   "canonicalProfile": "https://alexmerced.com",
   "image": "https://alexmerced.com/alexpics/photo-headshot-charcoal-blazer-turtleneck.webp",
-  "email": "dev@alexmerced.com",
+  "email": "contact@alexmerced.com",
   "jobTitle": "Head of Developer Relations",
   "worksFor": {
     "name": "Dremio",
@@ -95,7 +95,7 @@
     {
       "type": "email",
       "label": "General and developer inquiries",
-      "value": "dev@alexmerced.com"
+      "value": "contact@alexmerced.com"
     },
     {
       "type": "linkedin",
