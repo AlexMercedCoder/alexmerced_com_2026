@@ -1,0 +1,113 @@
+{
+  "note": "Netlify alias domains per network site. scripts/build-alias-redirects.mjs writes a 301 for each alias into the site's _redirects. Refresh with --refresh.",
+  "refreshed": "2026-10-13",
+  "sites": {
+    "iceberglakehouse.com": {
+      "repo": "content-and-media/blog/2024/lakehouse-iceberg-blog",
+      "redirectsFile": "public/_redirects",
+      "aliases": [
+        "alextalksdatalakehouses.fyi",
+        "blog.alexmerced.io",
+        "blog.alexmerceddata.com",
+        "blog.arcticlakehouse.com",
+        "blog.clouddatalakehouse.com",
+        "blog.datalake.casa",
+        "blog.datalakehouse.help",
+        "blog.datalakehouse.tips",
+        "blog.datalakehouse.tools",
+        "blog.datalakehouse101.com",
+        "blog.datalakehousehub.com",
+        "blog.datanation.click",
+        "blog.datawinterlake.com",
+        "blog.glaciallakehouse.com",
+        "blog.grokdataengineering.com",
+        "blog.groklakehouse.com",
+        "blog.icebergdatalakehouse.com",
+        "blog.iceberglakehouse.com",
+        "blog.lakehouse.top",
+        "blog.lakehousecatalog.com",
+        "blog.learndatalakehouse.com",
+        "blog.opendatalakehouse.com",
+        "blog.polarlakehouse.com",
+        "blog.winterlakehouse.com",
+        "datablog.alexmerced.com",
+        "grokiceberg.com",
+        "icebergcatalog.com",
+        "icebergdatalake.com",
+        "icebergdatalakehouse.com",
+        "icebergtables.com",
+        "lakehouseify.com",
+        "lakehousify.com"
+      ],
+      "skip": []
+    },
+    "datalakehousehub.com": {
+      "repo": "content-and-media/blog/2024/datalakehousehub",
+      "redirectsFile": "public/_redirects",
+      "aliases": [
+        "arcticlakehouse.com",
+        "clouddatalakehouse.com",
+        "data.lake.haus",
+        "datalake.casa",
+        "datalakehaus.com",
+        "datalakehouse.blog",
+        "datalakehouse.ing",
+        "datalakehouse.tips",
+        "glaciallakehouse.com",
+        "grokdataengineering.com",
+        "groklakehouse.com",
+        "hub.alexmerceddata.com",
+        "lake.haus",
+        "lakehouseagentic.com",
+        "lakehouseandai.com",
+        "learndatalakehouse.com",
+        "main.datalakehousehub.com",
+        "openclouddatalake.com",
+        "polarlakehouse.com",
+        "theagenticlakehouse.com",
+        "thelakehouseagentic.com",
+        "winterlakehouse.com"
+      ],
+      "skip": []
+    },
+    "alexmerced.com": {
+      "repo": "content-and-media/website/2026/alexmercedcom",
+      "redirectsFile": "public/_redirects",
+      "aliases": [
+        "alexmerced.click",
+        "alexmerced.link",
+        "alexmerced.net",
+        "alexmerced.online",
+        "alexmerced.org",
+        "alexmerced.rocks",
+        "alexmerced.site",
+        "alexmerced.space",
+        "alexmerced.stream",
+        "alexmerced.win",
+        "alexmerced.xyz",
+        "alexmercedtv.com",
+        "bio.alexmerced.com",
+        "teamalexmerced.com",
+        "thealexmerced.com",
+        "thisisalexmerced.com",
+        "votealexmerced.com"
+      ],
+      "skip": [
+        "bio.alexmerced.com"
+      ]
+    },
+    "alexmercedcoder.dev": {
+      "repo": "content-and-media/website/2026/AlexMercedCoder2026",
+      "redirectsFile": "public/_redirects",
+      "aliases": [
+        "alexmerced.dev",
+        "alexmerced.io",
+        "alexmerced.tech",
+        "alexmercedcodes.com",
+        "whois.alexmercedcoder.dev",
+        "www.alexmerced.dev"
+      ],
+      "skip": []
+    }
+  }
+}
