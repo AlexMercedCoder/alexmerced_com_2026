@@ -31,8 +31,9 @@ https://bio.alexmerced.com/*  https://alexmerced.com/professional  301!
 /speaking-thanks.html /speaking-thanks 301
 /contact.html       /contact       301
 /newsletter.html    /newsletter    301
-# Forced: community.html exists on disk, so an unforced rule would be shadowed.
+# Forced: community.html and network.html exist on disk, so unforced rules would be shadowed.
 /community.html     /community     301!
+/network.html       /network       301!
 /speaking           /speaking.html 200
 /speaking-thanks    /speaking-thanks.html 200
 /game               /game.html     200
