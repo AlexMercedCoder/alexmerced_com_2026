@@ -19,7 +19,8 @@ const network = JSON.parse(readFileSync(new URL('network/network.json', root), '
 const sites = JSON.parse(readFileSync(new URL('entity/sites.json', root), 'utf8')).sites;
 
 const esc = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
-const local = url => url.replace(/^https:\/\/alexmerced\.com/, '') || '/';
+// Local pages are served (and canonical) without the .html extension.
+const local = url => url.replace(/^https:\/\/alexmerced\.com/, '').replace(/^(\/[\w-]+)\.html$/, '$1') || '/';
 const external = url => /^https?:\/\//.test(local(url));
 const linkAttrs = url => (external(url) ? ' target="_blank" rel="noopener"' : '');
 

@@ -23,8 +23,8 @@ Every site in the network resolves author identity to that same identifier.
 - [Speaking](/speaking): Talk topics, past talks with dates, session abstracts, organizer FAQ, and the booking form
 - [Contact](/contact): Email contact@alexmerced.com for speaking, press, and developer inquiries
 - [Newsletters](/newsletter): Data, Lakehouse and AI on Substack, plus the other lists Alex writes
-- [Network directory](/network.html): Every site Alex runs, grouped by purpose
-- [Community](/community.html): Event calendars and discussion spaces Alex runs
+- [Network directory](/network): Every site Alex runs, grouped by purpose
+- [Community](/community): Event calendars and discussion spaces Alex runs
 
 ## Books
 - [Apache Iceberg: The Definitive Guide](https://books.alexmerced.com/books/apache-iceberg-the-definitive-guide/): O'Reilly, with Tomer Shiran and Jason Hughes; the category-defining text
