@@ -207,6 +207,14 @@ const index = {
   entries,
 };
 
+// On a host with no sibling checkouts (the Netlify build), keep the committed
+// index rather than replacing it with an entity-only one that has no pages.
+const OUT = join(SRC, 'network-index.json');
+if (harvested === 0 && existsSync(OUT) && JSON.parse(readFileSync(OUT, 'utf-8')).counts?.page) {
+  console.log('network index: no sibling llms.txt found; keeping the committed index (run npm run build:index locally to refresh it)');
+  process.exit(0);
+}
+
 // Minified: this file is fetched by browser agents on every network search and
 // is never hand-edited. Regenerate with `npm run build:index`.
 writeFileSync(join(SRC, 'network-index.json'), JSON.stringify(index) + '\n', 'utf-8');
